@@ -1,19 +1,19 @@
 ---
-title: 2024.3.0 的发行说明
-description: 这些是 Cloud Manager 2024.3.0 版的发行说明。
+title: 2024.4.0 的发行说明
+description: 这些是 Cloud Manager 2024.4.0 版的发行说明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 22730ba281f7c1c4720158a3a813c56b815a0af1
-workflow-type: ht
-source-wordcount: '268'
-ht-degree: 100%
+source-git-commit: 4a7c6fbc3fa936ff1470420966823f94fb3a4d7b
+workflow-type: tm+mt
+source-wordcount: '258'
+ht-degree: 79%
 
 ---
 
 
-# Cloud Manager 2024.3.0 版的发行说明 {#release-notes}
+# Cloud Manager 2024.4.0 版的发行说明 {#release-notes}
 
-此页面记载 [!UICONTROL Cloud Manager] 2024.3.0 版的发行说明。
+此页面记载 [!UICONTROL Cloud Manager] 2024.4.0 版的发行说明。
 
 >[!NOTE]
 >
@@ -21,11 +21,12 @@ ht-degree: 100%
 
 ## 发布日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2024.3.0 版的发布日期为 2024 年 3 月 14 日。下一个版本计划于 2024 年 4 月 11 日发布。
+[!UICONTROL Cloud Manager] 2024.4.0 版的发布日期为 2024 年 4 月 10 日。下一个版本计划于 2024 年 5 月 9 日发布。
 
 ## 新增功能 {#what-is-new}
 
-* 包括绿色服务器的 IP/DNS (FQDN) 信息在内的详细信息现在显示在 Cloud Manager 的用户界面中。
+* 引入了对仅暂存管道和仅生产管道的支持，使您能够将全栈生产部署管道拆分为更小的专用部署。
+* 增强了代码构建问题的错误消息，能够更轻松地识别根本原因以及后续可操作的步骤。
 
 ## 早期采用计划 {#early-adoption}
 
@@ -39,5 +40,4 @@ ht-degree: 100%
 
 ## 错误修复 {#bug-fixes}
 
-* 修复了性能测试步骤中错误率量度失败时未生成相应日志的错误。
-* 性能测试服务负责检测网站上是否存在页面 (404)，改进后的服务逻辑现在可确保更顺畅、不间断的部署。
+* 解决了Cloud Manager重用具有错误承诺哈希的工件的错误。
