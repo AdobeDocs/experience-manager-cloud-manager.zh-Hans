@@ -4,9 +4,9 @@ description: 这些是 Cloud Manager 2024.4.0 版的发行说明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 4a7c6fbc3fa936ff1470420966823f94fb3a4d7b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '258'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -25,8 +25,8 @@ ht-degree: 79%
 
 ## 新增功能 {#what-is-new}
 
-* 引入了对仅暂存管道和仅生产管道的支持，使您能够将全栈生产部署管道拆分为更小的专用部署。
-* 增强了代码构建问题的错误消息，能够更轻松地识别根本原因以及后续可操作的步骤。
+* 我们引入了对仅暂存和仅生产管道的支持，使您能够将全栈生产部署管道拆分为更小的专用部署。
+* 增强的代码构建问题错误消息可以更轻松地识别根本原因和下一步可操作的步骤。
 
 ## 早期采用计划 {#early-adoption}
 
@@ -40,4 +40,4 @@ ht-degree: 79%
 
 ## 错误修复 {#bug-fixes}
 
-* 解决了Cloud Manager重用具有错误承诺哈希的工件的错误。
+* 解决了 Cloud Manager 重复使用具有错误提交哈希的工件的错误。
