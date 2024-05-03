@@ -2,10 +2,10 @@
 title: 基于角色的权限
 description: 了解 Cloud Manager 预先配置的基于角色的权限来管理对云资源的访问。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 10297789ac8f905f242ac52bdc6fc4812b989e8a
-workflow-type: ht
-source-wordcount: '602'
-ht-degree: 100%
+source-git-commit: 1c0c3a751ba2023fc2c2dd5d0d54f914373ad95b
+workflow-type: tm+mt
+source-wordcount: '620'
+ht-degree: 97%
 
 ---
 
@@ -66,3 +66,7 @@ ht-degree: 100%
 | 生成个人访问令牌 | 访问 Git |  | x |  | x |  |
 
 要了解有关如何设置用户的更多信息，请参阅[设置用户和角色](/help/requirements/users-and-roles.md)文档。
+
+>[!TIP]
+>
+>还提供了具有可配置权限的自定义权限配置文件。 请参阅文档 [自定义权限](/help/using/custom-permissions.md) 以了解更多详细信息。
