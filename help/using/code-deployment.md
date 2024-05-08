@@ -2,9 +2,9 @@
 title: 代码部署
 description: 了解如何部署代码以及在部署代码时 Cloud Manager 中会发生什么情况。
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 70e68f8af17b0acf644176c2ed3afaf8fc219063
-workflow-type: ht
-source-wordcount: '1650'
+source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+workflow-type: tm+mt
+source-wordcount: '1648'
 ht-degree: 100%
 
 ---
@@ -55,8 +55,6 @@ ht-degree: 100%
 
 * **安全性测试**：此步骤评估代码对 AEM 环境产生的安全影响。有关测试过程的详细信息，请参阅[了解测试结果](/help/using/code-quality-testing.md)文档。
    * **性能测试**：此步骤评估代码的性能。有关测试过程的详细信息，请参阅[了解测试结果](/help/using/code-quality-testing.md)。
-
-  ![暂存测试](/help/assets/Stage_Testing1.png)
 
 ### 生产部署步骤 {#production-deployment}
 

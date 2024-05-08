@@ -2,10 +2,10 @@
 title: 管理管道
 description: 了解如何管理现有管道，包括编辑、运行和删除它们。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 28ab641ec85335d8330aeb465c07bf0264218fe4
-workflow-type: ht
-source-wordcount: '807'
-ht-degree: 100%
+source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+workflow-type: tm+mt
+source-wordcount: '800'
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 1. 在这里，您可以看到项目的所有管道的列表，以及启动和停止管道执行，就像在&#x200B;**管道信息卡**&#x200B;中一样。
 
-如果管道正在执行，则将鼠标悬停在其&#x200B;**状态**&#x200B;列上将显示有关执行的详细信息。
+点击或单击 `i` 图标显示有关管道的上次或当前执行的详细信息。
 
 ![管道执行详细信息](/help/assets/configure-pipelines/pipeline-status.png)
 
@@ -60,7 +60,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 1. 在这里，您可以看到项目的所有管道执行的列表，包括当前执行和历史执行。
 
-如果管道正在执行，则将鼠标悬停在其&#x200B;**状态**&#x200B;列上将显示有关执行的详细信息。
+点击或单击 `i` 图标显示有关所选管道运行的执行的详细信息。
 
 ![管道执行详细信息](/help/assets/configure-pipelines/pipeline-activity.png)
 

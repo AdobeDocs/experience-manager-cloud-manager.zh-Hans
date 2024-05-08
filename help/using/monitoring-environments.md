@@ -2,10 +2,10 @@
 title: 监控环境
 description: 了解如何在 Cloud Manager 中监控环境。
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 5907ca6337d33c26ff19a14bfeb358cd9f7b935d
+source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 100%
+source-wordcount: '928'
+ht-degree: 89%
 
 ---
 
@@ -24,20 +24,17 @@ ht-degree: 100%
 
 执行以下步骤可访问系统监控功能。
 
-1. 登录到 **Managed Services - 项目**&#x200B;登陆页面。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-   ![Managed Services 项目](/help/assets/ProgramLanding.png)
-
-1. 单击项目信息卡上的第四个图标。
+1. 点按或单击要监控的程序的省略号按钮，然后选择 **显示监控** 选项。
 
    ![设置](/help/assets/first-timea1.png)
 
-
-或者，您可以通过 [!UICONTROL Cloud Manager] 中的&#x200B;**报告**&#x200B;全局导航菜单来导航到&#x200B;**系统监控**&#x200B;登陆页面。
+此 **报表** 此时将打开页面以显示系统监控信息。
 
 ## 系统监控概述 {#system-monitoring-overview}
 
-系统监控概述页面列出了项目中受监控的环境，并报告了跨四个独立类别的高级别运行状况：
+此 **系统监控** 的部分 **报表** 页面列出了项目中受监控的环境，并报告了跨四个不同类别的高级别运行状况：
 
 * 主机
 * 存储
@@ -54,13 +51,11 @@ ht-degree: 100%
 
 ## 系统监控详细信息 {#system-monitoring-detail}
 
-要查看特定量度的详细信息，您可以单击左侧导航中的某个类别或单击特定实例的类别指示器之一。每个详细信息页面均显示该类别中量度的一系列图表。您可以查看环境中所有实例或某个特定实例的量度。您可以使用右上角的下拉框在环境和实例之间切换。
+要查看特定量度的详细信息，请点按或单击特定实例的类别列之一或左侧导航中的类别标题。 每个详细信息页面均显示该类别中量度的一系列图表。您可以查看环境中所有实例或某个特定实例的量度。您可以使用右上角的下拉框在环境和实例之间切换。
 
 ![选择环境](/help/assets/System_Monitoring1.png)
 
 左侧导航将显示当前所选类别中的可用量度，其中包含当前所选环境和实例的数据。
-
-![监控量度](/help/assets/System_Monitoring2.png)
 
 单个图表将显示状态和一段时间内的数据图表以及阈值。如果显示多个实例，则每个实例的数据将位于一个单独的系列中。
 
@@ -102,9 +97,9 @@ ht-degree: 100%
 
 ## SLA 报告 {#sla-reporting}
 
-客户可以查看签订的服务水平协议 (SLA) 下的生产 AEM 环境的性能。这可以通过&#x200B;**报告**&#x200B;屏幕上的子菜单实现。
+您可以查看生产AEM环境相对于您签订的服务水平协议(SLA)的性能。
 
-以下图表显示了 2018 年的月度 SLA 达到情况。
+以下图表显示了 2019 年的月度 SLA 达到情况。
 
 ![SLA 2018 图表](/help/assets/SLA-Reports-one.png)
 

@@ -2,10 +2,10 @@
 title: Cloud Manager 存储库
 description: 了解如何访问、创建和编辑 Cloud Manager 项目的存储库。
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: 63cbcf8724a840efa67b8fafc4c321e04a5d70d9
+source-git-commit: 1d4ab9704fdb743b097e24be335fbf069d1e78bd
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 98%
 
 ---
 
@@ -26,11 +26,7 @@ ht-degree: 100%
 
    ![“访问存储库信息”按钮](/help/assets/access-repo1.png)
 
-1. 如果您切换到&#x200B;**非生产**&#x200B;管道选项卡，则也可使用&#x200B;**访问存储库信息**&#x200B;选项，操作与[为管道配置](/help/using/non-production-pipelines.md)一样。
-
-   ![非生产管道](/help/assets/access-repo-nonprod.png)
-
-1. 单击&#x200B;**访问存储库信息**&#x200B;按钮，会打开显示以下内容的对话框：
+1. 点按或单击 **访问存储库信息** 按钮打开显示以下内容的对话框：
 
    * Git 存储库的 URL
    * 用户名
@@ -68,8 +64,6 @@ ht-degree: 100%
 1. 选择&#x200B;**保存**。
 
 此时将显示您新创建的存储库。
-
-![创建的新存储库](/help/assets/create-repo3.png)
 
 在[创建管道](/help/overview/ci-cd-pipelines.md)时，可以选择已在 Cloud Manager 中创建的存储库。
 

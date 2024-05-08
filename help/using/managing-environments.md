@@ -2,10 +2,10 @@
 title: 管理环境
 description: 了解如何使用 Cloud Manager 管理环境。
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: 80f8707e00357f5a08dd835b846c9ee610f3e573
+source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 100%
+source-wordcount: '264'
+ht-degree: 89%
 
 ---
 
@@ -37,9 +37,9 @@ Cloud Manager 的&#x200B;**概述**&#x200B;页面包含&#x200B;**环境**&#x200B
 
 ## 管理环境 {#managing-environments-with-cloud-manager}
 
-在&#x200B;**环境**&#x200B;图块上，单击&#x200B;**管理**&#x200B;以显示&#x200B;**环境**&#x200B;屏幕。
+在 **环境** 图块，点按或单击任意环境的行以显示 **环境** 屏幕。
 
-**环境**&#x200B;屏幕为项目中的每个生产和暂存环境显示一个信息卡（如果适用）。每张信息卡的上方将显示环境名称。信息卡包括环境中的节点表以及 CPU 尺寸、存储、区域和状态。
+此 **环境** 屏幕显示项目中的每个生产和暂存环境。 每张信息卡的上方将显示环境名称。信息卡包括环境中的节点表以及 CPU 尺寸、存储、区域和状态。
 
 >[!NOTE]
 >
