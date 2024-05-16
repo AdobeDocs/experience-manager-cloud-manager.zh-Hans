@@ -7,10 +7,10 @@ user-guide-description: 了解如何使用 Cloud Manager 在云中自行管理 A
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: fbbc8b7aee04d1c153aeac87cc086883c0c6b980
+source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 100%
+source-wordcount: '509'
+ht-degree: 99%
 
 ---
 
@@ -46,6 +46,7 @@ ht-degree: 100%
    + CI/CD 管道 {#pipelines}
       + [配置生产管道](/help/using/production-pipelines.md)
       + [配置非生产管道](/help/using/non-production-pipelines.md)
+      + [仅暂存和生产管道](/help/using/stage-prod-only.md)
       + [管理管道](/help/using/managing-pipelines.md)
    + [代码部署](/help/using/code-deployment.md)
    + [代码质量测试](/help/using/code-quality-testing.md)
@@ -68,6 +69,7 @@ ht-degree: 100%
 + 发行说明 {#release-notes}
    + [最新发行说明](/help/release-notes/current.md)
    + 2024 {#2024}
+      + [2024.4.0 的发行说明](/help/release-notes/2024/2024-4-0.md)
       + [2024.3.0 的发行说明](/help/release-notes/2024/2024-3-0.md)
       + [2024.2.0 的发行说明](/help/release-notes/2024/2024-2-0.md)
       + [2024.1.0 的发行说明](/help/release-notes/2024/2024-1-0.md)
