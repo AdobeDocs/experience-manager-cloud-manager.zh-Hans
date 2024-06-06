@@ -2,10 +2,10 @@
 title: 管理管道
 description: 了解如何管理现有管道，包括编辑、运行和删除它们。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+source-git-commit: 4ab4bd416658c55d72228b701c57a1845d2d0f41
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 96%
+source-wordcount: '901'
+ht-degree: 88%
 
 ---
 
@@ -40,15 +40,15 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 从&#x200B;**项目概述**&#x200B;页面中，点按或单击&#x200B;**管道**&#x200B;选项卡以切换到&#x200B;**管道**&#x200B;窗口。
+1. 从&#x200B;**项目概述**&#x200B;页面中，点击或单击&#x200B;**管道**&#x200B;选项卡以切换到&#x200B;**管道**&#x200B;窗口。
 
 1. 在这里，您可以看到项目的所有管道的列表，以及启动和停止管道执行，就像在&#x200B;**管道信息卡**&#x200B;中一样。
 
-点击或单击 `i` 图标显示有关管道的上次或当前执行的详细信息。
+点击或单击 `i` 图标可显示管道上次或当前执行的详细信息。
 
 ![管道执行详细信息](/help/assets/configure-pipelines/pipeline-status.png)
 
-点按或单击&#x200B;**查看详细信息**&#x200B;将转至[管道执行的详细信息。](#view-details)
+点击或单击&#x200B;**查看详细信息**&#x200B;将转至[管道执行的详细信息。](#view-details)
 
 ## 活动窗口 {#activity}
 
@@ -56,15 +56,15 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 从&#x200B;**项目概述**&#x200B;页面中，点按或单击&#x200B;**活动**&#x200B;选项卡以切换到&#x200B;**活动**&#x200B;窗口。
+1. 从&#x200B;**项目概述**&#x200B;页面中，点击或单击&#x200B;**活动**&#x200B;选项卡以切换到&#x200B;**活动**&#x200B;窗口。
 
 1. 在这里，您可以看到项目的所有管道执行的列表，包括当前执行和历史执行。
 
-点击或单击 `i` 图标显示有关所选管道运行的执行的详细信息。
+点击或单击 `i` 图标可显示有关执行所选管道运行的详细信息。
 
 ![管道执行详细信息](/help/assets/configure-pipelines/pipeline-activity.png)
 
-点按或单击&#x200B;**查看详细信息**&#x200B;将转至[管道执行的详细信息。](#view-details)
+点击或单击&#x200B;**查看详细信息**&#x200B;将转至[管道执行的详细信息。](#view-details)
 
 ## 运行管道 {#running-pipelines}
 
@@ -96,6 +96,10 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 >
 >您无法编辑运行中的管道。
 
+>[!NOTE]
+>
+>专用存储库不支持Web层和配置管道。 请参阅文档 [在Cloud Manager中添加专用存储库](/help/managing-code/private-repositories.md) 详细信息和完整的限制列表。
+
 ## 删除管道 {#deleting-pipelines}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
@@ -124,9 +128,18 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 ![步骤摘要](/help/assets/configure-pipelines/pipeline-step.png)
 
-点按或单击&#x200B;**查看详细信息**&#x200B;链接以显示&#x200B;**持续时间**&#x200B;部分。这包括基于该项目的历史趋势的管道的平均持续时间。
+点击或单击&#x200B;**查看详细信息**&#x200B;链接以显示&#x200B;**持续时间**&#x200B;部分。这包括基于该项目的历史趋势的管道的平均持续时间。
 
 ![持续时间](/help/assets/configure-pipelines/duration.png)
+
+如果您的管道包含 **代码扫描** 步骤（这会导致问题）中，您可以点按或单击 **下载详细信息** 按钮查看列表 [代码质量测试](/help/using/code-quality-testing.md) 没有通过。
+
+![代码质量问题](assets/managing-pipelines-code-quality-issues.png)
+
+A **项目文件位置** 列在CSV文件中可用，以指示违规代码的位置。 此列是项目相对路径，而 **文件位置** 列由Maven生成。
+
+![项目代码扫描问题详细信息](assets/managing-pipelines-code-quality-details.png)
+
 
 >[!NOTE]
 >

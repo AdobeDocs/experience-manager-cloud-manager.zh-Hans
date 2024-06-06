@@ -2,10 +2,10 @@
 title: 自定义代码质量规则
 description: 了解 Cloud Manager 在基于来自 AEM 工程的最佳实践的代码质量测试过程中执行的自定义代码质量规则的详细信息。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: f930f12b5f50dd96a1677ff7a56cf0e92a400556
-workflow-type: ht
-source-wordcount: '3377'
-ht-degree: 100%
+source-git-commit: 48ae41cb23f6a94fbaf31423f9c5cea3bfd45020
+workflow-type: tm+mt
+source-wordcount: '3513'
+ht-degree: 92%
 
 ---
 
@@ -794,6 +794,74 @@ AEM Cloud Service 禁止自定义搜索索引定义（即 `oak:QueryIndexDefinit
 * **从以下版本开始**：版本 2021.2.0
 
 AEM Cloud Service 禁止自定义搜索索引定义（即 `oak:QueryIndexDefinition` 类型的节点）包含名为 `reindex` 的属性。在迁移到 AEM Cloud Service 之前，必须更新使用此属性的索引编制。有关更多信息，请参阅[“内容搜索和索引编制”文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use)。
+
+### 不得在UI内容包中部署索引定义节点 {#oakpal-ui-content-package}
+
+* **键**： IndexNotUnderUIContent
+* **类型**：改进
+* **严重性**：轻微
+* **开始版本**：版本 2024.6.0
+
+AEM Cloud Service禁止自定义搜索索引定义（类型的节点） `oak:QueryIndexDefinition`)，部署在UI内容包中。
+
+>[!WARNING]
+>
+>建议您尽快解决此问题，因为这将导致管道从 [Cloud Manager 2024年8月版。](/help/release-notes/current.md)
+
+### 类型damAssetLucene的自定义全文索引定义必须正确带有“damAssetLucene”前缀 {#oakpal-dam-asset-lucene}
+
+* **键**： CustomFulltextIndexesOfTheDamAssetCheck
+* **类型**：改进
+* **严重性**：轻微
+* **开始版本**：版本 2024.6.0
+
+AEM Cloud Service禁止自定义全文索引类型定义 `damAssetLucene` 不会添加任何前缀 `damAssetLucene`.
+
+>[!WARNING]
+>
+>建议您尽快解决此问题，因为这将导致管道从 [Cloud Manager 2024年8月版。](/help/release-notes/current.md)
+
+### 索引定义节点不得包含同名的属性 {#oakpal-index-property-name}
+
+* **键**： DuplicateNameProperty
+* **类型**：改进
+* **严重性**：轻微
+* **开始版本**：版本 2024.6.0
+
+AEM Cloud Service禁止自定义搜索索引定义（即类型的节点） `oak:QueryIndexDefinition`)来自包含同名属性
+
+>[!WARNING]
+>
+>建议您尽快解决此问题，因为这将导致管道从 [Cloud Manager 2024年8月版。](/help/release-notes/current.md)
+
+### 禁止自定义某些OOTB索引定义 {#oakpal-customizing-ootb-index}
+
+* **键**： RestrictIndexCustomization
+* **类型**：改进
+* **严重性**：轻微
+* **开始版本**：版本 2024.6.0
+
+AEM Cloud Service禁止对以下OOTB索引进行未经授权的修改：
+
+* `nodetypeLucene`
+* `slingResourceResolver`
+* `socialLucene`
+* `appsLibsLucene`
+* `authorizables`
+* `pathReference`
+
+>[!WARNING]
+>
+>建议您尽快解决此问题，因为这将导致管道从 [Cloud Manager 2024年8月版。](/help/release-notes/current.md)
+
+### 分析器中标记器的配置应以“tokenizer”名称创建 {#oakpal-tokenizer}
+
+* **键**：AnalyzerTokenizerConfigCheck
+* **类型**：改进
+* **严重性**：轻微
+* **开始版本**：版本 2024.6.0
+
+AEM Cloud Service禁止在分析器中创建名称不正确的令牌化器。 令牌化器应始终定义为 `tokenizer`.
 
 ## Dispatcher 优化工具 {#dispatcher-optimization-tool-rules}
 

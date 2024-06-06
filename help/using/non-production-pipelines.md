@@ -2,7 +2,7 @@
 title: 配置非生产管道
 description: 了解如何使用 Cloud Manager 创建和配置非生产管道以部署代码。
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: 33ccb0f2139162845cc1b72505b6a5bfc7cf43e7
+source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 100%
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->在管道的关联 Git 存储库具有至少一个分支且[项目设置](/help/getting-started/program-setup.md)完成之前，无法设置管道。请参阅 [Cloud Manager 存储库](/help/managing-code/repositories.md)文档，了解如何在 Cloud Manager 中添加和管理存储库。
+>在管道的关联 Git 存储库具有至少一个分支且[项目设置](/help/getting-started/program-setup.md)完成之前，无法设置管道。请参阅 [Cloud Manager 存储库](/help/managing-code/managing-repositories.md)文档，了解如何在 Cloud Manager 中添加和管理存储库。
 
 ## 添加非生产管道 {#add-non-production-pipeline}
 
@@ -67,7 +67,7 @@ ht-degree: 100%
       * **立即失败** – 如果选定此选项，则只要发生重要失败，就会取消管道。这实际上是在模拟用户手动拒绝每个失败。
       * **立即继续** – 如果选定此选项，则每当发生重要失败时，管道就会自动继续。这实际上是在模拟用户手动批准每个失败。
 
-   1. **Dispatcher 配置** - **部署管理员**&#x200B;角色可以配置一组内容路径，这些路径将在管道运行时失效或从 AEM Dispatcher 缓存中刷新。这些缓存操作将在部署任何内容包之后在部署管道步骤中执行。这些设置使用标准 AEM Dispatcher 行为。要进行配置，请执行以下操作：
+   1. **Dispatcher 配置** - **部署管理员**&#x200B;角色可以配置一组内容路径，这些路径将在管道运行时失效或从 AEM Dispatcher 缓存中刷新。就在部署任何内容包之后，将作为部署管道步骤的一部分执行这些缓存操作。这些设置使用标准 AEM Dispatcher 行为。要进行配置，请执行以下操作：
 
       1. 在&#x200B;**路径**&#x200B;下，提供内容路径。
       1. 在&#x200B;**类型**&#x200B;下，选择要对路径执行的操作。

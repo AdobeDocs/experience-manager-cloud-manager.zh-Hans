@@ -1,48 +1,43 @@
 ---
-title: 2024.5.0 的发行说明
-description: 这些是 Cloud Manager 2024.5.0 版的发行说明。
+title: 2024.6.0 的发行说明
+description: 这些是 Cloud Manager 2024.6.0 版的发行说明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 395fe2a42fc2d6413dff38c9e4620c62039f87e2
+source-git-commit: a41ea35cb685d4e88e016bc887eb2465963747e1
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 76%
+source-wordcount: '291'
+ht-degree: 55%
 
 ---
 
 
-# Cloud Manager 2024.5.0 版的发行说明 {#release-notes}
+# Cloud Manager 2024.6.0 版的发行说明 {#release-notes}
 
-此页面记载 [!UICONTROL Cloud Manager] 2024.5.0 版的发行说明。
+此页面记载 [!UICONTROL Cloud Manager] 2024.6.0 版的发行说明。
 
 >[!NOTE]
 >
->有关 AEM as a Cloud Service 中的 Cloud Manager 的最新发行说明，请参阅 [AEM as a Cloud Service 中的 Cloud Manager 的最新发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/release-notes-cloud-manager/release-notes-cm-current.html)。
+>有关 AEM as a Cloud Service 中的 Cloud Manager 的最新发行说明，请参阅 [AEM as a Cloud Service 中的 Cloud Manager 的最新发行说明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/release-notes-cloud-manager/release-notes-cm-current.html?lang=zh-Hans)。
 
 ## 发布日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2024.5.0 版的发布日期为 2024 年 5 月 9 日。下一个版本计划于 2024 年 6 月 6 日发布。
+[!UICONTROL Cloud Manager] 2024.6.0 版的发布日期为 2024 年 6 月 6 日。下一个版本计划于 2024 年 7 月 11 日发布。
 
 ## 新增功能 {#what-is-new}
 
-* 现在，当管道在中运行时，将跳过内容审核步骤 [紧急模式。](/help/using/code-deployment.md#emergency-pipeline)
+* 您现在可以 [使用您自己的GitHub存储库](/help/managing-code/private-repositories.md) 用作全栈管道和前端管道的源。
+   * 此外，您还可以通过以下方式利用GitHub存储库 [Git子模块，](/help/managing-code/git-submodules.md) 增强了对用于拉取请求验证的自动生成管道的控制，并允许您在代码扫描阶段定义关键量度的行为。
+   * [您也可选择](/help/managing-code/github-check-config.md) 要在GitHub上保留报表历史记录，请命名管道并设置管道变量以满足您的需求。
+* 新的OakPal规则已添加到 [Cloud Manager代码质量扫描。](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)
+   * 截至2024年6月添加的每个新规则都是一个不中断的更改。
+   * 我们建议您尽快解决这些问题，因为从2024年8月发行的Cloud Manager版本开始，这些新规则会导致管道失败。
 
 ## 早期采用计划 {#early-adoption}
 
 成为我们早期采用计划的一部分，并有机会测试一些即将推出的功能
 
-### 仅限暂存和仅限生产的管道 {#staging-production-only-pipelines}
+### 仅暂存和仅生产管道 {#staging-production-only-pipelines}
 
-支持 [仅限暂存和仅限生产的管道](/help/using/stage-prod-only.md) 引入，使您能够将全栈生产部署管道拆分为更小的、专门的部署。
+我们引入了对[仅暂存和仅生产管道](/help/using/stage-prod-only.md)的支持，使您能够将全栈生产部署管道拆分为更小的专用部署。
 
-如果您有兴趣测试这项新功能并分享您的反馈，请发送电子邮件至  `Grp-cloudmanager_splitpipelines@adobe.com` 从与Adobe ID关联的电子邮件地址中查找。
-
-### 自带 GitHub {#byo-github}
-
-如果您使用 GitHub 管理存储库，则[现在可以通过 Cloud Manager 直接在 GitHub 存储库中验证代码。](/help/managing-code/byo-github.md)此集成使得无需始终与 Adobe 存储库同步代码，并使您可验证拉取请求后再将其合并到主分支中。此功能为公共 GitHub 所独有。不支持自托管 GitHub。
-
-如果您有兴趣测试这项新功能并共享您的反馈，请从您的 Adobe ID 关联的电子邮件地址发送电子邮件至 `Grp-CloudManager_BYOG@adobe.com`。
-
-## 错误修复 {#bug-fixes}
-
-* 解决了 Cloud Manager 重复使用具有错误提交哈希的工件的错误。
+如果您有兴趣测试这项新功能并共享您的反馈，请从您 Adobe ID 关联的电子邮件地址发送电子邮件至 `Grp-cloudmanager_splitpipelines@adobe.com`。

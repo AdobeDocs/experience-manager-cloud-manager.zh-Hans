@@ -7,10 +7,10 @@ user-guide-description: 了解如何使用 Cloud Manager 在云中自行管理 A
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
+source-git-commit: 3beee350dda077c16975ea628bd4c7b80d7d9160
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 99%
+source-wordcount: '530'
+ht-degree: 96%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 99%
    + CI/CD 管道 {#pipelines}
       + [配置生产管道](/help/using/production-pipelines.md)
       + [配置非生产管道](/help/using/non-production-pipelines.md)
-      + [仅暂存和生产管道](/help/using/stage-prod-only.md)
+      + [仅暂存和仅生产管道](/help/using/stage-prod-only.md)
       + [管理管道](/help/using/managing-pipelines.md)
    + [代码部署](/help/using/code-deployment.md)
    + [代码质量测试](/help/using/code-quality-testing.md)
@@ -58,17 +58,23 @@ ht-degree: 99%
    + [自定义代码质量规则](/help/using/custom-code-quality-rules.md)
    + [内容复制](/help/using/content-copy.md)
 + 管理代码 {#managing-code}
+   + [在Cloud Manager中管理存储库](/help/managing-code/managing-repositories.md)
+   + [存储库访问信息](/help/managing-code/accessing-repositories.md)
+   + [添加Adobe存储库](/help/managing-code/adobe-repositories.md)
+   + [添加专用存储库](/help/managing-code/private-repositories.md)
+   + [Git 子模块支持](/help/managing-code/git-submodules.md)
+   + [GitHub检查配置](/help/managing-code/github-check-config.md)
+   + [GitHub检查注释](/help/managing-code/github-annotations.md)
    + [Maven 项目版本处理](/help/managing-code/maven-project-version.md)
-   + [存储库](/help/managing-code/repositories.md)
    + [与 Git 集成](/help/managing-code/git-integration.md)
    + [使用多个 Git 存储库](/help/managing-code/multiple-git-repos.md)
-   + [使用您自己的 GitHub 存储库](/help/managing-code/byo-github.md)
 + 产品更新向导 {#product-update-wizard}
    + [概述](/help/product-update-wizard/overview.md)
    + [评估](/help/product-update-wizard/evaluation.md)
 + 发行说明 {#release-notes}
    + [最新发行说明](/help/release-notes/current.md)
    + 2024 {#2024}
+      + [2024.5.0 的发行说明](/help/release-notes/2024/2024-5-0.md)
       + [2024.4.0 的发行说明](/help/release-notes/2024/2024-4-0.md)
       + [2024.3.0 的发行说明](/help/release-notes/2024/2024-3-0.md)
       + [2024.2.0 的发行说明](/help/release-notes/2024/2024-2-0.md)

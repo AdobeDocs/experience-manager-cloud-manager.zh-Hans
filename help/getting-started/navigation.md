@@ -2,7 +2,7 @@
 title: 浏览 Cloud Manager UI
 description: 了解 Cloud Manager UI 的组织方式，以及如何管理您的程序和环境。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
+source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
 workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 100%
@@ -168,7 +168,7 @@ Cloud Manager 标头有一个汉堡菜单，该菜单可自动打开以显示程
 * 概述：当前文档中描述的程序概述
 * [活动](/help/using/managing-pipelines.md#activity)：程序的管道运行历史
 * [管道](/help/using/managing-pipelines.md#pipelines)：为程序配置的所有管道
-* [存储库](/help/managing-code/repositories.md)：为程序配置的所有存储库
+* [存储库](/help/managing-code/managing-repositories.md)：为程序配置的所有存储库
 * [报告](/help/using/monitoring-environments.md#system-monitoring-overview)：SLA 数据等量度
 * [环境](/help/using/managing-environments.md)：为程序配置的所有环境
 * [内容集](/help/using/content-copy.md)：为复制目的而创建的内容集
