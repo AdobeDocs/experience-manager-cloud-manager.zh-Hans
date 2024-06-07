@@ -3,9 +3,9 @@ title: 基于角色的权限
 description: 了解 Cloud Manager 预先配置的基于角色的权限来管理对云资源的访问。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 source-git-commit: fc1bc626dc18d25ce8c5bbae71396b234b5676db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '620'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 95%
 >
 >本文档介绍了 Cloud Manager for Adobe Managed Services (AMS) 的基于角色的权限。
 >
->AEM as a Cloud Service 的等效文档可以在 AEM as a Cloud Service 文档中的 [Cloud Manager 简介](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html#role-based-permissions)文档中找到。
+>AEM as a Cloud Service 的等效文档可以在 AEM as a Cloud Service 文档中的 [Cloud Manager 简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html?lang=zh-Hans#role-based-permissions)文档中找到。
 
 ## 用户角色 {#user-roles}
 
@@ -35,7 +35,7 @@ ht-degree: 95%
 | 部署管理员 | 此用户通过使用 [!UICONTROL Cloud Manager] 执行暂存和生产部署来管理部署操作，可以在必要时审批重要三层失败，并且有权访问 Git 存储库。 |
 | 开发人员 | 此用户开发和测试自定义应用程序代码，主要使用 [!UICONTROL Cloud Manager] 来查看部署状态，并具有对 Git 存储库的提交访问权限。 |
 | 客户成功工程师 | 此用户通常帮助 AMS 客户获得成功，并与 [!UICONTROL Cloud Manager] 交互以便执行需要客户成功工程师 (CSE) 监督的部署。 |
-| 内容作者 | 此用户通常不会与Cloud Manager进行交互，但可以使用Cloud Manager项目切换器(从Experience Cloud导航)来访问Adobe Experience Manager (AEM)。 |
+| 内容作者 | 此用户通常不会与 Cloud Manager 进行交互，但可以使用 Cloud Manager 项目切换器（从 Experience Cloud 导航）来访问 Adobe Experience Manager (AEM)。 |
 
 ## 用户权限 {#user-permissions}
 
