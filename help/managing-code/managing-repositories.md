@@ -2,10 +2,10 @@
 title: 在Cloud Manager中管理存储库
 description: 了解如何在Cloud Manager中创建、查看和编辑Git存储库。
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: b15ef71ae24f51811798d2d25c8f75320e21c01f
+source-git-commit: 73add7bee892769d1b3864e3238aff26bf96162d
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 27%
+source-wordcount: '660'
+ht-degree: 25%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 27%
 
 * 存储库的类型
    * **Adobe** 指示Adobe管理的存储库
-   * **私有** 指示您管理的GitHub存储库
+   * **GitHub** 指示您管理的专用GitHub存储库
 * 创建时间
 * 与存储库关联的管道
 
@@ -76,6 +76,13 @@ Cloud Manager支持由Adobe(**Adobe存储库**)以及您自己的自管理存储
 此 **存储库信息** 此时将打开一个窗口，其中包含详细信息。 有关访问存储库信息的更多信息，请参阅文档 [访问存储库信息。](accessing-repositories.md)
 
 ## 检查分支 {#check-branches}
+
+此 **检查分支/创建项目** 操作根据存储库的状态执行两个功能。
+
+* 如果存储库是新创建的，则该操作会根据以下内容创建一个示例项目 [AEM项目原型。](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview)
+* 如果存储库已创建示例项目，则会检查存储库及其分支的状态，如果示例项目已存在，则会返回报告。
+
+![检查分支操作](assets/check-branches.png)
 
 ## 复制存储库 URL {#copy-url}
 

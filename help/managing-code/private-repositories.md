@@ -3,10 +3,10 @@ title: 在Cloud Manager中添加专用存储库
 description: 了解如何设置Cloud Manager以使用您自己的专用GitHub存储库。
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: 84a6d8b7a44af124eb227999ad1cbd1fe14ab7ee
+source-git-commit: 6f14a8e9ff8e56f9f7b84799733e26b4c0ff8dcb
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 68%
+source-wordcount: '868'
+ht-degree: 70%
 
 ---
 
@@ -124,7 +124,6 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 
 某些限制适用于将专用存储库与Cloud Manager结合使用的情况。
 
-* 您无法使用专用存储库作为您管理的管道的直接存储库来源。
 * 使用Cloud Manager中的GitHub检查，无法暂停拉取请求验证。
    * 如果在Cloud Manager中验证GitHub存储库，则Cloud Manager将始终尝试验证为该存储库创建的拉取请求。
 * 如果从您的 GitHb 组织中删除 Adobe GitHub 应用程序，这将删除所有存储库的提取请求验证功能。
