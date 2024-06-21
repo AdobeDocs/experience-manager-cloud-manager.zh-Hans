@@ -3,7 +3,7 @@ title: 配置非生产管道
 description: 了解如何使用 Cloud Manager 创建和配置非生产管道以部署代码。
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '716'
 ht-degree: 100%
 

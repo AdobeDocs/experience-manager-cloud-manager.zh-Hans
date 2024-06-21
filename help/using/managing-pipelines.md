@@ -3,9 +3,9 @@ title: 管理管道
 description: 了解如何管理现有管道，包括编辑、运行和删除它们。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
 source-git-commit: 4ab4bd416658c55d72228b701c57a1845d2d0f41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '901'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 >[!NOTE]
 >
->专用存储库不支持Web层和配置管道。 请参阅文档 [在Cloud Manager中添加专用存储库](/help/managing-code/private-repositories.md) 详细信息和完整的限制列表。
+>专用存储库不支持 Web 层和配置管道。请参阅文档[在 Cloud Manager 中添加专用存储库](/help/managing-code/private-repositories.md)，了解详细信息和完整的限制列表。
 
 ## 删除管道 {#deleting-pipelines}
 
@@ -132,15 +132,15 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 ![持续时间](/help/assets/configure-pipelines/duration.png)
 
-如果您的管道包含 **代码扫描** 步骤（这会导致问题）中，您可以点按或单击 **下载详细信息** 按钮查看列表 [代码质量测试](/help/using/code-quality-testing.md) 没有通过。
+如果您的管道包含引发问题的&#x200B;**代码扫描**&#x200B;步骤，您可以点击或单击&#x200B;**下载详细信息**&#x200B;按钮，查看未通过的[代码质量测试](/help/using/code-quality-testing.md)列表。
 
 ![代码质量问题](assets/managing-pipelines-code-quality-issues.png)
 
-A **项目文件位置** 列在CSV文件中可用，以指示违规代码的位置。 此列是项目相对路径，而 **文件位置** 列由Maven生成。
+CSV 文件中有一个&#x200B;**项目文件位置**&#x200B;列，用于指示有问题代码的位置。此列是项目相对路径，而&#x200B;**文件位置**&#x200B;列是由 Maven 生成的。
 
-![项目代码扫描问题详细信息](assets/managing-pipelines-code-quality-details.png)
+![项目代码扫描问题详情](assets/managing-pipelines-code-quality-details.png)
 
 
 >[!NOTE]
 >
->您只能查看运行中的或已运行至少一次的管道的详细信息。
+>您只能查看运行中或已运行至少一次的管道的详细信息。

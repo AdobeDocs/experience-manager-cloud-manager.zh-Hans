@@ -3,9 +3,9 @@ title: 自定义代码质量规则
 description: 了解 Cloud Manager 在基于来自 AEM 工程的最佳实践的代码质量测试过程中执行的自定义代码质量规则的详细信息。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 48ae41cb23f6a94fbaf31423f9c5cea3bfd45020
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3513'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -795,53 +795,53 @@ AEM Cloud Service 禁止自定义搜索索引定义（即 `oak:QueryIndexDefinit
 
 AEM Cloud Service 禁止自定义搜索索引定义（即 `oak:QueryIndexDefinition` 类型的节点）包含名为 `reindex` 的属性。在迁移到 AEM Cloud Service 之前，必须更新使用此属性的索引编制。有关更多信息，请参阅[“内容搜索和索引编制”文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use)。
 
-### 不得在UI内容包中部署索引定义节点 {#oakpal-ui-content-package}
+### 索引定义节点不得部署在 UI 内容包中 {#oakpal-ui-content-package}
 
-* **键**： IndexNotUnderUIContent
+* **键**：IndexNotUnderUIContent
 * **类型**：改进
 * **严重性**：轻微
 * **开始版本**：版本 2024.6.0
 
-AEM Cloud Service禁止自定义搜索索引定义（类型的节点） `oak:QueryIndexDefinition`)，部署在UI内容包中。
+AEM Cloud Service 禁止在 UI 内容包中部署自定义搜索索引定义（类型为 `oak:QueryIndexDefinition` 的节点）。
 
 >[!WARNING]
 >
->建议您尽快解决此问题，因为这将导致管道从 [Cloud Manager 2024年8月版。](/help/release-notes/current.md)
+>建议您尽快解决此问题，因为从 [Cloud Manager 2024 年 8 月版本开始，它将导致管道失败](/help/release-notes/current.md)。
 
-### 类型damAssetLucene的自定义全文索引定义必须正确带有“damAssetLucene”前缀 {#oakpal-dam-asset-lucene}
+### damAssetLucene 类型的自定义全文索引定义必须正确添加“damAssetLucene”前缀 {#oakpal-dam-asset-lucene}
 
-* **键**： CustomFulltextIndexesOfTheDamAssetCheck
+* **键**：CustomFulltextIndexesOfTheDamAssetCheck
 * **类型**：改进
 * **严重性**：轻微
 * **开始版本**：版本 2024.6.0
 
-AEM Cloud Service禁止自定义全文索引类型定义 `damAssetLucene` 不会添加任何前缀 `damAssetLucene`.
+AEM Cloud Service 禁止类型 `damAssetLucene` 的自定义全文索引定义使用除 `damAssetLucene` 之外的任何内容作为前缀。
 
 >[!WARNING]
 >
->建议您尽快解决此问题，因为这将导致管道从 [Cloud Manager 2024年8月版。](/help/release-notes/current.md)
+>建议您尽快解决此问题，因为从 [Cloud Manager 2024 年 8 月版本开始，它将导致管道失败](/help/release-notes/current.md)。
 
 ### 索引定义节点不得包含同名的属性 {#oakpal-index-property-name}
 
-* **键**： DuplicateNameProperty
+* **键**：DuplicateNameProperty
 * **类型**：改进
 * **严重性**：轻微
 * **开始版本**：版本 2024.6.0
 
-AEM Cloud Service禁止自定义搜索索引定义（即类型的节点） `oak:QueryIndexDefinition`)来自包含同名属性
+AEM Cloud Service 禁止自定义搜索索引定义（即，类型为 `oak:QueryIndexDefinition` 的节点）包含同名的属性。
 
 >[!WARNING]
 >
->建议您尽快解决此问题，因为这将导致管道从 [Cloud Manager 2024年8月版。](/help/release-notes/current.md)
+>建议您尽快解决此问题，因为从 [Cloud Manager 2024 年 8 月版本开始，它将导致管道失败](/help/release-notes/current.md)。
 
-### 禁止自定义某些OOTB索引定义 {#oakpal-customizing-ootb-index}
+### 禁止自定义某些 OOTB 索引定义 {#oakpal-customizing-ootb-index}
 
-* **键**： RestrictIndexCustomization
+* **键**：RestrictIndexCustomization
 * **类型**：改进
 * **严重性**：轻微
 * **开始版本**：版本 2024.6.0
 
-AEM Cloud Service禁止对以下OOTB索引进行未经授权的修改：
+AEM Cloud Service 禁止对以下 OOTB 索引进行未经授权的修改：
 
 * `nodetypeLucene`
 * `slingResourceResolver`
@@ -852,16 +852,16 @@ AEM Cloud Service禁止对以下OOTB索引进行未经授权的修改：
 
 >[!WARNING]
 >
->建议您尽快解决此问题，因为这将导致管道从 [Cloud Manager 2024年8月版。](/help/release-notes/current.md)
+>建议您尽快解决此问题，因为从 [Cloud Manager 2024 年 8 月版本开始，它将导致管道失败](/help/release-notes/current.md)。
 
-### 分析器中标记器的配置应以“tokenizer”名称创建 {#oakpal-tokenizer}
+### 分析器中的标记器配置应使用名称“tokenizer”创建 {#oakpal-tokenizer}
 
 * **键**：AnalyzerTokenizerConfigCheck
 * **类型**：改进
 * **严重性**：轻微
 * **开始版本**：版本 2024.6.0
 
-AEM Cloud Service禁止在分析器中创建名称不正确的令牌化器。 令牌化器应始终定义为 `tokenizer`.
+AEM Cloud Service 禁止在分析器中创建名称错误的标记器。标记器应始终定义为 `tokenizer`。
 
 ## Dispatcher 优化工具 {#dispatcher-optimization-tool-rules}
 

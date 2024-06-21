@@ -4,9 +4,9 @@ description: 这些是 Cloud Manager 2024.6.0 版的发行说明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: a41ea35cb685d4e88e016bc887eb2465963747e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '291'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
@@ -25,12 +25,12 @@ ht-degree: 55%
 
 ## 新增功能 {#what-is-new}
 
-* 您现在可以 [使用您自己的GitHub存储库](/help/managing-code/private-repositories.md) 用作全栈管道和前端管道的源。
-   * 此外，您还可以通过以下方式利用GitHub存储库 [Git子模块，](/help/managing-code/git-submodules.md) 增强了对用于拉取请求验证的自动生成管道的控制，并允许您在代码扫描阶段定义关键量度的行为。
-   * [您也可选择](/help/managing-code/github-check-config.md) 要在GitHub上保留报表历史记录，请命名管道并设置管道变量以满足您的需求。
-* 新的OakPal规则已添加到 [Cloud Manager代码质量扫描。](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)
-   * 截至2024年6月添加的每个新规则都是一个不中断的更改。
-   * 我们建议您尽快解决这些问题，因为从2024年8月发行的Cloud Manager版本开始，这些新规则会导致管道失败。
+* 您现在可以[使用您自己的 GitHub 存储库](/help/managing-code/private-repositories.md)作为全堆叠和前端管道的源。
+   * 此外，您还可以利用带有 [Git 子模块](/help/managing-code/git-submodules.md)的 GitHub 存储库，为您提供对用于拉取请求验证的自动生成管道的增强控制，并允许您在代码扫描阶段定义关键指标的行为。
+   * [您还可以选择](/help/managing-code/github-check-config.md)在 GitHub 上保存报告历史记录、命名管道和设置管道变量以满足您的需求。
+* 新的 OakPal 规则已添加到[云管理器代码质量扫描中](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)。
+   * 自 2024 年 6 月起添加的每条新规则都是非重大更改。
+   * 我们建议您尽快解决这些问题，因为从 Cloud Manager 2024 年 8 月版本开始，这些新规则将导致管道失败。
 
 ## 早期采用计划 {#early-adoption}
 

@@ -8,9 +8,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
 source-git-commit: 3beee350dda077c16975ea628bd4c7b80d7d9160
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '530'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -58,13 +58,13 @@ ht-degree: 96%
    + [自定义代码质量规则](/help/using/custom-code-quality-rules.md)
    + [内容复制](/help/using/content-copy.md)
 + 管理代码 {#managing-code}
-   + [在Cloud Manager中管理存储库](/help/managing-code/managing-repositories.md)
+   + [在 Cloud Manager 中管理存储库](/help/managing-code/managing-repositories.md)
    + [存储库访问信息](/help/managing-code/accessing-repositories.md)
-   + [添加Adobe存储库](/help/managing-code/adobe-repositories.md)
+   + [添加 Adobe 存储库](/help/managing-code/adobe-repositories.md)
    + [添加专用存储库](/help/managing-code/private-repositories.md)
    + [Git 子模块支持](/help/managing-code/git-submodules.md)
-   + [GitHub检查配置](/help/managing-code/github-check-config.md)
-   + [GitHub检查注释](/help/managing-code/github-annotations.md)
+   + [GitHub 检查配置](/help/managing-code/github-check-config.md)
+   + [GitHub 检查批注](/help/managing-code/github-annotations.md)
    + [Maven 项目版本处理](/help/managing-code/maven-project-version.md)
    + [与 Git 集成](/help/managing-code/git-integration.md)
    + [使用多个 Git 存储库](/help/managing-code/multiple-git-repos.md)
