@@ -2,10 +2,10 @@
 title: 管理管道
 description: 了解如何管理现有管道，包括编辑、运行和删除它们。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 4ab4bd416658c55d72228b701c57a1845d2d0f41
-workflow-type: ht
-source-wordcount: '901'
-ht-degree: 100%
+source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -95,10 +95,6 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 >[!NOTE]
 >
 >您无法编辑运行中的管道。
-
->[!NOTE]
->
->专用存储库不支持 Web 层和配置管道。请参阅文档[在 Cloud Manager 中添加专用存储库](/help/managing-code/private-repositories.md)，了解详细信息和完整的限制列表。
 
 ## 删除管道 {#deleting-pipelines}
 
