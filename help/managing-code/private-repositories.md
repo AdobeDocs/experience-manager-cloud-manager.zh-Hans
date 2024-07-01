@@ -4,9 +4,9 @@ description: 了解如何设置 Cloud Manager 以使用您自己的专用 GitHub
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
 source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '855'
+ht-degree: 100%
 
 ---
 
@@ -114,7 +114,7 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 
 ## 将私有存储库与管道关联 {#pipelines}
 
-经验证的专用存储库可以与关联 [全栈管道。](/help/overview/ci-cd-pipelines.md)
+经过验证的专用存储库可以与[全栈管道相关联。](/help/overview/ci-cd-pipelines.md)
 
 ## 限制 {#limitations}
 
