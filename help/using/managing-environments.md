@@ -3,9 +3,9 @@ title: 管理环境
 description: 了解如何使用 Cloud Manager 管理环境。
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
 source-git-commit: 116a930eea08b2bb9d288ec153519699754e0374
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '277'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Cloud Manager 的&#x200B;**概述**&#x200B;页面包含&#x200B;**环境**&#x200B
 
 >[!NOTE]
 >
->环境详细信息（如名称）在配置后无法更改。
+>一旦配置完成，环境详细信息（例如名称）就无法更改。
 
 >[!NOTE]
 >
