@@ -3,8 +3,8 @@ title: 2024.6.0 的发行说明
 description: 这些是 Cloud Manager 2024.6.0 版的发行说明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
-workflow-type: ht
+source-git-commit: 851b556c0917d9f6d97d958a0c8e8aeff4141079
+workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## 发布日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2024.6.0 版的发布日期为 2024 年 6 月 6 日。下一个版本计划于 2024 年 7 月 11 日发布。
+[!UICONTROL Cloud Manager] 2024.6.0 版的发布日期为 2024 年 6 月 6 日。下一个版本计划于 2024 年 7 月 18 日发布。
 
 ## 新增功能 {#what-is-new}
 
