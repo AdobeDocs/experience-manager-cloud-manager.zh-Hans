@@ -3,7 +3,7 @@ title: 在 Cloud Manager 中管理存储库
 description: 了解如何在 Cloud Manager 中创建、查看和编辑 Git 存储库。
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 73add7bee892769d1b3864e3238aff26bf96162d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 100%
 

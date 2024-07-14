@@ -3,7 +3,7 @@ title: 基于角色的权限
 description: 了解 Cloud Manager 预先配置的基于角色的权限来管理对云资源的访问。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 source-git-commit: fc1bc626dc18d25ce8c5bbae71396b234b5676db
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 100%
 

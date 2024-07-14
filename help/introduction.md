@@ -4,8 +4,8 @@ description: 从此处开始了解 Cloud Manager for Adobe Managed Services (AMS
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: a2cea28061304d109a3c9a48650d01255579443c
 workflow-type: tm+mt
-source-wordcount: '1322'
-ht-degree: 100%
+source-wordcount: '1300'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 100%
 
 ![CI/CD 流](/help/assets/screen_shot_2018-05-12at73843pm.png)
 
-## [!UICONTROL  中的主要功能Cloud Manager] {#key-features-in-cloud-manager}
+## [!UICONTROL Cloud Manager]中的主要功能 {#key-features-in-cloud-manager}
 
 下面对精选的 Cloud Manager 主要功能进行了深入探讨。
 

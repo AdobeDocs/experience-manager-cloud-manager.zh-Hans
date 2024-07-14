@@ -5,7 +5,7 @@ description: 了解产品更新向导的评估阶段如何使用模式检测器�
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
 source-git-commit: ce2145da3b9e605e8a41bac28df520f14e255557
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '289'
 ht-degree: 100%
 
 ---

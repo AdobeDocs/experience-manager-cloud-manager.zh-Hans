@@ -5,7 +5,7 @@ exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
 source-git-commit: 67621fb2dbb0c32371b2ffc16ec45f47daf04e05
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 91%
 
 ## 应用程序 {#application}
 
-应用程序是客户创建的一组自定义项和配置，用于调整底层 [解决方案](#solution) (如AEM Sites或AEM Assets)满足其特定用例和需求。 应用程序是一个逻辑单元，可包含多个[工件](#artifact)。
+应用程序是客户创建的一组自定义项和配置，用于调整底层[解决方案](#solution)（例如 AEM Sites 或 AEM Assets）来满足其具体的用例要求和需求。应用程序是一个逻辑单元，可包含多个[工件](#artifact)。
 
 虚构的 [WKND 生活方式应用程序](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)是一个示例应用程序。
 

@@ -4,7 +4,7 @@ description: 了解 Adobe ID 以及如何使用它访问 Experience Cloud 资源
 exl-id: 9e51936c-9727-4b9c-a86a-2ea3aabd42cf
 source-git-commit: 522e5fbc650a8159602eb1aeaf42d64f4e23e8b4
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '246'
 ht-degree: 100%
 
 ---

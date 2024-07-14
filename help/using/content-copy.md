@@ -3,7 +3,7 @@ title: 内容复制工具
 description: 通过 Cloud Manager 内容复制工具，用户可按需将可变内容从其 AMS 托管的 AEM 6.x 生产环境复制到较低版本的环境以供测试。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: 655111cdf7327e92e03ac7eedd9eedd87cd4b2f1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 100%
 

@@ -4,7 +4,7 @@ description: 了解如何设置 Cloud Manager 以使用您自己的专用 GitHub
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
 source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 100%
 

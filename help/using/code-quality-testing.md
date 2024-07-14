@@ -4,7 +4,7 @@ description: 了解管道代码质量测试的工作方式以及其提高部署�
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: 38cf86a5effa201afdc8e00d8f33582fc06214d7
 workflow-type: tm+mt
-source-wordcount: '2867'
+source-wordcount: '2848'
 ht-degree: 100%
 
 ---
@@ -296,4 +296,3 @@ Cloud Manager 将使用 CSE 设置的用户名和密码在创作实例上创建�
 >
 >* 此优化不会影响部署到 AEM 的包。
 >* 由于将根据文件名匹配嵌入的内容包和跳过的内容包，因此，如果多个跳过的内容包具有完全相同的文件名或文件名在嵌入时发生变化，则无法进行此优化。
-
