@@ -3,9 +3,9 @@ title: 自定义代码质量规则
 description: 了解 Cloud Manager 在基于来自 AEM 工程的最佳实践的代码质量测试过程中执行的自定义代码质量规则的详细信息。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 8f0f5e819cf312ef25beac815beca92d4e3ac255
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3544'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -863,14 +863,14 @@ AEM Cloud Service 禁止对以下 OOTB 索引进行未经授权的修改：
 
 AEM Cloud Service 禁止在分析器中创建名称错误的标记器。标记器应始终定义为 `tokenizer`。
 
-### 索引定义的配置不应包含空格 {#oakpal-indexing-definitions-spaces}
+### 索引定义的配置不应包含空格。 {#oakpal-indexing-definitions-spaces}
 
-* **键**： PathSpacesCheck
+* **Key**: PathSpacesCheckKey
 * **类型**：改进
 * **严重性**：轻微
 * **开始版本**：版本 2024.7.0
 
-AEM Cloud Service禁止创建包含带空格的属性的索引定义。
+AEM Cloud Service 禁止创建包含带有空格属性的索引定义。
 
 ## Dispatcher 优化工具 {#dispatcher-optimization-tool-rules}
 
