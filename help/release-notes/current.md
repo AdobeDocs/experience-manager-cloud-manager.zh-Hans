@@ -6,7 +6,7 @@ exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 87c603a89b99f6984828280cba2041da8c72e839
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 63%
+ht-degree: 95%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 63%
 
 ## 发布日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2024.7.0版的发布日期为2024年7月18日。 计划于 2024 年 8 月 8 日发布下一个版本。
+发布日期为 2024.7.0 版本的 [!UICONTROL Cloud Manager] 是 2024 年 7 月 18 日。计划于 2024 年 8 月 8 日发布下一个版本。
 
 ## 新增功能 {#what-is-new}
 
-* [生产管道](/help/using/production-pipelines.md#adding-production-pipeline)和[非生产管道](/help/using/non-production-pipelines.md#adding-non-production-pipeline)在Git更改上触发&#x200B;**On Git Changes**&#x200B;以在提交上启动管道，现在可供[专用存储库使用。](/help/managing-code/private-repositories.md)
-* 生产前管道只能手动触发，在Git更改&#x200B;**时无法配置为**。
-* 对于仅用于生产的管道，可升级执行列表包括工件版本大于生产环境中部署的工件版本的那些执行。
+* [生产管道](/help/using/production-pipelines.md#adding-production-pipeline)和[非生产管道](/help/using/non-production-pipelines.md#adding-non-production-pipeline) 触发 **当 Git 发生更改** 以在提交时启动管道，现在可用于 [ 私人存储库](/help/managing-code/private-repositories.md)。
+* 预生产管道只能手动触发，不能配置为 **当 Git 发生更改**。
+* 对于仅限生产的管道，可推广执行列表包括那些具有比生产环境中已部署的工件版本更高的工件版本的执行。
 * [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)已更新为[版本49。](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
 
 
