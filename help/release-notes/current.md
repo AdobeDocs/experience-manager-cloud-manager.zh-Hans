@@ -4,9 +4,9 @@ description: 这些是 Cloud Manager 2024.7.0 版的发行说明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 87c603a89b99f6984828280cba2041da8c72e839
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '238'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 95%
 * [生产管道](/help/using/production-pipelines.md#adding-production-pipeline)和[非生产管道](/help/using/non-production-pipelines.md#adding-non-production-pipeline) 触发 **当 Git 发生更改** 以在提交时启动管道，现在可用于 [ 私人存储库](/help/managing-code/private-repositories.md)。
 * 预生产管道只能手动触发，不能配置为 **当 Git 发生更改**。
 * 对于仅限生产的管道，可推广执行列表包括那些具有比生产环境中已部署的工件版本更高的工件版本的执行。
-* [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)已更新为[版本49。](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
+* [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)已更新到[版本 49。](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
 
 
 ## 早期采用计划 {#early-adoption}

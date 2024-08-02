@@ -3,9 +3,9 @@ title: 浏览 Cloud Manager UI
 description: 了解 Cloud Manager UI 的组织方式，以及如何管理您的程序和环境。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
 source-git-commit: d4d9a9f38c5a969f276140dca98731c670547a3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1439'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -28,13 +28,13 @@ Cloud manage UI 主要由两个图形界面组成：
 “我的程序”控制台提供了对您在所选组织中有权访问的所有程序的概述。它由几个部分组成。
 
 1. 用于组织选择、警报和帐户设置的[工具栏](#toolbars-my-programs-toolbars)
-1. 允许您切换程序当前视图的选项卡。
-   * 选择&#x200B;**我的项目群**&#x200B;视图的&#x200B;**主页**&#x200B;视图（默认），该视图包含所有项目群的概述
-   * 访问许可证仪表板的&#x200B;**许可证**。 许可证仪表板仅适用于AEM as a Cloud Service程序，而不适用于AMS程序。
-      * 要确定您的程序具有的服务类型（AMS或AEMaaCS），请参阅本文档的[程序卡部分](#program-cards)。
-   * 请注意，这些选项卡默认为已关闭，可以使用[Cloud Manager标题中的汉堡菜单显示。](#cloud-manager-header)
-1. [行动号召和统计数据](#cta-statistics)，了解最近活动的概览
-1. [**我的项目群**&#x200B;部分](#my-programs-section)，其中包含您所有项目的概述
+1. 选项卡允许您切换程序的当前视图。
+   * **主页** 视图（默认），选择 **我的程序** 视图，其中显示所有项目的概览
+   * **访问许可证仪表板的许可证**。许可证仪表板仅适用于 AEM as a Cloud Service 计划，而不适用于 AMS 计划。
+      * 要确定您的程序所具有的服务类型（AMS 或 AEMaaCS），请参阅本文档的 [程序卡部分](#program-cards) 。
+   * 请注意，选项卡默认为关闭，可以使用 [Cloud Manager 标题中的汉堡菜单显示。](#cloud-manager-header)
+1. [操作号召和统计数据](#cta-statistics)，用于概述您最近的活动
+1. [**我的程序** 部分](#my-programs-section) ，其中概述了您的所有计划
 1. [快速链接](#quick-links)可用于轻松访问相关资源
 
 >[!TIP]
@@ -51,9 +51,9 @@ Cloud manage UI 主要由两个图形界面组成：
 
 ![Experience Cloud 标头](assets/experience-cloud-header.png)
 
-1. 汉堡菜单提供对选项卡的访问权限，这些选项卡可以引导您访问单个计划中的特定部分，或者根据上下文在许可证仪表板和&#x200B;**[我的程序](#my-programs-console)**&#x200B;控制台之间切换。
-   * 许可证仪表板仅适用于AEM as a Cloud Service程序，而不适用于AMS程序。
-   * 要确定您的程序具有的服务类型（AMS或AEMaaCS），请参阅本文档的[程序卡部分](#program-cards)。
+1. 汉堡菜单可以访问选项卡，可以将您带到单个程序的特定部分，或者根据上下文在许可证仪表板和 **[我的程序](#my-programs-console)** 控制台之间切换。
+   * 许可证仪表板仅适用于 AEM as a Cloud Service 计划，而不适用于 AMS 计划。
+   * 要确定您的程序所具有的服务类型（AMS 或 AEMaaCS），请参阅本文档的 [程序卡部分](#program-cards) 。
 1. 无论您在浏览 Cloud Manager 的哪个分区，Cloud Manager 按钮都会带您返回到 Cloud Manager 中的“我的程序”控制台。
 1. 点击或单击“反馈”按钮，向 Adobe 提供有关 Cloud Manager 的反馈。
 1. 组织选择器会显示您当前登录的组织（在此示例中为 Foundation Internal）。如果您的 Adobe ID 与多个组织关联，请点击或单击以切换到另一个组织。
@@ -69,13 +69,13 @@ Cloud manage UI 主要由两个图形界面组成：
 ![程序工具栏](assets/program-toolbar.png)
 
 1. 程序选择器会打开一个下拉菜单，您可以在其中快速选择其他程序或采取适合上下文的操作，例如创建一个新程序
-1. 通过“快速入门”链接，您可以访问[入门文档历程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/overview)，以便快速开始使用 Cloud Manager。
+1. 通过“快速入门”链接，您可以访问[入门文档历程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/overview)，以便快速开始使用 Cloud Manager。
    * 请注意，入门历程是为 AEM as a Cloud Service 而非 AMS 云服务设计的，但许多概念是相同的。
 1. 操作按钮可以提供适合上下文的操作，例如创建新程序。
 
-### 行动号召和统计数据 {#cta-statistics}
+### 操作号召和统计数据 {#cta-statistics}
 
-行动号召和统计部分提供组织的汇总数据，例如，如果您已成功设置程序，则可能会显示过去90天的活动统计数据，包括：
+操作号召和统计信息数据部分提供了您组织的汇总数据，例如，如果您已成功设置了程序，则可能会显示过去 90 天的活动统计数据，其中包括：
 
 * [部署](/help/using/code-deployment.md)次数
 * 已发现的[代码质量问题](/help/using/code-quality-testing.md)数量
@@ -83,9 +83,9 @@ Cloud manage UI 主要由两个图形界面组成：
 
 或者，如果您刚刚开始建立您的组织，则可能会有关于后续步骤或文档资源的提示。
 
-### “我的项目群”部分 {#my-programs-section}
+### 我的程序部分 {#my-programs-section}
 
-“我的程序”控制台的主要内容是&#x200B;**我的程序**&#x200B;部分，该部分将您的程序列为单独的卡片。 点击或单击信息卡即可访问相关程序的&#x200B;**程序概述**&#x200B;页面，以了解有关该程序的详细信息。
+“我的程序”控制台的主要内容是&#x200B;**我的程序**&#x200B;部分，其中将您的程序列为单独的卡片。点击或单击信息卡即可访问相关程序的&#x200B;**程序概述**&#x200B;页面，以了解有关该程序的详细信息。
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ Cloud manage UI 主要由两个图形界面组成：
 * 网格视图（默认）
 * 列表视图
 
-#### 程序卡 {#program-cards}
+#### 程序信息卡 {#program-cards}
 
 每个程序都会由一张信息卡（或表格中的一行）来表示，其中提供该程序的概述以及采取操作的快速链接。
 
@@ -112,8 +112,8 @@ Cloud manage UI 主要由两个图形界面组成：
 * 程序图像（如果进行了配置）
 * 项目名称
 * 服务类型：
-   * 用于AMS程序的&#x200B;**Experience Manager**
-   * **Experience Manager云**，用于[AEM as a Cloud Service程序](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/home)
+   * **Experience Manager** 适用于 AMS 计划
+   * **Experience Manager Cloud** 适用于 [AEM as a Cloud Service 计划](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/home)
 * 状态
 * 已配置的解决方案
 * 创建日期
@@ -137,7 +137,7 @@ Cloud manage UI 主要由两个图形界面组成：
 
 ## 程序概述窗口 {#program-overview}
 
-在&#x200B;[**我的程序**&#x200B;控制台](#my-programs-console)中选择程序后，您将转到程序概述。
+当您在&#x200B;[**“我的程序”**&#x200B;控制台中选择一个程序后，](#my-programs-console)您就会进入“程序概述”。
 
 ![程序概述](assets/program-overview.png)
 
