@@ -4,9 +4,9 @@ type: Documentation
 cloud: Experience Cloud
 git-repo: https://github.com/AdobeDocs/experience-manager-cloud-manager.zh-Hans
 recommendations: noDisplay
-source-git-commit: f35a777176522d412267f481622c8cd3d2592764
+source-git-commit: 2a25b0482800d4c5428a5595c9699dceed327043
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '112'
 ht-degree: 100%
 
 ---
@@ -23,5 +23,5 @@ metadata.md 文件中包含存储库级别的元数据，这些元数据会传�
 | solution-icon | 在解决方案标题旁边显示解决方案图标。尚未实施 |
 | getting-started-url | 指向 helpx 快速入门页面的链接 |
 | tutorials-url | 指向视频教程（helpx 教程或 KT 教程）的链接 |
-| mini-toc-levels | 确定显示在右边栏中的标题级别数量。默认值为 2 |
-| git-repo | 指定供内部使用的主存储库的位置 |
+| mini-toc-levels | 确定显示在右边栏中的标题级别数量。 默认值为 2 |
+| git-repo | 指定供内部使用的主要存储库的位置 |
