@@ -1,13 +1,13 @@
 ---
 source-git-commit: 2a25b0482800d4c5428a5595c9699dceed327043
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '74'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 # Adobe Experience Manager Cloud Manager 文档
 
-此存储库适用于Adobe Experience Manager Cloud Manager文档。
+这是 Adobe Experience Manager Cloud Manager 文档的存储库。
 
 欢迎您贡献文档内容。请参阅以下资源：
 
