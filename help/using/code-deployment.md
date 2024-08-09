@@ -2,10 +2,10 @@
 title: 代码部署
 description: 了解如何部署代码以及在部署代码时 Cloud Manager 中会发生什么情况。
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 100%
+source-wordcount: '1637'
+ht-degree: 94%
 
 ---
 
@@ -109,16 +109,16 @@ Cloud Manager 将构建过程生成的所有 target/*.zip 文件上传到存储�
 
 1. 每个 AEM 工件均通过包管理器 API 部署到每个 AEM 实例，其中包依赖关系将确定部署顺序。
 
-   * 要了解有关如何使用包安装新功能、在实例之间传输内容以及备份存储库内容的更多信息，请参阅[包管理器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html)文档。
+   * 要了解有关如何使用包安装新功能、在实例之间传输内容以及备份存储库内容的更多信息，请参阅[包管理器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html)。
 
    >[!NOTE]
    >
-   >所有 AEM 工件都会部署供作者和发布者使用。在需要特定于节点的配置时，应利用运行模式。要了解有关运行模式如何允许您针对特定目的调整 AEM 实例的更多信息，请参阅[“部署到 AEM as a Cloud Service”文档的“运行模式”部分](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html#runmodes)。
+   >所有 AEM 工件都会部署供作者和发布者使用。在需要特定于节点的配置时，应利用运行模式。要了解有关运行模式如何允许您针对特定目的调整AEM实例的更多信息，请参阅“部署到AEM as a Cloud Service”](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html#runmodes)文档的[运行模式部分。
 
 1. Dispatcher 工件将部署到每个 Dispatcher，如下所示：
 
    1. 当前配置已备份并复制到临时位置。
-   1. 已删除所有配置（不可变文件除外）。有关更多详细信息，请参阅 [Dispatcher 配置](/help/getting-started/dispatcher-configurations.md)文档。这会清空目录，确保没有留下孤立文件。
+   1. 已删除所有配置（不可变文件除外）。有关详细信息，请参阅[Dispatcher配置](/help/getting-started/dispatcher-configurations.md)。 这会清空目录，确保没有留下孤立文件。
    1. 工件将提取到 `httpd` 目录。不会覆盖不可变文件。在部署时，将忽略您对 Git 存储库中的不可变文件所做的任何更改。这些文件是 AMS Dispatcher 框架的核心，无法更改。
    1. Apache 执行配置测试。如果未发现任何错误，则将重新加载服务。如果发生错误，则从备份中恢复配置，重新加载服务，并将错误报告回 Cloud Manager。
    1. 管道配置中指定的每个路径都将失效或从 Dispatcher 缓存中进行刷新。
@@ -200,7 +200,7 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 ### 重新执行 API {#reexecute-api}
 
-除了在 UI 中可用之外，您还可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 触发重新执行以及标识已作为重新执行触发的执行。
+除了在UI中可用之外，您还可以使用[Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution)来触发重新执行，并识别作为重新执行触发的执行。
 
 #### 触发重新执行 {#triggering}
 

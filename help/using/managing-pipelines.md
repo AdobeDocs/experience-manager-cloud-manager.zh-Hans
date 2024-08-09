@@ -2,10 +2,10 @@
 title: 管理管道
 description: 了解如何管理现有管道，包括编辑、运行和删除它们。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 100%
+source-wordcount: '848'
+ht-degree: 67%
 
 ---
 
@@ -36,19 +36,19 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 ## 管道窗口 {#pipelines}
 
-**管道**&#x200B;窗口显示所选项目的所有管道的完整列表。此列表很有用，因为它提供的信息比[管道信息卡](#pipeline-card)中的信息更全面。
+**管道**&#x200B;窗口显示所选项目的所有管道的完整列表。这很有用，因为它提供的信息比[管道信息卡](#pipeline-card)中提供的信息更全面。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 从&#x200B;**项目概述**&#x200B;页面中，点击或单击&#x200B;**管道**&#x200B;选项卡以切换到&#x200B;**管道**&#x200B;窗口。
+1. 从&#x200B;**项目概述**&#x200B;页面，单击&#x200B;**管道**&#x200B;选项卡以切换到&#x200B;**管道**&#x200B;窗口。
 
-1. 在这里，您可以看到项目的所有管道的列表，以及启动和停止管道执行，就像在&#x200B;**管道信息卡**&#x200B;中一样。
+1. 在这里，您可以看到项目的所有管道列表，并且可以像在&#x200B;**管道信息卡**&#x200B;中一样启动和停止管道执行。
 
-点击或单击 `i` 图标可显示管道上次或当前执行的详细信息。
+单击`i`图标会显示有关管道的上次或当前执行的详细信息。
 
 ![管道执行详细信息](/help/assets/configure-pipelines/pipeline-status.png)
 
-点击或单击&#x200B;**查看详细信息**&#x200B;将转至[管道执行的详细信息。](#view-details)
+单击&#x200B;**查看详细信息**&#x200B;将会转到管道执行的[详细信息](#view-details)。
 
 ## 活动窗口 {#activity}
 
@@ -56,15 +56,15 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 从&#x200B;**项目概述**&#x200B;页面中，点击或单击&#x200B;**活动**&#x200B;选项卡以切换到&#x200B;**活动**&#x200B;窗口。
+1. 从&#x200B;**项目概述**&#x200B;页面，单击&#x200B;**活动**&#x200B;选项卡以切换到&#x200B;**活动**&#x200B;窗口。
 
 1. 在这里，您可以看到项目的所有管道执行的列表，包括当前执行和历史执行。
 
-点击或单击 `i` 图标可显示有关执行所选管道运行的详细信息。
+单击`i`图标会显示有关所选管道运行的执行的详细信息。
 
 ![管道执行详细信息](/help/assets/configure-pipelines/pipeline-activity.png)
 
-点击或单击&#x200B;**查看详细信息**&#x200B;将转至[管道执行的详细信息。](#view-details)
+单击&#x200B;**查看详细信息**&#x200B;将会转到管道执行的[详细信息](#view-details)。
 
 ## 运行管道 {#running-pipelines}
 
@@ -100,7 +100,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 导航到&#x200B;**项目概述**&#x200B;页面中的&#x200B;**管道**&#x200B;信息卡，并单击要删除的管道旁边的省略号按钮，然后从菜单中选择&#x200B;**删除**。
+1. 导航到&#x200B;**项目概述**&#x200B;页面中的&#x200B;**管道**&#x200B;信息卡，并单击要运行的管道旁边的省略号按钮，然后从菜单中选择&#x200B;**删除**。
 
 >[!NOTE]
 >
@@ -124,11 +124,11 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 ![步骤摘要](/help/assets/configure-pipelines/pipeline-step.png)
 
-点击或单击&#x200B;**查看详细信息**&#x200B;链接以显示&#x200B;**持续时间**&#x200B;部分。这包括基于该项目的历史趋势的管道的平均持续时间。
+单击&#x200B;**查看详细信息**&#x200B;链接以显示&#x200B;**持续时间**&#x200B;部分。 这包括基于该项目的历史趋势的管道的平均持续时间。
 
 ![持续时间](/help/assets/configure-pipelines/duration.png)
 
-如果您的管道包含引发问题的&#x200B;**代码扫描**&#x200B;步骤，您可以点击或单击&#x200B;**下载详细信息**&#x200B;按钮，查看未通过的[代码质量测试](/help/using/code-quality-testing.md)列表。
+如果您的管道包含&#x200B;**代码扫描**&#x200B;步骤，该步骤会导致问题，您可以单击&#x200B;**下载详细信息**&#x200B;按钮以查看未通过的[代码质量测试](/help/using/code-quality-testing.md)的列表。
 
 ![代码质量问题](assets/managing-pipelines-code-quality-issues.png)
 

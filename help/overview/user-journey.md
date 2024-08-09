@@ -2,10 +2,10 @@
 title: 用户历程
 description: 本文档列出了不同的新用户引导场景，并解释了您的 Cloud Manager 快速入门历程。
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
-source-git-commit: b0dbb602253939464ff034941ffbad84b7df77df
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
 source-wordcount: '539'
-ht-degree: 97%
+ht-degree: 91%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 97%
 
 您现有的 AEM 项目还需要符合推荐的最佳实践，因为您将开始使用 [!UICONTROL Cloud Manager] 将新的代码更改部署到 AEM 环境。
 
-要获取有关升级到 AEM 6.5 的好处的其他信息，请参阅[升级到 AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html) 文档。
+要获取有关升级到AEM 6.5的好处的其他信息，请参阅文档[升级到AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html)。
 
 ## 正在访问[!UICONTROL Cloud Manager] {#accessing-cloud-manager}
 
@@ -56,7 +56,7 @@ ht-degree: 97%
 
 要开始使用 [!UICONTROL Cloud Manager]，请参阅[首次登录文档](/help/getting-started/first-time-login.md)。
 
-有关 AEM 的其他信息，请参阅[部署和维护](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)文档。
+有关AEM的其他信息，请参阅文档[部署和维护](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)。
 
 ## 开始使用[!UICONTROL Cloud Manager] {#getting-started-with-cloud-manager}
 

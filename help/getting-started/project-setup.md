@@ -2,10 +2,10 @@
 title: 设置项目
 description: 了解如何设置项目，以便使用 Cloud Manager 管理和部署该项目。
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 100%
+source-wordcount: '1426'
+ht-degree: 98%
 
 ---
 
@@ -343,4 +343,4 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 
 ## 根据最佳实践开发代码 {#develop-your-code-based-on-best-practices}
 
-Adobe 工程和咨询团队开发了[一组面向 AEM 开发人员的全面的最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html)。
+Adobe工程和咨询团队已为AEM开发人员开发了一组[全面的最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html)。

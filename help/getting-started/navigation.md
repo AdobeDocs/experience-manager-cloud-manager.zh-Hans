@@ -2,10 +2,10 @@
 title: 浏览 Cloud Manager UI
 description: 了解 Cloud Manager UI 的组织方式，以及如何管理您的程序和环境。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: d4d9a9f38c5a969f276140dca98731c670547a3d
-workflow-type: ht
-source-wordcount: '1439'
-ht-degree: 100%
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+workflow-type: tm+mt
+source-wordcount: '1410'
+ht-degree: 80%
 
 ---
 
@@ -31,15 +31,15 @@ Cloud manage UI 主要由两个图形界面组成：
 1. 选项卡允许您切换程序的当前视图。
    * **主页** 视图（默认），选择 **我的程序** 视图，其中显示所有项目的概览
    * **访问许可证仪表板的许可证**。许可证仪表板仅适用于 AEM as a Cloud Service 计划，而不适用于 AMS 计划。
-      * 要确定您的程序所具有的服务类型（AMS 或 AEMaaCS），请参阅本文档的 [程序卡部分](#program-cards) 。
-   * 请注意，选项卡默认为关闭，可以使用 [Cloud Manager 标题中的汉堡菜单显示。](#cloud-manager-header)
+      * 要确定您的程序具有的服务类型（AMS或AEMaaCS），请参阅本文档的[程序卡部分](#program-cards)。
+   * 请注意，这些选项卡默认为已关闭，可以使用[Cloud Manager标题](#cloud-manager-header)中的汉堡菜单显示。
 1. [操作号召和统计数据](#cta-statistics)，用于概述您最近的活动
 1. [**我的程序** 部分](#my-programs-section) ，其中概述了您的所有计划
 1. [快速链接](#quick-links)可用于轻松访问相关资源
 
 >[!TIP]
 >
->有关程序的详细信息，请参阅文档[程序和程序类型](/help/getting-started/program-setup.md)。
+>有关程序的详细信息，请参阅[程序和程序类型](/help/getting-started/program-setup.md)。
 
 ### 工具栏 {#my-programs-toolbars}
 
@@ -53,13 +53,13 @@ Cloud manage UI 主要由两个图形界面组成：
 
 1. 汉堡菜单可以访问选项卡，可以将您带到单个程序的特定部分，或者根据上下文在许可证仪表板和 **[我的程序](#my-programs-console)** 控制台之间切换。
    * 许可证仪表板仅适用于 AEM as a Cloud Service 计划，而不适用于 AMS 计划。
-   * 要确定您的程序所具有的服务类型（AMS 或 AEMaaCS），请参阅本文档的 [程序卡部分](#program-cards) 。
+   * 要确定您的程序具有的服务类型（AMS或AEMaaCS），请参阅本文档的[程序卡部分](#program-cards)。
 1. 无论您在浏览 Cloud Manager 的哪个分区，Cloud Manager 按钮都会带您返回到 Cloud Manager 中的“我的程序”控制台。
-1. 点击或单击“反馈”按钮，向 Adobe 提供有关 Cloud Manager 的反馈。
-1. 组织选择器会显示您当前登录的组织（在此示例中为 Foundation Internal）。如果您的 Adobe ID 与多个组织关联，请点击或单击以切换到另一个组织。
-1. 点击或单击解决方案切换器可快速跳转到其他 Experience Cloud 解决方案。
+1. 单击“反馈”按钮，向Adobe提供有关Cloud Manager的反馈。
+1. 组织选择器会显示您当前登录的组织（在此示例中为 Foundation Internal）。如果您的Adobe ID与多个组织相关联，请单击以切换到其他组织。
+1. 通过单击解决方案切换器，可快速跳转到其他Experience Cloud解决方案。
 1. 可使用帮助图标快速访问学习和支持资源。
-1. 通知图标带有一个标记，其中显示当前分配的未完成[通知](/help/using/notifications.md)的数量。
+1. 通知图标带有标记，显示当前分配的未完成[通知的数量](/help/using/notifications.md)
 1. 选择代表用户的图标来访问用户设置。如果您尚未配置用户图片，系统会随机分配一个图标。
 
 #### 程序工具栏 {#program-toolbar}
@@ -85,7 +85,7 @@ Cloud manage UI 主要由两个图形界面组成：
 
 ### 我的程序部分 {#my-programs-section}
 
-“我的程序”控制台的主要内容是&#x200B;**我的程序**&#x200B;部分，其中将您的程序列为单独的卡片。点击或单击信息卡即可访问相关程序的&#x200B;**程序概述**&#x200B;页面，以了解有关该程序的详细信息。
+“我的程序”控制台的主要内容是&#x200B;**我的程序**&#x200B;部分，其中将您的程序列为单独的卡片。单击卡以访问程序的&#x200B;**程序概述**&#x200B;页面，了解有关程序的详细信息。
 
 >[!NOTE]
 >
@@ -137,13 +137,13 @@ Cloud manage UI 主要由两个图形界面组成：
 
 ## 程序概述窗口 {#program-overview}
 
-当您在&#x200B;[**“我的程序”**&#x200B;控制台中选择一个程序后，](#my-programs-console)您就会进入“程序概述”。
+在&#x200B;[**我的程序**&#x200B;控制台](#my-programs-console)中选择程序后，将转到程序概述。
 
 ![程序概述](assets/program-overview.png)
 
 通过程序概述，您可以访问 Cloud Manager 程序的所有详细信息。与“我的程序”控制台一样，它由几个部分组成。
 
-1. 通过[工具栏](#program-overview-toolbar)可快速跳转回“我的程序”控制台并导航程序
+1. [工具栏](#program-overview-toolbar)快速跳回“我的程序”控制台并导航该程序
 1. [选项卡](#program-tabs)用于在程序的不同方面之间进行切换
 1. 根据对程序的最后操作制定的[行动号召](#cta)
 1. 对程序[环境的概述](#environments)
@@ -152,7 +152,7 @@ Cloud manage UI 主要由两个图形界面组成：
 
 ### 工具栏 {#program-overview-toolbar}
 
-程序概述的工具栏与[我的程序控制台的工具栏非常相似。](#my-programs-toolbars) 这里仅说明差异。
+程序概述的工具栏与[我的程序控制台](#my-programs-toolbars)的工具栏非常相似。 此处仅说明了二者的差异。
 
 #### Cloud Manager 标头 {#cloud-manager-header-2}
 
@@ -160,7 +160,7 @@ Cloud Manager 标头有一个汉堡菜单，该菜单可自动打开以显示程
 
 ![Cloud Manager 汉堡菜单](assets/cloud-manager-hamburger.png)
 
-点击或单击汉堡菜单图标即可隐藏标签。
+单击汉堡菜单图标以隐藏选项卡。
 
 #### 程序工具栏 {#program-toolbar-2}
 
@@ -190,7 +190,7 @@ Cloud Manager 标头有一个汉堡菜单，该菜单可自动打开以显示程
 
 ### 行动呼吁 {#cta}
 
-行动呼吁部分将会根据您的程序状态为您提供有用的信息。对于新程序，您可能会看到所提供的后续步骤，以及上线日期提醒（[在程序创建期间设置）。](/help/getting-started/program-setup.md)
+行动呼吁部分将会根据您的程序状态为您提供有用的信息。对于新计划，您可能会看到提供的后续步骤以及上线日期提醒，[在计划创建期间设置](/help/getting-started/program-setup.md)。
 
 对于实时程序，上次部署的状态包含详细信息链接以及开始新部署的链接。
 
@@ -198,19 +198,19 @@ Cloud Manager 标头有一个汉堡菜单，该菜单可自动打开以显示程
 
 ### 环境信息卡 {#environments}
 
-**环境**&#x200B;信息卡可以为您提供环境概述以及快速操作的链接。
+**环境**&#x200B;信息卡概述了您的环境，并提供了快速操作链接。
 
 **环境**&#x200B;信息卡仅列出三个新环境。 单击&#x200B;**全部显示**&#x200B;按钮，查看程序的所有环境。
 
-请参阅[管理环境](/help/using/managing-environments.md)文档，了解有关如何管理环境的详细信息。
+有关如何管理环境的详细信息，请参阅[管理环境](/help/using/managing-environments.md)。
 
 ### 管道信息卡 {#pipelines}
 
-**管道**&#x200B;信息卡可以为您提供管道概述以及快速操作的链接。
+**管道**&#x200B;信息卡概述了您的管道以及用于快速操作的链接。
 
 **管道**&#x200B;信息卡仅会列出三条管道。单击&#x200B;**全部显示**&#x200B;按钮，查看程序的所有管道。
 
-请参阅[管理管道](/help/using/managing-pipelines.md)文档，了解有关如何管理管道的详细信息。
+有关如何管理管道的详细信息，请参阅[管理管道](/help/using/managing-pipelines.md)。
 
 ### 有用的资源 {#useful-resources}
 

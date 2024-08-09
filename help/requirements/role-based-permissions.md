@@ -2,10 +2,10 @@
 title: 基于角色的权限
 description: 了解 Cloud Manager 预先配置的基于角色的权限来管理对云资源的访问。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: fc1bc626dc18d25ce8c5bbae71396b234b5676db
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 100%
+source-wordcount: '617'
+ht-degree: 88%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 100%
 
 ## 用户角色 {#user-roles}
 
-使用 [Admin Console 对 [!UICONTROL Cloud Manager] 进行角色管理。](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)任何 [!UICONTROL Cloud Manager] 用户都必须是客户的 IMS 组织的成员，并且具有 Adobe Managed Services 产品上下文。通过在 Admin Console 中将用户添加到 [!UICONTROL Cloud Manager] 产品配置文件来提供特定的角色成员资格。
+已使用[Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)完成[!UICONTROL Cloud Manager]的角色管理。 [!UICONTROL Cloud Manager]的任何用户都必须是客户的IMS组织的成员，并且具有Adobe的Managed Services产品上下文。 通过在 Admin Console 中将用户添加到 [!UICONTROL Cloud Manager] 产品配置文件来提供特定的角色成员资格。
 
-要了解有关如何设置角色的更多信息，请参阅[设置用户和角色](/help/requirements/users-and-roles.md)文档。
+要了解有关如何设置角色的更多信息，请参阅文档[设置用户和角色](/help/requirements/users-and-roles.md)。
 
 此表列出了您可以在 Admin Console 中分配的角色。
 
@@ -65,8 +65,8 @@ ht-degree: 100%
 | 步骤读取 | 查看步骤质量量度结果 | x | x | x | x | x |
 | 生成个人访问令牌 | 访问 Git |  | x |  | x |  |
 
-要了解有关如何设置用户的更多信息，请参阅[设置用户和角色](/help/requirements/users-and-roles.md)文档。
+要了解有关如何设置用户的详细信息，请参阅文档[设置用户和角色](/help/requirements/users-and-roles.md)。
 
 >[!TIP]
 >
->还提供具有可配置权限的自定义权限配置文件。有关更多详细信息，请参阅[自定义权限](/help/using/custom-permissions.md)文档。
+>还提供具有可配置权限的自定义权限配置文件。有关详细信息，请参阅[自定义权限](/help/using/custom-permissions.md)。

@@ -1,15 +1,15 @@
 ---
-source-git-commit: 2a25b0482800d4c5428a5595c9699dceed327043
-workflow-type: ht
-source-wordcount: '500'
-ht-degree: 100%
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+workflow-type: tm+mt
+source-wordcount: '498'
+ht-degree: 93%
 
 ---
 # 为 Adobe Experience Manager Screens 文档贡献内容
 
 感谢您选择为 Adobe Experience Manager Screens 文档贡献内容！Adobe 欢迎来自整个读者社区和 Adobe 员工的内容贡献。
 
-本文将介绍如何贡献内容，并列出了贡献内容时应遵循的准则。
+本文件介绍了如何贡献内容，并指出了在贡献内容时应遵循的准则。
 
 ## Adobe 开源项目行为准则
 
@@ -30,7 +30,7 @@ Adobe 希望让您能够尽可能轻松地贡献内容。您可以通过两种�
 
 >[!NOTE]
 >
->您提交的内容将受 [Adobe 使用条款](https://www.adobe.com/cn/legal/terms.html)约束。
+>您提交的内容将受[Adobe使用条款](https://www.adobe.com/cn/legal/terms.html)的约束。
 
 ### 创建问题 {#create-an-issue}
 

@@ -2,10 +2,10 @@
 title: GitHub 检查批注
 description: 了解 GitHub 如何检查您专用存储库的批注 PR 以便为您提供有用的反馈。
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: 210d40a5e12b40fd84efc461c6a1c48559120837
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 100%
+source-wordcount: '251'
+ht-degree: 86%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 ![代码问题批注示例](assets/github-check-annotations-example.png)
 
-提供了存在问题的确切代码行，您可以单击该行显示相关代码。这些批注适用于所有代码问题，而不仅仅是拉取请求中更改的问题。
+提供了与此问题相关的确切代码行，您可以单击它以显示相关代码。 这些批注适用于所有代码问题，而不仅仅是拉取请求中更改的问题。
 
 ![代码问题批注示例](assets/github-check-annotations-example-code.png)
 
@@ -40,4 +40,4 @@ ht-degree: 100%
 
 ![批注示例](assets/github-check-annotations-code-quality-2.png)
 
-您还可以以 CSV 的形式将问题可视化。可以通过[查看 Cloud Manager 中管道执行的详细信息来检索此信息](/help/using/managing-pipelines.md)。
+您还可以以 CSV 的形式将问题可视化。可通过[查看Cloud Manager](/help/using/managing-pipelines.md)中管道执行的详细信息来检索此项。

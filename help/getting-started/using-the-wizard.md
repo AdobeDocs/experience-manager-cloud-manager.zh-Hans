@@ -2,10 +2,10 @@
 title: 使用新项目向导
 description: 关注此页面，了解如何使用该向导创建 AEM 应用程序项目
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
-source-git-commit: cb791a4f148ba394687b5e824b75fe1386d83c18
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 100%
+source-wordcount: '325'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 1. 在 [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com) 中登录 Cloud Manager 并选择适当的组织。
 
-1. 如果您尚未这样做，请[创建您的项目。](program-setup.md)创建项目后，Cloud Manager 将识别出尚未设置存储库，并会在&#x200B;**概述**&#x200B;屏幕上显示一个特殊的行动号召信息卡。
+1. 如果尚未这样做，请[创建您的程序](program-setup.md)。 创建项目后，Cloud Manager会识别出尚未设置存储库，并会在&#x200B;**概述**&#x200B;屏幕上显示一个特殊的行动号召信息卡。
 
    ![创建项目 CTA](/help/assets/image2018-10-3_14-29-44.png)
 

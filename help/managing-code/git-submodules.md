@@ -2,10 +2,10 @@
 title: Git 子模块支持
 description: 了解如何使用 Git 子模块在构建时跨 Git 存储库合并多个分支的内容。
 exl-id: f946d7e7-114a-4e33-bb82-2625d37bba2f
-source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 100%
+source-wordcount: '419'
+ht-degree: 97%
 
 ---
 
@@ -66,7 +66,7 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 ## 限制 {#limitations}
 
-在使用 Git 子模块时，请注意：
+使用Git子模块时，请注意以下事项：
 
 * Git URL 必须完全遵循上述语法。
 * 为安全起见，请勿在这些 URL 中嵌入凭据。

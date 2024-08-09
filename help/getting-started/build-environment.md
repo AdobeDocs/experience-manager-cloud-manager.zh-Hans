@@ -2,10 +2,10 @@
 title: 构建环境
 description: 了解 Cloud Manager 用户可用来构建和测试代码的专用构建环境。
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: dc0b83fa045208fcd333af10f90f9590c2aa96b8
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1280'
-ht-degree: 100%
+source-wordcount: '1275'
+ht-degree: 89%
 
 ---
 
@@ -20,7 +20,7 @@ Cloud Manager 的构建环境具有以下属性。
 
 * 构建环境基于 Linux，并派生自 Ubuntu 22.04。
 * 安装了 Apache Maven 3.9.4。
-   * Adobe 建议用户[更新其 Maven 存储库以使用 HTTPS 代替 HTTP](#https-maven)。
+   * Adobe建议用户[更新其Maven存储库以使用HTTPS而不是HTTP](#https-maven)。
 * 安装的 Java 版本是 Oracle JDK 8u401 和 Oracle JDK 11.0.22。
    * `/usr/lib/jvm/jdk1.8.0_401`
    * `/usr/lib/jvm/jdk-11.0.22`
@@ -31,15 +31,15 @@ Cloud Manager 的构建环境具有以下属性。
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-* 可以在构建时安装其他包，如[安装其他系统包](#installing-additional-system-packages)部分中所述。
+* 可以在生成时安装其他包，如[安装其他系统包](#installing-additional-system-packages)部分中所述。
 * 每次构建都是在原始环境中完成的。构建容器在执行之间不保留任何状态。
 * Maven 始终通过以下三条命令运行：
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * 使用 `settings.xml` 文件在系统级别配置 Maven，并将自动包含使用名为 `adobe-public` 的配置文件的公共 Adobe 工件存储库。
-   * 有关更多详细信息，请参阅 [Adobe 公共 Maven 存储库](https://repo1.maven.org/)。
-* 对于[前端管道](/help/overview/ci-cd-pipelines.md)有 Node.js 18 可用。
+   * 有关更多详细信息，请参阅[Adobe公共Maven存储库](https://repo1.maven.org/)。
+* Node.js 18可用于[前端管道](/help/overview/ci-cd-pipelines.md)。
 
 >[!NOTE]
 >
@@ -47,14 +47,15 @@ Cloud Manager 的构建环境具有以下属性。
 
 >[!TIP]
 >
->请参阅以下附加资源，了解如何使用 Cloud Manager API：
+>请参阅以下附加资源，了解如何使用Cloud Manager API：
+>
 >* [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 >* [创建 API 集成](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
 >* [API 权限](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
 
 ## HTTPS Maven 存储库 {#https-maven}
 
-Cloud Manager [版本 2023.10.0](/help/release-notes/2023/2023-10-0.md) 开始了对构建环境的一项滚动更新（在推出版本 2023.12.0 时完成更新），其中包括对 Maven 3.8.8 的更新。Maven 3.8.1 中引入的一项重大更改是旨在减少潜在漏洞的一项安全增强。具体来说，Maven 现在默认禁用所有不安全的 `http://*` 镜像，如 [Maven 发行说明中所述。](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)开始对构建环境进行滚动更新（包括对Maven 3.8.8的更新，此更新随2023.12.0版本完成）。Maven 3.8.1中引入的一项重大更改是旨在减少潜在漏洞的安全增强功能。 具体而言，Maven现在默认禁用所有不安全的`http://*`镜像，如[Maven发行说明](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)中所述。
 
 此安全增强导致某些用户可能在构建步骤中遇到问题，尤其是从使用不安全 HTTP 连接的 Maven 存储库下载工件时。
 
@@ -111,7 +112,7 @@ Cloud Manager [版本 2023.10.0](/help/release-notes/2023/2023-10-0.md) 开始�
 
 >[!NOTE]
 >
->从 2022 年 4 月开始，Oracle JDK 将是用于开发和运行 AEM 应用程序的默认 JDK。Cloud Manager 构建过程将自动切换为使用 Oracle JDK，即使已在 Maven 工具链中明确选定替代选项也是如此。有关更多详细信息，请参阅 [4 月发行说明](/help/release-notes/2022/2022-4-0.md)。
+>从 2022 年 4 月开始，Oracle JDK 将是用于开发和运行 AEM 应用程序的默认 JDK。Cloud Manager 的构建过程将自动切换为使用 Oracle JDK，即使已在 Maven 工具链中明确选定替代选项也是如此。有关详细信息，请参阅[4月发行说明](/help/release-notes/2022/2022-4-0.md)。
 
 ### 替代 Maven 执行 JDK 版本 {#alternate-maven}
 
@@ -149,7 +150,7 @@ Cloud Manager [版本 2023.10.0](/help/release-notes/2023/2023-10-0.md) 开始�
 
 #### Dispatcher {#dispatcher}
 
-只有常规环境变量可用于 [Dispatcher。无法使用 ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 密钥。
+只有常规环境变量可用于[调度程序](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)。 无法使用密钥。
 
 但是，无法在 `IfDefine` 指令中使用环境变量。
 

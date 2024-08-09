@@ -2,10 +2,10 @@
 title: 项目设置
 description: 完成新用户引导后，业务负责人将需要对项目进行一些初始设置。
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 99%
+source-wordcount: '584'
+ht-degree: 91%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 99%
 
 请注意，更改将立即保存到 Cloud Manager 中，但在下一次管道运行之前不会反映在您的环境中。
 
-如果您尚未创建管道，请参阅[配置生产管道](/help/using/production-pipelines.md)和[配置非生产管道](/help/using/non-production-pipelines.md)文档。
+如果尚未创建管道，请参阅文档[配置生产管道](/help/using/production-pipelines.md)和[配置非生产管道](/help/using/non-production-pipelines.md)。
 
 ## 在项目之间切换 {#swithing-programs}
 
@@ -86,7 +86,7 @@ ht-degree: 99%
 
 例如，一个用户期望其生产环境中的每分钟平均页面查看次数达到 1000 次，其生产环境中有四个 Dispatcher/发布服务器，每个服务器的每分钟页面查看次数为 250 次。这将假定其暂存环境中仅有一个 Dispatcher/发布服务器对。
 
-通过以下方式完成 Assets 性能测试，在 30 分钟的测试期间重复上传资产并测量每个资产的处理时间以及各种系统级量度。
+Assets性能测试可通过在30分钟的测试期间重复上传资源并测量每个资源的处理时间以及各种系统级量度来完成。
 
 您的生产环境前面可能有一个内容交付网络 (CDN)，例如 Akamai 或 CloudFront。由于 [!UICONTROL Cloud Manager] 直接针对暂存环境进行测试，因此 KPI 应仅反映预期将通过 CDN 的流量（即缓存未命中）。通常，这将是总生产流量的一个相对较小的部分。
 

@@ -2,10 +2,10 @@
 title: Cloud Manager for AMS 简介
 description: 从此处开始了解 Cloud Manager for Adobe Managed Services (AMS) 以及它如何使组织能够在云中自行管理 Adobe Experience Manager。
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: a2cea28061304d109a3c9a48650d01255579443c
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1300'
-ht-degree: 99%
+source-wordcount: '1295'
+ht-degree: 88%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 99%
 >
 >本文档具体描述了 Cloud Manager for Adobe Managed Services (AMS) 的特性和功能。
 >
->可以在 [AEM as a Cloud Service 文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/home.html)中找到 AEM as a Cloud Service 的等效文档。
+>可以在[AEM as a Cloud Service文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/home.html)中找到AEM as a Cloud Service的等效文档。
 
 使用 Cloud Manager 时，您的开发团队将从以下功能受益：
 
@@ -55,7 +55,7 @@ ht-degree: 99%
 
 您可以定义特定于应用程序的关键绩效指标 (KPI)（如每分钟的页面查看峰值和页面加载的预期响应时间），这些指标构成了衡量部署是否成功的基础。可以轻松定义不同团队成员的角色和权限。自助式界面在将控制权重新交还给您的同时，还提供了指向最佳实践资源的链接，并使您能够在需要时联系可提供必要指导的 Adobe 专家。
 
-要探究并开始使用 [!UICONTROL Cloud Manager] 的 UI，请参阅[首次登录文档。](/help/getting-started/first-time-login.md)
+要探究并开始使用[!UICONTROL Cloud Manager]的UI，请参阅文档[首次登录](/help/getting-started/first-time-login.md)。
 
 ### CI/CD 管道 {#ci-cd-pipeline}
 
@@ -63,7 +63,7 @@ ht-degree: 99%
 
 通过 [!UICONTROL Cloud Manager] UI，您能够配置并启动您的 CI/CD 管道。在执行此管道期间，会执行彻底的代码扫描，以确保只有高质量的应用程序才能投入到生产环境。
 
-要详细了解如何从 [!UICONTROL Cloud Manager] UI 配置管道，请参阅[配置生产管道](/help/using/production-pipelines.md)和[配置非生产管道文档。](/help/using/non-production-pipelines.md)
+要详细了解如何从[!UICONTROL Cloud Manager]的UI配置管道，请参阅文档[配置生产管道](/help/using/production-pipelines.md)和[配置非生产管道](/help/using/non-production-pipelines.md)。
 
 ### 灵活的部署模式 {#flexible-deployment-modes}
 
@@ -73,11 +73,11 @@ ht-degree: 99%
 
 质量检查不依赖于部署触发器，每次触发部署时，都会在 CI/CD 管道执行期间执行质量检查。质量检查包括现成的代码审查、安全性测试和性能测试，无需您或您的合作伙伴进行任何操作。
 
-要了解有关部署代码和质量检查的更多信息，请参阅[部署代码](/help/using/code-deployment.md)文档。
+要了解有关部署代码和质量检查的更多信息，请参阅文档[部署代码](/help/using/code-deployment.md)。
 
 ## Cloud Manager 中的可选功能 {#optional-features-in-cloud-manager}
 
-Cloud Manager 提供了附加高级功能，这些功能可能有助于实施您的项目，具体取决于特定环境设置和需求。如果您对这些功能感兴趣，请联系您的客户成功工程师 (CSE) 或 Adobe 代表来进行深入讨论。
+Cloud Manager 提供了附加高级功能，这些功能可能有助于实施您的项目，具体取决于特定环境设置和需求。如果您对这些功能感兴趣，请联系您的客户成功工程师(CSE)或Adobe代表以进行进一步讨论。
 
 ### 自动缩放 {#autoscaling}
 
@@ -89,7 +89,7 @@ Cloud Manager 提供了附加高级功能，这些功能可能有助于实施您
 
 >[!NOTE]
 >
->如果您想探索自动缩放功能是否适合您的应用程序，请联系您的 CSE 或 Adobe 代表。
+>如果您想探索自动缩放功能是否适合您的应用程序，请联系您的CSE或Adobe代表。
 
 ### 蓝/绿部署 {#blue-green}
 
@@ -123,7 +123,7 @@ Cloud Manager 提供了附加高级功能，这些功能可能有助于实施您
 
 所有使用 Cloud Manager 进行生产部署的 AMS 用户都有资格使用蓝/绿部署。不过，要使用蓝/绿部署，不仅需要对您的环境进行额外验证，还需要由 Adobe CSE 进行设置。
 
-如果您想进行蓝/绿部署，请考虑以下要求和限制并联系您的 CSE。
+如果您对蓝/绿部署感兴趣，请考虑以下要求和限制并联系您的CSE。
 
 #### 要求和限制 {#limitations}
 
@@ -131,5 +131,5 @@ Cloud Manager 提供了附加高级功能，这些功能可能有助于实施您
 * 在蓝/绿部署中，不会预览 Dispatcher/发布对。
 * 每个 Dispatcher/发布对都与所有其他 Dispatcher/发布对相同。
 * 蓝/绿部署仅适用于生产环境。
-* 可以在 AWS 和 Azure 中进行蓝/绿部署。
+* 蓝/绿部署在AWS和Azure中可用。
 * 蓝/绿部署不适用于仅使用 Assets 的客户。

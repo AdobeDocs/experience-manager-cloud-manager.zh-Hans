@@ -2,10 +2,10 @@
 title: 重要概念
 description: 与所有功能强大的工具一样，Cloud Manager 包含了许多概念和术语。本文档总结了开始使用 Cloud Manager 时的一些最重要内容。
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
-source-git-commit: 67621fb2dbb0c32371b2ffc16ec45f47daf04e05
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 100%
+ht-degree: 70%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 100%
 
 ## 应用程序 {#application}
 
-应用程序是客户创建的一组自定义项和配置，用于调整底层[解决方案](#solution)（例如 AEM Sites 或 AEM Assets）来满足其具体的用例要求和需求。应用程序是一个逻辑单元，可包含多个[工件](#artifact)。
+应用程序是客户创建的一组自定义项和配置，用于调整底层[解决方案](#solution)（例如 AEM Sites 或 AEM Assets）来满足其具体的用例要求和需求。应用程序是一个逻辑单元，可能包含多个[项目](#artifact)。
 
-虚构的 [WKND 生活方式应用程序](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)是一个示例应用程序。
+一个示例应用程序是虚构的[WKND生活方式应用程序](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)。
 
 ## 工件 {#artifact}
 
@@ -30,15 +30,15 @@ ht-degree: 100%
 
 ## 环境 {#environment}
 
-环境是[项目中的单个虚拟机集群。](#program)对于 AEM，它由一个创作实例（（可选）带有一个额外的冷备用创作实例）、零个或多个发布实例、一个或多个 Dispatcher 实例和一个负载平衡器组成。
+环境是[程序](#program)中的单个虚拟机群集。 对于AEM，它由一个创作实例(（可选）带有一个额外的冷备用创作实例)、零个或多个发布实例、一个或多个Dispatcher实例和一个负载平衡器组成。
 
 ## Git 存储库 {#git-repository}
 
-Git 存储库是一个存储特定于客户的源代码的位置，可[使用 Git](https://git-scm.com) 进行访问。
+Git存储库是存储特定于客户的源代码的位置，可使用[使用Git](https://git-scm.com)进行访问。
 
 ## 实例 {#instance}
 
-实例是一台运行 AEM [解决方案的特定虚拟服务器。](#solution)从部署的角度来看，实例代表一个逻辑单元。
+实例是运行AEM [解决方案](#solution)的特定虚拟服务器。 从部署的角度来看，实例代表一个逻辑单元。
 
 ## 组织 {#organization}
 
@@ -62,4 +62,4 @@ Git 存储库是一个存储特定于客户的源代码的位置，可[使用 Gi
 
 ## 步骤 {#step}
 
-步骤是一个配置的说明集，它将某个工作单元作为[管道](#pipeline)构建块完成。
+步骤是一个配置的说明集，它将某个工作单元作为[管道](#pipeline)的构建块完成。

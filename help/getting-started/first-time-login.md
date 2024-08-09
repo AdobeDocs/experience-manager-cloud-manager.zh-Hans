@@ -2,10 +2,10 @@
 title: 首次登录
 description: 如果您已设置常规配置并且已准备好首次使用 Cloud Manager，请按照此页面上的说明进行操作。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: 1417d3bfa5a844641e0942d1fe1bd7bf84e41997
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 100%
+source-wordcount: '293'
+ht-degree: 75%
 
 ---
 
@@ -24,15 +24,15 @@ ht-degree: 100%
 
    ![Cloud Manager 控制台](/help/assets/cloud-manager-console.png)
 
-1. 点击或单击程序的信息卡以导航到 Cloud Manager 的&#x200B;**概述**&#x200B;页面。
+1. 单击项目的卡以导航到Cloud Manager的&#x200B;**概述**&#x200B;页面。
 
 1. 此时将打开 Cloud Manager 以显示&#x200B;**概述**&#x200B;页面。
 
    ![Cloud Manager 概述页面](/help/assets/program-overview-page.png)
 
-1. 如果您的程序尚未设置，请点击或单击[行动呼吁](/help/getting-started/navigation.md#cta)中的&#x200B;**安装程序**，设置您的程序描述，并定义关键绩效指标 (KPI)。如果您的程序已经设置完毕，CTA 可能会提供额外的后续步骤。
+1. 如果您的项目尚未设置，请单击[行动号召](/help/getting-started/navigation.md#cta)中的&#x200B;**设置项目**&#x200B;以设置项目说明并定义关键绩效指标(KPI)。 如果您的程序已经设置完毕，CTA 可能会提供额外的后续步骤。
 
-请继续查看[项目设置](/help/getting-started/program-setup.md)文档，了解项目设置过程的后续步骤。
+您可以继续查看文档[项目设置](/help/getting-started/program-setup.md)，了解项目设置过程的后续步骤。
 
 ## Cloud Manager 活动 {#activity}
 
@@ -40,7 +40,7 @@ Cloud Manager 提供项目活动的综合视图，其中列出了所有用于生
 
 >[!TIP]
 >
->有关如何使用 Cloud Manager UI 的详细信息，请参阅文档[浏览 Cloud Manager UI。](/help/getting-started/navigation.md)
+>有关如何使用Cloud Manager UI的详细信息，请参阅文档[浏览Cloud Manager UI](/help/getting-started/navigation.md)。
 
 >[!NOTE]
 >

@@ -2,17 +2,17 @@
 title: 配置生产管道
 description: 了解如何使用 Cloud Manager 创建和配置生产管道以部署代码。
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 33ccb0f2139162845cc1b72505b6a5bfc7cf43e7
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1302'
-ht-degree: 100%
+source-wordcount: '1286'
+ht-degree: 91%
 
 ---
 
 
 # 配置生产管道 {#configuring-production-pipelines}
 
-了解如何使用 Cloud Manager 创建和配置生产管道以部署代码。如果您首先想了解有关管道在 Cloud Manager 中的工作方式的更具有概念化的概述，请参阅 [CI/CD 管道](/help/overview/ci-cd-pipelines.md)文档。
+了解如何使用 Cloud Manager 创建和配置生产管道以部署代码。如果您首先想从概念上更加深入了解有关管道在Cloud Manager中的工作方式，请参阅[CI/CD管道](/help/overview/ci-cd-pipelines.md)。
 
 ## 概述 {#overview}
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 * **生产管道** - 生产管道是一个专用管道，它包含一系列精心设计的步骤，可执行这些步骤以将 Git 存储库中的源代码用于生产环境。
 * **非生产管道** - 非生产管道主要用于运行代码质量扫描或将源代码部署到开发环境中。
 
-本文档侧重于生产管道。有关如何配置非生产管道的详细信息，请参阅[配置非生产管道](/help/using/non-production-pipelines.md)文档。
+本文档侧重于生产管道。有关如何配置非生产管道的详细信息，请参阅文档[配置非生产管道](/help/using/non-production-pipelines.md)。
 
 **部署管理员**&#x200B;角色负责设置管道。管道配置包含：
 
@@ -37,9 +37,9 @@ ht-degree: 100%
 
 在使用 [!UICONTROL Cloud Manager] UI 设置项目并具有至少一个环境后，便可以添加生产管道。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 中登录 Cloud Manager 并选择适当的组织和项目。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 导航到&#x200B;**项目概述**&#x200B;页面中的&#x200B;**管道**&#x200B;信息卡，并单击 **+添加**，然后选择&#x200B;**添加生产管道**。
+1. 从&#x200B;**项目概述**&#x200B;页面导航到&#x200B;**管道**&#x200B;信息卡，然后单击&#x200B;**+添加**&#x200B;并选择&#x200B;**添加生产管道**。
 
    ![添加生产管道](/help/assets/configure-pipelines/add-prod1.png)
 
@@ -113,7 +113,7 @@ ht-degree: 100%
 
            >[!TIP]
            >
-           >请参阅[代码部署](/help/using/code-deployment.md)文档，了解如何设置部署计划或立即执行管道。
+           >请参阅[代码部署](/help/using/code-deployment.md)，了解如何设置部署计划或立即执行管道。
 
             * **使用 CSE 监督** - 如果选择此选项，则通过 CSE 实际启动部署。在启用此选项的情况下创建或编辑管道时，**部署管理员**&#x200B;角色具有以下选项。
 
@@ -128,7 +128,7 @@ ht-degree: 100%
 
    >[!TIP]
    >
-   >请参阅[代码质量测试](/help/using/code-quality-testing.md#performance-testing)文档，了解有关&#x200B;**暂存测试**&#x200B;选项卡上可用的选项的更多详细信息。
+   >有关&#x200B;**暂存测试**&#x200B;选项卡上可用选项的更多详细信息，请参阅[代码质量测试](/help/using/code-quality-testing.md#performance-testing)。
 
    1. 在&#x200B;**网站内容交付/分布式负载权重**&#x200B;部分中，您可以根据可启用或禁用的三个页面集之间的页面请求权重来定义网站性能测试的配置方式。
 
@@ -138,7 +138,7 @@ ht-degree: 100%
 
       ![网站负载权重](/help/assets/configure-pipelines/add-prod5.png)
 
-   1. 在 **Assets 性能测试分发**&#x200B;部分中，您可以定义图像和 PDF 的测试分发，并定义您自己的测试资产。
+   1. 在&#x200B;**Assets性能测试分发**&#x200B;部分下，您可以定义图像和PDF的测试分发并定义您自己的测试资源。
 
       * **图像** - 调整滑块可调整图像和 PDF 之间的测试拆分。
       * **PDF** - 调整滑块可调整图像和 PDF 之间的测试拆分。
@@ -155,7 +155,7 @@ ht-degree: 100%
 
 ## 后续步骤 {#the-next-steps}
 
-配置管道后，您需要部署代码。有关更多详细信息，请参阅[代码部署](/help/using/code-deployment.md)文档。
+配置管道后，您需要部署代码。有关详细信息，请参阅[代码部署](/help/using/code-deployment.md)。
 
 ## 视频教程 {#video-tutorial-one}
 

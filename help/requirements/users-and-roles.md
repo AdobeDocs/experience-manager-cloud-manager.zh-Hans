@@ -2,10 +2,10 @@
 title: 添加用户和角色
 description: 了解如何使用 Admin Console 添加用户和角色以及创建配置文件。
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: dd96d773ea3e6b9c45886fe41b28d3dd70cb8a61
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 100%
+source-wordcount: '769'
+ht-degree: 84%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 100%
 
 从 Admin Console 中管理 [!UICONTROL Cloud Manager] 角色。通过将用户添加到 [!UICONTROL Cloud Manager] 产品配置文件，提供特定的角色成员资格。
 
-Admin Console 是一个中央位置，用于管理整个组织内的 Adobe 授权。要详细了解 Adobe Admin Console，请参阅 [Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html) 文档。
+Admin Console 是一个中央位置，用于管理整个组织内的 Adobe 授权。要进一步了解Adobe Admin Console，请参阅 [Admin Console文档](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)。
 
 要向 [!UICONTROL Cloud Manager] 用户提供基于角色的适当权限，客户组织内的管理员必须在 [!UICONTROL AEM Managed Services] 产品上下文中创建与四个 [!UICONTROL Cloud Manager] 角色中的每一个相对应的新产品配置文件：
 
@@ -57,9 +57,9 @@ Admin Console 是一个中央位置，用于管理整个组织内的 Adobe 授�
 
 您可以使用 Admin Console 创建用户/组或将用户/组添加到这些产品配置文件中。
 
-1. 登录到 [`https://adminconsole.adobe.com` 上的 Admin Console。](https://adminconsole.adobe.com)
+1. 登录到[`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)上的Admin Console。
 
-1. 单击&#x200B;**概述**&#x200B;选项卡，然后在&#x200B;**产品和服务**&#x200B;卡片上单击要修改的产品。如果此处未列出它，请使用&#x200B;**产品**&#x200B;选项卡找到该产品并单击它。
+1. 单击&#x200B;**概述**&#x200B;选项卡，在&#x200B;**产品和服务**&#x200B;卡片上单击要修改的产品。 如果此处未列出它，请使用&#x200B;**产品**&#x200B;选项卡找到该产品并单击它。
 
    ![Admin Console“概述”选项卡](/help/assets/admin-console-overview.png)
 
@@ -93,13 +93,13 @@ Admin Console 是一个中央位置，用于管理整个组织内的 Adobe 授�
 
 在创建产品配置文件后，您可以将用户或用户组分配给这些配置文件。
 
-1. 登录到 [`https://adminconsole.adobe.com` 上的 Admin Console。](https://adminconsole.adobe.com)
+1. 登录到[`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)上的Admin Console。
 
 1. 在 Admin Console 中，选择&#x200B;**用户**&#x200B;选项卡。
 
    ![“用户”选项卡](/help/assets/admin-console-users.png)
 
-1. 单击左侧导航面板中的&#x200B;**用户**，然后单击一个用户以修改它。
+1. 单击左侧导航面板中的&#x200B;**用户**，然后单击用户以修改它。
 
 1. 单击&#x200B;**产品**&#x200B;部分中的省略号按钮，然后选择&#x200B;**编辑**。
 
@@ -107,12 +107,12 @@ Admin Console 是一个中央位置，用于管理整个组织内的 Adobe 授�
 
 1. 在&#x200B;**编辑产品和用户组**&#x200B;对话框中，单击加号按钮并选择要分配给该用户的配置文件。
 
-   * 如果已将该用户分配给角色，则加号按钮将变为编辑按钮（铅笔），但其作用相同。
+   * 如果用户已分配给角色，则加号按钮是编辑按钮（铅笔），但工作方式相同。
 
    ![编辑产品和用户组](/help/assets/admin-console-edit-products-and-user-groups.png)
 
 1. 单击&#x200B;**保存**&#x200B;以将配置文件保存到用户。
 
-重复相同步骤以将配置文件分配给用户组，但在&#x200B;**用户**&#x200B;选项卡上从左侧导航面板中选择&#x200B;**用户组**。单击一个用户组，选择&#x200B;**已分配的产品配置文件**&#x200B;选项卡，然后单击&#x200B;**分配产品配置文件**&#x200B;以分配配置文件。
+重复相同步骤以将配置文件分配给用户组，但在&#x200B;**用户**&#x200B;选项卡上从左侧导航面板中选择&#x200B;**用户组**。单击用户组并选择&#x200B;**已分配的产品配置文件**&#x200B;选项卡，然后单击&#x200B;**分配产品配置文件**&#x200B;以分配配置文件。
 
 ![将配置文件分配给组](/help/assets/admin-console-edit-user-groups.png)

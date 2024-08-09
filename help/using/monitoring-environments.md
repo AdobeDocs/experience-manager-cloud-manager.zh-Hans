@@ -2,10 +2,10 @@
 title: 监控环境
 description: 了解如何在 Cloud Manager 中监控环境。
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 100%
+source-wordcount: '922'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 点击或单击要监控的程序的省略号按钮，然后选择&#x200B;**显示监控**&#x200B;选项。
+1. 单击要监视的程序的省略号按钮，然后选择&#x200B;**显示监视**&#x200B;选项。
 
    ![设置](/help/assets/first-timea1.png)
 
@@ -51,7 +51,7 @@ ht-degree: 100%
 
 ## 系统监控详细信息 {#system-monitoring-detail}
 
-要查看特定量度的详细信息，请点击或单击特定实例的其中一个类别列或左侧导航中的类别标题。每个详细信息页面均显示该类别中量度的一系列图表。您可以查看环境中所有实例或某个特定实例的量度。您可以使用右上角的下拉框在环境和实例之间切换。
+要查看特定量度的详细信息，请单击特定实例的类别列之一或左侧导航中的类别标题。 每个详细信息页面均显示该类别中量度的一系列图表。您可以查看环境中所有实例或某个特定实例的量度。您可以使用右上角的下拉框在环境和实例之间切换。
 
 ![选择环境](/help/assets/System_Monitoring1.png)
 
@@ -61,7 +61,7 @@ ht-degree: 100%
 
 ![量度图表](/help/assets/Monitoring_Graphs1.png)
 
-通过单击图例中的系列，可以在图表上隐藏该系列。例如，如果您单击警告阈值系列，则您将只看到关键阈值。
+通过单击图例中的系列，可以在图表上隐藏该系列。例如，如果单击警告阈值系列，您将只看到关键阈值。
 
 ![修改图表](/help/assets/Monitoring_Graphs2.png)
 

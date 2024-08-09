@@ -2,10 +2,10 @@
 title: Cloud Manager 常见问题
 description: 本文档为 AMS 客户提供有关 Cloud Manager 最常见问题的解答。
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: 6be659e02df0657ec7d3dbce8c18c44a327a36f4
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 100%
+source-wordcount: '746'
+ht-degree: 93%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 100%
 
 是。您将需要添加 `maven-toolchains-plugin` 和正确的 Java 11 设置。
 
-* [此处](/help/getting-started/using-the-wizard.md)记录了该流程。
-* 有关示例，请参阅 [wknd 示例项目代码](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)。
+* [此处](/help/getting-started/using-the-wizard.md)记录此流程。
+* 有关示例，请参阅[wknd示例项目代码](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)。
 
 ## 从 Java 8 切换到 Java 11 后，我的构建失败，并显示一个有关 maven-scr-plugin 的错误。我该怎么办？ {#maven-src-plugin}
 
@@ -29,9 +29,9 @@ ht-degree: 100%
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
 ```
 
-有关如何移除此插件的说明，请[参阅此处](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)。
+有关如何删除此插件的说明，[请参阅此处](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)。
 
-## 从 Java 8 切换到 Java 11 后，我的构建失败，并显示一个有关 RequireJavaVersion 的错误。我该怎么办？ {#requirejavaversion}
+## 从 Java 8 切换到 Java 11 后，我的构建失败，并显示一个有关 RequireJavaVersion 的错误。 我该怎么办？ {#requirejavaversion}
 
 对于 Cloud Manager 构建，`maven-enforcer-plugin` 可能会失败，并显示此错误
 
@@ -60,7 +60,7 @@ ht-degree: 100%
    * 超过 `20` 秒的页面加载将标记为 `504` 错误。
 * 如果网站要求实施用户身份验证，请参阅[了解测试结果](/help/using/code-quality-testing.md#authenticated-performance-testing)文档，了解如何配置测试以针对网站进行身份验证。
 
-有关质量检查的更多信息，请参阅[了解测试结果](/help/using/code-quality-testing.md)文档。
+有关质量检查的详细信息，请参阅[了解测试结果](/help/using/code-quality-testing.md)。
 
 ## 我是否能将 SNAPSHOT 用于 Maven 项目版本？ {#snapshot}
 
@@ -74,9 +74,9 @@ ht-degree: 100%
 
 ## 包和捆绑包版本控制如何用于暂存和生产部署？ {#staging-production}
 
-在暂存和生产部署中，将生成自动版本，[如该处所记录](/help/managing-code/maven-project-version.md)。
+在暂存和生产部署中，将生成自动版本[，如此处](/help/managing-code/maven-project-version.md)所述。
 
-对于暂存和生产部署中的自定义版本控制，请设置包含三个部分的正确 maven 版本，如 `1.0.0`。每次部署到生产环境时提高版本。
+对于暂存和生产部署中的自定义版本控制，请设置适当的三部分 maven 版本，如 `1.0.0`。 每次部署到生产环境时提高版本。
 
 Cloud Manager 自动将其版本添加到暂存和生产构建，并创建 Git 分支。 无需特殊配置。 如果您未如前所述设置 maven 版本，部署仍将成功，并且会自动设置版本。
 

@@ -2,17 +2,17 @@
 title: 自定义代码质量规则
 description: 了解 Cloud Manager 在代码质量测试期间执行的自定义代码质量规则的具体内容。这些规则以 AEM Engineering 的最佳实践为基础。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 2a25b0482800d4c5428a5595c9699dceed327043
-workflow-type: ht
-source-wordcount: '3483'
-ht-degree: 100%
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+workflow-type: tm+mt
+source-wordcount: '3482'
+ht-degree: 93%
 
 ---
 
 
 # 自定义代码质量规则 {#custom-code-quality-rules}
 
-了解 Cloud Manager 在基于来自 AEM 工程的最佳实践的[代码质量测试](/help/using/code-quality-testing.md)过程中执行的自定义代码质量规则的详细信息。
+了解Cloud Manager在基于来自AEM Engineering的最佳实践的[代码质量测试](/help/using/code-quality-testing.md)过程中执行的自定义代码质量规则的详细信息。
 
 >[!NOTE]
 >
@@ -500,7 +500,7 @@ public void doThis(Resource resource) {
 
 Sling 调度程序不得用于需要保证执行的任务。 Sling 计划作业可保证执行，并且更适合集群和非集群环境。
 
-请参阅 [Apache Sling 事件和作业处理文档](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)，详细了解如何在集群环境中处理 Sling 作业。
+请参阅[Apache Sling事件和作业处理文档](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)，详细了解如何在集群环境中处理Sling作业。
 
 ### 不应使用 AEM 弃用的 API {#sonarqube-aem-deprecated}
 
@@ -653,9 +653,9 @@ OSGi 配置 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 定义 AEM 中
 * **密钥**：ReverseReplication
 * **类型**：代码异味 / Cloud Service 兼容性
 * **严重性**：轻微
-* **从以下版本开始**：版本 2020.5.0
+* **开始版本**：版本 2020.5.0
 
-Cloud Service 部署中不支持反向复制，如[发行说明：移除复制代理](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes#replication-agents)中所述。
+Cloud Service部署中不支持反向复制，如[发行说明：删除复制代理](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes#replication-agents)中所述。
 
 使用反向复制的客户应联系 Adobe 以获取替代解决方案。
 
@@ -666,7 +666,7 @@ Cloud Service 部署中不支持反向复制，如[发行说明：移除复制�
 * **严重性**：轻微
 * **开始版本**：版本 2021.2.0
 
-AEM 客户端库可能包含静态资源，如图像和字体。如[“使用客户端库”文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors)中所述，在使用代理客户端库时，这些静态资源必须包含在名为 `resources` 的子文件夹中，才能在发布实例上有效引用这些资源。
+AEM 客户端库可能包含静态资源，如图像和字体。如[使用客户端库文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors)中所述，在使用代理的客户端库时，这些静态资源必须包含在名为`resources`的子文件夹中，才能在发布实例上有效引用这些资源。
 
 #### 不合规的代码 {#non-compliant-proxy-enabled}
 
@@ -708,9 +708,9 @@ AEM 客户端库可能包含静态资源，如图像和字体。如[“使用客
 * **严重性**：轻微
 * **开始版本**：版本 2021.2.0
 
-虽然静态模板的使用历来在 AEM 项目中很普遍，但强烈建议使用可编辑的模板，因为它们提供了最大的灵活性，并支持静态模板中不存在的附加功能。要获取更多信息，请参阅[“页面模板 - 可编辑”文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable)。
+虽然静态模板的使用历来在 AEM 项目中很普遍，但强烈建议使用可编辑的模板，因为它们提供了最大的灵活性，并支持静态模板中不存在的附加功能。有关详细信息，请参阅[页面模板 — 可编辑文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable)。
 
-可以使用 [AEM 现代化工具](https://opensource.adobe.com/aem-modernize-tools/)在很大程度上实现从静态模板到可编辑模板的迁移的自动化。
+可以使用[AEM现代化工具](https://opensource.adobe.com/aem-modernize-tools/)在很大程度上实现从静态模板到可编辑模板的迁移的自动化。
 
 ### 建议不要使用旧的基础组件 {#oakpal-usage-legacy}
 
@@ -719,7 +719,7 @@ AEM 客户端库可能包含静态资源，如图像和字体。如[“使用客
 * **严重性**：轻微
 * **开始版本**：版本 2021.2.0
 
-旧的基础组件（即 `/libs/foundation` 下的组件）已在多个 AEM 版本中被弃用以便支持[核心组件。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/introduction)建议不要使用旧的基础组件作为自定义组件的基础（无论是通过叠加还是继承），并且应将这些基础组件转换为对应的核心组件。
+旧的基础组件（即`/libs/foundation`下的组件）已在多个AEM版本中被弃用以便支持[核心组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/introduction)。 建议不要使用旧的基础组件作为自定义组件的基础（无论是通过叠加还是继承），并且应将这些基础组件转换为相应的核心组件。
 
 [AEM 现代化工具](https://opensource.adobe.com/aem-modernize-tools/)可以促进此转换。
 
@@ -730,7 +730,7 @@ AEM 客户端库可能包含静态资源，如图像和字体。如[“使用客
 * **严重性**：轻微
 * **开始版本**：版本 2021.2.0
 
-AEM Cloud Service 要求自定义搜索索引定义（即 `oak:QueryIndexDefinition` 类型的节点）是 `/oak:index` 的直接子节点。必须移动其他位置的索引才能与 AEM Cloud Service 兼容。有关搜索索引的更多信息，请参阅[“内容搜索和索引编制”文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/indexing)。
+AEM Cloud Service 要求自定义搜索索引定义（即 `oak:QueryIndexDefinition` 类型的节点）是 `/oak:index` 的直接子节点。必须移动其他位置的索引才能与 AEM Cloud Service 兼容。有关搜索索引的更多信息，请参阅[内容搜索和索引编制文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/indexing)。
 
 ### 自定义搜索索引定义节点的 compatVersion 必须为 2 {#oakpal-custom-search-compatVersion}
 
@@ -739,7 +739,7 @@ AEM Cloud Service 要求自定义搜索索引定义（即 `oak:QueryIndexDefinit
 * **严重性**：轻微
 * **开始版本**：版本 2021.2.0
 
-AEM Cloud Service 要求自定义搜索索引定义（即 `oak:QueryIndexDefinition` 类型的节点）必须将 `compatVersion` 属性设置为 `2`。AEM Cloud Service 不支持任何其他值。有关搜索索引的更多信息，请参阅[“内容搜索和索引编制”文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/indexing)。
+AEM Cloud Service 要求自定义搜索索引定义（即 `oak:QueryIndexDefinition` 类型的节点）必须将 `compatVersion` 属性设置为 `2`。AEM Cloud Service 不支持任何其他值。有关搜索索引的更多信息，请参阅[内容搜索和索引编制文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/indexing)。
 
 ### 自定义搜索索引定义节点的后代节点的类型必须是`nt:unstructured` {#oakpal-descendent-nodes}
 
@@ -757,7 +757,7 @@ AEM Cloud Service 要求自定义搜索索引定义（即 `oak:QueryIndexDefinit
 * **严重性**：轻微
 * **开始版本**：版本 2021.2.0
 
-正确定义的自定义搜索索引定义节点必须包含一个名为 `indexRules` 的子节点，并且该节点必须至少有一个子节点。有关更多信息，请参阅 [Oak 文档](https://jackrabbit.apache.org/oak/docs/query/lucene.html)。
+正确定义的自定义搜索索引定义节点必须包含一个名为 `indexRules` 的子节点，并且该节点必须至少有一个子节点。有关详细信息，请参阅[Oak文档](https://jackrabbit.apache.org/oak/docs/query/lucene.html)。
 
 ### 自定义搜索索引定义节点必须遵循命名惯例 {#oakpal-custom-search-definitions}
 

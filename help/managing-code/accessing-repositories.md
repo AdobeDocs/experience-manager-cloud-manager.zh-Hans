@@ -2,10 +2,10 @@
 title: 存储库访问信息
 description: 了解如何使用 Cloud Manager 的自助 Git 帐户管理访问和管理 Adobe 管理的 Git 存储库。
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
-source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 100%
+source-wordcount: '394'
+ht-degree: 82%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
    ![访问“环境”信息卡上的“存储库信息”按钮](assets/pipelines-card.png)
 
-1. 点击或单击&#x200B;**访问存储库信息**&#x200B;按钮，打开&#x200B;**存储库信息**&#x200B;对话框并查看：
+1. 单击&#x200B;**访问存储库信息**&#x200B;按钮以打开&#x200B;**存储库信息**&#x200B;对话框并查看：
 
    * Git 用户名。
    * Git 密码。
@@ -32,9 +32,9 @@ ht-degree: 100%
 
    ![存储库信息窗口](assets/access-repo-info.png)
 
-1. 要访问密码，必须生成一个新密码。为此，请点击或单击&#x200B;**生成密码**&#x200B;按钮。
+1. 要访问密码，必须生成一个新密码。为此，请单击&#x200B;**生成密码**&#x200B;按钮。
 
-1. 在&#x200B;**您确定…**&#x200B;对话框中，通过点击或单击&#x200B;**生成密码**&#x200B;来确认密码生成。
+1. 单击&#x200B;**生成密码**，在&#x200B;**对话框**&#x200B;中确认密码生成。
 
    ![确认密码生成](assets/confirm-password-generation.png)
 
@@ -55,10 +55,10 @@ ht-degree: 100%
 
 ## 从存储库窗口访问存储库信息 {#repositories-window}
 
-**访问存储库信息**&#x200B;按钮也可在&#x200B;[**存储库**&#x200B;窗口的工具栏中找到。](managing-repositories.md) 该工具栏显示有关访问 Adobe 管理的存储库的相同信息。
+[**存储库**&#x200B;窗口](managing-repositories.md)的工具栏中还提供了&#x200B;**访问存储库信息**&#x200B;按钮，该按钮显示有关访问Adobe管理的存储库的相同信息。
 
 ## 撤销访问密码 {#revoke-password}
 
-您可以随时撤销访问密码。为此，请[为此请求创建支持工单](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)。
+您可以随时撤销访问密码。为此，请[为此请求](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)创建支持工单。
 
 该工单将被优先处理，并应在一天内撤销。
