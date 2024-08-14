@@ -2,10 +2,10 @@
 title: 仅暂存和仅生产管道
 description: 了解如何使用专用管道拆分暂存和生产部署。
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 70b7994435f7f0f587c134fab1fb66c6576386d9
+source-git-commit: 77eb1c824ba766e43dfd8e2b0f6f6edc71f043e5
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 37%
+source-wordcount: '943'
+ht-degree: 31%
 
 ---
 
@@ -83,9 +83,19 @@ ht-degree: 37%
 
 ## 运行仅生产管道和仅舞台管道 {#running}
 
-仅生产管道和仅阶段管道的运行方式与[所有其他管道的运行方式相同](/help/using/managing-pipelines.md#running-pipelines)。 有关详细信息，请参阅此文档。
+仅生产管道和仅舞台管道的运行方式与[所有其他管道的运行方式大致相同。](/help/using/managing-pipelines.md#running-pipelines)有关详细信息，请参阅该文档。 但是，这些管道有两个新特征。
 
-此外，可以直接从仅暂存管道的执行细节中触发仅生产管道运行。
+* 仅暂存管道和仅生产管道提供了新的[紧急模式](#emergency-mode)以允许跳过测试。
+* 仅生产管道运行可以直接从[仅暂存管道的执行详细信息触发。](#stage-only-run)
+
+### 紧急模式 {#emergency-mode}
+
+无论何时启动仅生产管道和暂存联机管道，都会提示您确认启动以及启动方式。
+
+* **正常模式**&#x200B;是标准运行，包括暂存测试步骤。
+* **紧急模式**&#x200B;跳过暂存测试步骤。
+
+![紧急模式](/help/assets/configure-pipelines/emergency-mode.png)
 
 ### 仅限阶段的管道 {#stage-only-run}
 
@@ -93,7 +103,9 @@ ht-degree: 37%
 
 ![仅暂存管道运行](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
 
-**升级构建**&#x200B;按钮仅当您处于最近成功执行的进暂存管道中时才会出现。单击后，它会要求您确认仅生产管道的运行或创建仅生产管道（如果尚不存在）。
+单击&#x200B;**提升生成**&#x200B;将提示您确认相关仅阶段管道已正常或在[紧急模式下运行。](#emergency-mode)
+
+如果仅生产管道不存在，系统将提示您创建一个管道。
 
 ### 仅生产管道 {#prod-only-run}
 
