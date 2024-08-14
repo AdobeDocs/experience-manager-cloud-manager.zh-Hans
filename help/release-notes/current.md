@@ -2,7 +2,7 @@
 title: Cloud Manager 2024.8.0发行说明
 description: 了解Cloud Manager 2024.8.0的发行说明。
 feature: Release Information
-source-git-commit: 34f15aff7478a6a0884f88f534a7dff996a8570e
+source-git-commit: dd764bb17127ba0a1e88e85592329cc9ddff42e3
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 ## 发布日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2024.8.0的发布日期是2024年8月13日。 下一个版本计划于2024年9月14日发布。
+[!UICONTROL Cloud Manager] 2024.8.0的发布日期是2024年8月14日。 下一个版本计划于2024年9月14日发布。
 
 ## 新增功能 {#what-is-new}
 
