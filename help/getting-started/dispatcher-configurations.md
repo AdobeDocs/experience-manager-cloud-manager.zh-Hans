@@ -2,19 +2,19 @@
 title: Dispatcher 配置
 description: 了解如何使用 Cloud Manager 部署 Dispatcher 配置文件。
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
 
-# Dispatcher 配置 {#manage-your-dispatcher-configurations}
+# Dispatcher配置 {#manage-your-dispatcher-configurations}
 
 了解如何使用 Cloud Manager 部署 Dispatcher 配置文件
 
-## 使用 Cloud Manager 部署 Dispatcher 配置 {#deploying-dispatcher-configurations}
+## 使用Cloud Manager部署Dispatcher配置 {#deploying-dispatcher-configurations}
 
 Cloud Manager 能够部署 Web 服务器和 Dispatcher 配置文件，前提是这些文件与普通 AEM 内容包一起存储在 Git 存储库中。
 
@@ -24,7 +24,7 @@ Cloud Manager 使用内置的[项目创建向导](/help/getting-started/using-th
 
 部署到 Dispatcher 实例后，Dispatcher 实例上这些目录的内容将由您的 Git 存储库中的内容覆盖。由于 Web 服务器和 Dispatcher 配置文件经常需要特定于环境的信息才能正确使用此功能，因此，您首先需要与客户成功工程师 (CSE) 一起在 `/etc/sysconfig/httpd` 中设置这些环境变量。
 
-## 适用于现有托管服务客户的 Dispatcher 配置 {#steps-for-configuring-dispatcher}
+## 适用于现有托管服务客户的Dispatcher配置 {#steps-for-configuring-dispatcher}
 
 执行以下步骤以完成初始 Dispatcher 配置。
 
@@ -48,7 +48,7 @@ Cloud Manager 使用内置的[项目创建向导](/help/getting-started/using-th
 
    尽管可在此处使用任意名称，但此步骤中创建的目录名称必须与步骤 6 中使用的名称相同。
 
-1. 此子目录将包含一个 Maven 模块，该模块使用 Maven Assembly 插件构建 Dispatcher .zip 文件。首先，在 `dispatcher` 目录中，创建一个包含此内容的 `pom.xml` 文件，并根据需要更改 `parent` 引用 `artifactId` 和 `name`。
+1. 此子目录将包含一个Maven模块，该模块使用Maven Assembly插件构建Dispatcher .zip文件。 首先，在 `dispatcher` 目录中，创建一个包含此内容的 `pom.xml` 文件，并根据需要更改 `parent` 引用 `artifactId` 和 `name`。
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -90,7 +90,7 @@ Cloud Manager 使用内置的[项目创建向导](/help/getting-started/using-th
 
    * 与步骤 1 中一样，可以根据需要将此处的 artifactId 和 name 设为其他值。此处仅以使用 `dispatcher` 为例。
 
-1. Maven Assembly 插件需要 `descriptor` 来定义 .zip 文件的创建方式。要创建此描述符，请在 `dispatcher` 子目录中创建一个名为 `assembly.xml` 的文件，该文件包含以下内容。请注意，上述 `pom.xml` 文件中的第 26 行引用了此文件名。
+1. Maven Assembly插件需要`descriptor`来定义.zip文件的创建方式。 要创建此描述符，请在 `dispatcher` 子目录中创建一个名为 `assembly.xml` 的文件，该文件包含以下内容。请注意，上述 `pom.xml` 文件中的第 26 行引用了此文件名。
 
    ```xml
    <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"

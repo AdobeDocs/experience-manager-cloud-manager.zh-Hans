@@ -2,10 +2,10 @@
 title: 配置生产管道
 description: 了解如何使用 Cloud Manager 创建和配置生产管道以部署代码。
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 91%
+source-wordcount: '1285'
+ht-degree: 87%
 
 ---
 
@@ -124,7 +124,7 @@ ht-degree: 91%
 
          * **Dispatcher 配置** - 为您的生产环境定义 Dispatcher 配置。这些选项与暂存环境的选项相同。
 
-1. 单击&#x200B;**继续**&#x200B;以进入&#x200B;**暂存测试**&#x200B;选项卡，可以在其中根据已许可的产品来配置 AEM Sites 和 AEM Assets 性能测试。
+1. 单击&#x200B;**继续**&#x200B;进入&#x200B;**暂存测试**&#x200B;选项卡，您可以在其中根据已许可的产品来配置AEM Sites和AEM Assets性能测试。
 
    >[!TIP]
    >

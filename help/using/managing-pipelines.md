@@ -2,10 +2,10 @@
 title: 管理管道
 description: 了解如何管理现有管道，包括编辑、运行和删除它们。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 67%
+source-wordcount: '847'
+ht-degree: 63%
 
 ---
 
@@ -66,7 +66,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 单击&#x200B;**查看详细信息**&#x200B;将会转到管道执行的[详细信息](#view-details)。
 
-## 运行管道 {#running-pipelines}
+## Ruu管道 {#running-pipelines}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
@@ -90,7 +90,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
       * [配置生产管道](/help/using/production-pipelines.md)
       * [配置非生产管道](/help/using/non-production-pipelines.md)
 
-1. 在编辑完管道后，单击&#x200B;**更新**。
+1. 编辑完管道后，单击&#x200B;**更新**。
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 管道执行中的所有步骤都将显示，而尚未开始的步骤将灰显。已完成的步骤将显示其持续时间。
 
-管道步骤完成后，将显示摘要。
+管道步骤完成后，会显示摘要。
 
 ![步骤摘要](/help/assets/configure-pipelines/pipeline-step.png)
 

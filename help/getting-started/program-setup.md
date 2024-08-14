@@ -2,10 +2,10 @@
 title: 项目设置
 description: 完成新用户引导后，业务负责人将需要对项目进行一些初始设置。
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 91%
+source-wordcount: '582'
+ht-degree: 86%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 91%
 
 1. 从 Cloud Manager 主屏幕导航到项目。
 
-1. 单击&#x200B;**编辑项目**&#x200B;以从&#x200B;**概述**&#x200B;页面更新或修改项目。
+1. 单击&#x200B;**编辑程序**&#x200B;以从&#x200B;**概述**&#x200B;页面更新或修改您的程序。
 
    ![“编辑项目”选项](/help/assets/set-up-program/edit-program1.png)
 
@@ -72,7 +72,7 @@ ht-degree: 91%
 
 如果尚未创建管道，请参阅文档[配置生产管道](/help/using/production-pipelines.md)和[配置非生产管道](/help/using/non-production-pipelines.md)。
 
-## 在项目之间切换 {#swithing-programs}
+## 在程序之间切换 {#swithing-programs}
 
 在使用一个项目时，可以快速切换到另一个项目，而无需返回 Cloud Manager 概述页面。
 

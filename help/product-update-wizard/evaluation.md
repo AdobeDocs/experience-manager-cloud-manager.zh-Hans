@@ -3,10 +3,10 @@ title: 评估阶段
 seo-title: Evaluation Phase
 description: 了解产品更新向导的评估阶段如何使用模式检测器来评估升级复杂性。
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 85%
+source-wordcount: '280'
+ht-degree: 75%
 
 ---
 
@@ -27,11 +27,11 @@ ht-degree: 85%
 >
 >要了解有关模式检测器的更多信息，请参阅[使用模式检测器来评估升级复杂性](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=zh-Hans)。
 
-## 运行评估 {#running}
+## 运行评估报告 {#running}
 
 模式检测器可在任何环境中运行。但是，为了提高检测率并避免业务关键实例速度减慢，Cloud Manager 将在创作实例的暂存环境中运行模式检测器。
 
-执行以下步骤可生成评估报告。
+**要运行评估报告：**
 
 1. 按照文档[产品更新向导](/help/product-update-wizard/overview.md)中的说明启动向导。
 
@@ -39,7 +39,7 @@ ht-degree: 85%
 
    ![运行评估](/help/assets/Run-Evaluation.png)
 
-1. 向导会告知您操作的状态。在生成评估报告时，您将看到&#x200B;**进行中**&#x200B;或&#x200B;**已完成**（如适用）。
+1. 向导会告知您操作的状态。注意&#x200B;**正在进行**&#x200B;或&#x200B;**已完成**（如果生成评估报告时适用）。
 
 1. 生成报告后，您可以单击&#x200B;**[!UICONTROL 下载报告]**&#x200B;以保存副本。
 

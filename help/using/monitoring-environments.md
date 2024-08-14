@@ -2,15 +2,15 @@
 title: 监控环境
 description: 了解如何在 Cloud Manager 中监控环境。
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 93%
+source-wordcount: '903'
+ht-degree: 79%
 
 ---
 
 
-# 监控环境 {#monitoring-environments}
+# 监视环境 {#monitoring-environments}
 
 了解如何在 Cloud Manager 中监控环境。
 
@@ -20,9 +20,7 @@ ht-degree: 93%
 
 如果量度超过其关键阈值，则将被视为处于关键状态。如果量度超过其警告阈值（但低于其关键阈值），则将被视为处于警告状态。阈值由 Adobe Managed Services 设置，并且可以在 [!UICONTROL Cloud Manager] 中进行可视化。在大多数情况下，客户之间的阈值是一致的，但在某些情况下，Adobe Managed Services 将修改阈值以符合特定的客户要求。应直接向您的客户成功工程师 (CSE) 咨询有关阈值的问题。
 
-## 访问系统监控功能 {#accessing-system-monitoring}
-
-执行以下步骤可访问系统监控功能。
+## 访问系统监控 {#accessing-system-monitoring}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
@@ -95,7 +93,7 @@ ht-degree: 93%
    * 每个复制代理均具有单独的量度。
 * **Dispatcher 刷新**：当前位于 Dispatcher 刷新队列中的项目数
 
-## SLA 报告 {#sla-reporting}
+## SLA报表 {#sla-reporting}
 
 您可以查看生产 AEM 环境相对于约定的服务水平协议 (SLA) 的性能。
 
@@ -111,14 +109,14 @@ ht-degree: 93%
 
 ![事件分析](/help/assets/sla-reporting3.png)
 
-## SLA 量度 {#sla-metrics}
+## SLA指标 {#sla-metrics}
 
-* **作者合同**：这是您与 Adobe Managed Services 签订的合同中为创作层定义的 SLA。
-* **AMS 作者 SLA**：这是测量出的由 Adobe 或我们的供应商引起的生产创作层保理事件的正常运行时间。
-* **作者 SLA**：这是测量出的创作层的正常运行时间，忽略了计划的停机时间，例如维护时段。
-* **最终用户合同**：这是您与 Adobe Managed Services 签订的合同中为发布层定义的 SLA。
-* **AMS 最终用户 SLA**：这是测量出的由 Adobe 或我们的供应商引起的生产发布层保理事件的正常运行时间。
-* **最终用户 SLA**：这是测量出的发布层的正常运行时间，忽略了计划的停机时间，例如维护时段。
+* **创作合同**：在您与AdobeManaged Services签订的合同中为创作层定义的SLA。
+* **AMS创作SLA**：测量到的由Adobe或我们的供应商引起的生产创作层保理事件的正常运行时间。
+* **创作SLA**：测量到的创作层的正常运行时间忽略了计划的停机时间，例如维护时段。
+* **最终用户合同**：在您与AdobeManaged Services签订的合同中为发布层定义的SLA。
+* **AMS最终用户SLA**：测量到的由Adobe或我们的供应商引起的生产发布层保理事件的正常运行时间。
+* **最终用户SLA**：测量到的发布层的正常运行时间，忽略了计划的停机时间，例如维护时段。
 
 ## 视频教程 {#video-tutorial}
 

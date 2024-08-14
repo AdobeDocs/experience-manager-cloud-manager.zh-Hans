@@ -2,10 +2,10 @@
 title: 通知
 description: 了解 Cloud Manager 如何向您通知重要事件。
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 94%
+source-wordcount: '564'
+ht-degree: 79%
 
 ---
 
@@ -36,11 +36,11 @@ ht-degree: 94%
 
 ![通知侧边栏](/help/assets/notificaitons-announcements.png)
 
-单击通知或公告查看其详细信息。链接到管道部署等活动的通知将带您了解该活动的详细信息，例如管道执行窗口。
+单击通知或公告查看其详细信息。 链接到管道部署等活动的通知将带您了解该活动的详细信息，例如管道执行窗口。
 
-单击面板底部的&#x200B;**查看全部**&#x200B;选项，可查看收件箱中的所有公告。
+单击面板底部的&#x200B;**查看全部**&#x200B;选项以查看收件箱中的所有公告。
 
-单击面板底部的&#x200B;**标记为已读**&#x200B;选项，可将所有未读通知标记为已读并清除铃铛图标标记。
+单击面板底部的&#x200B;**全部标记为已读**&#x200B;选项可将所有未读通知标记为已读并清除铃铛图标标记。
 
 ## 通知配置 {#configuration}
 

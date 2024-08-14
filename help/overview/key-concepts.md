@@ -2,10 +2,10 @@
 title: 重要概念
 description: 与所有功能强大的工具一样，Cloud Manager 包含了许多概念和术语。本文档总结了开始使用 Cloud Manager 时的一些最重要内容。
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 70%
+source-wordcount: '414'
+ht-degree: 49%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 70%
 
 ## 应用程序 {#application}
 
-应用程序是客户创建的一组自定义项和配置，用于调整底层[解决方案](#solution)（例如 AEM Sites 或 AEM Assets）来满足其具体的用例要求和需求。应用程序是一个逻辑单元，可能包含多个[项目](#artifact)。
+应用程序是客户创建的一组自定义项和配置，用于调整基础[解决方案](#solution)(如AEM Sites或AEM Assets)来满足其特定的用例和需求。 应用程序是一个逻辑单元，可能包含多个[项目](#artifact)。
 
-一个示例应用程序是虚构的[WKND生活方式应用程序](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)。
+一个示例应用程序是虚构的[WKND生活方式应用程序](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-learn/getting-started-wknd-tutorial-develop/overview)。
 
 ## 工件 {#artifact}
 
-工件是一个可部署的单元，它是将源代码转换为一个单元的构建过程所产生的结果。例如，一个包含源代码的 .zip 文件。
+工件是一个可部署的单元，它是将源代码转换为单个单元的构建过程所产生的结果。 例如，包含源代码的.zip文件。
 
 ## 工件存储库 {#artifact-repository}
 
@@ -30,9 +30,9 @@ ht-degree: 70%
 
 ## 环境 {#environment}
 
-环境是[程序](#program)中的单个虚拟机群集。 对于AEM，它由一个创作实例(（可选）带有一个额外的冷备用创作实例)、零个或多个发布实例、一个或多个Dispatcher实例和一个负载平衡器组成。
+环境是[程序](#program)中的单个虚拟机群集。 对于AEM，此环境由一个创作实例(（可选）带有一个额外的冷备用创作实例)、零个或多个发布实例、一个或多个Dispatcher实例和一个负载平衡器组成。
 
-## Git 存储库 {#git-repository}
+## Git存储库 {#git-repository}
 
 Git存储库是存储特定于客户的源代码的位置，可使用[使用Git](https://git-scm.com)进行访问。
 
@@ -46,7 +46,7 @@ Git存储库是存储特定于客户的源代码的位置，可使用[使用Git]
 
 ## 管道 {#pipeline}
 
-管道是一组按顺序执行的部署步骤。
+管道是一组按顺序运行或“执行”的部署步骤。
 
 ## 产品 {#product}
 

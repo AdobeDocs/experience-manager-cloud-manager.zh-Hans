@@ -2,10 +2,10 @@
 title: 首次登录
 description: 如果您已设置常规配置并且已准备好首次使用 Cloud Manager，请按照此页面上的说明进行操作。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 75%
+ht-degree: 66%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 75%
 
 您可以继续查看文档[项目设置](/help/getting-started/program-setup.md)，了解项目设置过程的后续步骤。
 
-## Cloud Manager 活动 {#activity}
+## Cloud Manager活动 {#activity}
 
 Cloud Manager 提供项目活动的综合视图，其中列出了所有用于生产环境和非生产环境的 CI/CD 管道执行，并允许查看过去和现在的活动。
 

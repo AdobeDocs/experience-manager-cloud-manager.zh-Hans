@@ -2,10 +2,10 @@
 title: 添加用户和角色
 description: 了解如何使用 Admin Console 添加用户和角色以及创建配置文件。
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 84%
+source-wordcount: '768'
+ht-degree: 81%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 84%
 >
 >Admin Console 中的开发人员角色与 [!UICONTROL Cloud Manager] 中的开发人员角色无关。
 
-## 使用 Admin Console 创建配置文件 {#using-admin-console-to-create-a-profile}
+## 使用Admin Console创建配置文件 {#using-admin-console-to-create-a-profile}
 
 从 Admin Console 中管理 [!UICONTROL Cloud Manager] 角色。通过将用户添加到 [!UICONTROL Cloud Manager] 产品配置文件，提供特定的角色成员资格。
 
