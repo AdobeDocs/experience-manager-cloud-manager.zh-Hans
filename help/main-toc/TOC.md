@@ -7,10 +7,10 @@ user-guide-description: 了解如何使用 Cloud Manager 在云中自行管理 A
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 9315a8ff96e450a1b15da583106eb5c086d80842
+source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
 workflow-type: tm+mt
 source-wordcount: '540'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -66,14 +66,14 @@ ht-degree: 100%
    + [GitHub 检查配置](/help/managing-code/github-check-config.md)
    + [GitHub 检查批注](/help/managing-code/github-annotations.md)
    + [Maven 项目版本处理](/help/managing-code/maven-project-version.md)
-   + [与 Git 集成](/help/managing-code/git-integration.md)
+   + [与Git集成](/help/managing-code/git-integration.md)
    + [使用多个 Git 存储库](/help/managing-code/multiple-git-repos.md)
 + 产品更新向导 {#product-update-wizard}
    + [概述](/help/product-update-wizard/overview.md)
    + [评估](/help/product-update-wizard/evaluation.md)
 + 发行说明 {#release-notes}
    + [最新发行说明](/help/release-notes/current.md)
-   + 2024 {#2024}
+   + 2024 {#rn-2024}
       + [2024.7.0 的发行说明](/help/release-notes/2024/2024-7-0.md)
       + [2024.6.0 的发行说明](/help/release-notes/2024/2024-6-0.md)
       + [2024.5.0 的发行说明](/help/release-notes/2024/2024-5-0.md)
@@ -81,7 +81,7 @@ ht-degree: 100%
       + [2024.3.0 的发行说明](/help/release-notes/2024/2024-3-0.md)
       + [2024.2.0 的发行说明](/help/release-notes/2024/2024-2-0.md)
       + [2024.1.0 的发行说明](/help/release-notes/2024/2024-1-0.md)
-   + 2023 {#2023}
+   + 2023 {#rn-2023}
       + [2023.12.0 的发行说明](/help/release-notes/2023/2023-12-0.md)
       + [2023.11.0 的发行说明](/help/release-notes/2023/2023-11-0.md)
       + [2023.10.0 的发行说明](/help/release-notes/2023/2023-10-0.md)
@@ -94,7 +94,7 @@ ht-degree: 100%
       + [2023.3.0 的发行说明](/help/release-notes/2023/2023-3-0.md)
       + [2023.2.0 的发行说明](/help/release-notes/2023/2023-2-0.md)
       + [2023.1.0 的发行说明](/help/release-notes/2023/2023-1-0.md)
-   + 2022 {#2022}
+   + 2022 {#rn-2022}
       + [2022.12.0 的发行说明](/help/release-notes/2022/2022-12-0.md)
       + [2022.11.0 的发行说明](/help/release-notes/2022/2022-11-0.md)
       + [2022.10.0 的发行说明](/help/release-notes/2022/2022-10-0.md)
@@ -107,7 +107,7 @@ ht-degree: 100%
       + [2022.3.0 的发行说明](/help/release-notes/2022/2022-3-0.md)
       + [2022.2.0 的发行说明](/help/release-notes/2022/2022-2-0.md)
       + [2022.1.0 的发行说明](/help/release-notes/2022/2022-1-0.md)
-   + 2021 {#2021}
+   + 2021 {#rn-2021}
       + [2021.12.0 的发行说明](/help/release-notes/2021/2021-12-0.md)
       + [2021.11.0 的发行说明](/help/release-notes/2021/2021-11-0.md)
       + [2021.10.0 的发行说明](/help/release-notes/2021/2021-10-0.md)
@@ -119,7 +119,7 @@ ht-degree: 100%
       + [2021.4.0 的发行说明](/help/release-notes/2021/2021-4-0.md)
       + [2021.3.0 的发行说明](/help/release-notes/2021/2021-3-0.md)
       + [2021.2.0 的发行说明](/help/release-notes/2021/2021-2-0.md)
-   + 2020 {#2020}
+   + 2020 {#rn-2020}
       + [2020.12.0 的发行说明](/help/release-notes/2020/2020-12-0.md)
       + [2020.11.0 的发行说明](/help/release-notes/2020/2020-11-0.md)
       + [2020.10.0 的发行说明](/help/release-notes/2020/2020-10-0.md)
@@ -132,7 +132,7 @@ ht-degree: 100%
       + [2020.3.0 的发行说明](/help/release-notes/2020/2020-3-0.md)
       + [2020.2.0 的发行说明](/help/release-notes/2020/2020-2-0.md)
       + [2020.1.0 的发行说明](/help/release-notes/2020/2020-1-0.md)
-   + 2019 {#2019}
+   + 2019 {#rn-2019}
       + [2019.12.0 的发行说明](/help/release-notes/2019/2019-12-0.md)
       + [2019.11.0 的发行说明](/help/release-notes/2019/2019-11-0.md)
       + [2019.10.0 的发行说明](/help/release-notes/2019/2019-10-0.md)
@@ -145,7 +145,7 @@ ht-degree: 100%
       + [2019.3.0 的发行说明](/help/release-notes/2019/2019-3-0.md)
       + [2019.2.0 的发行说明](/help/release-notes/2019/2019-2-0.md)
       + [2019.1.0 的发行说明](/help/release-notes/2019/2019-1-0.md)
-   + 2018 {#2018}
+   + 2018 {#rn-2018}
       + [2018.9.0 的发行说明](/help/release-notes/2018/2018-9-0.md)
       + [2018.8.0 的发行说明](/help/release-notes/2018/2018-8-0.md)
       + [2018.7.0 的发行说明](/help/release-notes/2018/2018-7-0.md)

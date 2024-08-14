@@ -2,10 +2,10 @@
 title: 内容复制工具
 description: 通过Cloud Manager内容复制工具，用户可按需将可变内容从AMS托管的AEM 6.x生产环境复制到较低环境以进行测试。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 2563c58431e58d2fc5917a2ad88835bbdd4224f2
+source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 44%
+source-wordcount: '1144'
+ht-degree: 36%
 
 ---
 
@@ -165,11 +165,10 @@ ht-degree: 44%
 * 无法在同一环境中运行并发内容复制操作。
 * 如果在目标或源环境（如CI/CD管道）上运行了任何活动操作，则无法执行内容复制。
 * 每个内容集最多可以指定五十条路径。排除的路径没有限制。
-* 内容复制工具不应用作克隆或镜像工具，因为它无法跟踪源上移动或删除的内容。
-* 内容复制一旦开始即无法暂停或取消。
-* 内容复制工具将资源连同与动态媒体相关的元数据从较高环境复制到所选的较低环境。
-   * 然后，需要在较低的环境中使用 [DAM 处理资源工作流程](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html)重新处理复制的资源以使用相应的动态媒体配置。
-* 当不复制版本历史记录时，内容复制过程将大大加快。
+* 内容复制工具不应用作克隆或镜像工具，因为它不能跟踪源上已移动或删除的内容。
+* 一旦启动内容副本，就无法暂停或取消内容副本。
+* 内容复制工具可将资源和Dynamic Media元数据从较高的环境复制到选定的较低环境。 然后，需要在较低环境中使用[DAM流程资源工作流](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/using/assets-workflow)重新处理复制的资源，才能使用相应的Dynamic Media配置。
+* 当不复制版本历史记录时，内容复制过程的速度会显着加快。
 * 不支持启用了资源大小大于2 GB的[Dynamic Media配置](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)。
 * 当未复制版本历史记录时，内容复制过程会显着加快。
 * 目标环境的区域必须与源环境的区域相同或为其一部分。
