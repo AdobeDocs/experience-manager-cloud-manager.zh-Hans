@@ -2,10 +2,10 @@
 title: Cloud Manager for AMS 简介
 description: 从此处开始了解 Cloud Manager for Adobe Managed Services (AMS) 以及它如何使组织能够在云中自行管理 Adobe Experience Manager。
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
+source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 56%
+source-wordcount: '1256'
+ht-degree: 48%
 
 ---
 
@@ -33,17 +33,15 @@ ht-degree: 56%
 
 使用 Cloud Manager 时，您的开发团队将从以下功能受益：
 
-* 持续集成/持续交付 (CI/CD) 代码，将上市时间从几个月/几周缩短到几天/几小时
+* 持续集成/持续交付(CI/CD)代码，将上市时间从几个月/几周缩短到几天/几小时。
 
-* 在投入生产之前，根据最佳实践执行代码审查、性能测试和安全性验证以将生产中断降至最低
+* 在投入生产之前，根据最佳实践执行代码审查、性能测试和安全性验证以将生产中断降至最低。
 
-* API 连接，对现有 DevOps 过程进行补充
+* API连接以补充现有DevOps流程。
 
-* 自动缩放功能可智能地检测增加容量需求，并自动使更多的 Dispatcher/发布区段联机
+* 自动缩放功能可智能地检测增加容量需求，并自动使更多的Dispatcher/发布区段联机。
 
-下图说明了 [!UICONTROL Cloud Manager] 中使用的 CI/CD 流程：
-
-![CI/CD 流](/help/assets/screen_shot_2018-05-12at73843pm.png)
+![CI/CD流](/help/assets/screen_shot_2018-05-12at73843pm.png)在[!UICONTROL Cloud Manager]中使用的CI/CD进程流。
 
 ## [!UICONTROL Cloud Manager]中的主要功能 {#key-features-in-cloud-manager}
 
@@ -57,7 +55,7 @@ ht-degree: 56%
 
 若要探索并开始使用[!UICONTROL Cloud Manager]的UI，请参阅[首次登录](/help/getting-started/first-time-login.md)。
 
-### CI/CD 管道 {#ci-cd-pipeline}
+### CI/CD管道 {#ci-cd-pipeline}
 
 [!UICONTROL Cloud Manager] 的一项重要功能是，能够实施优化的 CI/CD 管道来加速自定义代码或更新的交付，例如，在网站上添加新的组件。
 
@@ -75,7 +73,7 @@ ht-degree: 56%
 
 要了解有关部署代码和质量检查的更多信息，请参阅[部署代码](/help/using/code-deployment.md)。
 
-## Cloud Manager 中的可选功能 {#optional-features-in-cloud-manager}
+## Cloud Manager中的可选功能 {#optional-features-in-cloud-manager}
 
 Cloud Manager提供了额外的高级功能，这些功能可能有助于实施您的项目，具体取决于您的特定环境设置和需求。 如果您对这些功能感兴趣，请联系您的客户成功工程师(CSE)或Adobe代表以进行进一步讨论。
 
@@ -102,7 +100,7 @@ Cloud Manager提供了额外的高级功能，这些功能可能有助于实施�
 * 在设置过程中将创建一个绿色负载平衡器。 此负载平衡器永不更改，并且您应将绿色或“测试”URL指向它。
 * 在蓝/绿部署期间，将创建现有Dispatcher/发布层的精确副本。
 
-#### 蓝/绿部署流 {#flow}
+#### 蓝/绿部署流程 {#flow}
 
 启用蓝/绿部署时，部署流与标准 Cloud Service 部署流不同。
 

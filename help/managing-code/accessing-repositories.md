@@ -2,47 +2,45 @@
 title: 存储库访问信息
 description: 了解如何使用 Cloud Manager 的自助 Git 帐户管理访问和管理 Adobe 管理的 Git 存储库。
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 82%
+source-wordcount: '361'
+ht-degree: 37%
 
 ---
 
 # 存储库访问信息 {#accessing-repos}
 
-了解如何使用 Cloud Manager 的自助 Git 帐户管理访问和管理 Adobe 管理的 Git 存储库。
+了解如何使用Cloud Manager中的自助Git帐户管理访问和管理Adobe管理的Git存储库。
 
 ## 从概述页面访问存储库信息 {#overview-page}
 
-通过使用管道信息卡上突出显示的&#x200B;**访问存储库信息**&#x200B;按钮，Cloud Manager 可以轻松检索 Adobe 管理的存储库的存储库访问信息。
-
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 从&#x200B;**程序概述**&#x200B;页面导航到 **管道**&#x200B;信息卡。
+1. 从您的&#x200B;**项目概述**&#x200B;页面导航到&#x200B;**管道**&#x200B;信息卡。
 
    ![访问“环境”信息卡上的“存储库信息”按钮](assets/pipelines-card.png)
 
-1. 单击&#x200B;**访问存储库信息**&#x200B;按钮以打开&#x200B;**存储库信息**&#x200B;对话框并查看：
+1. 单击&#x200B;**访问存储库信息**。 在&#x200B;**存储库信息……**&#x200B;对话框中，可以查看以下内容：
 
-   * Git 用户名。
-   * Git 密码。
-   * Cloud Manager Git 存储库的 URL。
-   * 预构建的 Git 命令可快速将远程添加到您的 Git 存储库并推送代码。
+   * Git用户名。
+   * Git密码。
+   * Cloud Manager Git存储库的URL。
+   * 预建的Git命令用于向Git存储库快速添加远程存储库和推送代码。
 
    ![存储库信息窗口](assets/access-repo-info.png)
 
-1. 要访问密码，必须生成一个新密码。为此，请单击&#x200B;**生成密码**&#x200B;按钮。
+1. 要访问密码，必须生成一个新密码。单击 **`Generate password`**。
 
-1. 单击&#x200B;**生成密码**，在&#x200B;**对话框**&#x200B;中确认密码生成。
+1. 在&#x200B;**是否确定……**&#x200B;对话框中，单击&#x200B;**生成密码**&#x200B;以确认密码生成。
 
    ![确认密码生成](assets/confirm-password-generation.png)
 
-1. 密码已生成，可在&#x200B;**密码**&#x200B;字段中复制。
+1. 在&#x200B;**密码**&#x200B;字段中，生成密码。 单击复制图标以将其复制到剪贴板。
 
-   * 生成密码将使之前的密码失效。
-   * Cloud Manager 不会保存密码。您有责任安全地保存此密码。
-   * 由于 Cloud Manager 不保存密码，因此，如果您丢失密码，则必须重新生成一个新密码。
+   * 生成密码将使上一个密码无效。
+   * Cloud Manager不保存您的访问密码。 请确保安全地保存此密码。
+   * 如果丢失密码，则必须生成新密码。
 
    ![生成的密码示例](assets/generated-password.png)
 
@@ -50,15 +48,15 @@ ht-degree: 82%
 
 >[!NOTE]
 >
->* **访问存储库信息**&#x200B;选项对具有&#x200B;**开发人员**&#x200B;或&#x200B;**部署管理员**&#x200B;角色的用户可见。
+>* **访问存储库信息**&#x200B;选项对具有&#x200B;**开发人员**&#x200B;角色或&#x200B;**部署管理员**&#x200B;角色的用户可见，或者对两者都可见。
 >* **访问存储库信息**&#x200B;按钮仅显示 Adobe 管理的存储库的存储库访问信息。Cloud Manager 中没有关于[专用存储库](private-repositories.md)的访问信息。
 
-## 从存储库窗口访问存储库信息 {#repositories-window}
+## 从“存储库”窗口访问存储库信息 {#repositories-window}
 
-[**存储库**&#x200B;窗口](managing-repositories.md)的工具栏中还提供了&#x200B;**访问存储库信息**&#x200B;按钮，该按钮显示有关访问Adobe管理的存储库的相同信息。
+**访问存储库信息**&#x200B;按钮也可在&#x200B;[**存储库**&#x200B;窗口](managing-repositories.md)的工具栏上使用。 它显示有关访问Adobe管理的存储库的相同信息。
 
-## 撤销访问密码 {#revoke-password}
+## 撤销访问口令 {#revoke-password}
 
-您可以随时撤销访问密码。为此，请[为此请求](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)创建支持工单。
+您可以随时撤销访问密码。[为此类请求创建支持工单](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)。
 
-该工单将被优先处理，并应在一天内撤销。
+票证将优先处理，通常在一天内撤销。
