@@ -1,24 +1,24 @@
 ---
 title: 配置分支
-description: 了解如何在 Git 中设置您的第一个分支，以及 CI/CD 管道如何使用它来部署您的应用程序代码。
+description: 了解如何在Git中设置您的第一个分支，以及CI/CD管道如何使用它来部署您的应用程序代码。
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
-source-git-commit: 4c051cd1696f8a00d0278131c9521ad4dcb956a3
+source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 100%
+source-wordcount: '324'
+ht-degree: 14%
 
 ---
 
 
 # 配置分支 {#configuring-branches}
 
-了解如何在 Git 中设置您的第一个分支，以及 CI/CD 管道如何使用它来部署您的应用程序代码。
+了解如何在Git中设置您的第一个分支，以及CI/CD管道如何使用它来部署您的应用程序代码。
 
-## 在 Git 中设置您的第一个分支 {#setting-up-your-first-branch-in-git}
+## 在Git中设置您的第一个分支 {#setting-up-your-first-branch-in-git}
 
-将为登记到 Cloud Manager 中的每个项目[配置](/help/requirements/environment-provisioning.md)一个最初为空的 Git 存储库。此存储库可以包含开发过程所需的任意数量的分支，但必须至少有一个分支可供 CI/CD 管道用来将应用程序代码部署到暂存和生产环境。最佳实践是将 `main` 用作此分支的名称。方便之处在于，这是 Git 客户端在设置新项目时的默认行为。
+将为登记到 Cloud Manager 中的每个项目[配置](/help/requirements/environment-provisioning.md)一个最初为空的 Git 存储库。此存储库可以包含开发过程所需数量的分支，但必须至少有一个分支可供CI/CD管道用于将应用程序代码部署到暂存和生产环境。 最佳实践是将 `main` 用作此分支的名称。方便之处在于，此方法是Git客户端在设置新项目时的默认行为。
 
-例如，在设置新项目时，您将运行一组与以下内容类似的命令。
+例如，在设置新项目时，您运行一组与以下内容类似的命令。
 
 ```shell
 $ git init
@@ -50,11 +50,11 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->不需要使用命令行客户端。提供了多种图形 Git 客户端，它们可作为独立应用程序或集成开发环境 (IDE)（如 Eclipse 或 IntelliJ）的一部分。只要客户端应用程序支持使用 HTTPS 的 Git，它就能与 [!UICONTROL Cloud Manager] 兼容。
+>无需使用命令行客户端。 有多种图形Git客户端可作为独立应用程序或集成开发环境(IDE)（如Eclipse或IntelliJ）的一部分提供。 只要客户端应用程序支持使用 HTTPS 的 Git，它就能与 [!UICONTROL Cloud Manager] 兼容。
 
 ## 推送您的第一个分支 {#pushing-your-first-branch}
 
-在提交至少一项修订后，您可以将 [!UICONTROL Cloud Manager] 存储库添加为远程存储库，然后将提交内容推送到其中。
+在提交至少一项修订后，您可以将[!UICONTROL Cloud Manager]存储库添加为远程存储库，然后将提交内容推送到其中。
 
 ```shell
 $ git remote add adobe <url>
@@ -70,12 +70,12 @@ To <url>
 
 >[!NOTE]
 >
->在 [!UICONTROL Cloud Manager] 新用户引导期间，您的客户成功工程师将为您提供特定 URL 以及您的凭据。
+>您的AdobeCSE（客户成功工程师）在[!UICONTROL Cloud Manager]新用户引导期间提供了特定URL以及您的凭据。
 
 ## 其他分支 {#additional-branches}
 
-对于非常简单的项目，单个 `main` 分支可能已够用，但在大多数情况下，将需要更复杂的分支策略。许多客户遵循以下过程：在名为 `develop` 的分支上执行日常开发活动，并在需要部署时将 develop 分支并入 `main` 分支中。
+对于非常简单的项目，单个`main`分支可能就足够了，但在大多数情况下，需要更复杂的分支策略。 许多客户遵循以下过程：在名为`develop`的分支上执行日常开发活动。 然后，在需要部署时，开发分支将合并到`main`分支中。
 
 >[!TIP]
 >
->要查看常见的 git 命令，请参阅 [Git 备忘单](https://github.github.com/training-kit/downloads/github-git-cheat-sheet)。
+>要查看常见的Git命令，请参阅[Git备忘单](https://training.github.com/downloads/github-git-cheat-sheet)。

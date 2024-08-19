@@ -1,18 +1,18 @@
 ---
 title: 项目设置
-description: 完成新用户引导后，业务负责人将需要对项目进行一些初始设置。
+description: 完成新用户引导后，业务负责人必须对项目进行一些初始设置。
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 86%
+source-wordcount: '567'
+ht-degree: 53%
 
 ---
 
 
 # 项目设置 {#program-setup}
 
-完成新用户引导后，业务负责人将完成项目的初始设置，包括设置项目描述和定义用于性能测试的关键绩效指标 (KPI)。
+完成新用户引导后，业务负责人通过添加描述并定义关键绩效指标(KPI)来设置项目。 然后使用这些KPI进行性能测试。
 
 ## 使用[!UICONTROL Cloud Manager]设置项目 {#program-setup-cloud-manager}
 
@@ -24,7 +24,7 @@ ht-degree: 86%
 
    ![设置项目](/help/assets/set-up-program/setup1.png)
 
-1. 在&#x200B;**设置项目**&#x200B;对话框中，您可以在三个选项卡中输入项目信息：
+1. 在&#x200B;**设置程序**&#x200B;对话框中，您可以在三个选项卡中输入程序信息：
 
    * **常规**
    * **KPI**
@@ -34,21 +34,21 @@ ht-degree: 86%
 
    ![“常规”选项卡](/help/assets/Setup_Program-General.png)
 
-1. 在 **KPI** 选项卡上，定义 KPI。在此示例中，为 **AEM Sites** 和 **AEM Assets** 定义了单独的 KPI。您将能够为已许可的产品指定 KPI。
+1. 在 **KPI** 选项卡上，定义 KPI。在此示例中，为 **AEM Sites** 和 **AEM Assets** 定义了单独的 KPI。为已许可的产品指定KPI。
 
-   * 有关如何在 Cloud Manager 中测量 KPI 的更多详细信息，请参阅 [KPI](#kpis) 部分。
+   有关如何在 Cloud Manager 中测量 KPI 的更多详细信息，请参阅 [KPI](#kpis) 部分。
 
    ![定义 KPI](/help/assets/Setup_Program-KPIs.png)
 
 1. 在&#x200B;**配置**&#x200B;选项卡上，可以为环境定义按需缩放选项（如果为项目启用了自动缩放）。
 
-   * 自动缩放仅适用于生产环境，并且可能不适用于所有客户项目。
+   自动缩放仅适用于生产环境，并且可能不适用于所有客户项目。
 
    ![配置选项](/help/assets/Setup_Program-Provisioning.png)
 
-1. 单击&#x200B;**保存**&#x200B;以完成设置向导。
+1. 单击&#x200B;**保存**。
 
-这将创建您的项目。可能需要几分钟的时间来配置资源，之后项目才可供使用。
+您的项目已创建。 可能需要几分钟的时间来配置资源，之后项目才可供使用。
 
 ## 编辑项目 {#editing-program}
 
@@ -70,7 +70,7 @@ ht-degree: 86%
 
 请注意，更改将立即保存到 Cloud Manager 中，但在下一次管道运行之前不会反映在您的环境中。
 
-如果尚未创建管道，请参阅文档[配置生产管道](/help/using/production-pipelines.md)和[配置非生产管道](/help/using/non-production-pipelines.md)。
+如果尚未创建管道，请参阅[配置生产管道](/help/using/production-pipelines.md)和[配置非生产管道](/help/using/non-production-pipelines.md)。
 
 ## 在程序之间切换 {#swithing-programs}
 
@@ -82,13 +82,13 @@ ht-degree: 86%
 
 ## KPI {#kpis}
 
-站点 KPI 是根据在暂存环境上运行的测试来测量的。通常，这些 KPI 将缩小以适应暂存环境的功能。
+站点KPI是根据在暂存环境中运行的测试来测量的。 通常，这些 KPI 将缩小以适应暂存环境的功能。
 
-例如，一个用户期望其生产环境中的每分钟平均页面查看次数达到 1000 次，其生产环境中有四个 Dispatcher/发布服务器，每个服务器的每分钟页面查看次数为 250 次。这将假定其暂存环境中仅有一个 Dispatcher/发布服务器对。
+例如，一个用户期望其生产环境中的每分钟平均页面查看次数达到1000次，其生产环境中有四个Dispatcher/发布服务器，则应该将此方案的每分钟页面查看次数扩展到250次。 此方案假定其暂存环境仅包含一个Dispatcher/发布服务器对。
 
-Assets性能测试可通过在30分钟的测试期间重复上传资源并测量每个资源的处理时间以及各种系统级量度来完成。
+Assets性能测试包括在30分钟的时间段内重复上传资源。 在整个测试中会测量每个资产的处理时间以及各种系统级量度。
 
-您的生产环境前面可能有一个内容交付网络 (CDN)，例如 Akamai 或 CloudFront。由于 [!UICONTROL Cloud Manager] 直接针对暂存环境进行测试，因此 KPI 应仅反映预期将通过 CDN 的流量（即缓存未命中）。通常，这将是总生产流量的一个相对较小的部分。
+您的生产环境前面可能有一个内容交付网络 (CDN)，例如 Akamai 或 CloudFront。由于[!UICONTROL Cloud Manager]直接针对暂存环境进行测试，因此KPI应仅反映预期将通过CDN的流量。 也就是说，缓存未命中。 通常，此体验只是总生产流量的一个相对较小的部分。
 
 ## 视频概述 {#video}
 
