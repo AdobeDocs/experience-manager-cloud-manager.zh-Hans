@@ -5,7 +5,7 @@ exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
 source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
 workflow-type: tm+mt
 source-wordcount: '911'
-ht-degree: 34%
+ht-degree: 36%
 
 ---
 
@@ -54,7 +54,7 @@ AdobeManaged Services设置阈值，您可以在[!UICONTROL Cloud Manager]中查
 
 ## 系统监控详细信息 {#system-monitoring-detail}
 
-要查看特定量度的详细信息，请单击特定实例的类别列之一或左侧导航中的类别标题。 每个详细信息页面均显示该类别中量度的一系列图表。您可以查看环境中所有实例或某个特定实例的量度。您可以使用右上角的下拉框在环境和实例之间切换。
+要查看特定量度的详细信息，请单击特定实例的其中一个类别列或左侧导航中的类别标题。每个详细信息页面均显示该类别中量度的一系列图表。您可以查看环境中所有实例或某个特定实例的量度。您可以使用右上角的下拉框在环境和实例之间切换。
 
 ![选择环境](/help/assets/System_Monitoring1.png)
 

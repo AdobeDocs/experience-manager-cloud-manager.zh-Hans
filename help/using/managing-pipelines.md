@@ -5,7 +5,7 @@ exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
 source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
 workflow-type: tm+mt
 source-wordcount: '840'
-ht-degree: 42%
+ht-degree: 58%
 
 ---
 
@@ -40,15 +40,15 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 从&#x200B;**项目概述**&#x200B;页面，单击&#x200B;**管道**&#x200B;选项卡以切换到&#x200B;**管道**&#x200B;窗口。
+1. 在&#x200B;**程序概述**&#x200B;页面中单击&#x200B;**管道**&#x200B;选项卡以切换到&#x200B;**管道**&#x200B;窗口。
 
-1. 在这里，您可以看到项目的所有管道列表，并且可以像在&#x200B;**管道信息卡**&#x200B;中一样启动和停止管道执行。
+1. 在这里，您可以看到程序的所有管道的列表，并可以像在&#x200B;**管道信息卡**&#x200B;中一样启动和停止管道执行。
 
-单击`i`图标会显示有关管道的上次或当前执行的详细信息。
+单击 `i` 图标可显示管道上次或当前执行的详细信息。
 
 ![管道执行详细信息](/help/assets/configure-pipelines/pipeline-status.png)
 
-单击&#x200B;**查看详细信息**&#x200B;将会转到管道执行的[详细信息](#view-details)。
+单击&#x200B;**查看详细信息**&#x200B;将转至[管道执行的详细信息](#view-details)。
 
 ## 活动窗口 {#activity}
 
@@ -56,11 +56,11 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 从&#x200B;**项目概述**&#x200B;页面，单击&#x200B;**活动**&#x200B;选项卡以切换到&#x200B;**活动**&#x200B;窗口。
+1. 在&#x200B;**项目概述**&#x200B;页面中单击&#x200B;**活动**&#x200B;选项卡以切换到&#x200B;**活动**&#x200B;窗口。
 
 1. 在这里，您可以看到项目的所有管道执行的列表，包括当前执行和历史执行。
 
-单击`i`图标会显示有关所选管道运行的执行的详细信息。
+单击 `i` 图标可显示有关执行所选管道运行的详细信息。
 
 ![管道执行详细信息](/help/assets/configure-pipelines/pipeline-activity.png)
 
@@ -122,11 +122,11 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 ![步骤摘要](/help/assets/configure-pipelines/pipeline-step.png)
 
-单击&#x200B;**查看详细信息**&#x200B;链接以显示&#x200B;**持续时间**&#x200B;部分。 此部分包括基于该项目历史趋势的管道平均持续时间。
+单击&#x200B;**查看详细信息**&#x200B;链接以显示&#x200B;**持续时间**&#x200B;部分。此部分包括基于该项目历史趋势的管道平均持续时间。
 
 ![持续时间](/help/assets/configure-pipelines/duration.png)
 
-如果您的管道包含&#x200B;**代码扫描**&#x200B;步骤，该步骤会导致问题，您可以单击&#x200B;**下载详细信息**&#x200B;按钮以查看未通过的[代码质量测试](/help/using/code-quality-testing.md)的列表。
+如果您的管道包含引发问题的&#x200B;**代码扫描**&#x200B;步骤，您可以单击&#x200B;**下载详细信息**&#x200B;按钮，查看未通过的[代码质量测试](/help/using/code-quality-testing.md)列表。
 
 ![代码质量问题](assets/managing-pipelines-code-quality-issues.png)
 

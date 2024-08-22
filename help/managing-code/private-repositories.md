@@ -6,7 +6,7 @@ exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
 source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 38%
+ht-degree: 45%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 38%
 
 ### 添加存储库 {#add-repo}
 
-1. 在Cloud Manager中，从&#x200B;**项目概述**&#x200B;页面，单击&#x200B;**存储库**&#x200B;选项卡以切换到&#x200B;**存储库**&#x200B;页面，然后单击&#x200B;**添加存储库**。
+1. 在 Cloud Manager 中，从&#x200B;**项目概述**&#x200B;页面中，单击&#x200B;**存储库**&#x200B;选项卡以切换到&#x200B;**存储库**&#x200B;页面，然后单击&#x200B;**添加存储库**。
 
 1. 在&#x200B;**添加存储库**&#x200B;对话框中，选择&#x200B;**专用存储库**&#x200B;作为存储库类型。
 
@@ -64,7 +64,7 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 
 1. 要增强安全性，请在存储库的默认分支中创建机密文件。 单击&#x200B;**生成**。
 
-1. 单击&#x200B;**确认**&#x200B;以确认生成机密文件。
+1. 通过单击&#x200B;**确认**&#x200B;以确认秘密文件的生成。
 
    ![确认密码生成](/help/assets/repositories/confirm-generation.png)
 
@@ -110,11 +110,11 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 
 >[!TIP]
 >
->您可以控制自动创建的管道，验证对专用存储库的每个拉取请求。有关详细信息，请参阅[GitHub检查专用存储库的配置](github-check-config.md)。
+>您可以控制自动创建的管道，验证对专用存储库的每个拉取请求。请参阅 [GitHub 检查专用存储库的配置](github-check-config.md)，了解更多信息。
 
 ## 将专用存储库与管道关联 {#pipelines}
 
-已验证的专用存储库可以与[全栈管道](/help/overview/ci-cd-pipelines.md)关联。
+经过验证的专用存储库可以与[全栈管道相关联](/help/overview/ci-cd-pipelines.md)。
 
 ## 限制 {#limitations}
 

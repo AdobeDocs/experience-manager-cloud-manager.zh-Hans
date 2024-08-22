@@ -5,7 +5,7 @@ exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
 source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '564'
-ht-degree: 79%
+ht-degree: 85%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 79%
 
 ## Cloud Manager 中的通知 {#cloud-manager-notifications}
 
-当生产管道启动和完成（成功或失败）、生产部署开始时以及到达&#x200B;**上线审批**&#x200B;和&#x200B;**已计划**&#x200B;步骤时，[!UICONTROL Cloud Manager]会向您发送通知。 这些通知将通过 [!UICONTROL Experience Cloud] 通知系统发送。
+[!UICONTROL Cloud Manager] 在以下情况下向您发送通知：当生产管道启动和完成（成功或失败）时、在生产部署开始时以及在到达&#x200B;**上线审批**&#x200B;和&#x200B;**已计划**&#x200B;步骤时。这些通知将通过 [!UICONTROL Experience Cloud] 通知系统发送。
 
 >[!NOTE]
 >

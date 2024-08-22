@@ -5,7 +5,7 @@ exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
 source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '1395'
-ht-degree: 54%
+ht-degree: 55%
 
 ---
 
@@ -340,4 +340,4 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 
 ## 根据最佳实践开发代码 {#develop-your-code-based-on-best-practices}
 
-Adobe工程和咨询团队已为AEM开发人员开发了一组[全面的最佳实践](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/bestpractices/best-practices)。
+Adobe 工程和咨询团队[为 AEM 开发人员制定了一套全面的最佳实践](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/bestpractices/best-practices)。

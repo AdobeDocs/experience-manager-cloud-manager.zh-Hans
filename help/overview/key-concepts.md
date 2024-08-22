@@ -5,7 +5,7 @@ exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
 source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 49%
+ht-degree: 64%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 49%
 
 应用程序是客户创建的一组自定义项和配置，用于调整基础[解决方案](#solution)(如AEM Sites或AEM Assets)来满足其特定的用例和需求。 应用程序是一个逻辑单元，可能包含多个[项目](#artifact)。
 
-一个示例应用程序是虚构的[WKND生活方式应用程序](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-learn/getting-started-wknd-tutorial-develop/overview)。
+虚构的 [WKND 生活方式应用程序](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-learn/getting-started-wknd-tutorial-develop/overview)是一个示例应用程序。
 
 ## 工件 {#artifact}
 
@@ -30,7 +30,7 @@ ht-degree: 49%
 
 ## 环境 {#environment}
 
-环境是[程序](#program)中的单个虚拟机群集。 对于AEM，此环境由一个创作实例(（可选）带有一个额外的冷备用创作实例)、零个或多个发布实例、一个或多个Dispatcher实例和一个负载平衡器组成。
+环境是一个[程序](#program)内的单个虚拟机集群对于AEM，此环境由一个创作实例(（可选）带有一个额外的冷备用创作实例)、零个或多个发布实例、一个或多个Dispatcher实例和一个负载平衡器组成。
 
 ## Git存储库 {#git-repository}
 
@@ -38,7 +38,7 @@ Git存储库是存储特定于客户的源代码的位置，可使用[使用Git]
 
 ## 实例 {#instance}
 
-实例是运行AEM [解决方案](#solution)的特定虚拟服务器。 从部署的角度来看，实例代表一个逻辑单元。
+实例是一台运行 AEM [解决方案](#solution)的特定虚拟服务器。从部署的角度来看，实例代表一个逻辑单元。
 
 ## 组织 {#organization}
 
@@ -62,4 +62,4 @@ Git存储库是存储特定于客户的源代码的位置，可使用[使用Git]
 
 ## 步骤 {#step}
 
-步骤是一个配置的说明集，它将某个工作单元作为[管道](#pipeline)的构建块完成。
+步骤是配置的指令集，它作为[管道](#pipeline)的构建块完成一些工作单元。

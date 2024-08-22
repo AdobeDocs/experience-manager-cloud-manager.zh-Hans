@@ -5,7 +5,7 @@ exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
 workflow-type: tm+mt
 source-wordcount: '1256'
-ht-degree: 48%
+ht-degree: 55%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 48%
 >id="aemcloud_cloudmanager_introduction"
 >title="Cloud Manager for AMS 简介"
 >abstract="使组织能够在云中自行管理 Adobe Experience Manager。它包含一个持续集成和持续交付 (CI/CD) 框架，使 IT 团队和实施合作伙伴能够在不影响性能或安全性的情况下快速交付自定义项或更新。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/programs#cloud-manager" text="创建项目"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/environments#cloud-manager" text="创建环境"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/cloud-manager/programs#cloud-manager" text="创建项目"
+>additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/cloud-manager/environments#cloud-manager" text="创建环境"
 
 ## 简介 {#introduction}
 
@@ -29,7 +29,7 @@ ht-degree: 48%
 >
 >本文档具体描述了 Cloud Manager for Adobe Managed Services (AMS) 的特性和功能。
 >
->可以在[AEM as a Cloud Service文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/home)中找到AEM as a Cloud Service的等效文档。
+>可以在 [AEM as a Cloud Service 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/home)中找到 AEM as a Cloud Service 的等效文档。
 
 使用 Cloud Manager 时，您的开发团队将从以下功能受益：
 
@@ -75,7 +75,7 @@ ht-degree: 48%
 
 ## Cloud Manager中的可选功能 {#optional-features-in-cloud-manager}
 
-Cloud Manager提供了额外的高级功能，这些功能可能有助于实施您的项目，具体取决于您的特定环境设置和需求。 如果您对这些功能感兴趣，请联系您的客户成功工程师(CSE)或Adobe代表以进行进一步讨论。
+Cloud Manager提供了额外的高级功能，这些功能可能有助于实施您的项目，具体取决于您的特定环境设置和需求。 如果您对这些功能感兴趣，请联系您的客户成功工程师 (CSE) 或 Adobe 代表来进行深入讨论。
 
 ### 自动缩放 {#autoscaling}
 
@@ -87,7 +87,7 @@ Cloud Manager提供了额外的高级功能，这些功能可能有助于实施�
 
 >[!NOTE]
 >
->如果您想探索自动缩放功能是否适合您的应用程序，请联系您的CSE或Adobe代表。
+>如果您想探索自动缩放功能是否适合您的应用程序，请联系您的 CSE 或 Adobe 代表。
 
 ### 蓝/绿部署 {#blue-green}
 
@@ -121,7 +121,7 @@ Cloud Manager提供了额外的高级功能，这些功能可能有助于实施�
 
 所有使用Cloud Manager进行生产部署的AMS用户都有资格使用蓝/绿部署。 但是，要使用蓝/绿部署，需要对您的环境进行额外验证，并由AdobeCSE进行设置。
 
-如果您对蓝/绿部署感兴趣，请考虑以下要求和限制并联系您的CSE。
+如果您想进行蓝/绿部署，请考虑以下要求和限制并联系您的 CSE。
 
 #### 要求和限制 {#limitations}
 
@@ -129,5 +129,5 @@ Cloud Manager提供了额外的高级功能，这些功能可能有助于实施�
 * 在蓝/绿部署中，不会预览 Dispatcher/发布对。
 * 每个Dispatcher/发布对都与所有其他Dispatcher/发布者对相同。
 * 蓝/绿部署仅适用于生产环境。
-* 蓝/绿部署在AWS和Azure中可用。
+* 蓝/绿可在 AWS 和 Azure 中使用。
 * 蓝/绿部署不适用于仅限Assets的客户。

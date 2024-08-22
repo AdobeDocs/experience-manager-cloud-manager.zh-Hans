@@ -5,7 +5,7 @@ exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
 source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
 workflow-type: tm+mt
 source-wordcount: '748'
-ht-degree: 57%
+ht-degree: 60%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 57%
 
 是。您需要使用Java 11的正确设置添加`maven-toolchains-plugin`。
 
-* [此处](/help/getting-started/using-the-wizard.md)记录此流程。
+* 这个过程记录在[此处](/help/getting-started/using-the-wizard.md)。
 * 有关示例，请参阅[WKND示例项目代码](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)。
 
 ## 从 Java 8 切换到 Java 11 后，我的构建失败，并显示一个有关 maven-scr-plugin 的错误。我该怎么办？ {#maven-src-plugin}
@@ -72,7 +72,7 @@ ht-degree: 57%
 
 ## 包和捆绑包版本控制如何用于暂存和生产部署？ {#staging-production}
 
-在暂存和生产部署中，将生成自动版本[，如此处](/help/managing-code/maven-project-version.md)所述。
+在准备和生产部署中，会生成一个自动版本，[如此处所记录](/help/managing-code/maven-project-version.md)。
 
 对于暂存和生产部署中的自定义版本控制，请设置适当的三部分 maven 版本，如 `1.0.0`。 每次部署到生产环境时提高版本。
 

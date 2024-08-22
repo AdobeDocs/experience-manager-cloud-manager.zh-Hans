@@ -5,7 +5,7 @@ exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
 source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
 workflow-type: tm+mt
 source-wordcount: '932'
-ht-degree: 27%
+ht-degree: 36%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 27%
 
 仅生产管道是手动触发的，因为它们未直接链接到&#x200B;**Git更改**&#x200B;的存储库。
 
-这些专用管道提供了更大的灵活性，但您应注意到以下有关操作和建议的详细信息。
+这些专用管道提供了更大的灵活性，但应注意以下操作细节和建议。
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ ht-degree: 27%
 
 ## 管道创建 {#pipeline-creation}
 
-仅生产管道和仅暂存管道的创建方式与标准耦合[生产管道](/help/using/production-pipelines.md)和[非生产管道](/help/using/non-production-pipelines.md)的创建方式类似。 有关详细信息，请参阅这些文档。
+仅生产和仅暂存管道以与标准耦合的[生产管道](/help/using/production-pipelines.md)和[非生产管道](/help/using/non-production-pipelines.md)类似的方式创建。请参阅这些文件，了解详细信息。
 
 1. 在&#x200B;**管道**&#x200B;窗口中，单击&#x200B;**添加管道**。
 
@@ -59,8 +59,8 @@ ht-degree: 27%
 >
 >如果相应的管道已经存在，则某些选项可能会变灰。
 >
->* 如果仅暂存管道尚不存在，**添加仅生产管道**&#x200B;不可用。
->* 如果标准耦合管道已存在，则&#x200B;**添加生产管道**&#x200B;不可用。
+>* 如果仅暂存管道尚不存在，则无法&#x200B;**添加仅生产管道**。
+>* 如果标准耦合管道已经存在，则&#x200B;**添加生产管道**&#x200B;将不可用。
 >* 每个程序只允许一个仅生产和一个仅暂存管道。
 
 ### 仅限阶段的管道 {#stage-only}

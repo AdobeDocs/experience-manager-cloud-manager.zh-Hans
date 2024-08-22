@@ -5,7 +5,7 @@ exl-id: a81eda9f-aa89-40ea-8e4c-52367a0a6aba
 source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '1416'
-ht-degree: 47%
+ht-degree: 56%
 
 ---
 
@@ -26,17 +26,17 @@ Cloud Manager具有一组预定义的角色，这些角色可管理对各种Clou
 
 >[!TIP]
 >
->有关预定义角色的详细信息，请参阅[基于角色的权限](/help/requirements/role-based-permissions.md)。
+>有关预定义角色的详细信息，请参阅文档[基于角色的权限](/help/requirements/role-based-permissions.md)。
 
 ## 使用自定义权限 {#using}
 
 创建和使用您自己的自定义权限需要以下三个步骤：
 
-1. [创建新的产品配置文件](#create)。
-1. [为新的产品配置文件分配自定义权限](#assign-permissions)。
-1. [将用户分配给新的产品配置文件](#assign-users)。
+1. [创建新的产品轮廓](#create)。
+1. [向新产品轮廓分配自定义权限](#assign-permissions)。
+1. [将用户分配给新产品轮廓](#assign-users)。
 
-本节详细介绍了这些步骤。 在创建自己的自定义权限时，您可能会发现查看[条款](#terms)和[可配置权限](#configurable-permissions)部分很有用。
+本节详细介绍了这些步骤。 在创建自己的自定义权限时，您可能会发现参阅[术语](#terms)和[可配置权限](#configurable-permissions)会很有用。
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Cloud Manager具有一组预定义的角色，这些角色可管理对各种Clou
 
 1. 选择产品 **AEM Managed Services**。
 
-1. 搜索名称与模式`*-cloud-manager`匹配的和实例，然后单击以管理用户和权限。
+1. 搜索名称与模式 `*-cloud-manager` 匹配的实例，并单击以管理用户和权限。
 
 1. 您将被重定向到Admin Console的&#x200B;**产品**&#x200B;选项卡，您可以在其中管理Cloud Manager的用户和权限。 在Admin Console中，单击&#x200B;**新建配置文件**。
 
@@ -71,7 +71,7 @@ Cloud Manager具有一组预定义的角色，这些角色可管理对各种Clou
 
 现在，您已拥有新的产品配置文件，可以向其分配自定义权限。
 
-1. 在Admin Console中，单击刚刚创建的[新产品配置文件的名称](#create)。
+1. 在 Admin Console 中，单击[刚创建的新产品轮廓](#create)的名称。
 
 1. 在打开的窗口中，选择&#x200B;**权限**&#x200B;选项卡以查看可编辑权限的列表。
 
@@ -98,7 +98,7 @@ Cloud Manager具有一组预定义的角色，这些角色可管理对各种Clou
 
 您现在可以将用户分配给使用自定义权限创建的新产品配置文件。
 
-1. 在Admin Console中，单击刚刚为其分配自定义权限的[新产品配置文件的名称](#assign-permissions)。
+1. 在 Admin Console 中，单击[刚为其分配自定义权限的新产品轮廓](#assign-permissions)的名称。
 
 1. 在打开的窗口中，选择&#x200B;**用户**&#x200B;选项卡。
 
@@ -143,7 +143,7 @@ Cloud Manager中组织级别权限的一个示例是&#x200B;**存储库信息访
 
 | 术语 | 描述 |
 |---|---|
-| 预定义的权限 | 预定义角色，如&#x200B;**业务负责人**、**部署管理器**&#x200B;等。 监管 Cloud Manager 的各种功能。有关预定义角色的详细信息，请参阅[基于角色的权限](/help/requirements/role-based-permissions.md)。 |
+| 预定义的权限 | 预定义角色，如&#x200B;**业务负责人**、**部署管理器**&#x200B;等。 监管 Cloud Manager 的各种功能。有关预定义角色的详细信息，请参阅文档[基于角色的权限](/help/requirements/role-based-permissions.md)。 |
 | 自定义权限 | Cloud Manager功能，允许用户创建权限配置文件以定义用来管理Cloud Manager所支持功能的角色 |
 | 权限配置文件 | 在Admin Console中创建，用于管理适用于权限配置文件中用户的可配置权限 |
 | 可配置的权限 | 可在权限配置文件中配置Cloud Manager权限 |
@@ -160,7 +160,7 @@ Cloud Manager中组织级别权限的一个示例是&#x200B;**存储库信息访
 
 ## 限制 {#limitations}
 
-使用自定义权限时，请牢记以下限制：
+在使用自定义权限时，请记住以下限制：
 
 * [一组有限的权限](#configurable-permissions)，可用于创建自定义配置文件。
 * 项目、环境、管道等资源。在 Cloud Manager 中创建，可能需要两分钟才能显示在 Admin Console 中以进行权限配置。
@@ -175,7 +175,7 @@ Cloud Manager中组织级别权限的一个示例是&#x200B;**存储库信息访
 * 部署管理员
 * 开发人员
 
-有关预定义角色的详细信息，请参阅[基于角色的权限](/help/requirements/role-based-permissions.md)。
+有关预定义角色的详细信息，请参阅文档[基于角色的权限](/help/requirements/role-based-permissions.md)。
 
 ### 引入自定义配置文件后，预定义的权限配置文件会发生什么情况？
 

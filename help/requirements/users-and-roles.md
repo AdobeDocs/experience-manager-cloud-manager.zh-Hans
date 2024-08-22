@@ -5,7 +5,7 @@ exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 81%
+ht-degree: 95%
 
 ---
 
@@ -57,7 +57,7 @@ Admin Console 是一个中央位置，用于管理整个组织内的 Adobe 授�
 
 您可以使用 Admin Console 创建用户/组或将用户/组添加到这些产品配置文件中。
 
-1. 登录到[`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)上的Admin Console。
+1. 登录到 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) 上的 Admin Console。
 
 1. 单击&#x200B;**概述**&#x200B;选项卡，在&#x200B;**产品和服务**&#x200B;卡片上单击要修改的产品。 如果此处未列出它，请使用&#x200B;**产品**&#x200B;选项卡找到该产品并单击它。
 
@@ -93,26 +93,26 @@ Admin Console 是一个中央位置，用于管理整个组织内的 Adobe 授�
 
 在创建产品配置文件后，您可以将用户或用户组分配给这些配置文件。
 
-1. 登录到[`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)上的Admin Console。
+1. 登录到 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) 上的 Admin Console。
 
 1. 在 Admin Console 中，选择&#x200B;**用户**&#x200B;选项卡。
 
    ![“用户”选项卡](/help/assets/admin-console-users.png)
 
-1. 单击左侧导航面板中的&#x200B;**用户**，然后单击用户以修改它。
+1. 单击左侧导航面板中的&#x200B;**用户**，然后单击一个用户以修改它。
 
 1. 单击&#x200B;**产品**&#x200B;部分中的省略号按钮，然后选择&#x200B;**编辑**。
 
    ![编辑用户](/help/assets/admin-console-edit-user.png)
 
-1. 在&#x200B;**编辑产品和用户组**&#x200B;对话框中，单击加号按钮并选择要分配给该用户的配置文件。
+1. 在&#x200B;**编辑产品和用户组**&#x200B;对话框中，单击加号按钮并选择要分配给该用户的轮廓。
 
-   * 如果用户已分配给角色，则加号按钮是编辑按钮（铅笔），但工作方式相同。
+   * 如果已将该用户分配给角色，则加号按钮是编辑按钮（铅笔），但其作用相同。
 
    ![编辑产品和用户组](/help/assets/admin-console-edit-products-and-user-groups.png)
 
 1. 单击&#x200B;**保存**&#x200B;以将配置文件保存到用户。
 
-重复相同步骤以将配置文件分配给用户组，但在&#x200B;**用户**&#x200B;选项卡上从左侧导航面板中选择&#x200B;**用户组**。单击用户组并选择&#x200B;**已分配的产品配置文件**&#x200B;选项卡，然后单击&#x200B;**分配产品配置文件**&#x200B;以分配配置文件。
+重复相同步骤以将配置文件分配给用户组，但在&#x200B;**用户**&#x200B;选项卡上从左侧导航面板中选择&#x200B;**用户组**。单击一个用户组，选择&#x200B;**已分配的产品配置文件**&#x200B;选项卡，然后单击&#x200B;**分配产品轮廓**&#x200B;以分配轮廓。
 
 ![将配置文件分配给组](/help/assets/admin-console-edit-user-groups.png)

@@ -5,13 +5,13 @@ exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 source-git-commit: ba08da1b25a1f9ba8bc954b2fbd27b60d4ddf1a0
 workflow-type: tm+mt
 source-wordcount: '685'
-ht-degree: 55%
+ht-degree: 61%
 
 ---
 
 # 配置非生产管道 {#configuring-non-production-pipelines}
 
-了解如何使用 Cloud Manager 创建和配置非生产管道以部署代码。如果您首先想从概念上更加深入了解有关管道在Cloud Manager中的工作方式，请参阅[CI/CD管道](/help/overview/ci-cd-pipelines.md)。
+了解如何使用 Cloud Manager 创建和配置非生产管道以部署代码。如果您首先想了解有关管道在 Cloud Manager 中的工作方式的更具有概念化的概述，请参阅 [CI/CD 管道](/help/overview/ci-cd-pipelines.md)。
 
 ## 概述 {#overview}
 
@@ -20,7 +20,7 @@ ht-degree: 55%
 * **生产管道** – 生产管道是一个专用管道，它包含一系列精心设计的步骤，可执行这些步骤以将源代码用于生产环境。
 * **非生产管道** – 非生产管道主要用于运行代码质量扫描或将源代码部署到开发环境中。
 
-本文档侧重于非生产管道。有关如何配置生产管道的详细信息，请参阅文档[配置生产管道](/help/using/production-pipelines.md)。
+本文档侧重于非生产管道。有关如何配置生产管道的详细信息，请参阅[配置生产管道](/help/using/production-pipelines.md)文档。
 
 有两种类型的非生产管道：
 
@@ -81,7 +81,7 @@ ht-degree: 55%
 
 ## 后续步骤 {#the-next-steps}
 
-配置管道后，即可部署代码。 有关详细信息，请参阅[代码部署](/help/using/code-deployment.md)。
+配置管道后，即可部署代码。 请参阅 [代码部署](/help/using/code-deployment.md) 了解更多详细信息。
 
 ## 视频教程 {#video-tutorial}
 
