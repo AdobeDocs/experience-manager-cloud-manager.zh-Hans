@@ -3,9 +3,9 @@ title: Git 与 Adobe Cloud Manager 的集成
 description: 本视频系列介绍了客户管理的（内部部署）Git 存储库的设置以及它与 Adobe Cloud Manager 的集成。
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
 source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '337'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Adobe Cloud Manager 附带了一个 Git 存储库，用于使用 Cloud Manager �
 
 本视频系列中概述的步骤和命名惯例代表了有关使用客户管理的 Git 存储库和 Cloud Manager 的一些最佳实践。预计所描述的惯例和工作流将适用于各个开发团队。
 
-有关Cloud Manager的完整概述，请参阅[Cloud Manager简介](/help/introduction.md)。
+有关 Cloud Manager 的完整概述，请参阅 [Cloud Manager 简介](/help/introduction.md)。
 
 ## 初始同步 {#initial-sync}
 
@@ -40,7 +40,7 @@ Adobe Cloud Manager 附带了一个 Git 存储库，用于使用 Cloud Manager �
 
 ## 基本分支策略 {#branching-strategy}
 
-设置基本分支策略以利用Cloud Manager的[生产](/help/using/production-pipelines.md)和[非生产管道](/help/using/non-production-pipelines.md)。
+设置基本分支策略以利用 Cloud Manager 的[生产管道](/help/using/production-pipelines.md)和[非生产管道](/help/using/non-production-pipelines.md)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 

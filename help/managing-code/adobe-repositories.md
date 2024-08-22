@@ -3,9 +3,9 @@ title: 在 Cloud Manager 中添加 Adobe 存储库
 description: 了解如何在 Cloud Manager 中创建 Adobe 管理的存储库。
 exl-id: 24c6ca97-ea70-41b8-b4c7-b8b0f406a57d
 source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '145'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -29,8 +29,8 @@ ht-degree: 79%
 
    ![添加“存储库”对话框](assets/add-repository-wizard.png)
 
-当向导关闭时，您的新存储库将显示在&#x200B;**存储库**&#x200B;窗口的表中。您现在可以将[CI/CD管道](/help/overview/ci-cd-pipelines.md)与其关联或在&#x200B;[**存储库**&#x200B;窗口](managing-repositories.md)中管理它。
+当向导关闭时，您的新存储库将显示在&#x200B;**存储库**&#x200B;窗口的表中。您现在可以将 [CI/CD 管道](/help/overview/ci-cd-pipelines.md)与其关联，或在&#x200B;[**存储库**&#x200B;窗口内对其进行管理](managing-repositories.md)。
 
 >[!TIP]
 >
->您还可以添加您自己作为[专用存储库](private-repositories.md)管理的GitHub存储库。
+>您还可以将自己管理的 GitHub 存储库添加为[专用存储库](private-repositories.md)。

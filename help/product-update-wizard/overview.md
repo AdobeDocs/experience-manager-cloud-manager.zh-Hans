@@ -3,16 +3,16 @@ title: 产品更新向导
 description: 了解产品更新向导如何简化 Cloud Manager 中的端到端 AEM 更新过程。
 exl-id: 8134e956-bfcf-41b8-a408-fa4375058c6a
 source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '210'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 
 # 产品更新向导 {#product-update-wizard}
 
-产品更新向导是使用 Cloud Manager 升级到最新版本的 Adobe Experience Manager 6.5 的引导式分步升级体验。它使用Cloud Manager的CI/CD框架和内置的自动化测试，简化了端到端流程并确保遵循AEM最佳实践。
+产品更新向导是使用 Cloud Manager 升级到最新版本的 Adobe Experience Manager 6.5 的引导式分步升级体验。它使用 Cloud Manager 的 CI/CD 框架和内置的自动化测试，简化了端到端流程并确保遵循 AEM 最佳实践。
 
 该向导包括五个阶段，可以在 AEM 产品更新期间为您提供指导：
 
@@ -36,5 +36,5 @@ ht-degree: 82%
 
 1. 向导将显示 **[!UICONTROL AEM 6.5 更新]**&#x200B;过程的第一个阶段。
 
-若要了解有关向导的第一个阶段的更多信息，请参阅文档[评估阶段](/help/product-update-wizard/evaluation.md)。
+要了解有关向导的第一个阶段的更多信息，请参阅[评估阶段](/help/product-update-wizard/evaluation.md)文档。
 

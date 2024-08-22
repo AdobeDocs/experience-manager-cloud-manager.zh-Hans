@@ -3,9 +3,9 @@ title: 在 Cloud Manager 中管理存储库
 description: 了解如何在 Cloud Manager 中创建、查看和编辑 Git 存储库。
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '648'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -53,11 +53,11 @@ ht-degree: 79%
 
 ## 添加存储库 {#adding-repositories}
 
-单击&#x200B;**存储库**&#x200B;窗口中的&#x200B;**添加存储库**&#x200B;按钮以启动&#x200B;**添加存储库**&#x200B;向导。
+单击&#x200B;**存储库**&#x200B;窗口中的&#x200B;**添加存储库**&#x200B;按钮，启动&#x200B;**添加存储库**&#x200B;向导。
 
 ![添加存储库向导](assets/add-repository-wizard.png)
 
-Cloud Manager同时支持由Adobe(**Adobe存储库**)管理的存储库和您自己的自管理存储库（**专用存储库**）。 根据您选择添加的存储库类型，必填字段会有所不同。有关更多详细信息，请参阅以下文档：
+Cloud Manager 支持由 Adobe 管理的存储库（**Adobe 存储库**）和您自行管理的存储库（**专用存储库**）。根据您选择添加的存储库类型，必填字段会有所不同。有关更多详细信息，请参阅以下文档：
 
 * [在 Cloud Manager 中添加 Adobe 存储库](adobe-repositories.md)
 * [在 Cloud Manager 中添加专用存储库](private-repositories.md)
@@ -69,17 +69,17 @@ Cloud Manager同时支持由Adobe(**Adobe存储库**)管理的存储库和您自
 
 ## 访问存储库信息 {#repo-info}
 
-在&#x200B;**存储库**&#x200B;窗口中查看存储库时，您可以通过单击工具栏上的&#x200B;**访问存储库信息**&#x200B;按钮，查看有关如何以编程方式访问Adobe管理的存储库的详细信息。
+在&#x200B;**存储库**&#x200B;窗口中查看您的存储库时，您可以通过单击工具栏中的&#x200B;**访问存储库信息**&#x200B;按钮，查看有关如何以编程方式访问 Adobe 管理的存储库的详细信息。
 
 ![存储库信息](assets/access-repo-info.png)
 
-**存储库信息**&#x200B;窗口将打开并显示详细信息。有关访问存储库信息的详细信息，请参阅[访问存储库信息](accessing-repositories.md)。
+**存储库信息**&#x200B;窗口将打开并显示详细信息。有关访问存储库信息的更多信息，请参阅[访问存储库信息](accessing-repositories.md)。
 
 ## 检查分支 {#check-branches}
 
 **检查分支/创建项目** 操作根据存储库的状态执行两项功能。
 
-* 如果存储库是新创建的，则该操作将根据[AEM项目原型](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/overview)创建一个示例项目。
+* 如果存储库是新创建的，则该操作将基于 [AEM 项目原型](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/overview)创建示例项目。
 * 如果存储库中已经创建了示例项目，它会检查存储库及其分支的状态，并报告示例项目是否已存在。
 
 ![检查分支机构操作](assets/check-branches.png)
@@ -90,7 +90,7 @@ Cloud Manager同时支持由Adobe(**Adobe存储库**)管理的存储库和您自
 
 ## 查看和更新 {#view-update}
 
-**查看和更新**&#x200B;操作将打开&#x200B;**更新存储库**&#x200B;对话框。使用该工具，您可以查看&#x200B;**Name**&#x200B;和&#x200B;**存储库URL预览**&#x200B;并更新存储库的&#x200B;**描述**。
+**查看和更新**&#x200B;操作将打开&#x200B;**更新存储库**&#x200B;对话框。使用该对话框，您可以查看&#x200B;**名称**&#x200B;和&#x200B;**存储库 URL 预览**&#x200B;以及更新存储库的&#x200B;**描述**。
 
 ![查看和更新存储库信息](assets/update-repository.png)
 
@@ -104,4 +104,4 @@ Cloud Manager同时支持由Adobe(**Adobe存储库**)管理的存储库和您自
 
 如果您在删除同名存储库后尝试创建新存储库，您将收到错误消息 `An error has occurred while trying to create repository. Contact your CSE or Adobe Support.`
 
-如果您收到此错误消息，请联系Adobe支持，以便他们可以协助重命名已删除的存储库，或为新存储库选择其他名称。
+如果显示此错误消息，请联系 Adobe 支持人员，以使其可协助重命名被删除的存储库或为新存储库选择其他名称。
