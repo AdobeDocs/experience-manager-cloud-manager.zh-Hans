@@ -1,28 +1,28 @@
 ---
 title: 在 Cloud Manager 中管理存储库
-description: 了解如何在 Cloud Manager 中创建、查看和编辑 Git 存储库。
+description: 了解如何在Cloud Manager中创建、查看和编辑Git存储库。
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: ht
-source-wordcount: '648'
-ht-degree: 100%
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+workflow-type: tm+mt
+source-wordcount: '641'
+ht-degree: 68%
 
 ---
 
 
-# Cloud Manager 存储库 {#cloud-manager-repos}
+# Cloud Manager存储库 {#cloud-manager-repos}
 
-了解如何在 Cloud Manager 中创建、查看和编辑 Git 存储库。
+了解如何在Cloud Manager中创建、查看和编辑Git存储库。
 
 ## 概述 {#overview}
 
 存储库用于使用 Git 存储和管理项目代码。您在 Cloud Manager 中创建的每个程序都有一个为其创建的 Adobe 管理的存储库。
 
-您可以选择创建其他 Adobe 管理存储库，也可以添加您自己的专用存储库。您可在&#x200B;**存储库**&#x200B;窗口中查看与您项目相关的所有存储库。
+您可以选择创建其他Adobe管理的存储库，也可以添加您自己的专用存储库。 您可在&#x200B;**存储库**&#x200B;窗口中查看与您项目相关的所有存储库。
 
-在 Cloud Manager 中创建的存储库也可供您在添加或编辑管道时选择。 请参阅 [CI-CD 管道](/help/overview/ci-cd-pipelines.md)，以了解更多信息。
+在添加或编辑管道时，您也可以选择在Cloud Manager中创建的存储库。 请参阅 [CI-CD 管道](/help/overview/ci-cd-pipelines.md)，以了解更多信息。
 
-任何给定的管道都有一个主存储库或分支。 通过 [Git 子模块支持](git-submodules.md)，可以在构建时包括许多二级分支。
+任何给定的管道都有一个主存储库或分支。 如果支持[Git子模块](git-submodules.md)，则可以在生成时包含许多二级分支。
 
 ## 存储库窗口 {#repositories-window}
 
@@ -36,7 +36,7 @@ ht-degree: 100%
 
 **存储库**&#x200B;窗口提供有关存储库的详细信息：
 
-* 存储库类型
+* 存储库的类型。
    * **Adobe** 表示 Adobe 管理的存储库
    * **GitHub** 表示您管理的专用 GitHub 存储库
 * 创建时间
@@ -57,15 +57,16 @@ ht-degree: 100%
 
 ![添加存储库向导](assets/add-repository-wizard.png)
 
-Cloud Manager 支持由 Adobe 管理的存储库（**Adobe 存储库**）和您自行管理的存储库（**专用存储库**）。根据您选择添加的存储库类型，必填字段会有所不同。有关更多详细信息，请参阅以下文档：
+Cloud Manager 支持由 Adobe 管理的存储库（**Adobe 存储库**）和您自行管理的存储库（**专用存储库**）。根据您选择添加的存储库类型，必填字段会有所不同。
 
-* [在 Cloud Manager 中添加 Adobe 存储库](adobe-repositories.md)
-* [在 Cloud Manager 中添加专用存储库](private-repositories.md)
+请参阅[在Cloud Manager中添加Adobe存储库](adobe-repositories.md)。
+请参阅[在Cloud Manager中添加专用存储库](private-repositories.md)。
 
 >[!NOTE]
 >
->* 用户必须具有&#x200B;**部署管理员**&#x200B;或&#x200B;**业务负责人**&#x200B;角色才能添加存储库。
->* 在任何给定公司或 IMS 组织的所有项目中，存储库的数量限制为 300 个。
+>用户必须具有&#x200B;**部署管理员**&#x200B;或&#x200B;**业务负责人**&#x200B;角色才能添加存储库。
+>
+>在任何给定公司或 IMS 组织的所有项目中，存储库的数量限制为 300 个。
 
 ## 访问存储库信息 {#repo-info}
 
@@ -79,12 +80,13 @@ Cloud Manager 支持由 Adobe 管理的存储库（**Adobe 存储库**）和您�
 
 **检查分支/创建项目** 操作根据存储库的状态执行两项功能。
 
-* 如果存储库是新创建的，则该操作将基于 [AEM 项目原型](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/overview)创建示例项目。
-* 如果存储库中已经创建了示例项目，它会检查存储库及其分支的状态，并报告示例项目是否已存在。
+如果存储库是新创建的，则该操作将根据[AEM项目原型](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/overview)创建一个示例项目。
+
+如果存储库中已经创建了示例项目，它会检查存储库及其分支的状态，并报告示例项目是否已存在。
 
 ![检查分支机构操作](assets/check-branches.png)
 
-## 复制存储库 URL {#copy-url}
+## 复制存储库URL {#copy-url}
 
 **复制存储库 URL**&#x200B;操作会将&#x200B;**存储库**&#x200B;窗口中选定存储库的 URL 复制到剪贴板以便在其他地方使用。
 
@@ -96,12 +98,12 @@ Cloud Manager 支持由 Adobe 管理的存储库（**Adobe 存储库**）和您�
 
 ## 删除 {#delete}
 
-**删除**&#x200B;操作会从您的项目中删除存储库。如果存储库与管道关联，则无法删除它。
+**删除**&#x200B;操作会从您的项目中删除存储库。无法删除与管道关联的存储库。
 
 ![删除](assets/delete.png)
 
-请注意，在 Cloud Manager 中删除某个存储库时，将它标为已删除，用户无法再访问它，但在系统中保留它以供恢复。
+在Cloud Manager中删除存储库后，该存储库将标记为已删除；用户无法再访问该存储库。 但是，出于恢复目的，在系统中维护它。
 
-如果您在删除同名存储库后尝试创建新存储库，您将收到错误消息 `An error has occurred while trying to create repository. Contact your CSE or Adobe Support.`
+如果在删除同名存储库后尝试创建新存储库，则会收到错误消息`An error has occurred while trying to create repository. Contact your CSE or Adobe Support.`
 
 如果显示此错误消息，请联系 Adobe 支持人员，以使其可协助重命名被删除的存储库或为新存储库选择其他名称。

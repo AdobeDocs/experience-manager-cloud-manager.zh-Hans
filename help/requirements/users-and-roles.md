@@ -1,11 +1,11 @@
 ---
 title: 添加用户和角色
-description: 了解如何使用 Admin Console 添加用户和角色以及创建配置文件。
+description: 了解如何使用Admin Console添加用户和角色以及创建配置文件。
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 95%
+source-wordcount: '758'
+ht-degree: 64%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 95%
 
 必须具有特定的权限，才能使用 [!UICONTROL Cloud Manager] 中的许多功能。例如，仅允许某些用户为项目设置关键绩效指标 (KPI)。这些权限将在逻辑上按角色分组。
 
-[!UICONTROL Cloud Manager] 当前为用户定义了四个角色，这些角色控制特定功能的可用性：
+[!UICONTROL Cloud Manager]当前为用户定义了四个角色，这些角色控制特定功能的可用性：
 
 * 业务负责人
 * 项目管理员
@@ -27,16 +27,16 @@ ht-degree: 95%
 
 ## 角色定义 {#role-definitions}
 
-此表汇总了角色。
+下表汇总了Cloud Manager中的角色。
 
-| [!UICONTROL Cloud Manager] 角色 | 描述 |
-|--- |--- |
-| 业务负责人 | 此用户负责定义 KPI、审批生产部署和覆盖重要三层失败（如有必要）。 |
-| 项目管理员 | 此用户使用 [!UICONTROL Cloud Manager] 执行团队设置、审查状态、查看 KPI，并且可以在必要时审批重要三层失败。 |
-| 部署管理员 | 此用户管理部署操作并使用 [!UICONTROL Cloud Manager] 执行暂存/生产部署、编辑 CI/CD 管道、在必要时审批重要三层失败，还有权访问 Git 存储库。 |
-| 开发人员 | 此用户开发并测试自定义应用程序代码并主要使用 [!UICONTROL Cloud Manager] 查看部署状态，还有权访问 Git 存储库以提交代码。 |
-| 客户成功工程师 | 此用户一般支持 AMS 客户取得成功，并与 [!UICONTROL Cloud Manager] 交互以执行需要 CSE 监督的部署。 |
-| 内容作者 | 此用户一般不与 [!UICONTROL Cloud Manager] 交互，但可使用 [!UICONTROL Cloud Manager] 项目切换器访问 AEM。 |
+| [!UICONTROL Cloud Manager]角色 | 描述 |
+| --- | --- |
+| 业务负责人 | 负责定义KPI、审批生产部署和覆盖重要三层失败（如有必要）。 |
+| 项目管理员 | 他们使用[!UICONTROL Cloud Manager]执行团队设置、审查状态、查看KPI，并且可以在必要时审批重要三层失败。 |
+| 部署管理员 | 管理部署操作并使用[!UICONTROL Cloud Manager]执行暂存和生产部署，编辑CI/CD管道，并在必要时审批关键三层失败。 他们还可以访问Git存储库。 |
+| 开发人员 | 开发和测试自定义应用程序代码，并主要使用[!UICONTROL Cloud Manager]来查看部署状态，并且可以访问Git存储库以提交代码。 |
+| 客户成功工程师 | CSE通常帮助AMS客户获得成功。 他们与[!UICONTROL Cloud Manager]交互以执行需要CSE监督的部署。 |
+| 内容作者 | 他们通常不会与[!UICONTROL Cloud Manager]交互，但可以使用[!UICONTROL Cloud Manager]项目切换器访问AEM。 |
 
 >[!NOTE]
 >
@@ -46,20 +46,20 @@ ht-degree: 95%
 
 从 Admin Console 中管理 [!UICONTROL Cloud Manager] 角色。通过将用户添加到 [!UICONTROL Cloud Manager] 产品配置文件，提供特定的角色成员资格。
 
-Admin Console 是一个中央位置，用于管理整个组织内的 Adobe 授权。要进一步了解Adobe Admin Console，请参阅 [Admin Console文档](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)。
+Admin Console 是一个中央位置，用于管理整个组织内的 Adobe 授权。要了解有关Adobe Admin Console的更多信息，请参阅[Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)。
 
-要向 [!UICONTROL Cloud Manager] 用户提供基于角色的适当权限，客户组织内的管理员必须在 [!UICONTROL AEM Managed Services] 产品上下文中创建与四个 [!UICONTROL Cloud Manager] 角色中的每一个相对应的新产品配置文件：
+管理员必须在[!UICONTROL AEM Managed Services]产品上下文中创建新的产品配置文件，以便为[!UICONTROL Cloud Manager]用户分配基于角色的权限，这些权限与四个[!UICONTROL Cloud Manager]角色中的每一个相对应。
 
 * 业务负责人
 * 部署管理员
 * 开发人员
 * 项目管理员
 
-您可以使用 Admin Console 创建用户/组或将用户/组添加到这些产品配置文件中。
+您可以使用Admin Console创建用户或组，或将其添加到这些产品配置文件中。
 
 1. 登录到 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) 上的 Admin Console。
 
-1. 单击&#x200B;**概述**&#x200B;选项卡，在&#x200B;**产品和服务**&#x200B;卡片上单击要修改的产品。 如果此处未列出它，请使用&#x200B;**产品**&#x200B;选项卡找到该产品并单击它。
+1. 单击&#x200B;**概述**&#x200B;选项卡，然后在&#x200B;**产品和服务**&#x200B;卡片上单击要编辑的产品。 如果此处未列出它，请使用&#x200B;**产品**&#x200B;选项卡找到该产品并单击它。
 
    ![Admin Console“概述”选项卡](/help/assets/admin-console-overview.png)
 

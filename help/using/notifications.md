@@ -2,10 +2,10 @@
 title: 通知
 description: 了解 Cloud Manager 如何向您通知重要事件。
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 85%
+source-wordcount: '561'
+ht-degree: 67%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 85%
 
 ## Cloud Manager 中的通知 {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] 在以下情况下向您发送通知：当生产管道启动和完成（成功或失败）时、在生产部署开始时以及在到达&#x200B;**上线审批**&#x200B;和&#x200B;**已计划**&#x200B;步骤时。这些通知将通过 [!UICONTROL Experience Cloud] 通知系统发送。
+[!UICONTROL Cloud Manager]在生产部署开始时在生产管道启动和完成（成功或失败）时向您发送通知。 当达到&#x200B;**上线审批**&#x200B;和&#x200B;**已计划**&#x200B;步骤时。 这些通知将通过 [!UICONTROL Experience Cloud] 通知系统发送。
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ ht-degree: 85%
 
 ![通知设置图标](/help/assets/notifications-configuration.png)
 
-该操作将打开&#x200B;**Experience Cloud 偏好设置**&#x200B;窗口，您可以在其中定义通知订阅以及接收通知的方式。
+将打开&#x200B;**Experience Cloud首选项**&#x200B;窗口，您可以在其中定义通知订阅以及接收通知的方式。
 
 ### 订阅 {#subscriptions}
 
@@ -58,17 +58,17 @@ ht-degree: 85%
 
 ![通知订阅](/help/assets/notifications-subscriptions.png)
 
-默认情况下，您将收到所有产品的所有通知。单击产品旁边的&#x200B;**自定义**&#x200B;以定义您收到的该产品的通知类型。
+默认情况下，您将收到所有产品的所有通知。 单击产品旁边的&#x200B;**自定义**&#x200B;以定义您收到的该产品的通知类型。
 
 ![通知订阅自定义](/help/assets/notifications-subscriptions-customize.png)
 
 ### 优先级 {#priority}
 
-优先警报将标有&#x200B;**高**&#x200B;选项卡，并且可以配置为仅作为警报接收。在&#x200B;**优先级**&#x200B;分区，您可以定义哪些类别有资格作为优先通知。
+优先级警报标有&#x200B;**高**&#x200B;标记。 您可以将它们配置为仅作为警报接收。 在&#x200B;**优先级**&#x200B;分区，您可以定义哪些类别有资格作为优先通知。
 
 ![通知优先级](/help/assets/notifications-priority.png)
 
-使用下拉菜单添加到有资格作为优先级的类别列表中。单击类别名称旁边的 X 将其删除。
+使用下拉菜单添加到有资格作为优先级的类别列表中。单击类别名称旁边的`X`可将其删除。
 
 ### 警报 {#alerts}
 
@@ -94,4 +94,4 @@ ht-degree: 85%
 * 每日
 * 每周
 
-当选中&#x200B;**即时通知**&#x200B;后，每个通知都会立即发送电子邮件。对于&#x200B;**每日摘要**&#x200B;和&#x200B;**每周摘要**，您可以选择发送每日摘要的时间以及发送每周摘要的日期和时间。
+选择&#x200B;**即时通知**&#x200B;后，每个通知都会立即发送电子邮件。 对于&#x200B;**每日摘要**&#x200B;和&#x200B;**每周摘要**，您可以选择发送每日摘要的时间以及发送每周摘要的日期和时间。

@@ -2,18 +2,18 @@
 title: 在 Cloud Manager 中添加 Adobe 存储库
 description: 了解如何在 Cloud Manager 中创建 Adobe 管理的存储库。
 exl-id: 24c6ca97-ea70-41b8-b4c7-b8b0f406a57d
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: ht
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
-# 在 Cloud Manager 中添加 Adobe 存储库 {#adobe-repositories}
+# 在Cloud Manager中添加Adobe存储库 {#adobe-repositories}
 
 了解如何在 Cloud Manager 中创建 Adobe 管理的存储库。
 
-## 添加 Adobe 管理的存储库 {#add-adobe-repository}
+## 添加Adobe管理的存储库 {#add-adobe-repository}
 
 **存储库**&#x200B;窗口可让您轻松为项目添加其他 Adobe 管理的存储库。
 

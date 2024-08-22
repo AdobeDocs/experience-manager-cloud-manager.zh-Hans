@@ -2,7 +2,7 @@
 title: 配置非生产管道
 description: 了解如何使用 Cloud Manager 创建和配置非生产管道以部署代码。
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: ba08da1b25a1f9ba8bc954b2fbd27b60d4ddf1a0
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 61%
@@ -29,7 +29,7 @@ ht-degree: 61%
 
 >[!NOTE]
 >
->在管道的关联Git存储库至少具有一个分支且[项目设置](/help/getting-started/program-setup.md)完成之前，无法设置管道。 请参阅[Cloud Manager存储库](/help/managing-code/managing-repositories.md)，了解如何在Cloud Manager中添加和管理存储库。
+>在管道的关联Git存储库具有至少一个分支且[项目设置](/help/getting-started/program-setup.md)完成之前，无法设置管道。 请参阅[Cloud Manager存储库](/help/managing-code/managing-repositories.md)，了解如何在Cloud Manager中添加和管理存储库。
 
 ## 添加非生产管道 {#add-non-production-pipeline}
 

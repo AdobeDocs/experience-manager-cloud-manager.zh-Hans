@@ -2,10 +2,10 @@
 title: Git 子模块支持
 description: 了解如何使用Git子模块在构建时跨Git存储库合并多个分支的内容。
 exl-id: f946d7e7-114a-4e33-bb82-2625d37bba2f
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 31%
+ht-degree: 20%
 
 ---
 
@@ -66,9 +66,9 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 ## 限制 {#limitations}
 
-使用 Git 子模块时，请注意以下：
+使用Git子模块时，请注意以下事项：
 
-* Git URL 必须完全遵循上述语法。
+* Git URL必须完全遵循上述语法。
 * 为安全起见，请勿在这些 URL 中嵌入凭据。
 * 仅支持分支的根目录中的子模块。
 * Git子模块引用将存储到特定的Git承诺中。 因此，在对子模块存储库进行更改时，需要更新引用的承诺。 例如，通过使用`git submodule update --remote`。
@@ -87,8 +87,8 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 ### 限制和建议 {#limitations-recommendations-private-repos}
 
-使用带有专用存储库的 Git 子模块时，注意以下限制。
+将Git子模块与专用存储库结合使用时，请注意以下限制。
 
 * 子模块的Git URL可以是HTTPS或SSH格式，但它们必须链接到Github.com存储库。 无法将Adobe存储库子模块添加到GitHub聚合器存储库，反之亦然。
 * GitHub 子模块必须可供 Adobe GitHub App 访问。
-* [使用 Git 子模块与 Adobe 管理的存储库的局限性](#limitations-recommendations)同样适用。
+* [将Git子模块与Adobe管理的存储库一起使用的限制也适用。](#limitations-recommendations)

@@ -2,10 +2,10 @@
 title: 项目设置
 description: 完成新用户引导后，业务负责人必须对项目进行一些初始设置。
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 53%
+source-wordcount: '564'
+ht-degree: 49%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 53%
 
 1. 单击&#x200B;**更新**&#x200B;以保存更改。
 
-请注意，更改将立即保存到 Cloud Manager 中，但在下一次管道运行之前不会反映在您的环境中。
+更改将立即保存到Cloud Manager中，但在下一次管道运行之前不会反映在您的环境中。
 
 如果尚未创建管道，请参阅[配置生产管道](/help/using/production-pipelines.md)和[配置非生产管道](/help/using/non-production-pipelines.md)。
 

@@ -2,10 +2,10 @@
 title: 代码质量测试
 description: 了解管道代码质量测试的工作方式以及其提高部署质量的方式。
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: ht
-source-wordcount: '2763'
-ht-degree: 100%
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+workflow-type: tm+mt
+source-wordcount: '2764'
+ht-degree: 96%
 
 ---
 
@@ -204,7 +204,7 @@ Cloud Manager 通过在暂存发布服务器上以未经身份验证的用户身
 | 网络带宽利用率 | 重要 | >= 90% |
 | 每分钟请求数 | 信息 | >= 6000 |
 
-请参阅[经过身份验证的性能测试](#authenticated-performance-testing)部分，了解有关将基本身份验证用于 Sites 和 Assets 的性能测试的更多详细信息。
+有关将基本身份验证用于网站和Assets的性能测试的更多详细信息，请参阅[经过身份验证的性能测试](#authenticated-performance-testing)。
 
 >[!NOTE]
 >
@@ -224,25 +224,25 @@ Cloud Manager 通过在暂存发布服务器上以未经身份验证的用户身
 $ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>
 ```
 
-请参阅[补丁用户管道变量](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables) API 文档了解如何使用 API。
+请参阅[修补用户管道变量](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables) API文档，了解如何使用该API。
 
 ### AEM Assets {#aem-assets}
 
 Cloud Manager 通过反复上传资产来对 AEM Assets 项目执行性能测试，测试时间为 30 分钟。
 
-#### 新用户引导要求 {#onboarding-requirement}
+#### 载入要求 {#onboarding-requirement}
 
 对于 Assets 性能测试，您的客户成功工程师将在暂存环境中引导作者期间创建 `cloudmanager` 用户和密码。性能测试步骤需要一个名为 `cloudmanager` 的用户和由 CSE 设置的相关密码。
 
 此方法应保留在作者实例中，并且其权限保持不变。更改或删除它可能会导致资产性能测试失败。
 
-#### 用于测试的图像和资产 {#assets-for-testing}
+#### 图像和用于测试的Assets {#assets-for-testing}
 
 客户可以上传自己的资产进行测试。该过程可以从&#x200B;**管道设置**&#x200B;或&#x200B;**编辑**&#x200B;屏幕完成。支持 JPEG、PNG、GIF 和 BMP 等常见图像格式以及 Photoshop、Illustrator 和 Postscript 文件。
 
 如果未上传图像，Cloud Manager 使用默认图像和 PDF 文档进行测试。
 
-#### 用于测试的资产的分配 {#distribution-of-assets}
+#### 用于测试的Assets的分发 {#distribution-of-assets}
 
 在&#x200B;**管道设置**&#x200B;或&#x200B;**编辑**&#x200B;屏幕中设置每分钟上传的每种类型资产数量。
 
@@ -254,11 +254,11 @@ Cloud Manager 将使用 CSE 设置的用户名和密码在创作实例上创建�
 
 >[!TIP]
 >
->请参阅 [配置生产管道](/help/using/production-pipelines.md) 以了解更多信息。请参阅[项目设置](/help/getting-started/program-setup.md)文档，了解如何设置项目和定义 KPI。
+>请参阅[配置生产管道](/help/using/production-pipelines.md)以了解详情。 请参阅[项目设置](/help/getting-started/program-setup.md)文档，了解如何设置项目和定义 KPI。
 
 ### 性能测试结果图表 {#performance-testing-results-graphs}
 
-**“性能测试”对话框**&#x200B;中提供了许多量度
+**性能测试对话框**&#x200B;中有许多量度可用。
 
 ![量度列表](/help/assets/understand_test-results-screen1.png)
 

@@ -2,10 +2,10 @@
 title: 监控环境
 description: 了解如何在 Cloud Manager 中监控环境。
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 36%
+source-wordcount: '910'
+ht-degree: 34%
 
 ---
 
@@ -60,7 +60,7 @@ AdobeManaged Services设置阈值，您可以在[!UICONTROL Cloud Manager]中查
 
 左侧的导航显示当前所选类别中的可用量度，其中包含当前所选环境和实例的数据。
 
-单个图表将显示状态和一段时间内的数据图表以及阈值。如果显示多个实例，则每个实例的数据都位于一个单独的系列中。
+单个图表显示状态和随时间变化的数据图表以及阈值。 如果显示多个实例，则每个实例的数据都位于一个单独的系列中。
 
 ![量度图表](/help/assets/Monitoring_Graphs1.png)
 

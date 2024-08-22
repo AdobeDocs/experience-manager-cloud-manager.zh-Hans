@@ -2,17 +2,17 @@
 title: 首次登录
 description: 如果您已设置常规配置并且已准备好首次使用 Cloud Manager，请按照此页面上的说明进行操作。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 91%
+ht-degree: 49%
 
 ---
 
 
 # 首次登录 {#first-time-login}
 
-一旦设置了 [!UICONTROL Cloud Manager] 的常规配置，即可使用它。
+在为[!UICONTROL Cloud Manager]设置常规配置后，便可以使用它。
 
 >[!NOTE]
 >
@@ -36,12 +36,12 @@ ht-degree: 91%
 
 ## Cloud Manager活动 {#activity}
 
-Cloud Manager 提供项目活动的综合视图，其中列出了所有用于生产环境和非生产环境的 CI/CD 管道执行，并允许查看过去和现在的活动。
+Cloud Manager提供了项目活动的综合视图。 它列出了所有CI/CD管道执行，包括生产和非生产。 利用此类功能，可了解过去和现在的活动。
 
 >[!TIP]
 >
->有关如何使用 Cloud Manager UI 的详细信息，请参阅文档[ Cloud Manager UI 导航。](/help/getting-started/navigation.md)
+>有关如何使用Cloud Manager UI的详细信息，请参阅[浏览Cloud Manager UI](/help/getting-started/navigation.md)。
 
 >[!NOTE]
 >
->默认情况下，有权访问 AEM 环境的用户也将拥有 Cloud Manager 用户角色。这个角色本身并不足以让用户访问项目详细信息视图。此类仅具有 Cloud Manager 用户角色的用户能够通过项目菜单选项导航到 AEM 环境作者 URL（如果存在环境）。如果此类用户希望获得项目级访问权限，则必须联系其管理员。
+>默认情况下，有权访问AEM环境的用户也具有Cloud Manager用户角色。 此角色不足以授予用户访问项目详细信息视图的权限。 此类仅具有Cloud Manager用户角色的用户能够通过项目菜单选项导航到AEM环境作者URL（如果存在环境）。 如果此类用户希望获得项目级访问权限，则必须联系其管理员。

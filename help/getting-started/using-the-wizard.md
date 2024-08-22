@@ -2,10 +2,10 @@
 title: 使用“新建项目”向导
 description: 关注此页面，了解如何使用该向导创建 AEM 应用程序项目
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 36%
+ht-degree: 30%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 36%
 
    ![详细的原型参数](/help/assets/screen_shot_2018-10-08at60032am.png)
 
-1. 单击&#x200B;**创建**&#x200B;以使用原型创建入门项目并提交到指定的 Git 分支。
+1. 单击&#x200B;**创建**&#x200B;以使用原型创建入门项目并提交到指定的Git分支。
 
 您现在已拥有基础项目。 是时候设置您的管道了。
 

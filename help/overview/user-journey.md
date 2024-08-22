@@ -2,9 +2,9 @@
 title: 用户历程
 description: 了解各种载入场景和Cloud Manager快速入门。
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
-source-git-commit: 6a5615c0db91c62fc8858b967021b46c7b383aa0
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '532'
 ht-degree: 21%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 21%
 
 使用您的AdobeIdentity Management凭据登录[!UICONTROL Experience Cloud]登录页面。 从该位置，从解决方案切换器中选择AEM以访问[!UICONTROL Cloud Manager]和您的AEM环境。
 
-在首次登录[!UICONTROL Cloud Manager]后，您将有权直接从[!UICONTROL Cloud Manager] UI访问AEM环境。 此时，您已能开始探索 [!UICONTROL Cloud Manager] 的所有可能性，并准备好您的第一个代码分支以部署到暂存和生产环境。
+在首次登录[!UICONTROL Cloud Manager]后，您可以直接从[!UICONTROL Cloud Manager] UI访问AEM环境。 此时，您已能开始探索 [!UICONTROL Cloud Manager] 的所有可能性，并准备好您的第一个代码分支以部署到暂存和生产环境。
 
 若要开始使用[!UICONTROL Cloud Manager]，请参阅[首次登录](/help/getting-started/first-time-login.md)。
 

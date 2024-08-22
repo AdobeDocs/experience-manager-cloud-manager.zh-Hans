@@ -2,10 +2,10 @@
 title: 设置项目
 description: 了解如何设置项目，以便使用 Cloud Manager 管理和部署该项目。
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1395'
-ht-degree: 55%
+ht-degree: 54%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 55%
 现有AEM项目必须遵循一些基本规则，以便可以使用Cloud Manager成功构建和部署这些项目。
 
 * 必须使用 Apache Maven 构建项目。
-* Git 存储库的根目录中必须有一个 `pom.xml` 文件。
+* Git存储库的根目录中必须有一个`pom.xml`文件。
    * 此 `pom.xml` 文件可以根据需要引用尽可能多的子模块（这些子模块又可能包含其他子模块）。
    * 可以将引用添加到您在其他 Maven 工件存储库中拥有的 `pom.xml` 文件中。
    * 配置后，支持访问[受密码保护的构件存储库](#password-protected-maven-repositories)。但是，不支持访问受网络保护的工件存储库。
@@ -275,7 +275,7 @@ $ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSI
 
 ## 生成工件重用 {#build-artifact-reuse}
 
-在许多情况下，会将同一代码部署到多个 AEM 环境中。如果可能，当Cloud Manager检测到在多个全栈管道执行中使用了相同的git commit时，可避免重建代码库。
+在许多情况下，会将同一代码部署到多个 AEM 环境中。如果可能，当Cloud Manager检测到在多个全栈管道执行中使用了相同的Git commit时，可避免重建代码库。
 
 开始执行时，将提取分支管道的当前 HEAD 承诺。 承诺哈希在UI中可见，并可通过API查看。 在构建步骤成功完成时，生成的工件将基于该承诺哈希进行存储，并且可在后续管道执行中重用。
 

@@ -1,18 +1,18 @@
 ---
 title: 源代码存储库
-description: 了解为您在 Cloud Manager 中拥有的每个项目配置的 Git 存储库。
+description: 了解为您在Cloud Manager中拥有的每个项目配置的Git存储库。
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
-source-git-commit: 4c977cdfbef438fdabd90ee104d98887f2467b49
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 32%
+ht-degree: 7%
 
 ---
 
 
 # Source代码存储库 {#source-code-repository}
 
-了解为您在 Cloud Manager 中拥有的每个项目配置的 Git 存储库。
+了解为您在Cloud Manager中拥有的每个项目配置的Git存储库。
 
 ## Cloud Manager存储库 {#cloud-manager-repository}
 
@@ -22,7 +22,7 @@ ht-degree: 32%
 
 有关如何在Git中设置分支的更多信息，请参阅[配置版本分支](/help/getting-started/configuring-branches.md)。
 
-有关如何将 Cloud Manager 的 Git 存储库与 CI/CD 管道结合使用的更多信息，请参阅[配置生产管道](/help/using/production-pipelines.md)和[配置非生产管道](/help/using/non-production-pipelines.md)了解详情。
+有关如何将Cloud Manager的Git存储库与CI/CD管道一起使用的更多信息，请参阅[配置生产管道](/help/using/production-pipelines.md)和[配置非生产管道](/help/using/non-production-pipelines.md)以了解更多信息。
 
 ## 内部部署存储库 {#on-premise-repository}
 

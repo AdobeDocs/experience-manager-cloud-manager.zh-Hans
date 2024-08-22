@@ -2,19 +2,19 @@
 title: 浏览 Cloud Manager UI
 description: 了解 Cloud Manager UI 的组织方式，以及如何管理您的程序和环境。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1435'
-ht-degree: 51%
+ht-degree: 49%
 
 ---
 
 
-# 导航 Cloud Manger UI {#navigation}
+# 导航Cloud Manger UI {#navigation}
 
 了解 Cloud Manager UI 的组织方式，以及如何管理您的程序和环境。
 
-Cloud manage UI 主要由两个图形界面组成：
+Cloud Manager UI主要由两个图形界面组成：
 
 * [在“我的程序”控制台](#my-programs-console)中，您可以查看和管理所有程序。
 * [在“项目概述”窗口](#program-overview)中，您可以查看各个项目的详细信息并管理单个项目。
