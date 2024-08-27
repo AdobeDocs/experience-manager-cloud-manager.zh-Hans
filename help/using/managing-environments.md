@@ -2,10 +2,10 @@
 title: 管理环境
 description: 了解如何使用 Cloud Manager 管理环境。
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: 6f5d51ef59aef831574bd55cee6b12a29e3d70d2
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 83%
+source-wordcount: '273'
+ht-degree: 86%
 
 ---
 
@@ -58,7 +58,7 @@ Cloud Manager 的&#x200B;**概述**&#x200B;页面包含&#x200B;**环境**&#x200B
 
 >[!NOTE]
 >
->如果您需要环境日志，可以通过您的客户成功工程师索取。
+>通过客户成功工程师请求您的环境日志。
 
 ## 视频教程 {#video-tutorial}
 
