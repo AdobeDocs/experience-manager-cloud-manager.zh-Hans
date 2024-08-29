@@ -2,7 +2,7 @@
 title: 管理环境
 description: 了解如何使用 Cloud Manager 管理环境。
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: 6f5d51ef59aef831574bd55cee6b12a29e3d70d2
+source-git-commit: 0b7c926120798e2fdb635752192f4ab2e12c1e24
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 86%
@@ -64,4 +64,6 @@ Cloud Manager 的&#x200B;**概述**&#x200B;页面包含&#x200B;**环境**&#x200B
 
 此视频概述了由 AEM 创作、发布和 Dispatcher 实例组成的 Cloud Manager 环境。
 
->[!VIDEO](https://video.tv.adobe.com/v/26318/) （3分钟，1秒）
+>[!VIDEO](https://video.tv.adobe.com/v/26318/)
+
+*（3分钟，1秒）*
