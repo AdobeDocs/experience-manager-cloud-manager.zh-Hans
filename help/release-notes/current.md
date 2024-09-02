@@ -3,45 +3,45 @@ title: Cloud Manager 2024.8.0 版的发行说明
 description: 了解 Cloud Manager 2024.8.0 的发行说明。
 feature: Release Information
 source-git-commit: 5ced643fabe0a670e456cbea72f9da8196ac774a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '266'
-ht-degree: 24%
+ht-degree: 100%
 
 ---
 
 
-# Cloud Manager 2024.8.0发行说明 {#release-notes}
+# Cloud Manager 2024.8.0 版的发行说明 {#release-notes}
 
 本页面记录了 [!UICONTROL Cloud Manager] 2024.8.0 版的发行说明。
 
 >[!NOTE]
 >
->有关AEM as a Cloud Service中Cloud Manager的最新发行说明，请参阅AEM as a Cloud Service的最新发行说明中的[Cloud Manager](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/cloud-manager/current)。
+>有关 AEM as a Cloud Service 中的 Cloud Manager 的最新发行说明，请参阅 [AEM as a Cloud Service 中的 Cloud Manager 的最新发行说明](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-cloud-service/content/release-notes/cloud-manager/current)。
 
 ## 发布日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2024.8.0的发布日期是2024年8月14日。 下一个版本计划于 2024 年 9 月 14 日发布。
+[!UICONTROL Cloud Manager] 2024.8.0 版的发布日期是 2024 年 8 月 14 日。下一个版本计划于 2024 年 9 月 14 日发布。
 
 ## 新增功能 {#what-is-new}
 
-* 对于仅阶段管道和仅生产管道（作为[早期采用者计划](#staging-production-only-pipelines)的一部分提供），您现在可以在[紧急模式](/help/using/stage-prod-only.md#emergency-mode)跳过阶段测试中执行这些管道。
+* 对于仅缓存和仅生产管道（作为[早期采用者项目](#staging-production-only-pipelines)提供），您现在可以在[紧急模式](/help/using/stage-prod-only.md#emergency-mode)中执行它们，并跳过缓存测试。
 
-## 早期采用计划 {#early-adoption}
+## 早期采用项目 {#early-adoption}
 
-成为Cloud Manager早期采用计划的一部分，并有机会测试一些即将推出的功能。
+加入 Cloud Manager 早期采用项目，即有机会测试一些即将推出的功能。
 
-### 仅限暂存和仅限生产的管道 {#staging-production-only-pipelines}
+### 仅暂存和仅生产管道 {#staging-production-only-pipelines}
 
-Adobe很高兴地宣布引入对[仅限暂存和仅限生产的管道](/help/using/stage-prod-only.md)的支持。 此新功能让您可以将全栈生产部署管道划分为更小的、更专业的部署。
+Adobe 很高兴地宣布推出对[仅暂存和仅生产管道](/help/using/stage-prod-only.md)的支持。 此新功能可让您将全栈生产部署管道划分为更小、更专业的部署。
 
-如果要测试此功能并提供反馈，请使用与您的Adobe ID关联的电子邮件地址向`Grp-cloudmanager_splitpipelines@adobe.com`发送电子邮件。
+如果您想测试此功能并提供反馈，请使用与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 `Grp-cloudmanager_splitpipelines@adobe.com`。
 
 ## 错误修复
 
 * 纠正了一个罕见的问题，即在删除管道后发现管道步骤仍在运行。
-* 现在，在第一次尝试时重新运行管道可正常工作，从而更正了必须多次开始重新运行的一个罕见问题。
-* 全栈管道的计划部署步骤现在遵循所选的计划日期，并且不会还原为&#x200B;**现在**。
-* 现已正确反映失败的复制内容任务的状态，在极少数情况下不再错误地显示`In Progress`状态。
+* 现在，第一次尝试即可重新运行管道，从而纠正了必须多次启动才能重新运行的罕见问题。
+* 全栈管道的预定部署步骤现在可以遵循选定的预定日期，并且不会恢复到&#x200B;**现在**。
+* 现在可以正确反映失败的复制内容任务的状态，并且不会再在极少数的情况下错误地显示 `In Progress` 状态。
 
 ## 已知问题 {#known-issues}
 
