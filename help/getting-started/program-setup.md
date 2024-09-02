@@ -5,16 +5,16 @@ exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '564'
-ht-degree: 49%
+ht-degree: 96%
 
 ---
 
 
-# 项目设置 {#program-setup}
+# 程序设置 {#program-setup}
 
-完成新用户引导后，业务负责人通过添加描述并定义关键绩效指标(KPI)来设置项目。 然后使用这些KPI进行性能测试。
+在完成新用户引导后，业务所有者通过添加描述和定义关键绩效指标 (KPI) 来设置该项目。 然后使用这些 KPI 进行性能测试。
 
-## 使用[!UICONTROL Cloud Manager]设置项目 {#program-setup-cloud-manager}
+## 使用 [!UICONTROL Cloud Manager]设置程序 {#program-setup-cloud-manager}
 
 执行以下步骤可设置项目和定义 KPI。
 
@@ -34,7 +34,7 @@ ht-degree: 49%
 
    ![“常规”选项卡](/help/assets/Setup_Program-General.png)
 
-1. 在 **KPI** 选项卡上，定义 KPI。在此示例中，为 **AEM Sites** 和 **AEM Assets** 定义了单独的 KPI。为已许可的产品指定KPI。
+1. 在 **KPI** 选项卡上，定义 KPI。在此示例中，为 **AEM Sites** 和 **AEM Assets** 定义了单独的 KPI。指定您已授权的产品的 KPI。
 
    有关如何在 Cloud Manager 中测量 KPI 的更多详细信息，请参阅 [KPI](#kpis) 部分。
 
@@ -48,9 +48,9 @@ ht-degree: 49%
 
 1. 单击&#x200B;**保存**。
 
-您的项目已创建。 可能需要几分钟的时间来配置资源，之后项目才可供使用。
+您的程序已创建。可能需要几分钟的时间来配置资源，之后该程序才可供使用。
 
-## 编辑项目 {#editing-program}
+## 编辑程序 {#editing-program}
 
 在设置项目后，可以编辑项目。执行以下步骤来编辑项目。
 
@@ -58,7 +58,7 @@ ht-degree: 49%
 
 1. 从 Cloud Manager 主屏幕导航到项目。
 
-1. 单击&#x200B;**编辑程序**&#x200B;以从&#x200B;**概述**&#x200B;页面更新或修改您的程序。
+1. 单击&#x200B;**编辑程序**&#x200B;以从&#x200B;**概述**&#x200B;页面更新或修改程序。
 
    ![“编辑项目”选项](/help/assets/set-up-program/edit-program1.png)
 
@@ -70,7 +70,7 @@ ht-degree: 49%
 
 更改将立即保存到Cloud Manager中，但在下一次管道运行之前不会反映在您的环境中。
 
-如果尚未创建管道，请参阅[配置生产管道](/help/using/production-pipelines.md)和[配置非生产管道](/help/using/non-production-pipelines.md)。
+如果您尚未创建管道，请参阅[配置生产管道](/help/using/production-pipelines.md)和[配置非生产管道](/help/using/non-production-pipelines.md)。
 
 ## 在程序之间切换 {#swithing-programs}
 
@@ -82,13 +82,13 @@ ht-degree: 49%
 
 ## KPI {#kpis}
 
-站点KPI是根据在暂存环境中运行的测试来测量的。 通常，这些 KPI 将缩小以适应暂存环境的功能。
+站点 KPI 是根据在暂存环境上运行的测试来测量的。 通常，这些 KPI 将会按比例缩小，以适应暂存环境的功能。
 
-例如，一个用户期望其生产环境中的每分钟平均页面查看次数达到1000次，其生产环境中有四个Dispatcher/发布服务器，则应该将此方案的每分钟页面查看次数扩展到250次。 此方案假定其暂存环境仅包含一个Dispatcher/发布服务器对。
+例如，一个用户期望其生产环境中的每分钟平均页面查看次数达到 1000 次，其生产环境中有四个 Dispatcher/发布服务器，每个服务器的每分钟页面查看次数为 250 次。 该场景假定其暂存环境中仅有一个 Dispatcher/发布服务器对。
 
-Assets性能测试包括在30分钟的时间段内重复上传资源。 在整个测试中会测量每个资产的处理时间以及各种系统级量度。
+资产性能测试涉及在 30 分钟内反复上传资产。 在整个测试过程中，会测量每个资产的处理时间和各种系统级指标。
 
-您的生产环境前面可能有一个内容交付网络 (CDN)，例如 Akamai 或 CloudFront。由于[!UICONTROL Cloud Manager]直接针对暂存环境进行测试，因此KPI应仅反映预期将通过CDN的流量。 也就是说，缓存未命中。 通常，此体验只是总生产流量的一个相对较小的部分。
+您的生产环境前面可能有一个内容传递网络 (CDN)，例如 Akamai 或 CloudFront。 由于 [!UICONTROL Cloud Manager] 直接针对暂存环境进行测试，因此 KPI 应仅反映预期将通过 CDN 的流量。 即缓存未命中。 通常，该体验是总生产流量的一个相对较小的部分。
 
 ## 视频概述 {#video}
 

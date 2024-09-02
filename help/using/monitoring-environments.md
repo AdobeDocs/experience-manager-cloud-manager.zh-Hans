@@ -5,31 +5,31 @@ exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 34%
+ht-degree: 98%
 
 ---
 
 
-# 监视环境 {#monitoring-environments}
+# 监控环境 {#monitoring-environments}
 
 了解如何在 Cloud Manager 中监控环境。
 
 ## 量度阈值 {#thresholds}
 
-在 [!UICONTROL Cloud Manager] 中，通过观察环境中的各个实例并跟踪每个实例的各种量度来监控系统。每个量度都有两个定义的阈值：*警告*&#x200B;阈值和&#x200B;*严重*&#x200B;阈值。
+在 [!UICONTROL Cloud Manager] 中，通过观察环境中的各个实例并跟踪每个实例的各种量度来监控系统。 每个量度都有两个定义的阈值：*警告*&#x200B;阈值和&#x200B;*关键*&#x200B;阈值。
 
 如果量度超过其警告阈值（但低于其关键阈值），则将被视为处于警告状态。
 
 如果量度超过其关键阈值，则将被视为处于关键状态。
 
-AdobeManaged Services设置阈值，您可以在[!UICONTROL Cloud Manager]中查看这些阈值。 在大多数情况下，客户之间的阈值是一致的，但在某些情况下，AdobeManaged Services会编辑阈值以匹配特定的客户要求。 将您对阈值的任何问题转给您的客户成功工程师(CSE)。
+Adobe Managed Services 会设置阈值，而您可以在 [!UICONTROL Cloud Manager] 中查看这些阈值。 在大多数情况下，客户之间的阈值是一致的，但在某些情况下，Adobe Managed Services 会修改阈值以匹配特定的客户要求。请向您的客户成功工程师 (CSE) 咨询任何有关阈值的问题。
 
-## 访问系统监控 {#accessing-system-monitoring}
+## 访问系统监控功能 {#accessing-system-monitoring}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 单击要监视的程序的省略号按钮。
-1. 在菜单的&#x200B;**管理**&#x200B;标题下，单击&#x200B;**显示监视**&#x200B;以打开显示系统监视信息的&#x200B;**报告**&#x200B;页面。
+1. 单击要监控的项目的省略号按钮。
+1. 在菜单中，在&#x200B;**管理**&#x200B;标题下，单击&#x200B;**显示监控**，以打开显示系统监控信息的&#x200B;**报告**&#x200B;页面。
 
    ![设置](/help/assets/first-timea1.png)
 
@@ -37,14 +37,14 @@ AdobeManaged Services设置阈值，您可以在[!UICONTROL Cloud Manager]中查
 
 ## 系统监控概述 {#system-monitoring-overview}
 
-**报告**&#x200B;页面的&#x200B;**系统监视**&#x200B;部分列出了项目中受监视的环境。 报告按以下四个不同类别报告其高级别健康状况：
+**报告**&#x200B;页面的&#x200B;**系统监控**&#x200B;部分列出了程序中受监控的环境。它通过以下四个不同的类别报告了它们的高级健康状况：
 
 * 主机
 * 存储
 * 网络
 * 应用程序
 
-每个类别中的状态均为各个量度的摘要。如果某个类别中的任何量度处于关键状态，则对于概述页面而言，整个类别都处于关键状态。 可以在环境级别和实例级别查看同一摘要。
+每个类别中的状态均为各个量度的摘要。如果某个类别中的任意量度处于关键状态，则对于概述页面而言，整个类别都处于关键状态。 可以在环境级别和实例级别查看同一摘要。
 
 ![系统监控概述](/help/assets/System-Monitoring-Reports.png)
 
@@ -58,13 +58,13 @@ AdobeManaged Services设置阈值，您可以在[!UICONTROL Cloud Manager]中查
 
 ![选择环境](/help/assets/System_Monitoring1.png)
 
-左侧的导航显示当前所选类别中的可用量度，其中包含当前所选环境和实例的数据。
+左侧导航显示当前所选类别中的可用量度，其中包含当前所选环境和实例的数据。
 
-单个图表显示状态和随时间变化的数据图表以及阈值。 如果显示多个实例，则每个实例的数据都位于一个单独的系列中。
+单个图表显示状态和随时间变化的数据图表以及阈值。 如果显示多个实例，则每个实例的数据都会位于一个单独的系列中。
 
 ![量度图表](/help/assets/Monitoring_Graphs1.png)
 
-通过单击图例中的系列，可以在图表上隐藏该系列。例如，如果单击警告阈值系列，则只能看到关键阈值。
+通过单击图例中的系列，可以在图表上隐藏该系列。例如，如果您单击警告阈值系列，则您只会看到关键阈值。
 
 ![修改图表](/help/assets/Monitoring_Graphs2.png)
 
@@ -72,30 +72,30 @@ AdobeManaged Services设置阈值，您可以在[!UICONTROL Cloud Manager]中查
 
 #### 主机 {#host}
 
-* **每个核心的负载**： CPU正在执行的进程数。 或者，处于等待状态的排队进程数在一(load1)、五(load5)和十五(load15)分钟时段内的平均值。
+* **每个核心的负载**：CPU 正在执行的进程数。 或者，一分钟（load1）、五分钟（load5）和十五分钟（load15）时间内处于等待状态的排队进程数的平均值。
 * **进程计数**：当前打开的进程数。
-* **用户计数**：具有活动Shell会话的用户数。
-* **内存使用率**：当前分配的系统内存的百分比。
-* **JVM内存**：分配的Java栈的大小（以MB为单位）。
-* **旧生成空间**：当前分配的JVM旧生成内存的百分比。
+* **用户计数**：具有活动 shell 会话的用户的数量。
+* **内存使用**：当前分配的系统内存的百分比。
+* **JVM 内存**：分配的 Java 堆的大小（以 MB 为单位）。
+* **旧一代空间**：当前分配的 JVM 旧一代内存的百分比。
 
 #### 网络 {#network}
 
-* **CQ端口检查**：访问AEM或Dispatcher端口的响应时间（秒）。 创作、发布和Dispatcher具有不同的量度。
+* **CQ 端口检查**：访问 AEM 或 Dispatcher 端口的响应时间（以秒为单位）。创作、发布和 Dispatcher 具有不同的量度。
 
 #### 存储 {#storage}
 
-* **磁盘空间**：主机上每个挂载点的已用磁盘空间（以MB为单位）。 每个挂载点具有不同的量度。 至少有`/`和`/mnt`的量度，但根据特定实例配置，可能会提供额外的挂载点量度。
+* **磁盘空间**：主机上每个挂载点的已用磁盘空间（以 MB 为单位）。 每个挂载点具有不同的量度。 至少有 `/` 和 `/mnt` 的量度，但根据具体的实例配置，可能会提供额外的挂载点量度。
 * **文件夹大小**
-* **AEM区段存储**： AEM区段存储的已用磁盘空间（以GB为单位）。
+* **AEM 区段存储**：AEM 区段存储的已用磁盘空间（以 GB 为单位）。
 
 #### 应用程序 {#application}
 
 * **复制代理**：测试复制事件所用的时间（以秒为单位）
    * 每个复制代理均具有单独的量度。
-* **Dispatcher刷新**：当前在Dispatcher刷新队列中的项目数
+* **Dispatcher 刷新**：当前位于 Dispatcher 刷新队列中的项目数
 
-## SLA报表 {#sla-reporting}
+## SLA 报告 {#sla-reporting}
 
 您可以查看生产 AEM 环境相对于约定的服务水平协议 (SLA) 的性能。
 
@@ -111,17 +111,17 @@ AdobeManaged Services设置阈值，您可以在[!UICONTROL Cloud Manager]中查
 
 ![事件分析](/help/assets/sla-reporting3.png)
 
-## SLA指标 {#sla-metrics}
+## SLA 量度 {#sla-metrics}
 
-* **创作合同**：在您与AdobeManaged Services签订的合同中为创作层定义的SLA。
-* **AMS创作SLA**：测量到的生产创作层的正常运行时间，由供应商或Adobe引起的保理事件。
-* **创作SLA**：测量到的创作层的正常运行时间忽略了计划的停机时间，例如维护时段。
-* **最终用户合同**：在您与AdobeManaged Services签订的合同中为发布层定义的SLA。
-* **AMS最终用户SLA**：测量到的生产发布层的正常运行时间，由供应商或Adobe引起的保理事件。
-* **最终用户SLA**：测量到的发布层的正常运行时间，忽略了计划的停机时间，例如维护时段。
+* **作者合同**：您与 Adobe Managed Services 签订的合同中为创作层定义的 SLA。
+* **AMS 作者 SLA**：测量出的生产作者层的正常运行时间，其中考虑了供应商或 Adobe 引起的事故。
+* **作者 SLA**：测量出的作者层的正常运行时间，其中忽略了计划的停机时间，例如维护时段。
+* **最终用户合同**：您与 Adobe Managed Services 签订的合同中为发布层定义的 SLA。
+* **AMS 最终用户 SLA**：测量出的生产发布层的正常运行时间，其中考虑了由供应商或 Adobe 引起的事故。
+* **最终用户 SLA**：测量出的发布层的正常运行时间，其中忽略了计划的停机时间，例如维护时段。
 
 ## 视频教程 {#video-tutorial}
 
-本视频概述了使用 Cloud Manager 报告生成的图表来查看项目环境。
+本视频概述如何使用 Cloud Manager 报告生成的图表来查看项目环境。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26315/)

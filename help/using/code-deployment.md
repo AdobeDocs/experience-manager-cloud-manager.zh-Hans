@@ -5,7 +5,7 @@ exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1637'
-ht-degree: 55%
+ht-degree: 97%
 
 ---
 
@@ -32,19 +32,19 @@ ht-degree: 55%
 * 暂存测试
 * 生产部署
 
-您可以通过查看日志或根据测试标准审查结果来审查各种部署过程的步骤。
+您可以通过查看日志或依据测试标准审查结果，来审查各种部署过程的步骤。
 
 ## 部署步骤 {#deployment-steps}
 
-在部署的每个步骤中都会执行大量操作，本节将对此进行介绍。 有关如何在幕后部署代码本身的技术详细信息，请参阅[部署进程详细信息](#deployment-process)。
+在部署的每个步骤中都会进行许多操作，本节将会对此进行介绍。 查看[部署过程详细信息](#deployment-process)，了解有关如何在幕后部署代码本身的技术详细信息。
 
 ### 暂存部署步骤 {#stage-deployment}
 
 **暂存部署**&#x200B;步骤包含以下操作：
 
-* **验证**：此步骤可确保将管道配置为使用当前可用的资源。 例如，存在已配置的分支并且环境可用。
-* **构建和单元测试**：此步骤运行容器化的构建过程。有关详细信息，请参阅[生成环境](/help/getting-started/build-environment.md)。
-* **代码扫描**：此步骤评估应用程序代码的质量。有关测试过程的详细信息，请参阅[了解测试结果](/help/using/code-quality-testing.md)。
+* **验证** – 此步骤可确保将管道配置为使用当前可用的资源。 例如，存在配置的分支并且环境可用。
+* **构建和单元测试**：此步骤运行容器化的构建过程。 有关详细信息，请参阅[构建环境](/help/getting-started/build-environment.md)。
+* **代码扫描**：此步骤评估应用程序代码的质量。 有关测试过程的详细信息，请参阅[了解测试结果](/help/using/code-quality-testing.md)。
 * **部署到暂存**
 
 ![暂存部署](/help/assets/Stage_Deployment1.png)
@@ -65,7 +65,7 @@ ht-degree: 55%
    * 利用此选项，您可以计划生产部署，也可以单击&#x200B;**立即**&#x200B;来立即执行生产部署。
 * **计划生产部署**
    * 配置管道时将启用此选项。
-   * 计划的日期和时间根据用户的时区指定。
+   * 根据用户的时区指定计划的日期和时间。
      ![计划部署](/help/assets/Production_Deployment1.png)
 * **CSE 支持**（如果已启用）
 * **部署到生产**
@@ -78,7 +78,7 @@ ht-degree: 55%
 
 ## 超时 {#timeouts}
 
-如果继续等待用户反馈，则以下步骤将超时：
+如果继续等待用户反馈，则以下步骤将会超时：
 
 | 步骤 | 超时 |
 |--- |--- |
@@ -96,72 +96,72 @@ Cloud Manager 将构建过程生成的所有 target/*.zip 文件上传到存储�
 
 当 Cloud Manager 部署到非生产拓扑时，目标是尽快完成部署，因此，工件将同时部署到所有节点，如下所示：
 
-1. Cloud Manager确定每个工件是AEM还是Dispatcher包。
+1. Cloud Manager 确定每个工件是 AEM 还是 Dispatcher 包。
 1. Cloud Manager 会从负载平衡器中移除所有 Dispatcher，以在部署期间隔离环境。
 
-   * 除非另有配置，否则您可以跳过开发和暂存部署中的负载平衡器更改。 即，对于开发环境，分离和附加非生产管道中的步骤；对于暂存环境，分离和附加生产管道中的步骤。
+   * 除非另有配置，否则您可以跳过开发和暂存部署中的负载均衡器更改。也就是说，对于开发环境，在非生产管道中分离和附加步骤，对于暂存环境，在生产管道中进行分离和附加。
 
    ![跳过负载平衡器](/help/assets/load_balancer.png)
 
    >[!NOTE]
    >
-   >预计1-1-1客户将使用此功能。
+   >预计 1-1-1 客户将会使用此功能。
 
 1. 每个 AEM 工件均通过包管理器 API 部署到每个 AEM 实例，其中包依赖关系将确定部署顺序。
 
-   * 详细了解如何使用包安装新功能、在实例之间传输内容以及备份存储库内容。 请参阅[包管理器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager)。
+   * 要了解有关如何使用包安装新功能、在实例之间传输内容以及备份存储库内容的更多信息，请参阅[包管理器](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-cloud-service/content/implementing/developer-tools/package-manager)。
 
    >[!NOTE]
    >
-   >所有 AEM 工件都会部署供作者和发布者使用。在需要特定于节点的配置时，应利用运行模式。要了解有关运行模式如何允许您针对特定目的调整 AEM 实例的更多信息，请参阅[“部署到 AEM as a Cloud Service”文档的“运行模式”部分](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/deploying/overview#runmodes)。
+   >所有 AEM 工件都会部署供作者和发布者使用。在需要特定于节点的配置时，应利用运行模式。要了解有关运行模式如何允许您针对特定目的调整 AEM 实例的更多信息，请参阅[“部署到 AEM as a Cloud Service”文档的“运行模式”部分](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-cloud-service/content/implementing/deploying/overview#runmodes)。
 
-1. Dispatcher工件将部署到每个Dispatcher，如下所示：
+1. Dispatcher 工件将会部署到每个 Dispatcher，如下所示：
 
    1. 当前配置已备份并复制到临时位置。
-   1. 已删除所有配置（不可变文件除外）。有关更多详细信息，请参阅 [Dispatcher 配置](/help/getting-started/dispatcher-configurations.md)。此方法会清除目录，以确保没有留下孤立文件。
-   1. 工件将提取到 `httpd` 目录。不会覆盖不可变文件。在部署时，将忽略您对Git存储库中的不可变文件所做的任何更改。 这些文件是AMS Dispatcher Framework的核心，无法更改。
+   1. 已删除所有配置（不可变文件除外）。有关更多详细信息，请参阅 [Dispatcher 配置](/help/getting-started/dispatcher-configurations.md)。这种方法会清空目录，以确保不会留下孤立文件。
+   1. 工件将提取到 `httpd` 目录。不会覆盖不可变文件。在部署时，您对 Git 存储库中不可变文件所做的任何更改都会被忽略。这些文件是 AMS Dispatcher 框架的核心，因此无法更改。
    1. Apache 执行配置测试。如果未发现任何错误，则将重新加载服务。如果发生错误，则从备份中恢复配置，重新加载服务，并将错误报告回 Cloud Manager。
-   1. 管道配置中指定的每个路径都将失效或从Dispatcher缓存中进行刷新。
+   1. 管道配置中指定的每个路径都将失效或从 Dispatcher 缓存中进行刷新。
 
    >[!NOTE]
    >
-   >Cloud Manager希望Dispatcher工件包含完整文件集。 所有Dispatcher配置文件都必须在Git存储库中。 缺少文件或文件夹会导致部署失败。
+   >Cloud Manager 要求 Dispatcher 工件包含完整文件集。 所有 Dispatcher 配置文件都必须位于 Git 存储库中。缺少文件或文件夹会导致部署失败。
 
-1. 成功将所有AEM和Dispatcher包部署到所有节点后，调度程序将添加回负载平衡器，并完成部署。
+1. 在将所有 AEM 和 Dispatcher 包成功部署到所有节点后，会将 Dispatcher 重新添加到负载平衡器，同时完成部署。
 
    >[!NOTE]
    >
-   >您可以跳过开发和暂存部署中的负载平衡器更改。 即，对于开发环境，分离和附加非生产管道中的步骤；对于暂存环境，分离和附加生产管道。
+   >您可以跳过开发和暂存部署中的负载均衡器更改。 也就是说，对于开发环境，在非生产管道中分离和附加步骤，对于暂存环境，在生产管道中进行分离和附加。
 
 ### 部署到生产阶段 {#deployment-production-phase}
 
-部署到生产拓扑的过程略有不同，旨在尽量减小对AEM网站访客的影响。
+部署到生产拓扑的过程略有不同，以尽量减小对 AEM 网站访客产生的影响。
 
 生产部署通常遵循与上述相同的步骤，但它采用的是滚动方式：
 
 1. 将 AEM 包部署到作者。
 1. 从负载平衡器分离 dispatcher1。
-1. 以并行方式将AEM包部署到publish1，并将Dispatcher包部署到dispatcher1，同时刷新Dispatcher缓存。
+1. 以并行方式将 AEM 包部署到 publish1，并将 Dispatcher 包部署到 dispatcher1，同时刷新 Dispatcher 缓存。
 1. 将 dispatcher1 放回负载平衡器中。
 1. 在将 dispatcher1 重新投入使用后，就会从负载平衡器中分离 dispatcher2。
-1. 以并行方式将AEM包部署到publish2，并将Dispatcher包部署到dispatcher2，同时刷新Dispatcher缓存。
+1. 以并行方式将 AEM 包部署到 publish2，并将 Dispatcher 包部署到 dispatcher2，同时刷新 Dispatcher 缓存。
 1. 将 dispatcher2 放回负载平衡器中。
 
 此过程将持续进行，直到部署到达拓扑中的所有发布者和 Dispatcher 为止。
 
 ## 紧急管道执行模式 {#emergency-pipeline}
 
-在关键情况下，AdobeManaged Services客户可能需要立即将代码更改部署到其暂存环境和生产环境。 这项功能可以让客户绕过整个Cloud Manager测试周期。
+在紧急情况下，Adobe Managed Services 客户可能需要立即将代码更改部署到其暂存和生产环境。 此功能使他们能够绕过完整的 Cloud Manager 测试周期。
 
 为了处理这些情况，可以在紧急模式下执行 Cloud Manager 生产管道。在使用此模式时，不执行安全性测试和性能测试步骤。所有其他步骤（包括任何已配置的审批步骤）都会像在正常管道执行模式中那样执行。
 
 >[!NOTE]
 >
->紧急管道执行模式功能基于逐个程序被激活。 激活由客户成功工程师完成。
+>紧急管道执行模式功能是逐个程序激活的。 激活由客户成功工程师完成。
 
 ### 使用紧急管道执行模式 {#using-emergency-pipeline}
 
-在启动生产管道执行时，您可以从对话框中选择正常模式或紧急模式。 如果为项目激活了紧急管道执行模式功能，则此选项可用。 启用该功能后，即可使用此选项。
+当您启动生产管道执行时，您可以从对话框中选择正常模式或紧急模式。如果程序激活了紧急管道执行模式功能，则此选项可用。启用该功能后，此选项可用。
 
 ![运行管道选项](/help/assets/execution-emergency1.png)
 
@@ -177,11 +177,11 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 ## 重新执行生产部署 {#reexecute-deployment}
 
-在罕见的情况下，生产部署步骤可能会因短暂的原因而失败。在这些情况下，只要生产部署步骤已完成，您就可以重新执行该步骤，而不管该步骤是成功、取消还是不成功。 使用包含以下三个步骤的同一管道支持重新执行：
+在罕见的情况下，生产部署步骤可能会因短暂的原因而失败。在这些情况下，只要生产部署步骤已完成，您就可以重新执行它，无论它是成功、遭到取消还是不成功。使用由以下三个步骤组成的相同管道支持重新执行：
 
-1. **验证步骤** — 与正常管道执行期间发生的验证相同。
+1. **验证步骤** - 在正常管道执行期间进行的相同验证。
 1. **构建步骤** - 在重新执行的上下文中，构建步骤复制工件，但实际上并不执行新的构建过程。
-1. **生产部署步骤** — 使用与正常管道执行中的生产部署步骤相同的配置和选项。
+1. **生产部署步骤** - 使用与正常管道执行中的生产部署步骤相同的配置和选项。
 
 在此类能够重新执行的情况下，生产管道状态页面在平常的&#x200B;**下载构建日志**&#x200B;选项旁提供&#x200B;**重新执行**&#x200B;选项。
 
@@ -248,8 +248,8 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 HAL 链接的 `href` 值的语法只是一个示例，应始终从 HAL 链接读取而不是生成实际值。
 
-将`PUT`请求提交到此终结点会导致`201`响应（如果成功）。 响应正文是新执行的表示形式。 此功能类似于通过API开始常规执行。
+向此端点提交 `PUT`请求会导致出现 `201` 响应（如果成功）。响应主体表示的是新的执行。该功能类似于通过 API 开始常规执行。
 
 #### 识别重新执行的执行 {#identifying}
 
-系统通过触发器字段中的值`RE_EXECUTE`识别重新执行的执行。
+系统通过触发器字段中的值 `RE_EXECUTE` 识别重新执行的执行。

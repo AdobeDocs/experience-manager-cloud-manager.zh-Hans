@@ -5,7 +5,7 @@ exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 49%
+ht-degree: 55%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 49%
 
 您可继续查看[程序设置](/help/getting-started/program-setup.md)文档，了解程序设置过程的后续步骤。
 
-## Cloud Manager活动 {#activity}
+## Cloud Manager 活动 {#activity}
 
 Cloud Manager提供了项目活动的综合视图。 它列出了所有CI/CD管道执行，包括生产和非生产。 利用此类功能，可了解过去和现在的活动。
 

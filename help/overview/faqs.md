@@ -1,25 +1,25 @@
 ---
 title: Cloud Manager 常见问题解答
-description: 了解面向AMS客户的有关Cloud Manager的最常见问题的答案。
+description: 了解有关适用于 AMS 客户的 Cloud Manager 的最常见问题的解答。
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '748'
-ht-degree: 52%
+ht-degree: 92%
 
 ---
 
 
 # Cloud Manager 常见问题解答 {#cloud-manager-faqs}
 
-本文档为AMS客户提供有关Cloud Manager最常见问题的解答。
+本文档提供了有关适用于 AMS 客户的 Cloud Manager 的最常见问题的解答。
 
 ## 是否可以将 Java 11 与 Cloud Manager 构建一起使用？ {#java-11}
 
-是。您需要使用Java 11的正确设置添加`maven-toolchains-plugin`。
+是。您需要添加 `maven-toolchains-plugin` 和正确的 Java 11 设置。
 
-* 这个过程记录在[此处](/help/getting-started/using-the-wizard.md)。
-* 有关示例，请参阅[WKND示例项目代码](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)。
+* 这个过程在[此处](/help/getting-started/using-the-wizard.md)记录。
+* 有关示例，请参阅 [WKND 示例项目代码](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)。
 
 ## 从 Java 8 切换到 Java 11 后，我的构建失败，并显示一个有关 maven-scr-plugin 的错误。我该怎么办？ {#maven-src-plugin}
 
@@ -29,7 +29,7 @@ ht-degree: 52%
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
 ```
 
-有关如何删除此插件的说明，[请参阅此处](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/)。
+有关如何删除此插件的说明，[请见此处](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/)。
 
 ## 从 Java 8 切换到 Java 11 后，我的构建失败，并显示一个有关 RequireJavaVersion 的错误。 我该怎么办？ {#requirejavaversion}
 
@@ -39,36 +39,36 @@ ht-degree: 52%
 [main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion
 ```
 
-此已知问题是由于Cloud Manager使用其他版本的Java来运行Maven命令而不是编译代码造成的。 从您的`maven-enforcer-plugin`配置中忽略`requireJavaVersion`。
+这是一个已知问题，导致此问题的原因是 Cloud Manager 使用其他版本的 Java 来运行 Maven 命令而不是编译代码。 从 `maven-enforcer-plugin` 配置中忽略 `requireJavaVersion`。
 
-## 代码质量检查失败，现在部署停滞。 是否能通过某种方式绕过此检查？ {#deployment-stuck}
+## 代码质量检查失败，并且现在部署出现卡滞。 是否能通过某种方式绕过此检查？ {#deployment-stuck}
 
-是。除安全性评级之外，所有代码质量故障都是非关键量度。 因此，可以在部署管道中，通过扩展结果UI中的项目来绕过这些量度。
+是。除安全评级之外的所有代码质量故障都是非关键量度。 因此，可以通过展开结果 UI 中的项目将它们作为部署管道的一部分绕过。
 
-具有[部署经理、项目经理或业务负责人](/help/requirements/users-and-roles.md#role-definitions)角色的用户可以覆盖这些问题。 在这种情况下，管道将继续运行。 或者，他们可以接受问题，在这种情况下，管道将因故障而停止。
+具有[部署经理、项目经理或业务所有者](/help/requirements/users-and-roles.md#role-definitions)角色的用户可以忽略这些问题。 在这种情况下，管道将会继续运行。 或者，他们可以接受这些问题，在这种情况下，管道会因失败而停止。
 
 有关更多详细信息，请参阅[运行管道时的三层审核](/help/using/code-quality-testing.md#three-tier-gates-while-running-a-pipeline)和[配置非生产管道](/help/using/non-production-pipelines.md#understanding-the-flow)文档。
 
-## Cloud Manager 部署在 Adobe Managed Services 环境中执行性能测试步骤时失败。如何调试此问题以传递关键量度？ {#debug-critical-metrics}
+## Cloud Manager 部署在 Adobe Managed Services 环境中执行性能测试步骤时失败。如何调试该问题以通过关键量度？ {#debug-critical-metrics}
 
-此问题的答案不是唯一的。但是，您可能会发现以下关于性能测试步骤的要点很有帮助：
+此问题的答案不是唯一的。但是，您可能会发现有关性能测试步骤的以下几点很有帮助：
 
-* 此步骤是一个Web性能步骤。 也就是说，现在应该使用Web浏览器加载页面。
-* 在测试期间，结果 .csv 文件中列出的 URL 将加载到 Cloud Manager 基础架构的 Chrome 浏览器中。
-* 一个常见的失败量度是错误率。 因此，对于要传递的URL，主URL必须以`200`状态加载，并且加载时间必须少于`20`秒。 如果页面加载时间超过`20`秒，则会将其标记为`504`错误。
-* 如果您的网站需要用户身份验证，请参阅[了解测试结果](/help/using/code-quality-testing.md#authenticated-performance-testing)来配置测试，以便您能够验证您的网站。
+* 此步骤是 Web 性能步骤。 也就是说，它是使用 Web 浏览器加载页面的时间。
+* 在测试期间，结果 .csv 文件中列出的 URL 将会加载到 Cloud Manager 基础架构的 Chrome 浏览器中。
+* 一个常见的失败量度是错误率。 因此，为了使 URL 通过，主 URL 必须以 `200` 状态加载，并且加载时间必须少于 `20` 秒。 如果页面加载时间超过 `20` 秒，则会被标记为 `504` 错误。
+* 如果网站要求实施用户身份验证，请参阅[了解测试结果](/help/using/code-quality-testing.md#authenticated-performance-testing)，了解如何通过配置测试来针对网站进行身份验证。
 
-有关质量检查的详细信息，请参阅[了解测试结果](/help/using/code-quality-testing.md)。
+有关质量检查的更多信息，请参阅[了解测试结果](/help/using/code-quality-testing.md)。
 
 ## 我是否能将 SNAPSHOT 用于 Maven 项目版本？ {#snapshot}
 
 是。对于开发人员部署，Git分支`pom.xml`文件必须在`<version>`值的末尾包含`-SNAPSHOT`。
 
-这样，在版本未更改时，仍可安装后续部署。 在开发人员部署中，不会为 Maven 构建添加或生成自动版本。
+这样一来，在版本未更改的情况下，仍能安装后续部署。 在开发人员部署中，不会为 Maven 构建添加或生成自动版本。
 
 您也可以为暂存和生产构建或部署将版本设置为 `-SNAPSHOT`。 Cloud Manager会自动设置正确的版本号，并在Git中为您创建标记。 如果需要，可以稍后参考此标记。
 
-[此处记录了](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling)有关版本处理的更多详细信息。
+[此处记录了](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling)有关版本处理的更多详细信息。
 
 ## 包和捆绑包版本控制如何用于暂存和生产部署？ {#staging-production}
 

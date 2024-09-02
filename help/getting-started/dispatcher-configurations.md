@@ -1,44 +1,44 @@
 ---
 title: Dispatcher 配置
-description: 了解如何使用Cloud Manager部署Dispatcher配置文件。
+description: 了解如何使用 Cloud Manager 部署 Dispatcher 配置文件。
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 48%
+ht-degree: 98%
 
 ---
 
 
-# Dispatcher配置 {#manage-your-dispatcher-configurations}
+# Dispatcher 配置 {#manage-your-dispatcher-configurations}
 
-了解如何使用Cloud Manager部署Dispatcher配置文件
+了解如何使用 Cloud Manager 部署 Dispatcher 配置文件
 
 ## 使用Cloud Manager部署Dispatcher配置 {#deploying-dispatcher-configurations}
 
-Cloud Manager能够部署Web服务器和Dispatcher配置文件，前提是这些文件与普通AEM内容包一起存储在Git存储库中。
+Cloud Manager 能够部署 Web 服务器和 Dispatcher 配置文件，前提是这些文件与普通 AEM 内容包一起存储在 Git 存储库中。
 
-要利用此功能，Maven构建应生成一个.zip文件，其中至少包含两个目录：`conf`和`conf.d`。 可以使用 `maven-assembly-plugin` 生成此 .zip 文件。
+为了利用此功能，Maven 构建应生成一个 .zip 文件，其中至少包含两个目录：`conf` 和 `conf.d`。 可以使用 `maven-assembly-plugin` 生成此 .zip 文件。
 
-Cloud Manager 使用内置的[项目创建向导](/help/getting-started/using-the-wizard.md)生成的项目具有自动创建的正确的 Maven 项目结构。如果您不熟悉AdobeManaged Services (AMS)，建议使用此路径。
+Cloud Manager 使用内置的[项目创建向导](/help/getting-started/using-the-wizard.md)生成的项目具有自动创建的正确的 Maven 项目结构。如果您不熟悉 Adobe Managed Services (AMS)，那么建议您执行此操作。
 
-当您部署到Dispatcher实例时，该实例上的目录将替换为Git存储库中的目录。 由于Web服务器和Dispatcher配置文件通常需要特定于环境的详细信息，因此您必须与客户成功工程师(CSE)协作，以在`/etc/sysconfig/httpd`中设置适当的环境变量，然后才能正确使用此功能。
+当您部署到 Dispatcher 实例时，实例上的目录会被 Git 存储库中的目录替换。由于 Web 服务器和 Dispatcher 配置文件通常需要特定于环境的详细信息，因此您必须与客户成功工程师 (CSE) 合作，在 `/etc/sysconfig/httpd` 中设置相应的环境变量，然后才能正确使用此功能。
 
-## 适用于现有托管服务客户的Dispatcher配置 {#steps-for-configuring-dispatcher}
+## 适用于现有托管服务客户的 Dispatcher 配置 {#steps-for-configuring-dispatcher}
 
 执行以下步骤以完成初始 Dispatcher 配置。
 
-1. 从您的 CSE 处获取当前生产配置文件。
+1. 从您的 CSE 处获取当前的生产配置文件。
 1. 移除硬编码的环境特定的数据（例如发布渲染程序 IP），并替换为变量。
 1. 在每个目标 Dispatcher 的键值对中定义所需的变量，并请求您的 CSE 将这些变量添加到每个实例上的 `/etc/sysconfig/httpd` 中。
-1. 在暂存环境中测试更新的配置。
+1. 在暂存环境中测试已更新的配置。
 1. 测试后，请求 CSE 部署到生产环境。
-1. 将文件提交到Git存储库。
+1. 将文件提交到 Git 存储库。
 1. 通过 Cloud Manager 进行部署。
 
 >[!NOTE]
 >
->可以在Cloud Manager新用户引导期间或以后的某个时间点，将Dispatcher和Web服务器配置迁移到Git存储库。
+>可以在 Cloud Manager 新用户引导期间或以后的某个时间点，将 Dispatcher 和 Web 服务器配置迁移到 Git 存储库。
 
 ### 示例 {#example}
 
@@ -48,7 +48,7 @@ Cloud Manager 使用内置的[项目创建向导](/help/getting-started/using-th
 
    尽管可在此处使用任意名称，但此步骤中创建的目录名称必须与步骤 6 中使用的名称相同。
 
-1. 此子目录包含一个Maven模块，该模块使用Maven Assembly插件构建Dispatcher .zip文件。 在`dispatcher`目录中，创建一个包含此内容的`pom.xml`文件，并根据需要更改`parent`引用`artifactId`和`name`。
+1. 此子目录包含一个 Maven 模块，该模块使用 Maven Assembly 插件构建 Dispatcher .zip 文件。 在 `dispatcher` 目录中，创建一个包含此内容的 `pom.xml` 文件，并根据需要更改 `parent` 引用、`artifactId` 和 `name`。
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -90,7 +90,7 @@ Cloud Manager 使用内置的[项目创建向导](/help/getting-started/using-th
 
    * 与步骤 1 中一样，可以根据需要将此处的 artifactId 和 name 设为其他值。此处仅以使用 `dispatcher` 为例。
 
-1. Maven Assembly插件需要`descriptor`来定义.zip文件的创建方式。 要创建此描述符，请在 `dispatcher` 子目录中创建一个名为 `assembly.xml` 的文件，该文件包含以下内容。请注意，上述 `pom.xml` 文件中的第 26 行引用了此文件名。
+1. Maven Assembly 插件需要 `descriptor` 来定义 .zip 文件的创建方式。 要创建此描述符，请在 `dispatcher` 子目录中创建一个名为 `assembly.xml` 的文件，该文件包含以下内容。请注意，上述 `pom.xml` 文件中的第 26 行引用了此文件名。
 
    ```xml
    <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
@@ -113,9 +113,9 @@ Cloud Manager 使用内置的[项目创建向导](/help/getting-started/using-th
    </assembly>
    ```
 
-1. 在Dispatcher子目录中创建一个名为`src`的子目录（如上面第11行的Assembly描述符中所引用）来存储实际的Apache和Dispatcher配置。 在此 `src` 目录中，创建名为 `conf`、`conf.d`、`conf.dispatcher.d` 和 `conf.modules.d` 的目录。
+1. 在 Dispatcher 子目录中创建一个名为 `src` 的子目录（如上面第 11 行的 Assembly 描述符中所引用）来存储实际的 Apache 和 Dispatcher 配置。 在此 `src` 目录中，创建名为 `conf`、`conf.d`、`conf.dispatcher.d` 和 `conf.modules.d` 的目录。
 
-1. 在 `conf`、`conf.d`、`conf.dispatcher.d` 和 `conf.modules.d` 目录中填入您的配置文件。例如，默认配置包含这些文件和符号链接。
+1. 在 `conf`、`conf.d`、`conf.dispatcher.d` 和 `conf.modules.d` 目录中填入您的配置文件。 例如，默认配置包含这些文件和符号链接。
 
    ```
    dispatcher
@@ -190,9 +190,9 @@ Cloud Manager 使用内置的[项目创建向导](/help/getting-started/using-th
            └── 02-dispatcher.conf
    ```
 
-1. 最后，在项目的根目录中的`pom.xml`文件中，添加一个`<module>`元素以包含Dispatcher模块。
+1. 最后，在项目的根目录中的 `pom.xml` 文件中，添加 `<module>` 元素以包含 Dispatcher 模块。
 
-   例如，如果现有模块列表为：
+   例如，如果现有模块列表为以下内容：
 
    ```xml
        <modules>
