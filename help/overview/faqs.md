@@ -3,9 +3,9 @@ title: Cloud Manager 常见问题解答
 description: 了解有关适用于 AMS 客户的 Cloud Manager 的最常见问题的解答。
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '748'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -62,11 +62,11 @@ ht-degree: 92%
 
 ## 我是否能将 SNAPSHOT 用于 Maven 项目版本？ {#snapshot}
 
-是。对于开发人员部署，Git分支`pom.xml`文件必须在`<version>`值的末尾包含`-SNAPSHOT`。
+是。对于开发人员部署，Git 分支 `pom.xml` 文件必须在 `<version>` 值的末尾包含 `-SNAPSHOT`。
 
 这样一来，在版本未更改的情况下，仍能安装后续部署。 在开发人员部署中，不会为 Maven 构建添加或生成自动版本。
 
-您也可以为暂存和生产构建或部署将版本设置为 `-SNAPSHOT`。 Cloud Manager会自动设置正确的版本号，并在Git中为您创建标记。 如果需要，可以稍后参考此标记。
+您也可以为暂存和生产构建或部署将版本设置为 `-SNAPSHOT`。 Cloud Manager 会自动设置适当的版本号并在 Git 中为您创建标记。如果需要，可以稍后参考此标记。
 
 [此处记录了](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling)有关版本处理的更多详细信息。
 
@@ -76,11 +76,11 @@ ht-degree: 92%
 
 对于暂存和生产部署中的自定义版本控制，请设置适当的三部分 maven 版本，如 `1.0.0`。 每次部署到生产环境时提高版本。
 
-Cloud Manager会自动将其版本添加到暂存和生产构建，并创建Git分支。 无需特殊配置。 如果您未如前所述设置 maven 版本，部署仍会成功，并且会自动设置版本。
+Cloud Manager 自动将其版本添加到暂存和生产构建，并创建 Git 分支。 无需特殊配置。 如果您未如前所述设置 maven 版本，部署仍会成功，并且会自动设置版本。
 
 ## 虽然在 Cloud Manager 部署中，我的 maven 构建失败，但它会在本地构建，并且不会产生错误。 有什么问题吗？ {#maven-build-fail}
 
-有关更多详细信息，请参阅此[Git资源](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md)。
+有关更多详细信息，请参阅此 [Git 资源](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md)。
 
 ## 我无法使用 aio 命令设置变量。 我该怎么办？ {#set-variable}
 

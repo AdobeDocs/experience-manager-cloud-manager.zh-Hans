@@ -3,9 +3,9 @@ title: 设置您的项目
 description: 了解如何设置项目，以便使用 Cloud Manager 管理和部署该项目。
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1395'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 现有 AEM 项目必须遵守一些基本规则才能使用 Cloud Manager 成功地构建和部署。
 
 * 必须使用 Apache Maven 构建项目。
-* Git存储库的根目录中必须有一个`pom.xml`文件。
+* Git 存储库的根目录中必须有一个 `pom.xml` 文件。
    * 此 `pom.xml` 文件可以根据需要引用尽可能多的子模块（这些子模块又可能包含其他子模块）。
    * 可以将引用添加到您在其他 Maven 工件存储库中拥有的 `pom.xml` 文件中。
    * 配置后，支持访问[受密码保护的工件存储库](#password-protected-maven-repositories)。但是，不支持访问受网络保护的工件存储库。
@@ -116,7 +116,7 @@ ht-degree: 94%
 >
 >受密码保护的 Maven 存储库中的工件应仅在极少数情况下用于未与 AEM 绑定的代码。
 
-要使用Cloud Manager中受密码保护的Maven存储库，请将密码(以及（可选）用户名)指定为密钥[管道变量](/help/getting-started/build-environment.md#pipeline-variables)，然后在Git存储库中名为`.cloudmanager/maven/settings.xml`的文件中引用该密钥。 该文件遵循 [Maven 设置文件](https://maven.apache.org/settings.html)架构。
+要使用 Cloud Manager 中受密码保护的 Maven 存储库，请将密码（以及（可选）用户名）指定为密钥[管道变量](/help/getting-started/build-environment.md#pipeline-variables)，然后在 Git 存储库中名为 `.cloudmanager/maven/settings.xml` 的文件中引用该密钥。该文件遵循 [Maven 设置文件](https://maven.apache.org/settings.html)架构。
 
 在 Cloud Manager 构建过程开始时，该文件中的 `<servers>` 元素将并入 Cloud Manager 提供的默认 `settings.xml` 文件中。 自定义服务器不应使用以 `adobe` 和 `cloud-manager`开头的服务器 ID。 此类 ID 被视为保留 ID。 Cloud Manager 仅会镜像与指定前缀之一或默认 ID `central` 匹配的服务器 ID。
 
@@ -275,7 +275,7 @@ $ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSI
 
 ## 构建工件重用 {#build-artifact-reuse}
 
-在许多情况下，会将同一代码部署到多个 AEM 环境中。如果可能，当Cloud Manager检测到在多个全栈管道执行中使用了相同的Git commit时，可避免重建代码库。
+在许多情况下，会将同一代码部署到多个 AEM 环境中。如果可能，当 Cloud Manager 检测到在多个全栈管道执行中使用了相同的 Git 承诺时，它会避免重建代码库。
 
 开始执行时，系统会提取分支管道的当前 HEAD 承诺。 承诺哈希在 UI 中可见，也可通过 API 查看它。 在构建步骤成功完成时，生成的工件将基于该承诺哈希进行存储，并且可在后续管道执行中重用。
 

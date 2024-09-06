@@ -1,17 +1,17 @@
 ---
 title: 存储库访问信息
-description: 了解如何使用Cloud Manager的自助Git帐户管理访问和管理Adobe管理的Git存储库。
+description: 了解如何使用 Cloud Manager 的自助 Git 帐户管理访问和管理 Adobe 管理的 Git 存储库。
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # 存储库访问信息 {#accessing-repos}
 
-了解如何使用Cloud Manager中的自助Git帐户管理访问和管理Adobe管理的Git存储库。
+了解如何使用 Cloud Manager 的自助 Git 帐户管理访问和管理 Adobe 管理的 Git 存储库。
 
 ## 从概述页面访问存储库信息 {#overview-page}
 
@@ -26,7 +26,7 @@ ht-degree: 85%
    * Git 用户名。
    * Git 密码。
    * Cloud Manager Git 存储库的 URL。
-   * 预建的Git命令，用于向Git存储库快速添加远程存储库和推送代码。
+   * 预构建的 Git 命令，用于快速将远程添加到 Git 存储库并推送代码。
 
    ![存储库信息窗口](assets/access-repo-info.png)
 

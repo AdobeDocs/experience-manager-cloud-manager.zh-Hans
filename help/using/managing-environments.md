@@ -3,9 +3,9 @@ title: 管理环境
 description: 了解如何使用 Cloud Manager 管理环境。
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
 source-git-commit: 0b7c926120798e2fdb635752192f4ab2e12c1e24
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '273'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -54,11 +54,11 @@ Cloud Manager 的&#x200B;**概述**&#x200B;页面包含&#x200B;**环境**&#x200B
 
 >[!NOTE]
 >
->配置环境详细信息（如名称）后，就无法对其进行更改。
+>一旦配置完成，环境详细信息（例如名称）就无法更改。
 
 >[!NOTE]
 >
->通过客户成功工程师请求您的环境日志。
+>通过您的客户成功工程师请求获得环境日志。
 
 ## 视频教程 {#video-tutorial}
 
@@ -66,4 +66,4 @@ Cloud Manager 的&#x200B;**概述**&#x200B;页面包含&#x200B;**环境**&#x200B
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318/)
 
-*（3分钟，1秒）*
+*（3 分钟，1 秒钟）*

@@ -3,16 +3,16 @@ title: 使用新项目向导
 description: 关注此页面，了解如何使用该向导创建 AEM 应用程序项目
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 
 # 使用新项目向导 {#using-the-wizard}
 
-当您以新客户身份登记到Cloud Manager时，将为您提供一个空的Git存储库。 为了帮助您入门，Cloud Manger 提供了一个向导，可让您根据 [AEM 项目原型](https://github.com/adobe/aem-project-archetype)创建最小 AEM 项目作为起点。
+当您以新客户身份登记到 Cloud Manager 时，将会为您提供一个空的 Git 存储库。 为了帮助您入门，Cloud Manger 提供了一个向导，可让您根据 [AEM 项目原型](https://github.com/adobe/aem-project-archetype)创建最小 AEM 项目作为起点。
 
 执行以下步骤，使用该向导创建 AEM 项目。
 
@@ -33,7 +33,7 @@ ht-degree: 88%
 
    ![详细的原型参数](/help/assets/screen_shot_2018-10-08at60032am.png)
 
-1. 单击&#x200B;**创建**&#x200B;以使用原型创建入门项目并提交到指定的Git分支。
+1. 单击&#x200B;**创建**&#x200B;以使用原型创建入门项目并提交到指定的 Git 分支。
 
 您现在已具有基础项目。现在请设置您的管道。
 

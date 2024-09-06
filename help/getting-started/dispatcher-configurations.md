@@ -3,9 +3,9 @@ title: Dispatcher 配置
 description: 了解如何使用 Cloud Manager 部署 Dispatcher 配置文件。
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '575'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 98%
 
 了解如何使用 Cloud Manager 部署 Dispatcher 配置文件
 
-## 使用Cloud Manager部署Dispatcher配置 {#deploying-dispatcher-configurations}
+## 使用 Cloud Manager 部署 Dispatcher 配置 {#deploying-dispatcher-configurations}
 
 Cloud Manager 能够部署 Web 服务器和 Dispatcher 配置文件，前提是这些文件与普通 AEM 内容包一起存储在 Git 存储库中。
 

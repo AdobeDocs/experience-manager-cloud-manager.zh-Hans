@@ -3,9 +3,9 @@ title: 代码部署
 description: 了解如何部署代码以及在部署代码时 Cloud Manager 中会发生什么情况。
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1637'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 97%
 
 了解如何部署代码以及在部署代码时 Cloud Manager 中会发生什么情况。
 
-## 使用Cloud Manager部署代码 {#deploying-code-with-cloud-manager}
+## 使用 Cloud Manager 部署代码 {#deploying-code-with-cloud-manager}
 
 配置生产管道（包括必要的存储库和环境）后，便可以部署代码。
 
@@ -198,7 +198,7 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 * 如果上一次执行在生产部署步骤前的任何时间点失败，则无法重新执行。
 
 
-### 重新执行API {#reexecute-api}
+### 重新执行 API {#reexecute-api}
 
 除了在 UI 中可用之外，您还可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 触发重新执行以及标识已作为重新执行触发的执行。
 

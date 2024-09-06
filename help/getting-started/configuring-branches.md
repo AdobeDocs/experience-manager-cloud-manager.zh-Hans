@@ -3,9 +3,9 @@ title: 配置分支
 description: 了解如何在 Git 中设置您的第一个分支，以及 CI/CD 管道如何使用它来部署您的应用程序代码。
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '324'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 90%
 
 ## 在 Git 中设置您的第一个分支 {#setting-up-your-first-branch-in-git}
 
-将为登记到Cloud Manager中的每个项目配置一个最初为空的Git存储库[](/help/requirements/environment-provisioning.md)。 此存储库可以包含开发过程所需的任意数量的分支，但必须至少有一个分支可供 CI/CD 管道用来将应用程序代码部署到暂存和生产环境。 最佳实践是将 `main` 用作此分支的名称。 方便之处在于，这种方法是 Git 客户端在设置新项目时的默认行为。
+系统会为登记到 Cloud Manager 中的每个项目[配置](/help/requirements/environment-provisioning.md)一个最初为空的 Git 存储库。 此存储库可以包含开发过程所需的任意数量的分支，但必须至少有一个分支可供 CI/CD 管道用来将应用程序代码部署到暂存和生产环境。 最佳实践是将 `main` 用作此分支的名称。 方便之处在于，这种方法是 Git 客户端在设置新项目时的默认行为。
 
 例如，在设置新项目时，您会运行一组与以下内容类似的命令。
 
@@ -50,7 +50,7 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->不是必须使用命令行客户端。 有多种图形 Git 客户端可用，它们可作为独立应用程序或集成开发环境 (IDE)（如 Eclipse 或 IntelliJ）的一部分。 只要客户端应用程序支持使用HTTPS的Git，它就应该与[!UICONTROL Cloud Manager]兼容。
+>不是必须使用命令行客户端。 有多种图形 Git 客户端可用，它们可作为独立应用程序或集成开发环境 (IDE)（如 Eclipse 或 IntelliJ）的一部分。 只要客户端应用程序支持使用 HTTPS 的 Git，它就能与 [!UICONTROL Cloud Manager] 兼容。
 
 ## 推送您的第一个分支 {#pushing-your-first-branch}
 
