@@ -3,9 +3,9 @@ title: Git 与 Adobe Cloud Manager 的集成
 description: 本视频系列介绍了客户管理的（内部部署）Git 存储库的设置以及它与 Adobe Cloud Manager 的集成。
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
 source-git-commit: 51bd685a17eb9d68b1ec8245e6167cab02101fc1
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '331'
+ht-degree: 100%
 
 ---
 
