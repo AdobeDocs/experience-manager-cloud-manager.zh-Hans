@@ -1,18 +1,18 @@
 ---
 title: 管理管道
-description: 了解如何管理现有管道，包括编辑、运行和删除它们。
+description: 了解如何管理现有管道，包括运行、编辑和删除它们。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
-workflow-type: ht
+source-git-commit: 9d910e1b1a4aad000a8389ddc22ce380bbccd4ef
+workflow-type: tm+mt
 source-wordcount: '840'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
 
 # 管理管道 {#managing-pipelines}
 
-了解如何管理现有管道，包括编辑、运行和删除它们。
+了解如何管理现有管道，包括运行、编辑和删除它们。
 
 ## 管道信息卡 {#pipeline-card}
 
@@ -34,13 +34,13 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 * **访问存储库信息** – 显示访问 Cloud Manager Git 存储库所需的信息。
 * **了解详情** – 导航到 CI/CD 管道文档资源。
 
-## 管道窗口 {#pipelines}
+## 管道页面 {#pipelines}
 
-**管道**&#x200B;窗口显示所选项目的所有管道的完整列表。 此列表很有用，因为它提供的信息比[管道信息卡](#pipeline-card)中的信息更全面。
+**管道**&#x200B;页面显示选定项目的所有管道的完整列表。 此列表很有用，因为它提供的信息比[管道信息卡](#pipeline-card)中的信息更全面。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 在&#x200B;**程序概述**&#x200B;页面中单击&#x200B;**管道**&#x200B;选项卡以切换到&#x200B;**管道**&#x200B;窗口。
+1. 从&#x200B;**项目概述**&#x200B;页面，单击&#x200B;**管道**&#x200B;选项卡以切换到&#x200B;**管道**&#x200B;页面。
 
 1. 在这里，您可以看到程序的所有管道的列表，并可以像在&#x200B;**管道信息卡**&#x200B;中一样启动和停止管道执行。
 
@@ -50,13 +50,13 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 单击&#x200B;**查看详细信息**&#x200B;将转至[管道执行的详细信息](#view-details)。
 
-## 活动窗口 {#activity}
+## 活动页面 {#activity}
 
-**活动**&#x200B;窗口显示所选项目的所有管道执行的完整列表。
+**活动**&#x200B;页面显示选定项目的所有管道执行的完整列表。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 在&#x200B;**项目概述**&#x200B;页面中单击&#x200B;**活动**&#x200B;选项卡以切换到&#x200B;**活动**&#x200B;窗口。
+1. 从&#x200B;**项目概述**&#x200B;页面，单击&#x200B;**活动**&#x200B;选项卡以切换到&#x200B;**活动**&#x200B;页面。
 
 1. 在这里，您可以看到项目的所有管道执行的列表，包括当前执行和历史执行。
 

@@ -3,10 +3,10 @@ title: 在 Cloud Manager 中添加专用存储库
 description: 了解如何设置 Cloud Manager 以使用您自己的专用 GitHub 存储库。
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
-workflow-type: ht
-source-wordcount: '795'
-ht-degree: 100%
+source-git-commit: 5090d7ee9a6742d71122acda9901d074bc254305
+workflow-type: tm+mt
+source-wordcount: '818'
+ht-degree: 96%
 
 ---
 
@@ -30,6 +30,8 @@ ht-degree: 100%
 1. [添加存储库](#add-repo)
 1. [专用存储库所有权验证](#validate-ownership)
 
+
+
 ### 添加存储库 {#add-repo}
 
 1. 在 Cloud Manager 中，从&#x200B;**项目概述**&#x200B;页面中，单击&#x200B;**存储库**&#x200B;选项卡以切换到&#x200B;**存储库**&#x200B;页面，然后单击&#x200B;**添加存储库**。
@@ -50,7 +52,9 @@ ht-degree: 100%
 >
 >有关在 Cloud Manager 中管理存储库的详细信息，请参阅 [Cloud Manager 存储库](/help/managing-code/managing-repositories.md)。
 
-### 专用存储库所有权验证 {#validate-ownership}
+
+
+### 验证专用存储库的所有权 {#validate-ownership}
 
 Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权限。要授予访问权限，您需要安装 Adobe GitHub 应用程序并验证您是否拥有指定的存储库。
 
@@ -88,9 +92,13 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 
 要稍后返回存储库并完成验证，请转到&#x200B;**存储库**&#x200B;页面。 单击您添加的 GitHub 存储库旁边的省略号按钮，然后从下拉菜单中选择&#x200B;**所有权验证**。
 
+
+
 ## 将专用存储库与 Cloud Manager 结合使用 {#using}
 
 在 Cloud Manager 中验证 GitHub 存储库后，便已完成集成，您可以在 Cloud Manager 中使用该存储库。
+
+**要将专用存储库与Cloud Manager一起使用：**
 
 1. 在创建提取请求时，GitHub 检查会自动启动。
 
@@ -112,16 +120,21 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 >
 >您可以控制自动创建的管道，验证对专用存储库的每个拉取请求。请参阅 [GitHub 检查专用存储库的配置](github-check-config.md)，了解更多信息。
 
+
+
 ## 将专用存储库与管道关联 {#pipelines}
 
-经过验证的专用存储库可以与[全栈管道相关联](/help/overview/ci-cd-pipelines.md)。
+已验证的专用存储库可以与[全栈和前端管道](/help/overview/ci-cd-pipelines.md)关联。
+
+
 
 ## 限制 {#limitations}
 
 在 Cloud Manager 中使用专用存储库时会受到某些限制。
 
-* 您无法使用 Cloud Manager 的 GitHub 检查来暂停提取请求验证。 如果在 Cloud Manager 中验证 GitHub 存储库，则 Cloud Manager 会尝试验证为该存储库创建的提取请求。
-* 如果从您的 GitHb 组织中删除 Adobe GitHub 应用程序，则该操作会移除所有存储库的提取请求验证功能。
+* 专用存储库不支持 Web 层和配置管道。
 * 在生产全栈管道上使用专用存储库时，不会创建和推送任何 Git 标记。
+* 如果从您的 GitHb 组织中删除 Adobe GitHub 应用程序，则该操作会移除所有存储库的提取请求验证功能。
 * 当新的提交被推送到选定的分支时，使用专用存储库和提交构建触发器的管道不会自动启动。
 * [工件重用功能](/help/getting-started/project-setup.md#build-artifact-reuse)不适用于专用存储库。
+* 您无法使用 Cloud Manager 的 GitHub 检查来暂停提取请求验证。 如果在 Cloud Manager 中验证 GitHub 存储库，则 Cloud Manager 会尝试验证为该存储库创建的提取请求。

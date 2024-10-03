@@ -2,7 +2,7 @@
 title: 存储库访问信息
 description: 了解如何使用 Cloud Manager 的自助 Git 帐户管理访问和管理 Adobe 管理的 Git 存储库。
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
-source-git-commit: b66eb29ab86b2a6acf3a1d92c217154d07b9cc1e
+source-git-commit: 04fbc4a3fdba8b108055d66a4fdb1a31994cb18e
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 47%
@@ -24,7 +24,7 @@ Cloud Manager允许使用&#x200B;**管道**&#x200B;信息卡中的&#x200B;**访�
 * Cloud Manager Git 存储库的 URL。
 * 预构建的 Git 命令，用于快速将远程添加到 Git 存储库并推送代码。
 
-![存储库信息窗口](assets/repository-info.png)
+  ![存储库信息窗口](assets/repository-info.png)
 
 Cloud Manager 中没有关于[专用存储库](/help/managing-code/private-repositories.md)的访问信息。
 
