@@ -2,9 +2,9 @@
 title: Cloud Manager 2024.10.0 版的发行说明
 description: 了解 Cloud Manager 2024.10.0 的发行说明。
 feature: Release Information
-source-git-commit: 94d5f3487408f9d8908bb15221c48ef768390527
+source-git-commit: 74e8f7c0f3896e0e33a02b62c003db322c0d50d8
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '369'
 ht-degree: 24%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 24%
 
 请参阅[在Cloud Manager中添加外部存储库](/help/managing-code/external-repositories.md)。
 
-![添加存储库对话框](/help/release-notes/assets/repositories-add-release-notes.png)
+![添加“存储库”对话框](/help/release-notes/assets/repositories-add-release-notes.png)
 
 >[!NOTE]
 >
@@ -67,6 +67,6 @@ Adobe宣布引入对[仅限暂存和仅限生产的管道](/help/using/stage-pro
 * text
 -->
 
-## 已知问题 {#known-issues}
+<!-- Known Issues {#known-issues}
 
-{{content-copy-known-issues}}
+ -->
