@@ -8,9 +8,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
 source-git-commit: 1209faf71edbd74cd87acfe24ec438b98ddd4a3a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '342'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 71%
    + CI/CD 管道 {#pipelines}
       + [配置生产管道](/help/using/production-pipelines.md)
       + [配置非生产管道](/help/using/non-production-pipelines.md)
-      + [分离阶段和仅生产管道（早期采用者）](/help/using/stage-prod-only.md)
+      + [拆分阶段和仅生产管道（早期采用者）](/help/using/stage-prod-only.md)
       + [管理管道](/help/using/managing-pipelines.md)
    + [代码部署](/help/using/code-deployment.md)
    + [代码质量测试](/help/using/code-quality-testing.md)
@@ -57,17 +57,17 @@ ht-degree: 71%
    + [通知](/help/using/notifications.md)
    + [自定义代码质量规则](/help/using/custom-code-quality-rules.md)
    + [内容复制](/help/using/content-copy.md)
-+ 管理代码{#managing-code}
++ 管理代码 {#managing-code}
    + [在 Cloud Manager 中管理存储库](/help/managing-code/managing-repositories.md)
    + [存储库访问信息](/help/managing-code/accessing-repositories.md)
-   + [添加Adobe资源库](/help/managing-code/adobe-repositories.md)
-   + [添加专用存储库](/help/managing-code/private-repositories.md)
-   + [添加外部存储库（早期采用者）](/help/managing-code/external-repositories.md)
+   + [添加一个 Adobe 存储库](/help/managing-code/adobe-repositories.md)
+   + [添加一个专用存储库](/help/managing-code/private-repositories.md)
+   + [添加一个外部存储库（早期采用者）](/help/managing-code/external-repositories.md)
    + [Git 子模块支持](/help/managing-code/git-submodules.md)
    + [GitHub 检查配置](/help/managing-code/github-check-config.md)
    + [GitHub 检查批注](/help/managing-code/github-annotations.md)
    + [Maven 项目版本处理](/help/managing-code/maven-project-version.md)
-   + [与Git集成](/help/managing-code/git-integration.md)
+   + [与 Git 集成](/help/managing-code/git-integration.md)
    + [使用多个 Git 存储库](/help/managing-code/multiple-git-repos.md)
 + 产品更新向导 {#product-update-wizard}
    + [概述](/help/product-update-wizard/overview.md)

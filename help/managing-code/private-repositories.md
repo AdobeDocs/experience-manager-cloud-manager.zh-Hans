@@ -4,9 +4,9 @@ description: 了解如何设置 Cloud Manager 以使用您自己的专用 GitHub
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
 source-git-commit: 5090d7ee9a6742d71122acda9901d074bc254305
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '818'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 96%
 
 
 
-### 添加存储库 {#add-repo}
+### 添加一个存储库 {#add-repo}
 
 1. 在 Cloud Manager 中，从&#x200B;**项目概述**&#x200B;页面中，单击&#x200B;**存储库**&#x200B;选项卡以切换到&#x200B;**存储库**&#x200B;页面，然后单击&#x200B;**添加存储库**。
 
@@ -54,7 +54,7 @@ ht-degree: 96%
 
 
 
-### 验证专用存储库的所有权 {#validate-ownership}
+### 验证专用存储库所有权 {#validate-ownership}
 
 Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权限。要授予访问权限，您需要安装 Adobe GitHub 应用程序并验证您是否拥有指定的存储库。
 
@@ -98,7 +98,7 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 
 在 Cloud Manager 中验证 GitHub 存储库后，便已完成集成，您可以在 Cloud Manager 中使用该存储库。
 
-**要将专用存储库与Cloud Manager一起使用：**
+**将专用存储库与 Cloud Manager 结合使用：**
 
 1. 在创建提取请求时，GitHub 检查会自动启动。
 
@@ -114,17 +114,17 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 
 >[!TIP]
 >
->有关运行拉取请求检查时通过 GitHub 提供信息的详细信息，请参阅文档 [GitHub 检查批注](github-annotations.md)。
+>有关运行提取请求检查时通过 GitHub 提供信息的详细信息，请参阅文档 [GitHub 检查批注](github-annotations.md)。
 
 >[!TIP]
 >
->您可以控制自动创建的管道，验证对专用存储库的每个拉取请求。请参阅 [GitHub 检查专用存储库的配置](github-check-config.md)，了解更多信息。
+>您可以控制自动创建的管道，验证对专用存储库的每个提取请求。请参阅 [GitHub 检查专用存储库的配置](github-check-config.md)，了解更多信息。
 
 
 
 ## 将专用存储库与管道关联 {#pipelines}
 
-已验证的专用存储库可以与[全栈和前端管道](/help/overview/ci-cd-pipelines.md)关联。
+经过验证的专用存储库可以与[全栈和前端管道相关联](/help/overview/ci-cd-pipelines.md)。
 
 
 

@@ -3,7 +3,7 @@ title: 存储库访问信息
 description: 了解如何使用 Cloud Manager 的自助 Git 帐户管理访问和管理 Adobe 管理的 Git 存储库。
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
 source-git-commit: 04fbc4a3fdba8b108055d66a4fdb1a31994cb18e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '381'
 ht-degree: 100%
 
