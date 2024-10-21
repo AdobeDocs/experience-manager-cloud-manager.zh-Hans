@@ -2,7 +2,7 @@
 title: 基于角色的权限
 description: 了解 Cloud Manager 预先配置的基于角色的权限来管理对云资源的访问。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: 682b142f35bc233bad82b0ddfa69bc0f2d5b5fdb
 workflow-type: ht
 source-wordcount: '616'
 ht-degree: 100%
@@ -18,7 +18,7 @@ ht-degree: 100%
 >
 >本文档介绍了 Cloud Manager for Adobe Managed Services (AMS) 的基于角色的权限。
 >
->AEM as a Cloud Service 的等效文档可以在 AEM as a Cloud Service 文档中的 [Cloud Manager 简介](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction#role-based-permissions)文档中找到。
+>AEM as a Cloud Service 的等效文档可以在 AEM as a Cloud Service 文档中的 [Cloud Manager 简介](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction#role-based-permissions)文档中找到。
 
 ## 用户角色 {#user-roles}
 
@@ -45,24 +45,26 @@ ht-degree: 100%
 | --- | --- | --- | --- | --- | --- | --- |
 | 读取应用程序 | 读取项目 KPI | x | x | x | x | x |
 | 编写应用程序 | 项目设置或编辑 | x | | | | |
-| 添加项目 | 添加新项目 | x | | | | |
+| 添加项目 | 添加新项目 | x |  |  |  |  |
 | 读取环境 | 查看环境详细信息 | x | x | x | x | x |
 | 创建执行 | 启动管道 | x | x | x | | |
 | 读取执行 | 查看执行状态 | x | x | x | x | x |
 | 恢复执行 | 暂停后可恢复执行 | x | x | x | | x |
 | 执行审批部署到生产 | 提供上线审批 | x | x | x | | |
 | 计划将执行部署到生产 | 计划生产部署 | x | x | x | | x |
-| 将执行部署到生产 | 在因 CSE 监督而暂停时将应用程序部署到生产环境 | | | | | x |
-| 执行取消 | 取消当前执行 | | | x | | |
-| 执行覆盖质量审核失败 | 审批重要质量审核失败 | x | x | x | | |
-| 管道创建 | 设置/编辑管道 | | x | | | |
+| 将执行部署到生产 | 在因 CSE 监督而暂停时将应用程序部署到生产环境 |  |  |  |  | x |
+| 执行取消 | 取消当前执行 |  |  | x |  |  |
+| 执行覆盖质量审核失败 | 审批重要质量审核失败 | x | x | x |  |  |
+| 管道创建 | 设置/编辑管道 |  | x |  |  |  |
 | 管道读取 | 查看管道详细信息 | x | x | x | x | x |
-| 管道写入 | 设置/编辑管道 | | x | | | |
-| 管道修改审批 | 允许编辑“业务负责人”选项 | | x | | | |
-| 管道修改托管部署 | 允许编辑“CSE 监督”选项 | | x | | | |
-| 管道删除 | 允许管道删除 | | x | | | |
+| 管道写入 | 设置/编辑管道 |  | x |  |  |  |
+| 管道修改审批 | 允许编辑“业务负责人”选项 |  | x |  |  |  |
+| 管道修改托管部署 | 允许编辑“CSE 监督”选项 |  | x |  |  |  |
+| 管道删除 | 允许管道删除 |  | x |  |  |  |
 | 步骤读取 | 查看步骤质量量度结果 | x | x | x | x | x |
-| 生成个人访问令牌 | 访问 Git | | x | | x | |
+| 生成个人访问令牌 | 访问 Git |  | x |  | x |  |
+
+<!-- CQDOC-22080 | Download log files  |  |  | x |  | x |  | -->
 
 要了解有关如何设置用户的更多信息，请参阅[设置用户和角色](/help/requirements/users-and-roles.md)。
 
