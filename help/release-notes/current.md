@@ -1,33 +1,34 @@
 ---
 title: Cloud Manager 2024.11.0 版的发行说明
-description: 了解Cloud Manager 2024.11.0版。
+description: 了解有关 Cloud Manager 2024.11.0 版本的信息。
 feature: Release Information
-source-git-commit: 4c22de9fa675edcd743d7acce6c7a1def8efa414
-workflow-type: tm+mt
+exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
+source-git-commit: bea7f2e6e7cab764312a800883d0785ff23fd8bf
+workflow-type: ht
 source-wordcount: '457'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
 # Cloud Manager 2024.11.0 版的发行说明 {#release-notes}
 
-了解[!UICONTROL Cloud Manager] 2024.11.0版的发行。
+了解有关 [!UICONTROL Cloud Manager] 2024.11.0 版本的信息。
 
 >[!NOTE]
 >
->请参阅 [Adobe Experience Manager as a Cloud Service 的当前发行说明](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home)。
+>请参阅 [Adobe Experience Manager as a Cloud Service 的当前发行说明](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-cloud-service/content/release-notes/home)。
 
 ## 发行日期 {#release-date}
 
 <!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-[!UICONTROL Cloud Manager] 2024.11.0的发布日期是2024年11月7日。
+[!UICONTROL Cloud Manager] 2024.11.0 版的发布日期为 2024 年 11 月 7 日。
 
-下一个计划发布日期为2024年12月5日。
+下一个版本计划于 2024 年 12 月 5 日发布。
 
 ## 新增功能 {#what-is-new}
 
-* 在性能测试期间将页面重定向到另一个域时，会排除这些页面的测试结果，因为它们无法准确表示实际性能。<!-- (CMGR-5637) -->
+* 当性能测试期间页面重定向到另一个域时，这些页面的测试结果将被排除，因为它们不能准确地代表实际性能。<!-- (CMGR-5637) -->
 
 ## 早期采用计划 {#early-adoption}
 
@@ -57,8 +58,8 @@ Adobe 宣布推出对[仅暂存和仅生产管道](/help/using/stage-prod-only.m
 
 ## 错误修复
 
-* AEM Cloud Manager中在内容复制操作的状态更新期间导致“403”错误的错误现已解决。 此问题归因于错误配置的入口IP地址，阻止了状态传播，并导致某些内容复制活动似乎卡住并无限期运行，需要手动取消。 此修复现在可确保正确报告状态并更顺畅地执行内容复制任务。<!-- (CMGR-62739) -->
-* 最近的一项更新解决了SonarQube中的一个问题：在某些情况下，无法检测到硬编码密码。 该修复现在包括扩展的模式检查，并与SonarQube中的默认检测标准保持一致。<!-- CMGR-62682 -->
+* AEM Cloud Manager 中的一个错误导致在内容复制操作的状态更新期间出现“403”错误，该错误现已解决。该问题是由于入口 IP 地址配置错误造成的，它阻止了状态传播，并且 LED 导致一些内容复制活动卡住并无限期运行，需要手动取消。此修复现在可以确保正确的状态报告和更顺畅地执行内容复制任务。<!-- (CMGR-62739) -->
+* 最近的更新解决了 SonarQube 中在某些情况下无法检测到硬编码密码的问题。目前的修复包括扩展模式检查，并与 SonarQube 中的默认检测标准保持一致。<!-- CMGR-62682 -->
 
 <!-- Known Issues {#known-issues}
 
