@@ -2,10 +2,11 @@
 title: Cloud Manager 2024.12.0 版的发行说明
 description: 了解关于Adobe Managed Services的Cloud Manager 2024.12.0版。
 feature: Release Information
-source-git-commit: ee79124a012106e53ffaaf9462202712f7078809
+exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
+source-git-commit: e266a4192e2a897f142a6c83ae5766483946320d
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 63%
+source-wordcount: '312'
+ht-degree: 70%
 
 ---
 
@@ -27,9 +28,9 @@ ht-degree: 63%
 
 下一个计划发行日期为2025年1月23日。
 
-## 新增功能 {#what-is-new}
+<!-- ## What's new {#what-is-new} -->
 
-* AEM代码质量步骤现在使用SonarQube 9.9服务器，取代了更早的7.4版本。 此升级可提供额外的安全性、性能和代码质量检查，为您的项目提供更全面的分析和覆盖。<!-- CMGR-45683 -->
+<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. --> <!-- CMGR-45683 -->
 
 ## 早期采用计划 {#early-adoption}
 
