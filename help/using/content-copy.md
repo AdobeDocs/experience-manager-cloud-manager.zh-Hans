@@ -1,20 +1,20 @@
 ---
 title: 内容复制工具
-description: 通过 Cloud Manager 内容复制工具，用户可按需将可变内容从 AMS 托管的 AEM 6.x 生产环境复制到较低版本的环境以供测试。
+description: 通过Cloud Manager内容复制工具，用户可按需将可变内容从AdobeManaged Services托管的Adobe Experience Manager 6.x生产环境复制到较低级别的环境以进行测试。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1144'
-ht-degree: 100%
+source-git-commit: de9cfaa07dc9ff4a6d1cb200d14c5e776d27767d
+workflow-type: tm+mt
+source-wordcount: '1363'
+ht-degree: 42%
 
 ---
 
 
 # 内容复制工具 {#content-copy}
 
-通过 Cloud Manager 内容复制工具，用户可按需将可变内容从 AMS 托管的 AEM 6.x 生产环境复制到较低版本的环境以供测试。
+通过Cloud Manager内容复制工具，用户可按需将可变内容从AdobeManaged Services托管的Adobe Experience Manager 6.x生产环境复制到较低级别的环境以进行测试。
 
-## 简介 {#introduction}
+## 关于内容复制工具{#introduction}
 
 当前的真实数据对于测试、验证和用户验收很有价值。通过内容复制工具，可将内容从 AMS 托管的 AEM 6.x 生产环境复制到暂存或开发环境。该工作流程支持各种测试场景。
 
@@ -43,120 +43,131 @@ ht-degree: 100%
 
 在可以复制任何内容之前，必须定义一个内容集。内容集在定义之后可以重复使用来复制内容。请按照以下步骤操作来创建内容集。
 
+**创建内容集：**
+
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 从&#x200B;**概述**&#x200B;页面，导航到&#x200B;**环境**&#x200B;屏幕。
+1. 在页面的左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以打开左侧菜单。
 
-1. 从&#x200B;**环境**&#x200B;屏幕导航到&#x200B;**内容集**&#x200B;页面。
+1. 从左侧菜单的&#x200B;**服务**&#x200B;页面下，单击![框图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **内容集**。
 
-1. 在屏幕右上角附近，单击&#x200B;**添加内容集**。
+1. 在页面的右上角附近，单击&#x200B;**添加内容集**。
 
    ![内容集](/help/assets/content-sets.png)
 
-1. 在向导的&#x200B;**详细信息**&#x200B;选项卡上，为内容集提供名称和描述，然后单击&#x200B;**继续**。
+1. 在&#x200B;**添加内容集**&#x200B;对话框的&#x200B;**详细信息**&#x200B;选项卡的&#x200B;**名称**&#x200B;和&#x200B;**描述**&#x200B;字段中，键入内容集的名称和可选描述，然后单击&#x200B;**继续**。
 
    ![内容集详细信息](/help/assets/add-content-set-details.png)
 
-1. 在向导的&#x200B;**内容路径**&#x200B;选项卡上，指定要包含在内容集中的可变内容的路径。
+1. 在&#x200B;**内容路径**&#x200B;选项卡的&#x200B;**路径**&#x200B;文本字段中，指定可更改且应包含在内容集中的内容路径。
 
-   1. 在&#x200B;**添加包含路径**&#x200B;字段中输入路径。
-   1. 单击&#x200B;**添加路径**&#x200B;按钮将路径添加到内容集中。
-   1. 根据需要，单击&#x200B;**添加路径**&#x200B;按钮。
+   只有以`/content`、`/conf`、`/etc`、`/var/workflow/models`或`/var/commerce`开头的路径才符合包含条件。
+
+1. 单击&#x200B;**![文件夹添加图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg)添加路径**&#x200B;以添加（或包含）内容集的路径。
+
+1. （可选）如有必要，请重复前两个步骤，根据需要添加添加路径（最多50个）。 否则，请继续执行下一步。
 
    ![添加路径到内容集](/help/assets/add-content-set-paths.png)
 
-1. 如果您需要优化或限制您的内容集，可以排除子路径。
+1. （可选）要缩小内容集的范围，您可以选择在所包含的内容路径中指定应排除的子路径。
 
-   1. 在包含的路径列表中，单击您需要限制的路径旁边的&#x200B;**添加排除子路径**&#x200B;图标。
-   1. 输入要从选定路径中排除的子路径。
-   1. 点击 **排除路径**。
-   1. 根据需要，再次单击&#x200B;**添加排除子路径**&#x200B;以添加要排除的其他路径。
+   1. 在要限制的包含内容路径的右侧，单击![文件夹删除图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg)。
+   1. 在文本字段中，键入对话框中显示的根路径的相对路径。
+   1. 单击![文件夹删除图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg) **排除路径**。
+   1. 如有必要，请重复步骤i.至iii。 添加更多排除路径；没有限制。 否则，请继续执行下一步。
 
    ![排除路径](/help/assets/add-content-set-paths-excluded.png)
 
-1. 如果需要，您可以修改指定的路径。
+1. （可选）执行以下任一操作：
 
-   1. 单击排除的子路径旁边的 `X` 以将其删除。
-   1. 单击路径旁边的省略号按钮以显示&#x200B;**编辑**&#x200B;和&#x200B;**删除**&#x200B;选项。
+   1. 单击已排除子路径右侧的![跨大小500图标](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg)以将其删除。
+   1. 单击所包含内容路径右侧的![更多图标](https://spectrum.adobe.com/static/icons/ui_18/More.svg)，然后单击&#x200B;**编辑**&#x200B;或&#x200B;**删除**。
 
    ![编辑路径列表](/help/assets/add-content-set-excluded-paths.png)
 
-1. 单击&#x200B;**创建**&#x200B;以创建内容集。
+1. 单击&#x200B;**创建**。
 
-内容集现在可用于在环境之间复制内容。
+您现在可以使用内容集在环境之间复制内容。
 
->[!NOTE]
->
->您最多可以在一个内容集中添加 50 个路径。
->排除的路径没有限制。
-
-## 编辑内容集 {#edit-content-set}
-
-遵循与创建内容步骤时类似的步骤。不要单击&#x200B;**添加内容集**，而是从控制台选择一个现有集，然后从省略号菜单中选择&#x200B;**编辑**。
-
-![编辑内容集](/help/assets/edit-content-set.png)
+## 编辑或删除内容集 {#edit-content-set}
 
 编辑内容集时，您可能需要展开配置的路径以显示排除的子路径。
 
-## 复制内容 {#copy-content}
-
-创建内容集后，您可以使用它来复制内容。按照以下步骤操作来复制内容。
+**要编辑或删除内容集：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 从&#x200B;**概述**&#x200B;页面，导航到&#x200B;**环境**&#x200B;屏幕。
+1. 在页面的左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以打开左侧菜单。
 
-1. 从&#x200B;**环境**&#x200B;屏幕导航到&#x200B;**内容集**&#x200B;页面。
+1. 从左侧菜单的&#x200B;**服务**&#x200B;下，单击![框图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **内容集**。
 
-1. 从控制台选择一个内容集，然后从省略号菜单中选择&#x200B;**复制内容**。
+1. 在&#x200B;**内容集**&#x200B;页面上的表中，单击所包含内容路径右侧的![更多图标](https://spectrum.adobe.com/static/icons/ui_18/More.svg)，然后单击&#x200B;**编辑**&#x200B;或&#x200B;**删除**。
+
+![编辑内容集](/help/assets/edit-content-set.png)
+
+
+## 复制内容 {#copy-content}
+
+创建内容集后，您可以使用该内容集复制内容。
+
+如果满足以下任一条件，则环境可能无法进行选择：
+
+* 用户缺少所需的权限。
+* 当前环境中正在运行管道或内容复制操作。
+
+**要复制内容：**
+
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
+
+1. 在页面的左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以打开左侧菜单。
+
+1. 从左侧菜单的&#x200B;**服务**&#x200B;下，单击![框图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **内容集**。
+
+1. 在&#x200B;**内容集**&#x200B;页面上的表格中，在要复制的包含的内容路径右侧，单击![更多图标](https://spectrum.adobe.com/static/icons/ui_18/More.svg)，然后单击&#x200B;**复制内容**。
 
    ![内容复制](/help/assets/copy-content.png)
 
-   >[!NOTE]
-   >
-   >在以下情况下可能无法选择环境：
-   >
-   >* 用户没有适当的权限。
-   >* 环境中有正在运行的管道或正在进行的复制内容操作。
+1. 在&#x200B;**复制内容**&#x200B;对话框中，为您的内容复制操作选择&#x200B;**Source**&#x200B;环境和&#x200B;**目标**&#x200B;环境。
 
-1. 在&#x200B;**复制内容**&#x200B;对话框中，指定内容复制操作的源和目标环境。
-   * 目标环境的区域必须与源环境的区域相同或为其子集。
+   * 目标环境中的区域必须是源环境中的区域子集。
+   * 在运行内容复制操作之前会检查兼容性问题。 当您选择&#x200B;**目标**&#x200B;环境时，系统会自动验证源和目标环境。 如果验证失败，进程将停止，并在说明失败原因的对话框中显示错误消息。
 
-1. 可选择在目标环境中删除或保留排除路径。选中复选框 `Do not delete exclude paths from destination` 以保留内容集中指定的 `exclude paths`。 如果未选中复选框，则会在目标环境中删除排除路径。
+1. （可选）执行以下任一操作：
 
-1. 可选择复制从源环境复制到目标环境的路径的版本历史记录。 如果要复制所有的版本历史记录，请选中复选框`Copy Versions`。
+   1. 要&#x200B;*保留*&#x200B;目标环境中排除的路径，请选中&#x200B;**`Do not delete exclude paths from destination`**。 此设置会保持内容集中指定的排除路径不变。
+   1. 要&#x200B;*删除*&#x200B;目标环境中排除的路径，请取消选中&#x200B;**`Do not delete exclude paths from destination`**。 此设置将删除内容集中指定的排除路径。
+   1. 若要将路径版本历史记录从源环境复制到目标环境，请选中&#x200B;**复制版本**。
 
-   ![复制内容](/help/assets/copying-content.png)
+      ![复制内容](/help/assets/copying-content.png)
 
-1. 点击 **复制**。
+1. 单击&#x200B;**复制**。 复制过程的状态将反映在所选内容集的控制台中。
 
-复制过程开始。复制过程的状态将反映在所选内容集的控制台中。
-
-## 内容复制活动 {#copy-activity}
+## 监控内容复制活动的状态 {#copy-activity}
 
 您可以在&#x200B;**复制内容活动**&#x200B;页面中监控复制过程的状态。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager，然后选择相应的组织和项目。
+**要监视内容复制活动的状态：**
 
-1. 从&#x200B;**概述**&#x200B;页面，导航到&#x200B;**环境**&#x200B;屏幕。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 从&#x200B;**环境**&#x200B;屏幕导航到&#x200B;**复制内容活动**&#x200B;页面。
+1. 在页面的左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以打开左侧菜单。
 
-![内容复制活动](/help/assets/copy-content-activity.png)
+1. 从左侧菜单的&#x200B;**服务**&#x200B;下，单击![历史记录图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg)**复制内容活动**。
 
-### 内容复制状态 {#statuses}
+   ![内容复制活动](/help/assets/copy-content-activity.png)
 
-开始复制内容后，复制过程可能具有以下状态之一。
+   复制内容进程可以具有以下状态之一：
 
-| 状态 | 描述 |
-|---|---|
-| 进行中 | 内容复制操作正在进行中 |
-| 失败 | 内容复制操作失败 |
-| 已完成 | 内容复制操作成功完成 |
+   | 状态 | 描述 |
+   | --- | --- |
+   | 进行中 | 正在执行内容复制操作。 |
+   | 已完成 | 内容复制操作已成功完成。 |
+   | 失败 | 内容复制操作失败。 |
+
 
 ## 限制 {#limitations}
 
-内容复制工具具有以下限制。
+内容复制工具具有以下限制：
 
 * 无法从较低环境向较高环境执行内容复制。
 * 内容复制只能在同一层级内进行。 也就是说，作者对作者，或者发布对发布。
@@ -167,9 +178,9 @@ ht-degree: 100%
 * 每个内容集最多可以指定五十条路径。排除的路径没有限制。
 * 内容复制工具不应用作克隆或镜像工具，因为它无法跟踪源上移动或删除的内容。
 * 内容复制一旦开始即无法暂停或取消。
-* 内容复制工具将资源和 Dynamic Media 元数据从较高的环境复制到所选的较低环境。 然后，需要在较低的环境中使用 [DAM 处理资源工作流程](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-65/content/assets/using/assets-workflow)重新处理复制的资源，以使用相应的 Dynamic Media 配置。
+* 内容复制工具将资源和 Dynamic Media 元数据从较高的环境复制到所选的较低环境。 然后，需要在较低的环境中使用 [DAM 处理资源工作流程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/using/assets-workflow)重新处理复制的资源，以使用相应的 Dynamic Media 配置。
 * 当不复制版本历史记录时，内容复制过程会大大加快。
-* [已启用资产大小大于 2 GB 的 Dynamic Media 配置](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)不受支持。
+* [已启用资产大小大于 2 GB 的 Dynamic Media 配置](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)不受支持。
 * 当不复制版本历史记录时，内容复制过程会大大加快。
 * 目标环境的区域必须与源环境的区域相同或为其子集。
 
