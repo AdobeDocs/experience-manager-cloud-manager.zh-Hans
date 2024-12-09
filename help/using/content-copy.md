@@ -2,10 +2,10 @@
 title: 内容拷贝以实现环境一致性
 description: 通过Cloud Manager中的内容复制，用户可按需将可变内容从AdobeManaged Services托管的Adobe Experience Manager 6.x生产环境复制到较低级别的环境以进行测试。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: e47047c85f9d428e268d147b2e24354026dda0f8
+source-git-commit: 228006b424504306e916014bbe8543dc41ba43b5
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 36%
+source-wordcount: '1312'
+ht-degree: 33%
 
 ---
 
@@ -85,9 +85,7 @@ ht-degree: 36%
 
    ![编辑路径列表](/help/assets/add-content-set-excluded-paths.png)
 
-1. 单击&#x200B;**创建**。
-
-您现在可以使用内容集在环境之间复制内容。
+1. 单击&#x200B;**创建**。您现在可以使用内容集在环境之间复制内容。
 
 ## 编辑或删除内容集 {#edit-content-set}
 
@@ -132,21 +130,23 @@ ht-degree: 36%
    * 目标环境中的区域必须是源环境中的区域子集。
    * 在运行内容复制操作之前会检查兼容性问题。 当您选择&#x200B;**目标**&#x200B;环境时，系统会自动验证源和目标环境。 如果验证失败，进程将停止，并在说明失败原因的对话框中显示错误消息。
 
+     ![复制内容](/help/assets/copying-content.png)
+
 1. （可选）执行以下任一操作：
 
    1. 要&#x200B;*保留*&#x200B;目标环境中排除的路径，请选中&#x200B;**`Do not delete exclude paths from destination`**。 此设置会保持内容集中指定的排除路径不变。
    1. 要&#x200B;*删除*&#x200B;目标环境中排除的路径，请取消选中&#x200B;**`Do not delete exclude paths from destination`**。 此设置将删除内容集中指定的排除路径。
-   1. 若要将路径版本历史记录从源环境复制到目标环境，请选中&#x200B;**复制版本**。
+   1. 若要将路径版本历史记录从源环境复制到目标环境，请选中&#x200B;**复制版本**。 当版本历史记录为&#x200B;*而非*&#x200B;时，内容复制过程要快得多。
 
-      ![复制内容](/help/assets/copying-content.png)
+
 
 1. 单击&#x200B;**复制**。 复制过程的状态将反映在所选内容集的控制台中。
 
-## 监控内容复制活动的状态 {#copy-activity}
+## 监控内容复制状态 {#copy-activity}
 
 您可以在&#x200B;**复制内容活动**&#x200B;页面中监控复制过程的状态。
 
-**要监视内容复制活动的状态：**
+**监视内容副本状态：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
@@ -156,7 +156,7 @@ ht-degree: 36%
 
    ![内容复制活动](/help/assets/copy-content-activity.png)
 
-   复制内容进程可以具有以下状态之一：
+   内容复制进程可以具有以下状态之一：
 
    | 状态 | 描述 |
    | --- | --- |
@@ -165,9 +165,7 @@ ht-degree: 36%
    | 失败 | 内容复制操作失败。 |
 
 
-## 限制 {#limitations}
-
-内容副本具有以下限制：
+## 内容副本的限制 {#limitations}
 
 * 无法从较低环境向较高环境执行内容复制。
 * 内容复制只能在同一层级内进行。 也就是说，作者对作者，或者发布对发布。
@@ -175,13 +173,10 @@ ht-degree: 36%
 * 只有当源环境和目标环境在同一云提供商和同一区域上时，才能为基于云数据存储的拓扑执行内容复制。
 * 在同一环境中运行并发的内容复制操作是不可能的。
 * 如果在目标或源环境（例如 CI/CD 管道）上正在运行任何活动操作，则无法执行内容复制。
-* 每个内容集最多可以指定五十条路径。排除的路径没有限制。
-* 不应将Content Copy用作克隆或镜像工具，因为它不能跟踪源上移动或删除的内容。
+* 内容复制不应用作克隆或镜像工具，因为它不能跟踪源上已移动或删除的内容。
 * 内容复制一旦开始即无法暂停或取消。
 * 内容复制将资源和Dynamic Media元数据从较高的环境复制到选定的较低环境。 然后，需要在较低的环境中使用 [DAM 处理资源工作流程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/using/assets-workflow)重新处理复制的资源，以使用相应的 Dynamic Media 配置。
-* 当不复制版本历史记录时，内容复制过程会大大加快。
 * [已启用资产大小大于 2 GB 的 Dynamic Media 配置](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)不受支持。
-* 当不复制版本历史记录时，内容复制过程会大大加快。
 * 目标环境的区域必须与源环境的区域相同或为其子集。
 
 ## 已知问题 {#known-issues}
