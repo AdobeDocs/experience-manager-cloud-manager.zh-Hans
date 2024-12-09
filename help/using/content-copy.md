@@ -1,22 +1,22 @@
 ---
 title: 内容拷贝以实现环境一致性
-description: 通过Cloud Manager内容复制工具，用户可按需将可变内容从AdobeManaged Services托管的Adobe Experience Manager 6.x生产环境复制到较低级别的环境以进行测试。
+description: 通过Cloud Manager中的内容复制，用户可按需将可变内容从AdobeManaged Services托管的Adobe Experience Manager 6.x生产环境复制到较低级别的环境以进行测试。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 2c96feb62a4db2424430c9c410563a7f61320fd2
+source-git-commit: e47047c85f9d428e268d147b2e24354026dda0f8
 workflow-type: tm+mt
-source-wordcount: '1364'
-ht-degree: 42%
+source-wordcount: '1351'
+ht-degree: 36%
 
 ---
 
 
 # 内容拷贝以实现环境一致性 {#content-copy}
 
-通过Cloud Manager内容复制工具，用户可按需将可变内容从AdobeManaged Services托管的Adobe Experience Manager 6.x生产环境复制到较低级别的环境以进行测试。
+通过Cloud Manager中的内容复制，用户可按需将可变内容从AdobeManaged Services托管的Adobe Experience Manager 6.x生产环境复制到较低级别的环境以进行测试。
 
 ## 关于内容复制 {#introduction}
 
-当前的真实数据对于测试、验证和用户验收很有价值。通过内容复制工具，可将内容从 AMS 托管的 AEM 6.x 生产环境复制到暂存或开发环境。该工作流程支持各种测试场景。
+当前的真实数据对于测试、验证和用户验收很有价值。内容复制允许您将内容从AMS托管的生产AEM 6.x环境复制到暂存或开发环境。 该工作流程支持各种测试场景。
 
 要复制的内容由内容集定义。 内容集包括要复制的可变内容的 JCR 路径列表。 内容会从源环境移动到目标环境。 所有操作均会在同一个 Cloud Manager 程序中完成。
 
@@ -37,7 +37,7 @@ ht-degree: 42%
 
 ## 权限 {#permissions}
 
-为了使用内容复制工具，用户必须分配有源和目标环境中的&#x200B;**部署经理**&#x200B;角色。
+若要使用内容复制功能，必须将用户分配到源环境和目标环境中的&#x200B;**部署管理员**&#x200B;角色。
 
 ## 创建内容集 {#create-content-set}
 
@@ -55,7 +55,7 @@ ht-degree: 42%
 
    ![内容集](/help/assets/content-sets.png)
 
-1. 在&#x200B;**添加内容集**&#x200B;对话框的&#x200B;**详细信息**&#x200B;选项卡的&#x200B;**名称**&#x200B;和&#x200B;**描述**&#x200B;字段中，键入内容集的名称和可选描述，然后单击&#x200B;**继续**。
+1. 在&#x200B;**`Add Content Set`**&#x200B;对话框的&#x200B;**详细信息**&#x200B;选项卡的&#x200B;**名称**&#x200B;和&#x200B;**描述**&#x200B;字段中，键入内容集的名称和可选描述，然后单击&#x200B;**继续**。
 
    ![内容集详细信息](/help/assets/add-content-set-details.png)
 
@@ -167,7 +167,7 @@ ht-degree: 42%
 
 ## 限制 {#limitations}
 
-内容复制工具具有以下限制：
+内容副本具有以下限制：
 
 * 无法从较低环境向较高环境执行内容复制。
 * 内容复制只能在同一层级内进行。 也就是说，作者对作者，或者发布对发布。
@@ -176,9 +176,9 @@ ht-degree: 42%
 * 在同一环境中运行并发的内容复制操作是不可能的。
 * 如果在目标或源环境（例如 CI/CD 管道）上正在运行任何活动操作，则无法执行内容复制。
 * 每个内容集最多可以指定五十条路径。排除的路径没有限制。
-* 内容复制工具不应用作克隆或镜像工具，因为它无法跟踪源上移动或删除的内容。
+* 不应将Content Copy用作克隆或镜像工具，因为它不能跟踪源上移动或删除的内容。
 * 内容复制一旦开始即无法暂停或取消。
-* 内容复制工具将资源和 Dynamic Media 元数据从较高的环境复制到所选的较低环境。 然后，需要在较低的环境中使用 [DAM 处理资源工作流程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/using/assets-workflow)重新处理复制的资源，以使用相应的 Dynamic Media 配置。
+* 内容复制将资源和Dynamic Media元数据从较高的环境复制到选定的较低环境。 然后，需要在较低的环境中使用 [DAM 处理资源工作流程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/using/assets-workflow)重新处理复制的资源，以使用相应的 Dynamic Media 配置。
 * 当不复制版本历史记录时，内容复制过程会大大加快。
 * [已启用资产大小大于 2 GB 的 Dynamic Media 配置](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)不受支持。
 * 当不复制版本历史记录时，内容复制过程会大大加快。
