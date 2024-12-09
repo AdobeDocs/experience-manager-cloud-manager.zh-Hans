@@ -1,20 +1,20 @@
 ---
-title: 内容复制工具
+title: 内容拷贝以实现环境一致性
 description: 通过Cloud Manager内容复制工具，用户可按需将可变内容从AdobeManaged Services托管的Adobe Experience Manager 6.x生产环境复制到较低级别的环境以进行测试。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: de9cfaa07dc9ff4a6d1cb200d14c5e776d27767d
+source-git-commit: 2c96feb62a4db2424430c9c410563a7f61320fd2
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1364'
 ht-degree: 42%
 
 ---
 
 
-# 内容复制工具 {#content-copy}
+# 内容拷贝以实现环境一致性 {#content-copy}
 
 通过Cloud Manager内容复制工具，用户可按需将可变内容从AdobeManaged Services托管的Adobe Experience Manager 6.x生产环境复制到较低级别的环境以进行测试。
 
-## 关于内容复制工具{#introduction}
+## 关于内容复制 {#introduction}
 
 当前的真实数据对于测试、验证和用户验收很有价值。通过内容复制工具，可将内容从 AMS 托管的 AEM 6.x 生产环境复制到暂存或开发环境。该工作流程支持各种测试场景。
 
