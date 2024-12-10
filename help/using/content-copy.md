@@ -2,9 +2,9 @@
 title: 内容拷贝以实现环境一致性
 description: 通过Cloud Manager中的内容复制，用户可按需将可变内容从AdobeManaged Services托管的Adobe Experience Manager 6.x生产环境复制到较低级别的环境以进行测试。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 228006b424504306e916014bbe8543dc41ba43b5
+source-git-commit: 16cc1aa0ff45126df9100f337b6259a3f248038f
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1321'
 ht-degree: 33%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 33%
 * 如果您在目标环境中编辑内容，则在路径匹配的情况下源内容会覆盖它。
 * 如果路径不同，源中的内容会与目标中的内容进行合并。
 
-## 权限 {#permissions}
+### 权限 {#permissions}
 
 若要使用内容复制功能，必须将用户分配到源环境和目标环境中的&#x200B;**部署管理员**&#x200B;角色。
 
@@ -142,11 +142,11 @@ ht-degree: 33%
 
 1. 单击&#x200B;**复制**。 复制过程的状态将反映在所选内容集的控制台中。
 
-## 监控内容复制状态 {#copy-activity}
+## 检查内容副本的状态 {#copy-activity}
 
 您可以在&#x200B;**复制内容活动**&#x200B;页面中监控复制过程的状态。
 
-**监视内容副本状态：**
+**检查内容副本的状态：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
@@ -179,6 +179,6 @@ ht-degree: 33%
 * [已启用资产大小大于 2 GB 的 Dynamic Media 配置](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)不受支持。
 * 目标环境的区域必须与源环境的区域相同或为其子集。
 
-## 已知问题 {#known-issues}
+## 内容副本的已知问题 {#known-issues}
 
 {{content-copy-known-issues}}
