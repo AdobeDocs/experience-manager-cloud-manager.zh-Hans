@@ -2,7 +2,7 @@
 title: 内容拷贝以实现环境一致性
 description: 通过Cloud Manager中的内容复制，用户可按需将可变内容从AdobeManaged Services托管的Adobe Experience Manager 6.x生产环境复制到较低级别的环境以进行测试。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 16cc1aa0ff45126df9100f337b6259a3f248038f
+source-git-commit: e3a656605ac59ca1f95985426932fddf2b53b7c9
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 33%
@@ -32,8 +32,9 @@ ht-degree: 33%
 
 复制内容时，源环境是真实的来源。
 
-* 如果您在目标环境中编辑内容，则在路径匹配的情况下源内容会覆盖它。
-* 如果路径不同，源中的内容会与目标中的内容进行合并。
+如果您在目标环境中编辑内容，则在路径匹配的情况下源内容会覆盖它。
+
+如果路径不同，源中的内容会与目标中的内容进行合并。
 
 ### 权限 {#permissions}
 
@@ -103,7 +104,6 @@ ht-degree: 33%
 
 ![编辑内容集](/help/assets/edit-content-set.png)
 
-
 ## 复制内容 {#copy-content}
 
 创建内容集后，您可以使用该内容集复制内容。
@@ -138,8 +138,6 @@ ht-degree: 33%
    1. 要&#x200B;*删除*&#x200B;目标环境中排除的路径，请取消选中&#x200B;**`Do not delete exclude paths from destination`**。 此设置将删除内容集中指定的排除路径。
    1. 若要将路径版本历史记录从源环境复制到目标环境，请选中&#x200B;**复制版本**。 当版本历史记录为&#x200B;*而非*&#x200B;时，内容复制过程要快得多。
 
-
-
 1. 单击&#x200B;**复制**。 复制过程的状态将反映在所选内容集的控制台中。
 
 ## 检查内容副本的状态 {#copy-activity}
@@ -156,14 +154,13 @@ ht-degree: 33%
 
    ![内容复制活动](/help/assets/copy-content-activity.png)
 
-   内容复制进程可以具有以下状态之一：
+   内容复制过程可以具有以下状态之一：
 
    | 状态 | 描述 |
    | --- | --- |
-   | 进行中 | 正在执行内容复制操作。 |
-   | 已完成 | 内容复制操作已成功完成。 |
-   | 失败 | 内容复制操作失败。 |
-
+   | 进行中 | 内容复制过程正在进行。 |
+   | 已完成 | 内容复制过程已成功完成。 |
+   | 失败 | 内容复制过程失败。 |
 
 ## 内容副本的限制 {#limitations}
 
