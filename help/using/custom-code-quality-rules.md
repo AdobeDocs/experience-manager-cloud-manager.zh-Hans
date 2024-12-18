@@ -3,9 +3,9 @@ title: 自定义代码质量规则
 description: 了解 Cloud Manager 在代码质量测试期间执行的自定义代码质量规则的具体内容。这些规则以 AEM Engineering 的最佳实践为基础。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 8811ed130b2c7a37a0c811c308b57acf0872e9c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3514'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -405,7 +405,7 @@ public void doThis() {
 * **密钥**：CQRules:CQBP-44---ExceptionPrintStackTrace
 * **类型**：代码异味
 * **严重性**：轻微
-* **从以下版本开始**：版本 2018.4.0
+* **开始版本**：版本 2018.4.0
 
 上下文对于理解日志消息是至关重要的。使用 `Exception.printStackTrace()` 会导致仅将堆栈跟踪输出到标准错误流，从而丢失所有上下文。此外，在像 AEM 这样的多线程应用程序中，如果使用此方法并行打印多个异常，则其堆栈跟踪可能会发生重叠，从而导致产生严重的混淆。应仅通过记录框架来记录异常。
 
@@ -438,7 +438,7 @@ public void doThis() {
 * **密钥**：CQRules:CQBP-44—LogLevelConsolePrinters
 * **类型**：代码异味
 * **严重性**：轻微
-* **从以下版本开始**：版本 2018.4.0
+* **开始版本**：版本 2018.4.0
 
 AEM 中的记录应始终通过记录框架 SLF4J 完成。直接输出到标准输出或标准错误流将丢失记录框架提供的结构和上下文信息，并且有时可能会导致出现性能问题。
 
@@ -551,7 +551,7 @@ public class DontDoThis implements Page {
 * **密钥**：BannedPath
 * **类型**：错误
 * **严重性**：阻断
-* **从以下版本开始**：版本 2019.6.0
+* **开始版本**：版本 2019.6.0
 
 客户应将 AEM 内容存储库中的 `/libs` 内容树视为只读，这是一个长期存在的最佳实践。修改 `/libs` 下的节点和属性会给主要和次要更新带来重大风险。 对 `/libs` 的编辑只能由 Adobe 通过正式渠道进行。
 
@@ -695,7 +695,7 @@ AEM 客户端库可能包含静态资源，如图像和字体。如[“使用客
 * **密钥**：CloudServiceIncompatibleWorkflowProcess
 * **类型**：代码异味
 * **严重性**：阻断
-* **从以下版本开始**：版本 2021.2.0
+* **开始版本**：版本 2021.2.0
 
 随着迁移到 AEM Cloud Service 上使用资产微服务进行资产处理，在 AEM 的内部部署和 AMS 版本中使用的功能已不再受支持或不再需要。
 
@@ -782,7 +782,7 @@ AEM Cloud Service 要求自定义搜索索引定义（即 `oak:QueryIndexDefinit
 * **密钥**：IndexSeedProperty
 * **类型**：代码异味
 * **严重性**：轻微
-* **从以下版本开始**：版本 2021.2.0
+* **开始版本**：版本 2021.2.0
 
 AEM Cloud Service 禁止自定义搜索索引定义（即 `oak:QueryIndexDefinition` 类型的节点）包含名为 `seed` 的属性。在迁移到 AEM Cloud Service 之前，必须更新使用此属性的索引编制。有关更多信息，请参阅[“内容搜索和索引编制”文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/indexing#how-to-use)。
 
@@ -791,7 +791,7 @@ AEM Cloud Service 禁止自定义搜索索引定义（即 `oak:QueryIndexDefinit
 * **密钥**：IndexReindexProperty
 * **类型**：代码异味
 * **严重性**：轻微
-* **从以下版本开始**：版本 2021.2.0
+* **开始版本**：版本 2021.2.0
 
 AEM Cloud Service 禁止自定义搜索索引定义（即 `oak:QueryIndexDefinition` 类型的节点）包含名为 `reindex` 的属性。在迁移到 AEM Cloud Service 之前，必须更新使用此属性的索引编制。有关更多信息，请参阅[“内容搜索和索引编制”文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/operations/indexing#how-to-use)。
 
@@ -872,14 +872,14 @@ AEM Cloud Service 禁止在分析器中创建名称错误的标记器。标记�
 
 AEM Cloud Service 禁止创建包含带空格属性的索引定义。
 
-### 索引定义的配置不应包含haystack0属性 {#oakpal-indexing-haystack0-property}
+### 索引定义的配置不应包含 haystack0 属性 {#oakpal-indexing-haystack0-property}
 
-* **Key**： HayStackPropertyCheck
+* **键**：HayStackPropertyCheck
 * **类型**：改进
 * **严重性**：轻微
 * **开始版本**：版本 2024.12.0
 
-AEM Cloud Service禁止创建包含haystack属性的索引定义。
+AEM Cloud Service 禁止创建包含带 haystack 属性的索引定义。
 
 ## Dispatcher 优化工具 {#dispatcher-optimization-tool-rules}
 

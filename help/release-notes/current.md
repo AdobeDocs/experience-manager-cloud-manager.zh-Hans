@@ -1,20 +1,20 @@
 ---
 title: Cloud Manager 2024.12.0 版的发行说明
-description: 了解关于Adobe Managed Services的Cloud Manager 2024.12.0版。
+description: 了解 Adobe Managed Services 上有关 Cloud Manager 2024.12.0 版本的信息。
 feature: Release Information
 exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
 source-git-commit: e266a4192e2a897f142a6c83ae5766483946320d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '312'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
-# AdobeManaged Services上的Cloud Manager 2024.12.0发行说明 {#release-notes}
+# Adobe Managed Services 上 Cloud Manager 2024.12.0 版的发行说明 {#release-notes}
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release -->
 
-了解有关AdobeManaged Services的[!UICONTROL Cloud Manager] 2024.12.0版本。
+了解 Adobe Managed Services 上有关 [!UICONTROL Cloud Manager] 2024.12.0 版本的信息。
 
 >[!NOTE]
 >
@@ -24,9 +24,9 @@ ht-degree: 70%
 
 <!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-[!UICONTROL Cloud Manager] 2024.12.0的发布日期是2024年12月5日。
+[!UICONTROL Cloud Manager] 2024.12.0 版的发布日期是 2024 年 12 月 5 日。
 
-下一个计划发行日期为2025年1月23日。
+下一个版本计划于 2025 年 1 月 23 日发布。
 
 <!-- ## What's new {#what-is-new} -->
 
@@ -40,9 +40,9 @@ ht-degree: 70%
 
 <!-- BOTH CS & AMS -->
 
-**自带Git**&#x200B;功能已扩展到包括对外部存储库（如GitLab和Bitbucket）的支持。 这项新的支持是对专用和企业 GitHub 存储库现有支持的补充。添加这些新的存储库时，您还可以将它们直接链接到管道。您可以在公共云平台、专用云平台或基础架构中托管这些存储库。这种集成还消除了与 Adobe 存储库持续同步代码的需要，并提供了在提取请求合并到主分支之前对其进行验证的功能。
+**自带 Git** 功能已得到扩展，包括对 GitLab 和 Bitbucket 等外部存储库的支持。这项新的支持是对专用和企业 GitHub 存储库现有支持的补充。添加这些新的存储库时，您还可以将它们直接链接到管道。您可以在公共云平台、专用云平台或基础架构中托管这些存储库。这种集成还消除了与 Adobe 存储库持续同步代码的需要，并提供了在提取请求合并到主分支之前对其进行验证的功能。
 
-使用外部存储库（不包括GitHub托管的存储库）且&#x200B;**部署触发器**&#x200B;在Git更改&#x200B;**上设置为**&#x200B;的管道现在会自动启动。
+使用外部存储库（不包括 GitHub 托管的存储库）和&#x200B;**部署触发器**&#x200B;设置为&#x200B;**在 Git 发生更改时**&#x200B;的管道现在会自动启动。
 
 请参阅[在 Cloud Manager 中添加外部存储库](/help/managing-code/external-repositories.md)。
 
