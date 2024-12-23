@@ -3,9 +3,9 @@ title: 内容复制以实现环境一致性
 description: Cloud Manager 中的内容复制允许用户按需将可变内容从 Adobe Managed Services 托管的 Adobe Experience Manager 6.x 生产环境复制到较低的环境进行测试。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: e3a656605ac59ca1f95985426932fddf2b53b7c9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1321'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -158,8 +158,8 @@ Cloud Manager 中的内容复制允许用户按需将可变内容从 Adobe Manag
 
    | 状态 | 描述 |
    | --- | --- |
-   | 进行中 | 内容复制过程正在进行。 |
-   | 已完成 | 内容复制过程已成功完成。 |
+   | 进行中 | 内容复制过程正在进行中。 |
+   | 已完成 | 内容复制过程成功完成。 |
    | 失败 | 内容复制过程失败。 |
 
 ## 内容复制的局限性 {#limitations}
