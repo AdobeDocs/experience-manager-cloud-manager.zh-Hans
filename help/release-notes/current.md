@@ -3,9 +3,9 @@ title: Cloud Manager 2024.12.0 版的发行说明
 description: 了解 Adobe Managed Services 上有关 Cloud Manager 2024.12.0 版本的信息。
 feature: Release Information
 exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
-source-git-commit: dcf2a4727b800f4364fcc7d757d281bde2738a55
+source-git-commit: 60db60be95318ebf6f2af91a94a9475604a15003
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '359'
 ht-degree: 87%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 87%
 
 * 从2025年2月13日星期四开始，Cloud Manager代码质量步骤现在使用升级的SonarQube版本9.9.5.90363。
 
-  更新后的规则可用于[此链接](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-quality-testing#code-quality-testing-step)上的AMS，这些规则确定Cloud Manager管道的安全分数和代码质量。 此更新可能会影响质量关卡，潜在阻止部署。
+  更新后的规则可用于[此链接](/help/using/code-quality-testing.md#code-quality-testing-step)上的AMS，这些规则确定Cloud Manager管道的安全分数和代码质量。 此更新可能会影响质量关卡，潜在阻止部署。
 
 ## 早期采用计划 {#early-adoption}
 
