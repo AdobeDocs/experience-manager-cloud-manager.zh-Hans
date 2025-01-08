@@ -2,10 +2,10 @@
 title: 代码质量测试
 description: 了解管道代码质量测试的工作方式以及其提高部署质量的方式。
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '2764'
-ht-degree: 100%
+source-git-commit: dcf2a4727b800f4364fcc7d757d281bde2738a55
+workflow-type: tm+mt
+source-wordcount: '2793'
+ht-degree: 98%
 
 ---
 
@@ -48,14 +48,16 @@ ht-degree: 100%
 
 有 100 多条规则结合了通用 Java 规则和特定于 AEM 的规则。 一些特定于 AEM 的规则基于来自 AEM Engineering 的最佳实践而创建，这些规则称作[Custom Code Quality Rules](/help/using/custom-code-quality-rules.md)。
 
->[!TIP]
+>[!IMPORTANT]
 >
->可[使用此链接](/help/assets/CodeQuality-rules-latest-AMS.xlsx)下载规则的完整列表。
+>您可以使用此链接](/help/assets/CodeQuality-rules-latest-AMS.xlsx)下载当前完整的规则[列表。
+>
+>从2025年2月13日星期四(Cloud Manager 2025.2.0)开始，Cloud Manager代码质量使用更新的SonarQube 9.9版本和更新的规则列表，您可以[在此下载](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx)。
 
 代码质量测试的结果按此表中汇总的评级交付。
 
 | 名称 | 定义 | 类别 | 故障阈值 |
-|--- |--- |--- |--- |
+| --- | --- | --- | --- |
 | 安全性评级 | A = 无漏洞<br/>B = 至少 1 个次要漏洞<br/>C = 至少 1 个主要漏洞<br/>D = 至少 1 个严重漏洞<br/>E = 至少 1 个阻断漏洞 | 严重 | &lt; B |
 | 可靠性评级 | A = 无错误<br/>B = 至少 1 个次要错误<br/>C = 至少 1 个主要错误<br/>D = 至少 1 个严重错误<br/>E = 至少 1 个阻断错误 | 重要 | &lt; C |
 | 可维护性评级 | 定义为代码异味的未完成修复成本占应用程序已用时间的百分比<br/><ul><li>A = &lt;=5%</li><li>B = 6-10%</li><li>C = 11-20%</li><li>D = 21-50%</li><li>E = >50%</li></ul> | 重要 | &lt; A |
@@ -67,7 +69,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->有关更多详细信息，请参阅 [SonarQube 的量度定义](https://docs.sonarsource.com/sonarqube/latest/user-guide/code-metrics/metrics-definition/)。
+>有关更多详细信息，请参阅 [SonarQube 的量度定义](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/)。
 
 >[!NOTE]
 >
