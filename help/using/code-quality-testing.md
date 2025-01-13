@@ -5,7 +5,7 @@ exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: f5e6ac81c6454730850bb7e884d82be48d2f8525
 workflow-type: tm+mt
 source-wordcount: '2793'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -48,11 +48,11 @@ ht-degree: 98%
 
 有 100 多条规则结合了通用 Java 规则和特定于 AEM 的规则。 一些特定于 AEM 的规则基于来自 AEM Engineering 的最佳实践而创建，这些规则称作[Custom Code Quality Rules](/help/using/custom-code-quality-rules.md)。
 
-您可以使用此链接](/help/assets/CodeQuality-rules-latest-AMS.xlsx)下载当前完整的规则[列表。
+可以[使用此链接](/help/assets/CodeQuality-rules-latest-AMS.xlsx)下载当前完整的规则列表。
 
 >[!IMPORTANT]
 >
->从2025年2月13日星期四(Cloud Manager 2025.2.0)开始，Cloud Manager代码质量使用更新的SonarQube 9.9版本和更新的规则列表，您可以[在此下载](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx)。
+>从 2025 年 2 月 13 日星期四（Cloud Manager 2025.2.0）开始，Cloud Manager Code Quality 将使用更新的 SonarQube 9.9 版本和更新的规则列表，您可以[在此处下载](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx)。
 
 代码质量测试的结果按此表中汇总的评级交付。
 

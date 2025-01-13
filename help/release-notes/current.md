@@ -6,7 +6,7 @@ exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
 source-git-commit: 60db60be95318ebf6f2af91a94a9475604a15003
 workflow-type: tm+mt
 source-wordcount: '359'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -32,9 +32,9 @@ ht-degree: 87%
 
 <!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. --> <!-- CMGR-45683 -->
 
-* 从2025年2月13日星期四开始，Cloud Manager代码质量步骤现在使用升级的SonarQube版本9.9.5.90363。
+* 从 2025 年 2 月 13 日星期四开始，Cloud Manager 代码质量步骤现在使用升级的 SonarQube 版本 9.9.5.90363。
 
-  更新后的规则可用于[此链接](/help/using/code-quality-testing.md#code-quality-testing-step)上的AMS，这些规则确定Cloud Manager管道的安全分数和代码质量。 此更新可能会影响质量关卡，潜在阻止部署。
+  更新后的规则可通过[此链接](/help/using/code-quality-testing.md#code-quality-testing-step)获取，适用于 AMS，可确定 Cloud Manager 管道的安全分数和代码质量。此更新可能会影响您的质量关卡，甚至可能阻碍部署。
 
 ## 早期采用计划 {#early-adoption}
 
