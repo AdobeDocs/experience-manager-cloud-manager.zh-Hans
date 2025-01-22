@@ -1,62 +1,55 @@
 ---
-title: Cloud Manager 2024.12.0 版的发行说明
-description: 了解 Adobe Managed Services 上有关 Cloud Manager 2024.12.0 版本的信息。
+title: Cloud Manager 2025.1.0 版的发行说明
+description: 了解 Adobe Managed Services 上有关 Cloud Manager 2025.1.0 版本的信息。
 feature: Release Information
-exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
-source-git-commit: 60db60be95318ebf6f2af91a94a9475604a15003
-workflow-type: ht
-source-wordcount: '359'
-ht-degree: 100%
+source-git-commit: c25508b24f00b8f8cfa7bae3cc4b0d6ecf684db3
+workflow-type: tm+mt
+source-wordcount: '193'
+ht-degree: 32%
 
 ---
 
-# Adobe Managed Services 上 Cloud Manager 2024.12.0 版的发行说明 {#release-notes}
+# Adobe Managed Services 上 Cloud Manager 2025.1.0 版的发行说明 {#release-notes}
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release -->
 
-了解 Adobe Managed Services 上有关 [!UICONTROL Cloud Manager] 2024.12.0 版本的信息。
+了解 Adobe Managed Services 上有关 [!UICONTROL Cloud Manager] 2025.1.0 版本的信息。
 
 >[!NOTE]
 >
->请参阅 [Adobe Experience Manager as a Cloud Service 的当前发行说明](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-cloud-service/content/release-notes/home)。
+>请参阅 [Adobe Experience Manager as a Cloud Service 的当前发行说明](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/home)。
 
 ## 发行日期 {#release-date}
 
 <!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-[!UICONTROL Cloud Manager] 2024.12.0 版的发布日期是 2024 年 12 月 5 日。
+[!UICONTROL Cloud Manager] 2025.1.0的发布日期是2024年1月22日星期三。
 
-下一个版本计划于 2025 年 1 月 23 日发布。
+下一个计划发布于2025年2月13日星期四。
 
 ## 新增功能 {#what-is-new}
 
-<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. --> <!-- CMGR-45683 -->
+**代码质量规则：** Cloud Manager代码质量步骤将开始将SonarQube Server 9.9与Cloud Manager 2025.2.0版本一起使用，该版本计划于2025年2月13日星期四发布。
 
-* 从 2025 年 2 月 13 日星期四开始，Cloud Manager 代码质量步骤现在使用升级的 SonarQube 版本 9.9.5.90363。
+为了准备，更新的SonarQube规则现在可在[代码质量规则](/help/using/code-quality-testing.md#code-quality-testing-step)中获取。
 
-  更新后的规则可通过[此链接](/help/using/code-quality-testing.md#code-quality-testing-step)获取，适用于 AMS，可确定 Cloud Manager 管道的安全分数和代码质量。此更新可能会影响您的质量关卡，甚至可能阻碍部署。
+您可以通过设置以下管道文本变量（请参阅下面的屏幕快照），“提前检查”新规则：
 
-## 早期采用计划 {#early-adoption}
+`CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-加入 Cloud Manager 早期采用计划，即有机会测试即将推出的功能。
+此外，设置以下变量以确保为同一提交运行代码质量步骤（通常为同一`commitId`跳过）：
 
-### 自带 Git - 现支持 GitLab 和 Bitbucket {#gitlab-bitbucket}
+`CM_DISABLE_BUILD_REUSE` = `true`
 
-<!-- BOTH CS & AMS -->
-
-**自带 Git** 功能已得到扩展，包括对 GitLab 和 Bitbucket 等外部存储库的支持。这项新的支持是对专用和企业 GitHub 存储库现有支持的补充。添加这些新的存储库时，您还可以将它们直接链接到管道。您可以在公共云平台、专用云平台或基础架构中托管这些存储库。这种集成还消除了与 Adobe 存储库持续同步代码的需要，并提供了在提取请求合并到主分支之前对其进行验证的功能。
-
-使用外部存储库（不包括 GitHub 托管的存储库）和&#x200B;**部署触发器**&#x200B;设置为&#x200B;**在 Git 发生更改时**&#x200B;的管道现在会自动启动。
-
-请参阅[在 Cloud Manager 中添加外部存储库](/help/managing-code/external-repositories.md)。
-
-![添加“存储库”对话框](/help/release-notes/assets/repositories-add-release-notes.png)
+![变量配置页面](/help/release-notes/assets/variables-config.png)
 
 >[!NOTE]
 >
->目前，开箱即用的提取请求代码质量检查仅限于 GitHub 托管的存储库，但正在计划将此功能扩展到其他 Git 供应商的更新。
+>Adobe建议创建一个新的CI/CD代码质量管道，并将其配置为与主生产管道位于同一分支。 在&#x200B;*2025年2月13日版本之前*&#x200B;设置适当的变量，以验证新的强制执行规则不会引入阻止程序。
 
-如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)。请务必注明您想要使用的 Git 平台以及您是处于专用/公共还是企业存储库结构中。
+<!-- ## Early adoption program {#early-adoption}
+
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
 
 
 <!-- ## Bug fixes {#bug-fixes}
