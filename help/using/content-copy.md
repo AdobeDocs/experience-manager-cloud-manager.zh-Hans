@@ -3,9 +3,9 @@ title: 内容复制以实现环境一致性
 description: Cloud Manager 中的内容复制允许用户按需将可变内容从 Adobe Managed Services 托管的 Adobe Experience Manager 6.x 生产环境复制到较低的环境进行测试。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: 84b3366481c2efd497583627eac67046452f6c38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1321'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Cloud Manager 中的内容复制允许用户按需将可变内容从 Adobe Manag
 
    只有以 `/content`、`/conf`、`/etc`、`/var/workflow/models` 或 `/var/commerce` 开头的路径才有资格纳入。
 
-1. 单击![文件夹添加图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg) **添加路径**&#x200B;以添加（或包含）内容集的路径。
+1. 单击![文件夹添加图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg)**添加路径**&#x200B;以添加（或包含）内容集的路径。
 
 1. （可选）如有必要，重复前两个步骤，根据需要添加其他路径（最多 50 条）。否则，继续下一步。
 
