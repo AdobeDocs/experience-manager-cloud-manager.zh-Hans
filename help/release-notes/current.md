@@ -3,10 +3,11 @@ title: Cloud Manager 2025.1.0 版的发行说明
 description: 了解 Adobe Managed Services 上有关 Cloud Manager 2025.1.0 版本的信息。
 feature: Release Information
 exlid: 669b1f2d8fc68526eb091e0f93f70ab93033d193
-source-git-commit: 434740b5ad2dafd5a6c55d0272cf5effdfa6baac
-workflow-type: tm+mt
+exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
+source-git-commit: ca9a07354ff8316f531840a42d6ecdda5c072b9b
+workflow-type: ht
 source-wordcount: '196'
-ht-degree: 31%
+ht-degree: 100%
 
 ---
 
@@ -24,21 +25,21 @@ ht-degree: 31%
 
 <!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-[!UICONTROL Cloud Manager] 2025.1.0的发布日期是2024年1月22日星期三。
+[!UICONTROL Cloud Manager] 2025.1.0 版的发布日期为 2024 年 1 月 22 日星期三。
 
-下一个计划发布于2025年2月13日星期四。
+下一个计划版本于 2025 年 2 月 13 日星期四发布。
 
 ## 新增功能 {#what-is-new}
 
-**代码质量规则 — Sonar多维数据集升级：** Cloud Manager代码质量步骤将开始将SonarQube Server 9.9与Cloud Manager 2025.2.0版本一起使用，该版本计划于2025年2月13日星期四发布。
+**代码质量规则 - Sonar Cube 升级：** Cloud Manager 代码质量步骤将从计划于 2025 年 2 月 13 日星期四发布的 Cloud Manager 2025.2.0 版本开始使用 SonarQube Server 9.9。
 
-为了准备，更新的SonarQube规则现在可在[代码质量规则](/help/using/code-quality-testing.md#code-quality-testing-step)中获取。
+为做好准备，更新后的 SonarQube 规则现已在[代码质量规则](/help/using/code-quality-testing.md#code-quality-testing-step)中提供。
 
-您可以通过设置以下管道文本变量（请参阅下面的屏幕快照），“提前检查”新规则：
+您可以通过设置以下管道文本变量来“提前检查”新规则（见下面的屏幕快照）：
 
 `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-此外，设置以下变量以确保为同一提交运行代码质量步骤（通常为同一`commitId`跳过）：
+此外，设置以下变量以确保代码质量步骤针对相同的提交运行（通常会跳过相同的 `commitId`）：
 
 `CM_DISABLE_BUILD_REUSE` = `true`
 
@@ -46,7 +47,7 @@ ht-degree: 31%
 
 >[!NOTE]
 >
->Adobe建议创建一个新的CI/CD代码质量管道，并将其配置为与主生产管道位于同一分支。 在&#x200B;*2025年2月13日版本之前*&#x200B;设置适当的变量，以验证新的强制执行规则不会引入阻止程序。
+>Adobe 建议创建一个新的 CI/CD 代码质量管道，并将其配置为与主生产管道相同的分支。在 2025 年 2 月 13 日发布&#x200B;*之前*&#x200B;设置适当的变量，以验证新实施的规则不会引入阻碍因素。
 
 <!-- ## Early adoption program {#early-adoption}
 

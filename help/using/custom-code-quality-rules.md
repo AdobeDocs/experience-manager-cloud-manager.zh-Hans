@@ -3,16 +3,16 @@ title: 自定义代码质量规则
 description: 了解 Cloud Manager 在代码质量测试期间执行的自定义代码质量规则的具体内容。这些规则以 AEM Engineering 的最佳实践为基础。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 1b7b703f7cba69878bd98aa971844741ebea7dba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3490'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
 # 自定义代码质量规则 {#custom-code-quality-rules}
 
-了解 Cloud Manager 在基于来自 AEM 工程的最佳实践的 [代码质量测试](/help/using/code-quality-testing.md)过程中执行的自定义代码质量规则的详细信息。
+了解 Cloud Manager 在基于来自 AEM 工程的最佳实践的[代码质量测试](/help/using/code-quality-testing.md)过程中执行的自定义代码质量规则的详细信息。
 
 >[!NOTE]
 >
@@ -496,7 +496,7 @@ public void doThis(Resource resource) {
 ### 不应使用 Sling 调度程序 {#sonarqube-sling-scheduler}
 
 * **密钥**：CQRules:AMSCORE-554
-* **类型**： `Code Smell`/Cloud Service兼容性
+* **类型**：`Code Smell` / Cloud Service 兼容性
 * **严重性**：轻微
 * **开始版本**：版本 2020.5.0
 
@@ -507,7 +507,7 @@ Sling 调度程序不得用于需要保证执行的任务。 Sling 计划作业�
 ### 不应使用 AEM 弃用的 API {#sonarqube-aem-deprecated}
 
 * **密钥**：AMSCORE-553
-* **类型**： `Code Smell`/Cloud Service兼容性
+* **类型**：`Code Smell` / Cloud Service 兼容性
 * **严重性**：轻微
 * **开始版本**：版本 2020.5.0
 
@@ -629,7 +629,7 @@ public class DontDoThis implements Page {
 ### 默认创作模式不应是经典 UI {#oakpal-default-authoring}
 
 * **密钥**：ClassicUIAuthoringMode
-* **类型**： `Code Smell`/Cloud Service兼容性
+* **类型**：`Code Smell` / Cloud Service 兼容性
 * **严重性**：轻微
 * **开始版本**：版本 2020.5.0
 
@@ -638,7 +638,7 @@ OSGi 配置 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 定义 AEM 中
 ### 带有对话框的组件应该有触摸 UI 对话框 {#oakpal-components-dialogs}
 
 * **密钥**：ComponentWithOnlyClassicUIDialog
-* **类型**： `Code Smell`/Cloud Service兼容性
+* **类型**：`Code Smell` / Cloud Service 兼容性
 * **严重性**：轻微
 * **开始版本**：版本 2020.5.0
 
@@ -653,7 +653,7 @@ OSGi 配置 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 定义 AEM 中
 ### 不应使用反向复制代理 {#oakpal-reverse-replication}
 
 * **密钥**：ReverseReplication
-* **类型**： `Code Smell`/Cloud Service兼容性
+* **类型**：`Code Smell` / Cloud Service 兼容性
 * **严重性**：轻微
 * **开始版本**：版本 2020.5.0
 
@@ -799,7 +799,7 @@ AEM Cloud Service 禁止自定义搜索索引定义（即 `oak:QueryIndexDefinit
 
 ### 索引定义节点不得部署在 UI 内容包中 {#oakpal-ui-content-package}
 
-* **键**：IndexNotUnderUIContent
+* **密钥**：IndexNotUnderUIContent
 * **类型**：改进
 * **严重性**：轻微
 * **开始版本**：版本 2024.6.0
@@ -812,7 +812,7 @@ AEM Cloud Service 禁止在 UI 内容包中部署自定义搜索索引定义（�
 
 ### 类型`damAssetLucene`的自定义全文索引定义必须正确添加前缀`damAssetLucene` {#oakpal-dam-asset-lucene}
 
-* **键**：CustomFulltextIndexesOfTheDamAssetCheck
+* **密钥**：CustomFulltextIndexesOfTheDamAssetCheck
 * **类型**：改进
 * **严重性**：轻微
 * **开始版本**：版本 2024.6.0
@@ -825,7 +825,7 @@ AEM Cloud Service 禁止类型 `damAssetLucene` 的自定义全文索引定义�
 
 ### 索引定义节点不得包含同名的属性 {#oakpal-index-property-name}
 
-* **键**：DuplicateNameProperty
+* **密钥**：DuplicateNameProperty
 * **类型**：改进
 * **严重性**：轻微
 * **开始版本**：版本 2024.6.0
@@ -838,7 +838,7 @@ AEM Cloud Service 禁止自定义搜索索引定义（即，类型为 `oak:Query
 
 ### 禁止自定义某些现成的索引定义 {#oakpal-customizing-ootb-index}
 
-* **键**：RestrictIndexCustomization
+* **密钥**：RestrictIndexCustomization
 * **类型**：改进
 * **严重性**：轻微
 * **开始版本**：版本 2024.6.0
@@ -858,7 +858,7 @@ AEM Cloud Service 禁止对以下 OOTB 索引进行未经授权的修改：
 
 ### 分析器中的标记器配置应使用`tokenizer`名称创建 {#oakpal-tokenizer}
 
-* **键**：AnalyzerTokenizerConfigCheck
+* **密钥**：AnalyzerTokenizerConfigCheck
 * **类型**：改进
 * **严重性**：轻微
 * **开始版本**：版本 2024.6.0
@@ -876,7 +876,7 @@ AEM Cloud Service 禁止创建包含带空格属性的索引定义。
 
 ### 索引定义的配置不应包含 haystack0 属性 {#oakpal-indexing-haystack0-property}
 
-* **键**：HayStackPropertyCheck
+* **密钥**：HayStackPropertyCheck
 * **类型**：改进
 * **严重性**：轻微
 * **开始版本**：版本 2024.12.0
