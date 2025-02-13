@@ -2,10 +2,10 @@
 title: 自定义代码质量规则
 description: 了解 Cloud Manager 在代码质量测试期间执行的自定义代码质量规则的具体内容。这些规则以 AEM Engineering 的最佳实践为基础。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 1b7b703f7cba69878bd98aa971844741ebea7dba
-workflow-type: ht
-source-wordcount: '3490'
-ht-degree: 100%
+source-git-commit: c50eb54b5603b4370f2d7907a2194477dcc3ba21
+workflow-type: tm+mt
+source-wordcount: '3523'
+ht-degree: 99%
 
 ---
 
@@ -882,6 +882,15 @@ AEM Cloud Service 禁止创建包含带空格属性的索引定义。
 * **开始版本**：版本 2024.12.0
 
 AEM Cloud Service 禁止创建包含带 haystack 属性的索引定义。
+
+### 索引定义的配置不应包含属性： async-previous {#oakpal-indexing-async-previous-property}
+
+* **Key**： IndexAsyncPreviousCheck
+* **类型**：改进
+* **严重性**：轻微
+* **开始版本**：版本 2025.2.0
+
+AEM Cloud Service禁止创建包含异步先前属性的索引定义。
 
 ## Dispatcher 优化工具 {#dispatcher-optimization-tool-rules}
 
