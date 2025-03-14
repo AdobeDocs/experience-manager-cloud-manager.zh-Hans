@@ -1,73 +1,61 @@
 ---
-title: Cloud Manager 2025.2.0 版的发行说明
-description: 了解 Adobe Managed Services 上有关 Cloud Manager 2025.2.0 版本的信息。
+title: Cloud Manager 2025.3.0 版的发行说明
+description: 了解 Adobe Managed Services 上有关 Cloud Manager 2025.3.0 版本的信息。
 feature: Release Information
-exlid: 669b1f2d8fc68526eb091e0f93f70ab93033d193
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 51dd060ec9b922ace9ce537cac669c61154284e8
-workflow-type: ht
-source-wordcount: '241'
-ht-degree: 100%
+source-git-commit: 31ae069c9e121963b4609af3f10ac08ab5539fb8
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 27%
 
 ---
 
-# Adobe Managed Services 上 Cloud Manager 2025.2.0 版的发行说明 {#release-notes}
+# Adobe Managed Services 上 Cloud Manager 2025.3.0 版的发行说明 {#release-notes}
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.02.0+Release -->
 
-了解 Adobe Managed Services 上有关 [!UICONTROL Cloud Manager] 2025.2.0 版本的信息。
+了解 Adobe Managed Services 上有关 [!UICONTROL Cloud Manager] 2025.3.0 版本的信息。
 
 另请参阅 [Adobe Experience Manager as a Cloud Service 的当前发行说明](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/home)。
 
 ## 发行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2025.2.0 版的发布日期为 2025 年 2 月 13 日星期四。
+[!UICONTROL Cloud Manager] 2025.3.0的发布日期是2025年3月13日星期四。
 
-下一个版本计划于 2025 年 3 月 13 日星期四发布。
+下一个计划发布于2025年4月10日星期四。
 
 ## 新增功能 {#what-is-new}
 
-<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. --> <!-- CMGR-45683 -->
+* **运行多个管道**
 
-* **升级的 SonarQube**
+  在管道页面上引入了同时运行多个管道的功能。 用户必须至少选择一个管道，但不能超过十个。 在管道页面的右上角附近，单击&#x200B;**运行选定项(x)**。 此时将显示一个模式对话框，其中列出了任何无法启动的管道。 单击&#x200B;**运行**&#x200B;以启动所有有效的管道。
 
-  从 2025 年 2 月 13 日星期四开始，Cloud Manager 代码质量步骤现在使用 SonarQube 9.9.5.90363。
+  ![运行选定的管道对话框](/help/release-notes/assets/run-selected-pipelines.png)
 
-  更新后的规则可通过[此链接](/help/using/code-quality-testing.md#code-quality-testing-step)获取，适用于 AMS，可确定 Cloud Manager 管道的安全分数和代码质量。
 
-* SonarQube 9.9 现在是所有客户的默认代码质量扫描引擎。
 
-* **Java 17 和 Java 21 构建环境支持**
+## 早期采用计划 {#early-adoption}
 
-  客户现在可以选择使用 Java 17 或 Java 21 进行构建，从而受益于性能改进和新语言功能。有关配置步骤，包括更新 Maven 项目描述和某些库版本，请参阅[构建环境](/help/getting-started/build-environment.md)。
+加入 Cloud Manager 早期采用计划，即有机会测试即将推出的功能。
 
-  >[!NOTE]
-  >对于 Cloud Service 环境，如果构建版本设置为 Java 17 或 Java 21，运行时就默认为 Java 21。
+### 面向AMS Cloud Manager客户的自助服务包更新
 
-* **内容复制验证扩展**
+作为率先采用者计划的一部分，Adobe Managed Services Cloud Manager客户现在可以通过&#x200B;**Cloud Manager**&#x200B;用户界面执行自助服务包更新。 此功能当前仅&#x200B;*可用于开发环境*，并且包括有限的失败错误报告。
 
-  内容复制验证规则已更新。在此版本中，如果源环境或目标环境中存在活动的管道执行，用户将无法再触发内容复制。用户必须等到所有正在进行的管道执行完成后才能启动内容复制。
+客户可以在&#x200B;**环境**&#x200B;部分（**三点菜单**）下的&#x200B;**程序概述**&#x200B;页面上检查Service Pack更新。
 
-<!-- 
-## Early adoption program {#early-adoption}
+![检查更新菜单选项](/help/release-notes/assets/check-for-updates-1.png)
 
-Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features.
 
-### Bring Your Own Git - now with support for GitLab and Bitbucket {#gitlab-bitbucket}
+![更新Service Pack对话框](/help/release-notes/assets/check-for-updates-2.png)
 
-The **Bring Your Own Git** feature has been expanded to include support for external repositories, such as GitLab and Bitbucket. This new support is in addition to the already existing support for private and enterprise GitHub repositories. When you add these new repos, you can also link them directly to your pipelines. You can host these repositories on public cloud platforms or within your private cloud or infrastructure. This integration also removes the need for constant code synchronization with the Adobe repository and provides the ability to validate pull requests before merging them into a main branch.
+可在&#x200B;**活动**&#x200B;页面上跟踪安装和升级过程。
 
-Pipelines using external repositories (excluding GitHub-hosted ones) and the **Deployment Trigger** set to **On Git Changes** now start automatically.
+该过程完成后，客户必须&#x200B;**批准执行**，服务包升级才能成功完成。
 
-See [Add external repositories in Cloud Manager](/help/managing-code/external-repositories.md).
+![批准服务页面更新](/help/release-notes/assets/check-for-updates-3.png)
 
-![Add Repository dialog box](/help/release-notes/assets/repositories-add-release-notes.png)
-
->[!NOTE]
->
->Currently, the out-of-the-box pull request code quality checks are exclusive to GitHub-hosted repositories, but an update to extend this functionality to other Git vendors is in the works.
-
-If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
+如果您有兴趣测试这项新功能并分享您的反馈，请联系您的Adobe客户成功工程师。
 
 
 <!-- ## Bug fixes {#bug-fixes}
