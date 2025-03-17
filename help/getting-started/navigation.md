@@ -2,10 +2,10 @@
 title: 浏览 Cloud Manager UI
 description: 了解 Cloud Manager UI 的组织方式，以及如何管理您的程序和环境。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1435'
-ht-degree: 100%
+source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+workflow-type: tm+mt
+source-wordcount: '1439'
+ht-degree: 96%
 
 ---
 
@@ -52,11 +52,11 @@ Cloud Manager UI 主要由两个图形界面组成：
 
 ![Experience Cloud 标头](assets/experience-cloud-header.png)
 
-1. 标题左侧的汉堡图标是一个下拉菜单，通过它可以访问单个程序特定部分的选项卡。 根据上下文，它还允许您在许可证仪表板和&#x200B;**[我的程序](#my-programs-console)** 控制台之间切换。
+1. 标题左侧的![显示菜单图标，汉堡包](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)图标是一个下拉菜单，可访问各个程序特定部分的选项卡。 根据上下文，它还允许您在许可证仪表板和&#x200B;**[我的程序](#my-programs-console)** 控制台之间切换。
    * 许可证仪表板仅适用于 AEM as a Cloud Service 计划，而不适用于 AMS 计划。
    * 要确定您的程序所具有的服务类型（AMS 或 AEMaaCS），请参阅本文档的 [程序信息卡部分](#program-cards)。
 1. 无论您在浏览 Cloud Manager 的哪个部分，Cloud Manager 按钮都会带您返回到 Cloud Manager 中的“我的程序”控制台。
-1. 单击“反馈”按钮，向 Adobe 提供有关 Cloud Manager 的反馈。
+1. 单击&#x200B;**反馈**&#x200B;向Adobe提供有关Cloud Manager的反馈。
 1. 组织选择器会显示您当前登录的组织（在此示例中为 Foundation Internal）。 如果您的 Adobe ID 与多个组织关联，请单击以切换到另一个组织。
 1. 单击解决方案切换器可快速跳转到其他 Experience Cloud 解决方案。
 1. 可使用帮助图标快速访问学习和支持资源。
@@ -123,7 +123,7 @@ Cloud Manager UI 主要由两个图形界面组成：
 
 ![信息](assets/information-view.png)
 
-通过省略号图标可以访问可在该程序上执行的其他操作。
+![更多图标，省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)允许您对程序执行其他操作。
 
 ![程序的省略号按钮](assets/program-ellipsis.png)
 

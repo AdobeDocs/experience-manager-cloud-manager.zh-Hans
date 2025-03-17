@@ -2,10 +2,10 @@
 title: 监控环境
 description: 了解如何在 Cloud Manager 中监控环境。
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '910'
-ht-degree: 100%
+source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+workflow-type: tm+mt
+source-wordcount: '911'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Managed Services 会设置阈值，而您可以在 [!UICONTROL Cloud Manag
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 单击要监控的项目的省略号按钮。
+1. 单击要监视的程序的![更多图标，省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 1. 在菜单中，在&#x200B;**管理**&#x200B;标题下，单击&#x200B;**显示监控**，以打开显示系统监控信息的&#x200B;**报告**&#x200B;页面。
 
    ![设置](/help/assets/first-timea1.png)

@@ -2,10 +2,10 @@
 title: 添加用户和角色
 description: 了解如何使用 Admin Console 添加用户和角色以及创建轮廓。
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '758'
-ht-degree: 100%
+source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+workflow-type: tm+mt
+source-wordcount: '762'
+ht-degree: 89%
 
 ---
 
@@ -101,18 +101,18 @@ Admin Console 是一个中央位置，用于管理整个组织内的 Adobe 授�
 
 1. 单击左侧导航面板中的&#x200B;**用户**，然后单击一个用户以修改它。
 
-1. 单击&#x200B;**产品**&#x200B;部分中的省略号按钮，然后选择&#x200B;**编辑**。
+1. 单击&#x200B;**产品**&#x200B;部分中的![更多图标，省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**编辑**。
 
    ![编辑用户](/help/assets/admin-console-edit-user.png)
 
-1. 在&#x200B;**编辑产品和用户组**&#x200B;对话框中，单击加号按钮并选择要分配给该用户的配置文件。
+1. 在&#x200B;**编辑产品和用户组**&#x200B;对话框中，单击![添加图标，加号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)，然后选择要分配给该用户的配置文件。
 
-   * 如果已将该用户分配给角色，则加号按钮是编辑按钮（铅笔），但其作用相同。
+   * 如果用户已分配给角色，则![添加图标加上](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)按钮是编辑按钮（铅笔），但工作方式相同。
 
    ![编辑产品和用户组](/help/assets/admin-console-edit-products-and-user-groups.png)
 
 1. 单击&#x200B;**保存**&#x200B;以将配置文件保存到用户。
 
-重复相同步骤以将配置文件分配给用户组，但在&#x200B;**用户**&#x200B;选项卡上从左侧导航面板中选择&#x200B;**用户组**。单击一个用户组，选择&#x200B;**已分配的产品配置文件**&#x200B;选项卡，然后单击&#x200B;**分配产品配置文件**&#x200B;以分配配置文件。
+重复相同步骤以将配置文件分配给用户组，但在&#x200B;**用户**&#x200B;选项卡上从左侧导航面板中选择&#x200B;**用户组**。单击用户组并选择&#x200B;**已分配的产品配置文件**&#x200B;单击&#x200B;**分配产品配置文件**&#x200B;以分配配置文件。
 
 ![将配置文件分配给组](/help/assets/admin-console-edit-user-groups.png)

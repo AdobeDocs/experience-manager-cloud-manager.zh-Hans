@@ -1,21 +1,21 @@
 ---
-title: 仅暂存和仅生产管道
+title: 仅限阶段和仅限生产环境的管道 — 早期采用者
 description: 了解如何使用专用管道拆分暂存和生产部署。
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 03f7429fd2c4a6dd4c8ae3228eff9c8cdab1ded8
-workflow-type: ht
-source-wordcount: '932'
-ht-degree: 100%
+source-git-commit: 2c6f5692ffa31e02d7338e68063d0c1c03a0c73b
+workflow-type: tm+mt
+source-wordcount: '936'
+ht-degree: 98%
 
 ---
 
-# 仅暂存和仅生产管道 {#stage-prod-only}
+# 仅限暂存和仅限生产的管道（早期采用者） {#stage-prod-only}
 
 了解如何使用专用管道拆分暂存和生产部署。
 
 >[!NOTE]
 >
->此功能仅适用于[早期采用者计划](/help/release-notes/current.md#early-adoption)。
+>此功能仅适用于[早期采用者计划](/help/release-notes/2024/2024-8-0.md)。
 
 ## 概述 {#overview}
 
@@ -116,3 +116,4 @@ ht-degree: 100%
 对于仅生产管道，请务必识别出要部署到生产中的源工件。 这些详细信息可以在&#x200B;**工件准备**&#x200B;步骤找到。 您可以导航到这些执行来获取更多详细信息和日志。
 
 ![工件详细信息](/help/assets/configure-pipelines/prod-only-pipeline-run.png)
+

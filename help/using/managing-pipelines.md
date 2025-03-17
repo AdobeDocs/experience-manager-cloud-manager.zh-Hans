@@ -2,10 +2,10 @@
 title: 管理管道
 description: 了解如何管理现有管道，包括运行、编辑和删除它们。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 9d910e1b1a4aad000a8389ddc22ce380bbccd4ef
-workflow-type: ht
-source-wordcount: '840'
-ht-degree: 100%
+source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
+workflow-type: tm+mt
+source-wordcount: '845'
+ht-degree: 73%
 
 ---
 
@@ -20,7 +20,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 ![Cloud Manager 中的管道信息卡](/help/assets/configure-pipelines/pipelines-card.png)
 
-通过单击每个管道旁边的省略号按钮，可以执行以下操作：
+通过单击每个管道旁边的![更多图标（省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)），您可以执行以下操作：
 
 * [运行管道](#running-pipelines)。
 * [编辑管道](#editing-pipelines)。
@@ -70,45 +70,56 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 1. 从&#x200B;**项目概述**&#x200B;页面导航到&#x200B;**管道**&#x200B;信息卡。
-1. 单击您运行的管道旁边的省略号按钮，然后从菜单中选择&#x200B;**运行**。
+1. 单击您运行的管道旁边的![更多图标，省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**运行**。
 
    “状态”列指示管道何时开始运行。
 
-   您可以通过再次单击省略号按钮并选择&#x200B;**[查看详细信息](#view-details)**&#x200B;来查看运行的详细信息。
+   您可以通过再次单击![更多图标、省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)和单击&#x200B;**[查看详细信息](#view-details)**&#x200B;来查看运行的详细信息。
 
-   根据管道类型，您可以通过再次单击省略号按钮并选择&#x200B;**取消**&#x200B;来取消运行。
+   根据管道类型，您可以通过单击![更多图标，再次单击省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)并单击&#x200B;**取消**&#x200B;来取消运行。
 
 ## 编辑管道 {#editing-pipelines}
 
+您无法编辑正在运行的管道。
+
+**要编辑管道：**
+
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 导航到&#x200B;**项目概述**&#x200B;页面中的&#x200B;**管道**&#x200B;信息卡，单击要编辑的管道旁边的省略号按钮，然后从菜单中选择&#x200B;**编辑**。
+1. 从&#x200B;**项目概述**&#x200B;页面，导航到&#x200B;**管道**&#x200B;信息卡。
 
-1. 出现&#x200B;**编辑生产管道**&#x200B;或&#x200B;**编辑非生产管道**&#x200B;对话框。 您可以编辑在创建管道期间输入的相同详细信息。
+1. 单击要编辑的管道旁边的![更多图标，省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**编辑**。
+
+1. 在&#x200B;**编辑生产管道**&#x200B;或&#x200B;**编辑非生产管道**&#x200B;对话框中，您可以编辑在创建管道期间输入的相同详细信息。
 
    有关管道可用的字段和配置选项的详细信息，请参阅[配置生产管道](/help/using/production-pipelines.md)和[配置非生产管道](/help/using/non-production-pipelines.md)。
 
-1. 完成后，单击&#x200B;**保存**。
-
->[!NOTE]
->
->您无法编辑运行中的管道。
+1. 完成后，单击&#x200B;**更新**。
 
 ## 删除管道 {#deleting-pipelines}
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
+您无法删除运行中的管道。
 
-1. 导航到&#x200B;**项目概述**&#x200B;页面中的&#x200B;**管道**&#x200B;信息卡，并单击要删除的管道旁边的省略号按钮，然后从菜单中选择&#x200B;**删除**。
-
->[!NOTE]
->
->您无法删除运行中的管道。
-
-## 查看详细信息 {#view-details}
+**要删除管道：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 导航到&#x200B;**项目概述**&#x200B;页面中的&#x200B;**管道**&#x200B;信息卡，并单击运行的管道旁边的省略号按钮，然后从菜单中选择&#x200B;**查看详细信息**。
+1. 从&#x200B;**项目概述**&#x200B;页面，导航到&#x200B;**管道**&#x200B;信息卡。
+
+1. 单击您运行的管道旁边的![更多图标，省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**删除**。
+
+
+## 查看管道详细信息 {#view-details}
+
+您只能查看运行中或已运行至少一次的管道的详细信息。
+
+**查看管道详细信息：**
+
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
+
+1. 从&#x200B;**项目概述**&#x200B;页面，导航到&#x200B;**管道**&#x200B;信息卡。
+
+1. 单击您运行的管道旁边的![更多图标，省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**查看详细信息**。
 
 1. 您将转到运行中的管道的详细信息页面。
 
@@ -126,15 +137,10 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 ![持续时间](/help/assets/configure-pipelines/duration.png)
 
-如果您的管道包含引发问题的&#x200B;**代码扫描**&#x200B;步骤，您可以单击&#x200B;**下载详细信息**&#x200B;按钮，查看未通过的[代码质量测试](/help/using/code-quality-testing.md)列表。
+如果您的管道包含&#x200B;**代码扫描**&#x200B;步骤，该步骤会导致问题，您可以单击&#x200B;**下载详细信息**&#x200B;以查看未通过的[代码质量测试](/help/using/code-quality-testing.md)的列表。
 
 ![代码质量问题](assets/managing-pipelines-code-quality-issues.png)
 
 CSV 文件中有一个&#x200B;**项目文件位置**&#x200B;列，用于指示有问题代码的位置。此列是项目相对路径，而&#x200B;**文件位置**&#x200B;列是由 Maven 生成的。
 
 ![项目代码扫描问题详情](assets/managing-pipelines-code-quality-details.png)
-
-
->[!NOTE]
->
->您只能查看运行中或已运行至少一次的管道的详细信息。
