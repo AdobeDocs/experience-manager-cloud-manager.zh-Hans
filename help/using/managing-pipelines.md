@@ -2,10 +2,10 @@
 title: 管理管道
 description: 了解如何管理现有管道，包括运行、编辑和删除它们。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 91691878a2c135cc9fe123c06afcf775a962a2e0
+source-git-commit: d4a7d9ab72947b97b0dabb2f822ef268e4972685
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 60%
+source-wordcount: '1060'
+ht-degree: 59%
 
 ---
 
@@ -87,7 +87,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 1. 从左侧菜单中，单击![工作流图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**。
 1. 在&#x200B;**管道**页面上的表中，选中要运行的管道旁边的复选框。
-如有必要，请单击![筛选器图标、漏斗](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **筛选器**&#x200B;以按环境或部署的代码类型对管道进行排序，或同时单击两者。
+如有必要，请单击![筛选器图标、漏斗](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **筛选器**&#x200B;以按名称、环境、已部署的代码类型或这三个的组合对管道进行排序。
 1. 在页面的右上角附近，单击&#x200B;**运行选定项(x)**。
 1. 在&#x200B;**运行所选管道(x)**&#x200B;对话框中，单击&#x200B;**运行(x)**。
 
