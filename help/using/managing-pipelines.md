@@ -2,10 +2,10 @@
 title: 管理管道
 description: 了解如何管理现有管道，包括运行、编辑和删除它们。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
+source-git-commit: 91691878a2c135cc9fe123c06afcf775a962a2e0
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 73%
+source-wordcount: '1054'
+ht-degree: 60%
 
 ---
 
@@ -66,7 +66,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 点击&#x200B;**查看详细信息**&#x200B;以查看[管道执行的详细信息](#view-details)。
 
-## 运行管道 {#running-pipelines}
+## 运行管道 {#run-one-pipeline}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 1. 从&#x200B;**项目概述**&#x200B;页面导航到&#x200B;**管道**&#x200B;信息卡。
@@ -77,6 +77,23 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
    您可以通过再次单击![更多图标、省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)和单击&#x200B;**[查看详细信息](#view-details)**&#x200B;来查看运行的详细信息。
 
    根据管道类型，您可以通过单击![更多图标，再次单击省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)并单击&#x200B;**取消**&#x200B;来取消运行。
+
+## 运行多个管道 {#run-multiple-pipelines}
+
+借助Cloud Manager，您可以同时运行多个管道，从而提高Adobe Managed Services (AMS)客户的部署效率。 **运行选定项**&#x200B;功能允许您选择多个管道并触发它们同时运行。 它减少了不得不单独运行管道的手动工作量，并优化了构建和部署工作流。
+
+**要运行多个管道：**
+
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
+1. 从左侧菜单中，单击![工作流图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**。
+1. 在&#x200B;**管道**页面上的表中，选中要运行的管道旁边的复选框。
+如有必要，请单击![筛选器图标、漏斗](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **筛选器**&#x200B;以按环境或部署的代码类型对管道进行排序，或同时单击两者。
+1. 在页面的右上角附近，单击&#x200B;**运行选定项(x)**。
+1. 在&#x200B;**运行所选管道(x)**&#x200B;对话框中，单击&#x200B;**运行(x)**。
+
+   **运行**&#x200B;按钮反映了可以继续的管道数。 例如，您可能选择了四条管道，但一条管道已在运行。 或者，链接到选定管道的环境不再存在。 在这种情况下，系统相应地进行调整。 按钮将更新为“运行(3)”，表示三条管道可以继续运行。
+
+1. 管道开始运行，其状态在&#x200B;**管道**&#x200B;列表中已更新。
 
 ## 编辑管道 {#editing-pipelines}
 
