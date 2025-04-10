@@ -3,9 +3,9 @@ title: Cloud Manager 2025.4.0 版的发行说明
 description: 了解 Adobe Managed Services 上有关 Cloud Manager 2025.4.0 版本的信息。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 40d093ce7d6839fff4ba16f790c61b96cb88dda5
+source-git-commit: 8c99baba6fb41dd702c338ba727efc237a0f1a8d
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '374'
 ht-degree: 88%
 
 ---
@@ -84,11 +84,11 @@ See also [Service Pack Updates for Development Environments - Early Adopter](/he
 -->
 
 
-
-## 错误修复 {#bug-fixes}
+<!--
+## Bug fixes {#bug-fixes}
 
 * A
 
-已知问题 {#known-issues}
+Known Issues {#known-issues}
 
-* A —>
+* A -->
