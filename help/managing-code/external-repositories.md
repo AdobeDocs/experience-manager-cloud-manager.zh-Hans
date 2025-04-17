@@ -2,7 +2,7 @@
 title: 在 Cloud Manager 中添加外部存储库 - 早期采用者
 description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab和Bitbucket存储库集成。
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: a63d996b283396efa139bf567c40a51e6f46d9bc
+source-git-commit: 5ba12cdfa4a0d790561fd2f3da738bf697133bee
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 28%
@@ -39,7 +39,7 @@ ht-degree: 28%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在&#x200B;**我的程序**&#x200B;控制台上，选择要将外部存储库链接到的程序。
+1. 在&#x200B;**[我的程序](/help/getting-started/navigation.md#my-programs-console)**&#x200B;控制台上，选择要将外部存储库链接到的程序。
 
 1. 在侧菜单的&#x200B;**程序**&#x200B;下，单击![文件夹大纲图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **存储库**。
 
@@ -121,7 +121,7 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
 
-1. 在&#x200B;**我的程序**&#x200B;控制台上，选择要为其配置外部Git存储库的webhook的程序。
+1. 在&#x200B;**[我的程序](/help/getting-started/navigation.md#my-programs-console)**&#x200B;控制台上，选择要为其配置外部Git存储库的webhook的程序。
 
 1. 在页面左上角，单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以显示左侧菜单。
 
