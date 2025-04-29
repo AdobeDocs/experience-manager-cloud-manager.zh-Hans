@@ -1,21 +1,22 @@
 ---
-title: 仅限阶段和仅限生产环境的管道 — 早期采用者
+title: 仅暂存和仅生产管道
 description: 了解如何使用专用管道拆分暂存和生产部署。
+badge: label="率先采用者" type="Positive" url="/help/release-notes/current.md网站#staging-production-only-pipelines"
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 2c6f5692ffa31e02d7338e68063d0c1c03a0c73b
+source-git-commit: b830c30bb6b2b99ef442577325a30de6b9953ec8
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 98%
+source-wordcount: '937'
+ht-degree: 99%
 
 ---
 
-# 仅限暂存和仅限生产的管道（早期采用者） {#stage-prod-only}
+# 仅暂存和仅生产管道 {#stage-prod-only}
 
 了解如何使用专用管道拆分暂存和生产部署。
 
 >[!NOTE]
 >
->此功能仅适用于[早期采用者计划](/help/release-notes/2024/2024-8-0.md)。
+>此功能仅适用于[早期采用者计划](/help/release-notes/current.md#staging-production-only-pipelines)。
 
 ## 概述 {#overview}
 
