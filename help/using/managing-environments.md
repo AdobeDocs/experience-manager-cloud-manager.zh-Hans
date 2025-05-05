@@ -64,6 +64,6 @@ Cloud Manager 的&#x200B;**概述**&#x200B;页面包含&#x200B;**环境**&#x200B
 
 此视频概述了由 AEM 创作、发布和 Dispatcher 实例组成的 Cloud Manager 环境。
 
->[!VIDEO](https://video.tv.adobe.com/v/26318/)
+>[!VIDEO](https://video.tv.adobe.com/v/34270?captions=chi_hans)
 
 *（3 分钟，1 秒钟）*

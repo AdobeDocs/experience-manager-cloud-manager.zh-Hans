@@ -163,4 +163,4 @@ ht-degree: 100%
 
 该视频概述了本文档中详述的管道创建过程。
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/)
+>[!VIDEO](https://video.tv.adobe.com/v/327604?captions=chi_hans)

@@ -92,4 +92,4 @@ ht-degree: 100%
 
 ## 视频概述 {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/)
+>[!VIDEO](https://video.tv.adobe.com/v/34265?captions=chi_hans)
