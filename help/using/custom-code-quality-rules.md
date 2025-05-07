@@ -2,7 +2,7 @@
 title: 自定义代码质量规则
 description: 了解 Cloud Manager 在代码质量测试期间执行的自定义代码质量规则的具体内容。这些规则以 AEM Engineering 的最佳实践为基础。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 8388edb5510ed4583a7bc703f3781af03d976948
+source-git-commit: 54987d6ccd8c31dab677d90b40466c458743f936
 workflow-type: tm+mt
 source-wordcount: '3644'
 ht-degree: 96%
@@ -801,7 +801,7 @@ AEM Cloud Service 禁止自定义搜索索引定义（即 `oak:QueryIndexDefinit
 
 * **密钥**：IndexNotUnderUIContent
 * **类型**：改进
-* **严重性**：轻微
+* **严重性**：主要
 * **开始版本**：版本 2024.6.0
 
 AEM Cloud Service 禁止在 UI 内容包中部署自定义搜索索引定义（类型为 `oak:QueryIndexDefinition` 的节点）。
@@ -814,7 +814,7 @@ AEM Cloud Service 禁止在 UI 内容包中部署自定义搜索索引定义（�
 
 * **密钥**：CustomFulltextIndexesOfTheDamAssetCheck
 * **类型**：改进
-* **严重性**：轻微
+* **严重性**：主要
 * **开始版本**：版本 2024.6.0
 
 AEM Cloud Service 禁止类型 `damAssetLucene` 的自定义全文索引定义使用除 `damAssetLucene` 之外的任何内容作为前缀。
@@ -827,7 +827,7 @@ AEM Cloud Service 禁止类型 `damAssetLucene` 的自定义全文索引定义�
 
 * **密钥**：DuplicateNameProperty
 * **类型**：改进
-* **严重性**：轻微
+* **严重性**：主要
 * **开始版本**：版本 2024.6.0
 
 AEM Cloud Service 禁止自定义搜索索引定义（即，类型为 `oak:QueryIndexDefinition` 的节点）包含同名的属性。
@@ -840,7 +840,7 @@ AEM Cloud Service 禁止自定义搜索索引定义（即，类型为 `oak:Query
 
 * **密钥**：RestrictIndexCustomization
 * **类型**：改进
-* **严重性**：轻微
+* **严重性**：主要
 * **开始版本**：版本 2024.6.0
 
 AEM Cloud Service 禁止对以下 OOTB 索引进行未经授权的修改：
@@ -885,14 +885,14 @@ AEM Cloud Service 禁止创建包含带 haystack 属性的索引定义。
 
 ### 索引定义的配置不应包含属性：async-previous {#oakpal-indexing-unsupported-async-properties}
 
-* **密钥**： IndexUnsupportedAsyncPropertiesCheck
+* **Key**： IndexUnsupportedAsyncPropertiesCheck
 * **类型**：改进
 * **严重性**：轻微
 * **开始版本**：版本 2025.3.0
 
-AEM Cloud Service禁止创建具有不受支持的异步属性的索引定义。
+AEM Cloud Service禁止使用不受支持的异步属性创建索引定义。
 
-### 索引定义的配置不应在多个索引中具有相同的标记 {#oakpal-indexing-same-tag-multiple-indexes}
+### 索引定义的配置在多个索引中不应有相同的标记 {#oakpal-indexing-same-tag-multiple-indexes}
 
 * **键**： SameTagInMultipleIndexes
 * **类型**：改进
@@ -908,8 +908,8 @@ AEM Cloud Service禁止创建在多个索引中包含相同标记的索引定义
 * **严重性**：主要
 * **开始版本**：版本 2025.4.0
 
-对于低于/content的路径，不允许在文件保管库中使用“替换”模式；对于低于/etc和/var的路径，不应使用替换模式。
-“替换”模式将使用内容包中提供的内容替换存储库中的所有现有内容，且触发此操作的包不应包含在通过CloudManager部署的包中。
+对于/content下的路径，不允许在文件保险库中使用“替换”模式；对于/etc和/var下的路径，不应使用此模式。
+模式“替换”会将存储库中所有现有内容替换为内容包中提供的内容，触发此操作的包不应包含在通过CloudManager部署的包中。
 
 ## Dispatcher 优化工具 {#dispatcher-optimization-tool-rules}
 
