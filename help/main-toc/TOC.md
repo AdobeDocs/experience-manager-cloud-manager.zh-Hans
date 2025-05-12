@@ -7,10 +7,10 @@ user-guide-description: 了解如何使用 Cloud Manager 在云中自行管理 A
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 4c4ffeb689117620bd810f35d277f5ab20bda8d3
+source-git-commit: ecee095cfdf929e38823ace77f184db3108cab92
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -35,14 +35,14 @@ ht-degree: 100%
 + 开始使用 {#getting-started}
    + [首次登录](/help/getting-started/first-time-login.md)
    + [导航](/help/getting-started/navigation.md)
-   + [项目设置](/help/getting-started/program-setup.md)
-   + AEM 项目创建 {#project-creation}
+   + [程序设置](/help/getting-started/program-setup.md)
+   + AEM项目创建 {#project-creation}
       + [使用向导](/help/getting-started/using-the-wizard.md)
       + [项目设置](/help/getting-started/project-setup.md)
       + [构建环境](/help/getting-started/build-environment.md)
    + [配置分支](/help/getting-started/configuring-branches.md)
    + [Dispatcher 配置](/help/getting-started/dispatcher-configurations.md)
-+ 用法 {#using}
++ 使用 {#using}
    + CI/CD 管道 {#pipelines}
       + [配置生产管道](/help/using/production-pipelines.md)
       + [配置非生产管道](/help/using/non-production-pipelines.md)
@@ -76,6 +76,7 @@ ht-degree: 100%
 + 发行说明 {#release-notes}
    + [当前](/help/release-notes/current.md)
    + 2025 {#rn-2025}
+      + [2025.4.0](/help/release-notes/2025/2025-4-0.md)
       + [2025.3.0](/help/release-notes/2025/2025-3-0.md)
       + [2025.2.0](/help/release-notes/2025/2025-2-0.md)
       + [2025.1.0](/help/release-notes/2025/2025-1-0.md)
