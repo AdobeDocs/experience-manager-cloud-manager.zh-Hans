@@ -3,10 +3,10 @@ title: Cloud Manager 2025.6.0 版的发行说明
 description: 了解 Adobe Managed Services 上有关 Cloud Manager 2025.5.0 版本的信息。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 13e6f33e7ef92f4a27ae30c7550351b20d3e86ed
+source-git-commit: d0acd47ea6011dc5896d20d76ab0fcaa970df6ac
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 64%
+source-wordcount: '558'
+ht-degree: 65%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 64%
 
 ## 新增功能 {#what-is-new}
 
-* **(UI)仅暂存管道和仅生产管道**
+* **仅暂存管道和仅生产管道**
 
   Cloud Manager现在支持仅暂存管道和仅生产管道。 通过此功能，您可以将全栈生产部署拆分为更小的、特定于用途的管道。<!-- This feature went into GA from Early Adopter in the June 5, 2025 CM release -->
 
@@ -39,7 +39,7 @@ ht-degree: 64%
 
   查看[仅暂存和仅生产管道](/help/using/stage-prod-only.md)。
 
-* **(UI)管道收藏夹**
+* **管道收藏夹**
 
   在此版本中，Cloud Manager引入了固定收藏管道的功能，可让您将特定管道标记为收藏夹，以便它们显示在&#x200B;**管道**&#x200B;页面上的列表顶部。 此增强功能使经常访问的管道更容易查找和运行。<!-- CMGR-68293 -->
 
