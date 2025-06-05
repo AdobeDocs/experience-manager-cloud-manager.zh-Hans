@@ -2,10 +2,10 @@
 title: 管理管道
 description: 了解如何管理现有管道，包括运行、编辑和删除它们。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: d4a7d9ab72947b97b0dabb2f822ef268e4972685
+source-git-commit: 91eda02d55134fba167f30830a142a80717e9083
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 59%
+source-wordcount: '1170'
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 ![Cloud Manager 中的管道信息卡](/help/assets/configure-pipelines/pipelines-card.png)
 
-通过单击每个管道旁边的![更多图标（省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)），您可以执行以下操作：
+点击每个管道旁边的![“更多”图标（省略号）](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，可以执行以下操作：
 
 * [运行管道](#running-pipelines)。
 * [编辑管道](#editing-pipelines)。
@@ -50,6 +50,18 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 单击&#x200B;**查看详细信息**&#x200B;将转至[管道执行的详细信息](#view-details)。
 
+### 标记管道收藏夹{#pipeline-favorites}
+
+您可以将特定管道标记为收藏，以便它们显示在&#x200B;**管道**&#x200B;页面的列表顶部。 此功能使经常访问的管道更容易查找和运行。
+
+**标记管道收藏夹：**
+
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
+1. 从&#x200B;**项目概述**&#x200B;页面，单击![管道选项卡 — 工作流图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**&#x200B;选项卡。
+1. 在&#x200B;**管道**&#x200B;页面上，在管道名称和类型的左侧，单击取消收藏的管道的![星形轮廓图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg)以将其添加到收藏夹列表。
+或者，单击收藏管道](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg)的![星形图标以将该管道从收藏夹列表中删除。
+
+
 ## 活动页面 {#activity}
 
 **活动**&#x200B;页面显示所选项目的所有管道执行的完整列表。
@@ -66,77 +78,77 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 点击&#x200B;**查看详细信息**&#x200B;以查看[管道执行的详细信息](#view-details)。
 
-## 运行管道 {#run-one-pipeline}
+## 运行一个管道 {#run-one-pipeline}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 1. 从&#x200B;**项目概述**&#x200B;页面导航到&#x200B;**管道**&#x200B;信息卡。
-1. 单击您运行的管道旁边的![更多图标，省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**运行**。
+1. 点击您运行的管道旁边的![“更多”图标（省略号）](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后点击&#x200B;**运行**。
 
    “状态”列指示管道何时开始运行。
 
-   您可以通过再次单击![更多图标、省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)和单击&#x200B;**[查看详细信息](#view-details)**&#x200B;来查看运行的详细信息。
+   您可以再次点击![“更多”图标（省略号）](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后点击&#x200B;**[查看详细信息](#view-details)**&#x200B;来查看运行的详细信息。
 
-   根据管道类型，您可以通过单击![更多图标，再次单击省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)并单击&#x200B;**取消**&#x200B;来取消运行。
+   根据管道类型，您可以再次点击![“更多”图标（省略号）](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后点击&#x200B;**取消**&#x200B;来取消运行。
 
 ## 运行多个管道 {#run-multiple-pipelines}
 
-借助Cloud Manager，您可以同时运行多个管道，从而提高Adobe Managed Services (AMS)客户的部署效率。 **运行选定项**&#x200B;功能允许您选择多个管道并触发它们同时运行。 它减少了不得不单独运行管道的手动工作量，并优化了构建和部署工作流。
+使用 Cloud Manager，您可以同时运行多个管道，从而提高 Adobe Managed Services (AMS) 客户的部署效率。**运行所选**&#x200B;功能可让您选择多个管道并触发它们同时运行。这样可以减少单独运行管道的手动工作量，优化构建和部署工作流程。
 
-**要运行多个管道：**
+**如要运行多个管道：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
-1. 从左侧菜单中，单击![工作流图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**。
-1. 在&#x200B;**管道**&#x200B;页面上的表中，选中要运行的管道旁边的复选框。
-如有必要，请单击![筛选器图标、漏斗](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **筛选器**&#x200B;以按名称、环境、已部署的代码类型或这三个的组合对管道进行排序。
-1. 在页面的右上角附近，单击&#x200B;**运行选定项(x)**。
-1. 在&#x200B;**运行所选管道(x)**&#x200B;对话框中，单击&#x200B;**运行(x)**。
+1. 在左侧菜单中，点击![工作流图标 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**。
+1. 在&#x200B;**管道**页面的表格中，选择要运行的管道旁边的复选框。
+需要时，点击![“过滤器”图标，漏斗](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **过滤器**，按名称、环境、部署的代码类型或所有三者组合对管道进行排序。
+1. 在页面的右上角附近，点击&#x200B;**运行所选（x）**。
+1. 在&#x200B;**运行选定的管道 (x)** 对话框中，点击&#x200B;**运行 (x)**。
 
-   **运行**&#x200B;按钮反映了可以继续的管道数。 例如，您可能选择了四条管道，但一条管道已在运行。 或者，链接到选定管道的环境不再存在。 在这种情况下，系统相应地进行调整。 按钮将更新为“运行(3)”，表示三条管道可以继续运行。
+   **运行**&#x200B;按钮显示了可以继续运行的管道数量。例如，您可能选择了四个管道，但其中一个已经在运行。或者，关联到某个选定管道的环境不再存在。在这种情况下，系统会进行相应调整。按钮会更新为“运行（3）”，表示三条管道可以继续运行。
 
-1. 管道开始运行，其状态在&#x200B;**管道**&#x200B;列表中已更新。
+1. 管道开始运行，在&#x200B;**管道**&#x200B;列表中会更新其状态。
 
 ## 编辑管道 {#editing-pipelines}
 
 您无法编辑正在运行的管道。
 
-**要编辑管道：**
+**如要编辑管道：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 从&#x200B;**项目概述**&#x200B;页面，导航到&#x200B;**管道**&#x200B;信息卡。
+1. 从&#x200B;**项目概述**&#x200B;页面导航到&#x200B;**管道**&#x200B;信息卡。
 
-1. 单击要编辑的管道旁边的![更多图标，省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**编辑**。
+1. 点击要编辑的管道旁边的![“更多”图标（省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)），然后点击&#x200B;**编辑**。
 
-1. 在&#x200B;**编辑生产管道**&#x200B;或&#x200B;**编辑非生产管道**&#x200B;对话框中，您可以编辑在创建管道期间输入的相同详细信息。
+1. 在&#x200B;**编辑生产管道**&#x200B;或&#x200B;**编辑非生产管道**&#x200B;对话框中，您可以编辑在创建管道时所输入的相同的详细信息。
 
    有关管道可用的字段和配置选项的详细信息，请参阅[配置生产管道](/help/using/production-pipelines.md)和[配置非生产管道](/help/using/non-production-pipelines.md)。
 
-1. 完成后，单击&#x200B;**更新**。
+1. 完成后，点击&#x200B;**更新**。
 
 ## 删除管道 {#deleting-pipelines}
 
 您无法删除运行中的管道。
 
-**要删除管道：**
+**如要删除管道：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 从&#x200B;**项目概述**&#x200B;页面，导航到&#x200B;**管道**&#x200B;信息卡。
+1. 从&#x200B;**项目概述**&#x200B;页面导航到&#x200B;**管道**&#x200B;信息卡。
 
-1. 单击您运行的管道旁边的![更多图标，省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**删除**。
+1. 点击您运行的管道旁边的![“更多”图标（省略号）](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后点击&#x200B;**删除**。
 
 
 ## 查看管道详细信息 {#view-details}
 
 您只能查看运行中或已运行至少一次的管道的详细信息。
 
-**查看管道详细信息：**
+**如要查看管道详细信息：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 从&#x200B;**项目概述**&#x200B;页面，导航到&#x200B;**管道**&#x200B;信息卡。
+1. 从&#x200B;**项目概述**&#x200B;页面导航到&#x200B;**管道**&#x200B;信息卡。
 
-1. 单击您运行的管道旁边的![更多图标，省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**查看详细信息**。
+1. 点击您运行的管道旁边的![“更多”图标（省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)），然后点击&#x200B;**查看详细信息**。
 
 1. 您将转到运行中的管道的详细信息页面。
 
@@ -154,7 +166,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 ![持续时间](/help/assets/configure-pipelines/duration.png)
 
-如果您的管道包含&#x200B;**代码扫描**&#x200B;步骤，该步骤会导致问题，您可以单击&#x200B;**下载详细信息**&#x200B;以查看未通过的[代码质量测试](/help/using/code-quality-testing.md)的列表。
+如果您的管道包含的&#x200B;**代码扫描**&#x200B;步骤引发了问题，您可以点击&#x200B;**下载详细信息**，查看未通过的[代码质量测试](/help/using/code-quality-testing.md)列表。
 
 ![代码质量问题](assets/managing-pipelines-code-quality-issues.png)
 

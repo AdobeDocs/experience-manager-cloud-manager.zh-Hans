@@ -1,38 +1,51 @@
 ---
-title: Cloud Manager 2025.5.0 版的发行说明
+title: Cloud Manager 2025.6.0 版的发行说明
 description: 了解 Adobe Managed Services 上有关 Cloud Manager 2025.5.0 版本的信息。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 802844e15dc2b610e658e9fac4f0304f0ec878c6
+source-git-commit: 13e6f33e7ef92f4a27ae30c7550351b20d3e86ed
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '560'
+ht-degree: 64%
 
 ---
 
-# Adobe Managed Services 上 Cloud Manager 2025.5.0 版的发行说明 {#release-notes}
+# Adobe Managed Services 上 Cloud Manager 2025.6.0 版的发行说明 {#release-notes}
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-了解 Adobe Managed Services 上有关 [!UICONTROL Cloud Manager] 2025.5.0 版本的信息。
+了解 Adobe Managed Services 上有关 [!UICONTROL Cloud Manager] 2025.6.0 版本的信息。
 
 另请参阅 [Adobe Experience Manager as a Cloud Service 的当前发行说明](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/home)。
 
 ## 发行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2025.5.0的发布日期是2025年5月8日星期四。
+[!UICONTROL Cloud Manager] 2025.6.0的发布日期是2025年6月5日星期四。
 
-5月Cloud Manager版本中没有重大的新增功能或错误修复。
+<!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-下一个计划发布于2025年6月5日星期四。
+下一个计划发布于2025年7月10日星期四。
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-<!--
-## What's new {#what-is-new}
 
-* 
--->
+## 新增功能 {#what-is-new}
+
+* **(UI)仅暂存管道和仅生产管道**
+
+  Cloud Manager现在支持仅暂存管道和仅生产管道。 通过此功能，您可以将全栈生产部署拆分为更小的、特定于用途的管道。<!-- This feature went into GA from Early Adopter in the June 5, 2025 CM release -->
+
+  ![选择“全栈代码”单选按钮并选择暂存环境的情况下添加非生产管道对话框](/help/release-notes/assets/add-non-production-pipeline.png)
+
+  查看[仅暂存和仅生产管道](/help/using/stage-prod-only.md)。
+
+* **(UI)管道收藏夹**
+
+  在此版本中，Cloud Manager引入了固定收藏管道的功能，可让您将特定管道标记为收藏夹，以便它们显示在&#x200B;**管道**&#x200B;页面上的列表顶部。 此增强功能使经常访问的管道更容易查找和运行。<!-- CMGR-68293 -->
+
+  ![管道标记为收藏](/help/release-notes/assets/pipeline-favorites.png) *两个管道标记为收藏。*
+
+  查看[标记管道收藏夹](/help/using/managing-pipelines.md#pipeline-favorites)。
 
 
 ## 早期采用计划 {#early-adoption}
@@ -40,6 +53,16 @@ ht-degree: 0%
 参与 Cloud Manager 的早期采用计划，在即将推出的功能正式发布之前获得独家访问权。
 
 目前有以下早期采用机会：
+
+
+### 管理访问令牌{#access-tokens}
+
+使用Cloud Manager中的&#x200B;**管理访问令牌**&#x200B;功能查看、重命名和删除与外部自带Git存储库关联的访问令牌，例如GitHub Enterprise、GitLab、Bitbucket和Azure DevOps。
+
+请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
+
+如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)。请务必注明您想要使用的 Git 平台以及您是处于专用/公共还是企业存储库结构中。
+
 
 ### 自带 Git：现支持 GitLab 和 Bitbucket {#gitlab-bitbucket}
 
@@ -57,18 +80,12 @@ ht-degree: 0%
 
 如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)。请务必注明您想要使用的 Git 平台以及您是处于专用/公共还是企业存储库结构中。
 
-### 仅暂存和仅生产管道 {#staging-production-only-pipelines}
 
-Adobe 宣布推出对[仅暂存和仅生产管道](/help/using/stage-prod-only.md)的支持。此新功能可让您将全栈生产部署管道划分为更小、更专业的部署。
+## 错误修复 {#bug-fixes}
 
-如果您想测试此功能并提供反馈，请使用与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-cloudmanager_splitpipelines@adobe.com](mailto:Grp-cloudmanager_splitpipelines@adobe.com)。
-
+* 现在，AEM Cloud Manager在获取客户工件时将由409错误（冲突）导致的Maven构建失败正确映射到由客户导致的失败。 此更改通过区分内部错误和与客户环境设置相关的问题改进了错误消息传递。<!-- CMGR-66673 -->
 
 <!--
-## Bug fixes {#bug-fixes}
-
-* A
-
 Known Issues {#known-issues}
 
 * A -->

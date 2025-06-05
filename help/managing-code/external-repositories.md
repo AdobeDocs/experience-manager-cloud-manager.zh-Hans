@@ -3,9 +3,9 @@ title: 在Cloud Manager中添加外部存储库
 description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab和Bitbucket存储库集成。
 badge: label="率先采用者" type="Positive" url="/help/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: b830c30bb6b2b99ef442577325a30de6b9953ec8
+source-git-commit: 83ba61364d5a492bd7236d7fcaeabf8cf904627a
 workflow-type: tm+mt
-source-wordcount: '1867'
+source-wordcount: '1871'
 ht-degree: 28%
 
 ---
@@ -74,6 +74,8 @@ ht-degree: 28%
    | **添加新的访问令牌** | **存储库类型： GitHub Enterprise**<br><ul><li> 在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>按照[GitHub文档](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的说明创建个人访问令牌。<li>GitHub企业个人访问令牌(PAT)所需的权限<br>这些权限确保Cloud Manager可以验证拉取请求、管理提交状态检查以及访问必要的存储库详细信息。<br>在GitHub Enterprise中生成PAT时，请确保它包含以下存储库权限：<ul><li>拉取请求（读取和写入）<li>提交状态（读取和写入）<li>存储库元数据（只读）</li></li></ul></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
    | | **存储库类型： GitLab**<ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>按照[GitLab文档](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的说明创建个人访问令牌。<li>GitLab个人访问令牌(PAT)所需的权限<br>这些范围允许Cloud Manager访问验证和webhook集成所需的存储库数据和用户信息。<br>在GitLab中生成PAT时，请确保它包括以下令牌范围：<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
    | | **存储库类型： Bitbucket**<ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>使用[Bitbucket文档](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)创建存储库访问令牌。<li>Bitbucket个人访问令牌(PAT)所需的权限<br>这些权限允许Cloud Manager访问存储库内容、管理拉取请求以及配置或响应webhook事件。<br>在Bitbucket中创建应用程序密码时，请确保它包含以下必需的应用程序密码权限：<ul><li>存储库（只读）<li>拉取请求（读取和写入）<li>Webhook（读写）</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
+
+   请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
 
    >[!NOTE]
    >
