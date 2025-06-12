@@ -3,10 +3,10 @@ title: Cloud Manager 2025.6.0 版的发行说明
 description: 了解 Adobe Managed Services 上有关 Cloud Manager 2025.5.0 版本的信息。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: d0acd47ea6011dc5896d20d76ab0fcaa970df6ac
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '558'
-ht-degree: 65%
+ht-degree: 72%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 65%
 
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-下一个计划发布于2025年7月10日星期四。
+下一个版本计划于 2025 年 7 月 10 日星期四发布。
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
@@ -33,7 +33,7 @@ ht-degree: 65%
 
 * **仅暂存管道和仅生产管道**
 
-  Cloud Manager现在支持仅暂存管道和仅生产管道。 通过此功能，您可以将全栈生产部署拆分为更小的、特定于用途的管道。<!-- This feature went into GA from Early Adopter in the June 5, 2025 CM release -->
+  Cloud Manager现在支持仅暂存管道和仅生产管道。 通过此功能，您可以将全栈生产部署拆分为更小的、特定于用途的管道。<!-- This feature went into GA from Private beta in the June 5, 2025 CM release -->
 
   ![选择“全栈代码”单选按钮并选择暂存环境的情况下添加非生产管道对话框](/help/release-notes/assets/add-non-production-pipeline.png)
 
@@ -41,18 +41,18 @@ ht-degree: 65%
 
 * **管道收藏夹**
 
-  在此版本中，Cloud Manager引入了固定收藏管道的功能，可让您将特定管道标记为收藏夹，以便它们显示在&#x200B;**管道**&#x200B;页面上的列表顶部。 此增强功能使经常访问的管道更容易查找和运行。<!-- CMGR-68293 -->
+  在此版本中，Cloud Manager引入了固定收藏管道的功能，可让您将特定管道标记为收藏夹，以便它们显示在&#x200B;**管道**&#x200B;页面上的列表顶部。 此项增强功能可帮助您更轻松地查找并运行常用的管道。<!-- CMGR-68293 -->
 
-  ![管道标记为收藏](/help/release-notes/assets/pipeline-favorites.png) *两个管道标记为收藏。*
+  ![标记为收藏的管道](/help/release-notes/assets/pipeline-favorites.png) *已标记为收藏的两个管道。*
 
-  查看[标记管道收藏夹](/help/using/managing-pipelines.md#pipeline-favorites)。
+  请参阅[将管道标记为收藏](/help/using/managing-pipelines.md#pipeline-favorites)。
 
 
-## 早期采用计划 {#early-adoption}
+## 私人Beta计划 {#beta-program}
 
-参与 Cloud Manager 的早期采用计划，在即将推出的功能正式发布之前获得独家访问权。
+参与Cloud Manager的私人测试版计划，在即将发布的功能正式发布之前获得独家访问权。
 
-目前有以下早期采用机会：
+目前提供以下私人测试版机会：
 
 
 ### 管理访问令牌{#access-tokens}
@@ -83,7 +83,7 @@ ht-degree: 65%
 
 ## 错误修复 {#bug-fixes}
 
-* 现在，AEM Cloud Manager在获取客户工件时将由409错误（冲突）导致的Maven构建失败正确映射到由客户导致的失败。 此更改通过区分内部错误和与客户环境设置相关的问题改进了错误消息传递。<!-- CMGR-66673 -->
+* AEM Cloud Manager 现在能够正确地将由于在获取客户工件时发生 409 错误（冲突）导致的 Maven 构建失败，映射为客户导致的失败。这一变更通过区分内部错误和与客户环境设置相关的问题，改进了错误消息的显示方式。<!-- CMGR-66673 -->
 
 <!--
 Known Issues {#known-issues}

@@ -7,10 +7,10 @@ user-guide-description: 了解如何使用 Cloud Manager 在云中自行管理 A
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 35845e827b0a3fadfe2a55a2171b5e02100cf3eb
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '373'
-ht-degree: 94%
+ht-degree: 91%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 94%
    + [代码质量测试](/help/using/code-quality-testing.md)
    + [管理环境](/help/using/managing-environments.md)
    + [监控环境](/help/using/monitoring-environments.md)
-   + [开发环境的服务包更新（早期采用者）](/help/using/service-packs-environments.md)
+   + [开发环境的Service Pack更新（私人测试版）](/help/using/service-packs-environments.md)
    + [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
    + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [通知](/help/using/notifications.md)
@@ -63,8 +63,8 @@ ht-degree: 94%
    + [存储库访问信息](/help/managing-code/accessing-repositories.md)
    + [添加一个 Adobe 存储库](/help/managing-code/adobe-repositories.md)
    + [添加一个专用存储库](/help/managing-code/private-repositories.md)
-   + [添加一个外部存储库（早期采用者）](/help/managing-code/external-repositories.md)
-   + [管理访问令牌（率先采用者）](/help/managing-code/manage-access-tokens.md)
+   + [添加外部存储库（私人测试版）](/help/managing-code/external-repositories.md)
+   + [管理访问令牌（私人测试版）](/help/managing-code/manage-access-tokens.md)
    + [Git 子模块支持](/help/managing-code/git-submodules.md)
    + [GitHub 检查配置](/help/managing-code/github-check-config.md)
    + [GitHub 检查批注](/help/managing-code/github-annotations.md)

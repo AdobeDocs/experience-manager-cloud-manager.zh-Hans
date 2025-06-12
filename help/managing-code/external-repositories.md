@@ -1,12 +1,12 @@
 ---
 title: 在Cloud Manager中添加外部存储库
 description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab和Bitbucket存储库集成。
-badge: label="率先采用者" type="Positive" url="/help/release-notes/current.md网站#gitlab-bitbucket"
+badge: label="私人测试版" type="Positive" url="/help/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 83ba61364d5a492bd7236d7fcaeabf8cf904627a
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '1871'
-ht-degree: 28%
+ht-degree: 27%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 28%
 
 >[!NOTE]
 >
->本文中介绍的功能只能通过早期采用计划获得。 有关更多详细信息，以及要注册为早期采用者，请参阅[自带Git](/help/release-notes/current.md#gitlab-bitbucket)。
+>本文中介绍的功能只能通过私有Beta版计划获得。 有关更多详细信息以及注册私人测试版，请参阅[自带Git](/help/release-notes/current.md#gitlab-bitbucket)。
 
 ## 配置外部存储库
 
@@ -79,7 +79,7 @@ ht-degree: 28%
 
    >[!NOTE]
    >
-   >**添加新的访问令牌**&#x200B;功能目前处于早期采用者阶段。正在规划其他功能。因此，访问令牌所需的权限可能会发生更改。此外，用于管理令牌的用户界面（包括令牌有效期限等功能）可能会被更新。而且，还将进行自动检查，以确保与存储库链接的令牌保持有效。
+   >功能&#x200B;**添加新访问令牌**&#x200B;当前处于专用测试阶段。 正在规划其他功能。因此，访问令牌所需的权限可能会发生更改。此外，用于管理令牌的用户界面（包括令牌有效期限等功能）可能会被更新。而且，还将进行自动检查，以确保与存储库链接的令牌保持有效。
 
 1. 点击&#x200B;**验证**。
 
