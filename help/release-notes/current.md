@@ -3,10 +3,10 @@ title: Cloud Manager 2025.6.0 版的发行说明
 description: 了解 Adobe Managed Services 上有关 Cloud Manager 2025.5.0 版本的信息。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
+source-git-commit: 38d398caf2323b603afd293aa9152308fefd323f
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 72%
+source-wordcount: '560'
+ht-degree: 68%
 
 ---
 
@@ -55,18 +55,9 @@ ht-degree: 72%
 目前提供以下私人测试版机会：
 
 
-### 管理访问令牌{#access-tokens}
-
-使用Cloud Manager中的&#x200B;**管理访问令牌**&#x200B;功能查看、重命名和删除与外部自带Git存储库关联的访问令牌，例如GitHub Enterprise、GitLab、Bitbucket和Azure DevOps。
-
-请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
-
-如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)。请务必注明您想要使用的 Git 平台以及您是处于专用/公共还是企业存储库结构中。
-
-
 ### 自带 Git：现支持 GitLab 和 Bitbucket {#gitlab-bitbucket}
 
-**自带 Git** 功能已得到扩展，包括对 GitLab 和 Bitbucket 等外部存储库的支持。这项新的支持是对专用和企业 GitHub 存储库现有支持的补充。添加这些新的存储库时，您还可以将它们直接链接到管道。您可以在公共云平台、专用云平台或基础架构中托管这些存储库。这种集成还消除了与 Adobe 存储库持续同步代码的需要，并提供了在提取请求合并到主分支之前对其进行验证的功能。
+**自带Git** (BYOG)功能已扩展到包括对外部存储库（如GitLab和Bitbucket）的支持。 这项新的支持是对专用和企业 GitHub 存储库现有支持的补充。添加这些新的存储库时，您还可以将它们直接链接到管道。您可以在公共云平台、专用云平台或基础架构中托管这些存储库。这种集成还消除了与 Adobe 存储库持续同步代码的需要，并提供了在提取请求合并到主分支之前对其进行验证的功能。
 
 使用外部存储库（不包括 GitHub 托管的存储库）和&#x200B;**部署触发器**&#x200B;设置为&#x200B;**在 Git 发生更改时**&#x200B;的管道现在会自动启动。
 
@@ -77,6 +68,14 @@ ht-degree: 72%
 >[!NOTE]
 >
 >目前，开箱即用的提取请求代码质量检查仅限于 GitHub 托管的存储库，但正在计划将此功能扩展到其他 Git 供应商的更新。
+
+如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)。请务必注明您想要使用的 Git 平台以及您是处于专用/公共还是企业存储库结构中。
+
+#### 管理访问令牌{#access-tokens}
+
+结合使用&#x200B;**管理访问令牌**&#x200B;功能和BYOG可查看、重命名和删除与外部自带Git存储库（例如GitHub Enterprise、GitLab、Bitbucket和Azure DevOps）关联的访问令牌。
+
+请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
 
 如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)。请务必注明您想要使用的 Git 平台以及您是处于专用/公共还是企业存储库结构中。
 
