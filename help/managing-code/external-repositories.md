@@ -3,9 +3,9 @@ title: 在Cloud Manager中添加外部存储库
 description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab和Bitbucket存储库集成。
 badge: label="私人测试版" type="Positive" url="/help/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
+source-git-commit: dfdbc66c6a447d47d669eb84e6ddf8dca86fc632
 workflow-type: tm+mt
-source-wordcount: '1871'
+source-wordcount: '1864'
 ht-degree: 27%
 
 ---
@@ -23,8 +23,9 @@ ht-degree: 27%
 在 Cloud Manager 中配置外部存储库包括三个步骤：
 
 1. [将外部存储库 ](#add-external-repo) 添加到选择的程序。
-1. 向外部存储库提供访问令牌。
-1. 验证私有GitHub存储库的所有权。
+1. [将已验证的外部存储库链接到管道](#validate-ext-repo)。
+<!-- 1. Provide an access token to the external repository.
+1. Validate ownership of the private GitHub repository. -->
 1. [将webhook](#configure-webhook)配置为外部存储库。
 
 
