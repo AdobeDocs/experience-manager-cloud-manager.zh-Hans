@@ -3,10 +3,10 @@ title: 在Cloud Manager中添加外部存储库
 description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab和Bitbucket存储库集成。
 badge: label="私人测试版" type="Positive" url="/help/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 3958e36391eaca3450ef765676fcbbd485766318
+source-git-commit: 073f1024891e1a1d4298c5c593df011f5572e820
 workflow-type: tm+mt
-source-wordcount: '2050'
-ht-degree: 24%
+source-wordcount: '2295'
+ht-degree: 31%
 
 ---
 
@@ -51,14 +51,14 @@ ht-degree: 24%
 
 1. 在&#x200B;**添加存储库**&#x200B;对话框中，选择&#x200B;**专用存储库**，将外部 Git 存储库链接到您的程序。
 
-   ![添加自己的存储库](/help/managing-code/assets/repositories-private-repo-type.png)
+   ![添加自己的存储库](/help/managing-code/assets/repository-add-private-dialogbox2.png)
 
 1. 在每个相应的字段中，提供有关存储库的以下详细信息：
 
    | 字段 | 描述 |
    | --- | --- |
    | **存储库名称** | 必需。为您的新存储库取一个富有表现力的名称。 |
-   | **存储库 URL** | 必需。存储库的 URL。<br><br>如果您使用的是GitHub托管的存储库，则路径必须以`.git`结尾。<br>例如，*`https://github.com/org-name/repo-name.git`*（URL 路径仅用于说明目的）。<br><br>如果您使用外部存储库，则必须使用以下 URL 路径格式：<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> 或 <br>`https://self-hosted-domain/org-name/repo-name.git`<br>，并与您的 Git 供应商匹配。 |
+   | **存储库 URL** | 必需。存储库的 URL。<br><br>如果您使用的是GitHub托管的存储库，则路径必须以`.git`结尾。<br>例如，*`https://github.com/org-name/repo-name.git`* （URL路径仅用于图示）。<br><br>如果您使用外部存储库，则必须使用以下 URL 路径格式：<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> 或 <br>`https://self-hosted-domain/org-name/repo-name.git`<br>，并与您的 Git 供应商匹配。 |
    | **选择存储库类型** | 必需。选择正在使用的存储库类型：<ul><li>**GitHub**（GitHub Enterprise和GitHub的自托管版本）</li><li>**GitLab**（`gitlab.com`和GitLab的自托管版本） </li><li>**Bitbucket**(仅支持`bitbucket.org` （云版本）)。 Bitbucket的自托管版本从2024年2月15日开始被弃用。)</li></ul>如果上面的存储库 URL 路径包含 Git 供应商名称，例如 GitLab 或 Bitbucket，则存储库类型已为您预先选择。 |
    | **描述** | 可选。存储库的详细描述。 |
 
@@ -67,20 +67,56 @@ ht-degree: 24%
 1. 在&#x200B;**专用存储库所有权验证**&#x200B;对话框中，提供访问令牌来验证外部存储库的所有权，以便您可以访问它。
 
    ![为存储库选择现有的访问令牌](/help/managing-code/assets/repositories-exisiting-access-token.png)
-   *为Bitbucket存储库选择现有的访问令牌。*
+   *为Bitbucket存储库选择现有的访问令牌（仅供说明）。*
 
-   | 令牌类型 | 描述 |
-   | --- | --- |
-   | **使用现有的访问令牌** | 如果您已经为贵组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择一个现有令牌。使用&#x200B;**令牌名称**&#x200B;下拉列表，选择要应用到存储库的令牌。否则，添加一个新的访问令牌。 |
-   | **添加新的访问令牌** | **存储库类型： GitHub Enterprise**<br><ul><li> 在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>按照[GitHub文档](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的说明创建个人访问令牌。<li>GitHub企业个人访问令牌(PAT)所需的权限<br>这些权限确保Cloud Manager可以验证拉取请求、管理提交状态检查以及访问必要的存储库详细信息。<br>在GitHub Enterprise中生成PAT时，请确保它包含以下存储库权限：<ul><li>拉取请求（读取和写入）<li>提交状态（读取和写入）<li>存储库元数据（只读）</li></li></ul></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
-   | | **存储库类型： GitLab**<ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>按照[GitLab文档](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的说明创建个人访问令牌。<li>GitLab个人访问令牌(PAT)所需的权限<br>这些范围允许Cloud Manager访问验证和webhook集成所需的存储库数据和用户信息。<br>在GitLab中生成PAT时，请确保它包括以下令牌范围：<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
-   | | **存储库类型： Bitbucket**<ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>使用[Bitbucket文档](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)创建存储库访问令牌。<li>Bitbucket个人访问令牌(PAT)所需的权限<br>这些权限允许Cloud Manager访问存储库内容、管理拉取请求以及配置或响应webhook事件。<br>在Bitbucket中创建应用程序密码时，请确保它包含以下必需的应用程序密码权限：<ul><li>存储库（只读）<li>拉取请求（读取和写入）<li>Webhook（读写）</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
+>[!BEGINTABS]
 
-   请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
+>[!TAB GitHub企业版]
 
-   >[!NOTE]
-   >
-   >功能&#x200B;**添加新访问令牌**&#x200B;当前处于专用测试阶段。 正在规划其他功能。因此，访问令牌所需的权限可能会发生更改。此外，用于管理令牌的用户界面（包括令牌有效期限等功能）可能会被更新。而且，还将进行自动检查，以确保与存储库链接的令牌保持有效。
+**GitHub企业版**
+
+| 令牌类型 | 描述 |
+| --- | --- |
+| **使用现有的访问令牌** | 如果您已经为贵组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择一个现有令牌。使用&#x200B;**令牌名称**&#x200B;下拉列表，选择要应用到存储库的令牌。否则，添加一个新的访问令牌。 |
+| **添加新的访问令牌** | <ul><li> 在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>按照[GitHub文档](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的说明创建个人访问令牌。<li>GitHub企业个人访问令牌(PAT)所需的权限<br>这些权限确保Cloud Manager可以验证拉取请求、管理提交状态检查以及访问必要的存储库详细信息。<br>在GitHub Enterprise中生成PAT时，请确保它包含以下存储库权限：<ul><li>拉取请求（读取和写入）<li>提交状态（读取和写入）<li>存储库元数据（只读）</li></li></ul></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
+
+请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
+
+>[!NOTE]
+>
+>功能&#x200B;**添加新访问令牌**&#x200B;当前处于专用测试阶段。 正在规划其他功能。因此，访问令牌所需的权限可能会发生更改。此外，用于管理令牌的用户界面（包括令牌有效期限等功能）可能会被更新。而且，还将进行自动检查，以确保与存储库链接的令牌保持有效。
+
+>[!TAB GitLab]
+
+**GitLab**
+
+| 令牌类型 | 描述 |
+| --- | --- |
+| **使用现有的访问令牌** | 如果您已经为贵组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择一个现有令牌。使用&#x200B;**令牌名称**&#x200B;下拉列表，选择要应用到存储库的令牌。否则，添加一个新的访问令牌。 |
+| **添加新的访问令牌** | <ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>按照[GitLab文档](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的说明创建个人访问令牌。<li>GitLab个人访问令牌(PAT)所需的权限<br>这些范围允许Cloud Manager访问验证和webhook集成所需的存储库数据和用户信息。<br>在GitLab中生成PAT时，请确保它包括以下令牌范围：<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
+
+请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
+
+>[!NOTE]
+>
+>功能&#x200B;**添加新访问令牌**&#x200B;当前处于专用测试阶段。 正在规划其他功能。因此，访问令牌所需的权限可能会发生更改。此外，用于管理令牌的用户界面（包括令牌有效期限等功能）可能会被更新。而且，还将进行自动检查，以确保与存储库链接的令牌保持有效。
+
+>[!TAB 比特桶]
+
+**比特桶**
+
+| 令牌类型 | 描述 |
+| --- | --- |
+| **使用现有的访问令牌** | 如果您已经为贵组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择一个现有令牌。使用&#x200B;**令牌名称**&#x200B;下拉列表，选择要应用到存储库的令牌。否则，添加一个新的访问令牌。 |
+| **添加新的访问令牌** | <ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>使用[Bitbucket文档](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)创建存储库访问令牌。<li>Bitbucket个人访问令牌(PAT)所需的权限<br>这些权限允许Cloud Manager访问存储库内容、管理拉取请求以及配置或响应webhook事件。<br>在Bitbucket中创建应用程序密码时，请确保它包含以下必需的应用程序密码权限：<ul><li>存储库（只读）<li>拉取请求（读取和写入）<li>Webhook（读写）</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
+
+请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
+
+>[!NOTE]
+>
+>功能&#x200B;**添加新访问令牌**&#x200B;当前处于专用测试阶段。 正在规划其他功能。因此，访问令牌所需的权限可能会发生更改。此外，用于管理令牌的用户界面（包括令牌有效期限等功能）可能会被更新。而且，还将进行自动检查，以确保与存储库链接的令牌保持有效。
+
+>[!ENDTABS]
 
 1. 点击&#x200B;**验证**。
 
@@ -154,7 +190,7 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 
 >[!TAB GitHub企业版]
 
-### GitHub企业版
+**GitHub企业版**
 
 1. 找到解决方案的&#x200B;**Webhook**&#x200B;设置部分。
 1. 将之前复制的Webhook URL粘贴到URL文本字段中。
@@ -171,6 +207,8 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 
 >[!TAB GitLab]
 
+**GitLab**
+
 1. 找到解决方案的&#x200B;**Webhook**&#x200B;设置部分。
 1. 将之前复制的Webhook URL粘贴到URL文本字段中。
    1. 将Webhook URL中的`api_key`查询参数替换为您自己的实际API密钥。
@@ -186,7 +224,7 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 
 >[!TAB 比特桶]
 
-### Bitbucket
+**比特桶**
 
 1. 找到解决方案的&#x200B;**Webhook**&#x200B;设置部分。
 1. 将之前复制的Webhook URL粘贴到URL文本字段中。
@@ -209,42 +247,51 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 
 以下行为适用：
 
-* **GitHub企业版**
+>[!BEGINTABS]
 
-  创建检查后，它类似于下面的屏幕快照。 与`GitHub.com`的主要区别在于`GitHub.com`使用检查运行，而GitHub Enterprise（使用个人访问令牌）生成提交状态：
+>[!TAB GitHub企业版]
 
-  ![提交状态以指示GitHub Enterprise上的PR验证过程](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
+**GitHub企业版**
 
-* **比特桶**
+创建检查后，它类似于下面的屏幕快照。 与`GitHub.com`的主要区别在于`GitHub.com`使用检查运行，而GitHub Enterprise（使用个人访问令牌）生成提交状态：
 
-  运行代码质量验证时：
+![提交状态以指示GitHub Enterprise上的PR验证过程](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
 
-  正在运行代码质量验证时的![状态](/help/managing-code/assets/repository-webhook-bitbucket1.png)
+>[!TAB GitLab]
 
-  使用提交状态来跟踪PR验证进度。 在以下示例中，屏幕截图显示了当代码质量验证因客户问题而失败时将发生的情况。 添加带有详细错误信息的注释，并创建提交检查，其中显示故障（在右侧可见）：
+**GitLab**
 
-  Bitbucket的![拉取请求验证状态](/help/managing-code/assets/repository-webhook-bitbucket2.png)
+GitLab交互仅依赖于评论。 验证开始时，将添加注释。 验证完成（无论成功还是失败）后，将移除初始注释，并替换为包含验证结果或错误详细信息的新注释。
 
-* **GitLab**
+运行代码质量验证时：
 
-  GitLab交互仅依赖于评论。 验证开始时，将添加注释。 验证完成（无论成功还是失败）后，将移除初始注释，并替换为包含验证结果或错误详细信息的新注释。
+![运行代码质量验证时](/help/managing-code/assets/repository-webhook-gitlab1.png)
 
-  运行代码质量验证时：
+完成冷质量验证时：
 
-  ![运行代码质量验证时](/help/managing-code/assets/repository-webhook-gitlab1.png)
+![冷质量验证完成后](/help/managing-code/assets/repository-webhook-gitlab2.png)
 
-  完成冷质量验证时：
+当代码质量验证失败并出现错误时：
 
-  ![冷质量验证完成后](/help/managing-code/assets/repository-webhook-gitlab2.png)
+![当代码质量验证失败并出现错误](/help/managing-code/assets/repository-webhook-gitlab3.png)时
 
-  当代码质量验证失败并出现错误时：
+当代码质量验证因客户问题而失败时：
 
-  ![当代码质量验证失败并出现错误](/help/managing-code/assets/repository-webhook-gitlab3.png)时
+![当代码质量验证因客户问题而失败时](/help/managing-code/assets/repository-webhook-gitlab4.png)
 
-  当代码质量验证因客户问题而失败时：
+>[!TAB 比特桶]
 
-  ![当代码质量验证因客户问题而失败时](/help/managing-code/assets/repository-webhook-gitlab4.png)
+**比特桶**
 
+运行代码质量验证时：
+
+正在运行代码质量验证时的![状态](/help/managing-code/assets/repository-webhook-bitbucket1.png)
+
+使用提交状态来跟踪PR验证进度。 在以下示例中，屏幕截图显示了当代码质量验证因客户问题而失败时将发生的情况。 添加带有详细错误信息的注释，并创建提交检查，其中显示故障（在右侧可见）：
+
+Bitbucket的![拉取请求验证状态](/help/managing-code/assets/repository-webhook-bitbucket2.png)
+
+>[!ENDTABS]
 
 ## webhook问题疑难解答
 
