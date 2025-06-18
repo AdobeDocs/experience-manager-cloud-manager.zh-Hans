@@ -3,10 +3,10 @@ title: 在Cloud Manager中添加外部存储库
 description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab和Bitbucket存储库集成。
 badge: label="私人测试版" type="Positive" url="/help/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 06fa04f8a459885a20f2b626ccf5d648ccc5fb57
+source-git-commit: bacb4b6e79519e4fef4cf01e04154d492cc888e2
 workflow-type: tm+mt
-source-wordcount: '2150'
-ht-degree: 26%
+source-wordcount: '2035'
+ht-degree: 27%
 
 ---
 
@@ -63,6 +63,8 @@ ht-degree: 26%
    | **描述** | 可选。存储库的详细描述。 |
 
 1. 选择&#x200B;**保存**&#x200B;以添加存储库。
+
+   现在，提供访问令牌以验证外部存储库的所有权。
 
 1. 在&#x200B;**私有存储库所有权验证**&#x200B;对话框中，提供用于验证外部存储库所有权的访问令牌，以便您能够访问它，然后单击&#x200B;**验证**。
 
@@ -129,6 +131,7 @@ ht-degree: 26%
 >
 >有关在 Cloud Manager 中管理存储库的详细信息，请参阅 [Cloud Manager 存储库](/help/managing-code/managing-repositories.md)。
 
+
 ## 为外部存储库配置webhook {#configure-webhook}
 
 Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参阅[添加外部存储库](#add-ext-repo)。 这些Webhook允许Cloud Manager接收与Git供应商解决方案中的其他操作相关的事件。
@@ -172,60 +175,44 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 
    有关webhook配置的所有详细信息以及每个供应商所需的事件均可在[添加外部存储库](#add-ext-repo)中获取。 在步骤8下，请参见选项卡表。
 
+1. 找到解决方案的&#x200B;**Webhook**&#x200B;设置部分。
+1. 将之前复制的Webhook URL粘贴到URL文本字段中。
+   1. 将Webhook URL中的`api_key`查询参数替换为您自己的实际API密钥。
+
+      要生成API密钥，您必须在Adobe Developer Console中创建集成项目。 有关完整详细信息，请参阅[创建API集成项目](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)。
+
+1. 将您之前复制的Webhook密码粘贴到&#x200B;**密码**（或&#x200B;**密钥**，或&#x200B;**密码令牌**）文本字段中。
+1. 配置webhook以发送Cloud Manager所需的事件。 使用下表确定Git提供商的正确事件。
+
 >[!BEGINTABS]
 
 >[!TAB GitHub企业版]
 
-1. 找到解决方案的&#x200B;**Webhook**&#x200B;设置部分。
-1. 将之前复制的Webhook URL粘贴到URL文本字段中。
-   1. 将Webhook URL中的`api_key`查询参数替换为您自己的实际API密钥。
-
-      要生成API密钥，您必须在Adobe Developer Console中创建集成项目。 有关完整详细信息，请参阅[创建API集成项目](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)。
-
-1. 将您之前复制的Webhook密码粘贴到&#x200B;**密码**（或&#x200B;**密钥**，或&#x200B;**密码令牌**）文本字段中。
-1. 配置webhook以发送Cloud Manager所需的事件。
-
-   | 必需的webhook事件 |
-   | --- |
-   | 这些事件允许Cloud Manager响应GitHub活动，例如拉取请求验证、管道的基于推送的触发器或Edge Delivery Services代码同步。<br>确保将webhook设置为在下列必需的webhook事件上触发：<ul><li>拉取请求<li>推送<li>问题评论</li></li></li></ul></ul></ul> |
+    | 必需的webhook事件 |
+    | — |
+    | 这些事件允许Cloud Manager响应GitHub活动，例如拉取请求验证、管道的基于推送的触发器或Edge Delivery Services代码同步。&lt;br>确保将webhook设置为在发生以下必需的webhook事件时触发：&lt;ul>&lt;li>拉取请求&lt;li>推送&lt;li>问题评论&lt;/li>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul> |
 
 >[!TAB GitLab]
 
-1. 找到解决方案的&#x200B;**Webhook**&#x200B;设置部分。
-1. 将之前复制的Webhook URL粘贴到URL文本字段中。
-   1. 将Webhook URL中的`api_key`查询参数替换为您自己的实际API密钥。
-
-      要生成API密钥，您必须在Adobe Developer Console中创建集成项目。 有关完整详细信息，请参阅[创建API集成项目](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)。
-
-1. 将您之前复制的Webhook密码粘贴到&#x200B;**密码**（或&#x200B;**密钥**，或&#x200B;**密码令牌**）文本字段中。
-1. 配置webhook以发送Cloud Manager所需的事件。
-
-   | 必需的webhook事件 |
-   | --- |
-   | 这些webhook事件允许Cloud Manager在推送代码或提交合并请求时触发管道。 它们还跟踪与拉取请求验证相关的注释（通过注释事件）。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>推送事件<li>合并请求事件<li>注释事件</li></li></li></ul></ul></ul> |
+    | 必需的webhook事件 |
+    | — |
+    | 这些webhook事件允许Cloud Manager在推送代码或提交合并请求时触发管道。 它们还跟踪与拉取请求验证相关的注释（通过注释事件）。&lt;br>确保将webhook设置为在下列必需的webhook事件中触发&lt;ul>&lt;li>推送事件&lt;li>合并请求事件&lt;li>注释事件&lt;/li>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul> |
 
 >[!TAB 比特桶]
 
-1. 找到解决方案的&#x200B;**Webhook**&#x200B;设置部分。
-1. 将之前复制的Webhook URL粘贴到URL文本字段中。
-   1. 将Webhook URL中的`api_key`查询参数替换为您自己的实际API密钥。
-
-      要生成API密钥，您必须在Adobe Developer Console中创建集成项目。 有关完整详细信息，请参阅[创建API集成项目](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)。
-
-1. 将您之前复制的Webhook密码粘贴到&#x200B;**密码**（或&#x200B;**密钥**，或&#x200B;**密码令牌**）文本字段中。
-1. 配置webhook以发送Cloud Manager所需的事件。
-
-   | 必需的webhook事件 |
-   | --- |
-   | 这些事件可确保Cloud Manager能够验证拉取请求、响应代码推送并与注释交互以协调管道。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>拉取请求：已创建<li>拉取请求：已更新<li>拉取请求：已合并<li>拉取请求：评论<li>存储库：推送</li></li></li></ul></ul></ul> |
+    | 必需的webhook事件 |
+    | — |
+    | 这些事件可确保Cloud Manager能够验证拉取请求、响应代码推送并与注释交互以协调管道。&lt;br>确保将webhook设置为在发生以下必需的webhook事件时触发&lt;ul>&lt;li>拉取请求：已创建&lt;li>拉取请求：已更新&lt;li>拉取请求：已合并&lt;li>拉取请求：评论&lt;li>存储库：推送&lt;/li>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul> |
 
 >[!ENDTABS]
 
+
 ### 使用Webhook验证拉取请求
 
-正确配置Webhook后，Cloud Manager会自动触发对存储库的管道执行或PR验证检查。
+正确配置Webhook后，Cloud Manager会自动触发存储库的管道执行或拉取请求(PR)验证检查。
 
-根据您使用的外部存储库，以下行为适用：
+具体行为因您使用的Git提供商而异，如下所述。
+
 
 >[!BEGINTABS]
 
