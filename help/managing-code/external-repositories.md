@@ -3,10 +3,10 @@ title: 在Cloud Manager中添加外部存储库
 description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab和Bitbucket存储库集成。
 badge: label="私人测试版" type="Positive" url="/help/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: bacb4b6e79519e4fef4cf01e04154d492cc888e2
+source-git-commit: cd2a71bc83a8ac7173089daea9670d25b68e62ba
 workflow-type: tm+mt
-source-wordcount: '2035'
-ht-degree: 27%
+source-wordcount: '2003'
+ht-degree: 28%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 27%
 
 >[!TAB GitHub企业版]
 
-| 令牌类型 | 描述 |
+| 访问令牌选项 | 描述 |
 | --- | --- |
 | **使用现有的访问令牌** | 如果您已经为贵组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择一个现有令牌。使用&#x200B;**令牌名称**&#x200B;下拉列表，选择要应用到存储库的令牌。否则，添加一个新的访问令牌。 |
 | **添加新的访问令牌** | <ul><li> 在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>按照[GitHub文档](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的说明创建个人访问令牌。<li>GitHub企业个人访问令牌(PAT)所需的权限<br>这些权限确保Cloud Manager可以验证拉取请求、管理提交状态检查以及访问必要的存储库详细信息。<br>在GitHub Enterprise中生成PAT时，请确保它包含以下存储库权限：<ul><li>拉取请求（读取和写入）<li>提交状态（读取和写入）<li>存储库元数据（只读）</li></li></ul></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
@@ -86,7 +86,7 @@ ht-degree: 27%
 
 >[!TAB GitLab]
 
-| 令牌类型 | 描述 |
+| 访问令牌选项 | 描述 |
 | --- | --- |
 | **使用现有的访问令牌** | 如果您已经为贵组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择一个现有令牌。使用&#x200B;**令牌名称**&#x200B;下拉列表，选择要应用到存储库的令牌。否则，添加一个新的访问令牌。 |
 | **添加新的访问令牌** | <ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>按照[GitLab文档](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的说明创建个人访问令牌。<li>GitLab个人访问令牌(PAT)所需的权限<br>这些范围允许Cloud Manager访问验证和webhook集成所需的存储库数据和用户信息。<br>在GitLab中生成PAT时，请确保它包括以下令牌范围：<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
@@ -98,7 +98,7 @@ ht-degree: 27%
 
 >[!TAB 比特桶]
 
-| 令牌类型 | 描述 |
+| 访问令牌选项 | 描述 |
 | --- | --- |
 | **使用现有的访问令牌** | 如果您已经为贵组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择一个现有令牌。使用&#x200B;**令牌名称**&#x200B;下拉列表，选择要应用到存储库的令牌。否则，添加一个新的访问令牌。 |
 | **添加新的访问令牌** | <ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>使用[Bitbucket文档](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)创建存储库访问令牌。<li>Bitbucket个人访问令牌(PAT)所需的权限<br>这些权限允许Cloud Manager访问存储库内容、管理拉取请求以及配置或响应webhook事件。<br>在Bitbucket中创建应用程序密码时，请确保它包含以下必需的应用程序密码权限：<ul><li>存储库（只读）<li>拉取请求（读取和写入）<li>Webhook（读写）</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
@@ -188,21 +188,21 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 
 >[!TAB GitHub企业版]
 
-    | 必需的webhook事件 |
-    | — |
-    | 这些事件允许Cloud Manager响应GitHub活动，例如拉取请求验证、管道的基于推送的触发器或Edge Delivery Services代码同步。&lt;br>确保将webhook设置为在发生以下必需的webhook事件时触发：&lt;ul>&lt;li>拉取请求&lt;li>推送&lt;li>问题评论&lt;/li>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul> |
+| 必需的webhook事件 |
+| --- |
+| 这些事件允许Cloud Manager响应GitHub活动，例如拉取请求验证、管道的基于推送的触发器或Edge Delivery Services代码同步。<br>确保将webhook设置为在下列必需的webhook事件上触发：<ul><li>拉取请求<li>推送<li>问题评论</li></li></li></ul></ul></ul> |
 
 >[!TAB GitLab]
 
-    | 必需的webhook事件 |
-    | — |
-    | 这些webhook事件允许Cloud Manager在推送代码或提交合并请求时触发管道。 它们还跟踪与拉取请求验证相关的注释（通过注释事件）。&lt;br>确保将webhook设置为在下列必需的webhook事件中触发&lt;ul>&lt;li>推送事件&lt;li>合并请求事件&lt;li>注释事件&lt;/li>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul> |
+| 必需的webhook事件 |
+| --- |
+| 这些webhook事件允许Cloud Manager在推送代码或提交合并请求时触发管道。 它们还跟踪与拉取请求验证相关的注释（通过注释事件）。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>推送事件<li>合并请求事件<li>注释事件</li></li></li></ul></ul></ul> |
 
 >[!TAB 比特桶]
 
-    | 必需的webhook事件 |
-    | — |
-    | 这些事件可确保Cloud Manager能够验证拉取请求、响应代码推送并与注释交互以协调管道。&lt;br>确保将webhook设置为在发生以下必需的webhook事件时触发&lt;ul>&lt;li>拉取请求：已创建&lt;li>拉取请求：已更新&lt;li>拉取请求：已合并&lt;li>拉取请求：评论&lt;li>存储库：推送&lt;/li>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul> |
+| 必需的webhook事件 |
+| --- |
+| 这些事件可确保Cloud Manager能够验证拉取请求、响应代码推送并与注释交互以协调管道。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>拉取请求：已创建<li>拉取请求：已更新<li>拉取请求：已合并<li>拉取请求：评论<li>存储库：推送</li></li></li></ul></ul></ul> |
 
 >[!ENDTABS]
 
