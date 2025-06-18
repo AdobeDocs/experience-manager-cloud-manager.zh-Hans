@@ -3,9 +3,9 @@ title: 在Cloud Manager中添加外部存储库
 description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab和Bitbucket存储库集成。
 badge: label="私人测试版" type="Positive" url="/help/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 073f1024891e1a1d4298c5c593df011f5572e820
+source-git-commit: 523e8ef1c90bf88aa846e067aa1cca9e6ed5d8ce
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2283'
 ht-degree: 31%
 
 ---
@@ -73,8 +73,6 @@ ht-degree: 31%
 
 >[!TAB GitHub企业版]
 
-**GitHub企业版**
-
 | 令牌类型 | 描述 |
 | --- | --- |
 | **使用现有的访问令牌** | 如果您已经为贵组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择一个现有令牌。使用&#x200B;**令牌名称**&#x200B;下拉列表，选择要应用到存储库的令牌。否则，添加一个新的访问令牌。 |
@@ -88,8 +86,6 @@ ht-degree: 31%
 
 >[!TAB GitLab]
 
-**GitLab**
-
 | 令牌类型 | 描述 |
 | --- | --- |
 | **使用现有的访问令牌** | 如果您已经为贵组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择一个现有令牌。使用&#x200B;**令牌名称**&#x200B;下拉列表，选择要应用到存储库的令牌。否则，添加一个新的访问令牌。 |
@@ -102,8 +98,6 @@ ht-degree: 31%
 >功能&#x200B;**添加新访问令牌**&#x200B;当前处于专用测试阶段。 正在规划其他功能。因此，访问令牌所需的权限可能会发生更改。此外，用于管理令牌的用户界面（包括令牌有效期限等功能）可能会被更新。而且，还将进行自动检查，以确保与存储库链接的令牌保持有效。
 
 >[!TAB 比特桶]
-
-**比特桶**
 
 | 令牌类型 | 描述 |
 | --- | --- |
@@ -190,8 +184,6 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 
 >[!TAB GitHub企业版]
 
-**GitHub企业版**
-
 1. 找到解决方案的&#x200B;**Webhook**&#x200B;设置部分。
 1. 将之前复制的Webhook URL粘贴到URL文本字段中。
    1. 将Webhook URL中的`api_key`查询参数替换为您自己的实际API密钥。
@@ -207,8 +199,6 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 
 >[!TAB GitLab]
 
-**GitLab**
-
 1. 找到解决方案的&#x200B;**Webhook**&#x200B;设置部分。
 1. 将之前复制的Webhook URL粘贴到URL文本字段中。
    1. 将Webhook URL中的`api_key`查询参数替换为您自己的实际API密钥。
@@ -223,8 +213,6 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
    | 这些webhook事件允许Cloud Manager在推送代码或提交合并请求时触发管道。 它们还跟踪与拉取请求验证相关的注释（通过注释事件）。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>推送事件<li>合并请求事件<li>注释事件</li></li></li></ul></ul></ul> |
 
 >[!TAB 比特桶]
-
-**比特桶**
 
 1. 找到解决方案的&#x200B;**Webhook**&#x200B;设置部分。
 1. 将之前复制的Webhook URL粘贴到URL文本字段中。
@@ -251,15 +239,11 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 
 >[!TAB GitHub企业版]
 
-**GitHub企业版**
-
 创建检查后，它类似于下面的屏幕快照。 与`GitHub.com`的主要区别在于`GitHub.com`使用检查运行，而GitHub Enterprise（使用个人访问令牌）生成提交状态：
 
 ![提交状态以指示GitHub Enterprise上的PR验证过程](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 >[!TAB GitLab]
-
-**GitLab**
 
 GitLab交互仅依赖于评论。 验证开始时，将添加注释。 验证完成（无论成功还是失败）后，将移除初始注释，并替换为包含验证结果或错误详细信息的新注释。
 
@@ -280,8 +264,6 @@ GitLab交互仅依赖于评论。 验证开始时，将添加注释。 验证完
 ![当代码质量验证因客户问题而失败时](/help/managing-code/assets/repository-webhook-gitlab4.png)
 
 >[!TAB 比特桶]
-
-**比特桶**
 
 运行代码质量验证时：
 
