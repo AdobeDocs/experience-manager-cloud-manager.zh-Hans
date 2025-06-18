@@ -3,10 +3,10 @@ title: 在Cloud Manager中添加外部存储库
 description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab和Bitbucket存储库集成。
 badge: label="私人测试版" type="Positive" url="/help/release-notes/current.md网站#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: a0836dd24dd3b711c9d1b78f28755e2db98b051c
+source-git-commit: 5bef5a1b8f54a245e1354b1b77c775a06b9b3faa
 workflow-type: tm+mt
-source-wordcount: '2210'
-ht-degree: 17%
+source-wordcount: '2141'
+ht-degree: 26%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 17%
 
 1. 选择&#x200B;**保存**&#x200B;以添加存储库。
 
-1. 在&#x200B;**专用存储库所有权验证**&#x200B;对话框中，提供访问令牌来验证外部存储库的所有权，以便您可以访问它。
+1. 在&#x200B;**私有存储库所有权验证**&#x200B;对话框中，提供用于验证外部存储库所有权的访问令牌，以便您能够访问它，然后单击&#x200B;**验证**。
 
    ![为存储库选择现有的访问令牌](/help/managing-code/assets/repositories-exisiting-access-token.png)
    *为Bitbucket存储库选择现有的访问令牌（仅供说明）。*
@@ -73,43 +73,37 @@ ht-degree: 17%
 
 >[!TAB GitHub企业版]
 
-    | 令牌类型 | 描述 |
-    | — | — |
-    | **使用现有访问令牌** | 如果您已经为您的组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择现有令牌。 使用&#x200B;**令牌名称**&#x200B;下拉列表选择要应用于存储库的令牌。 否则，请添加新访问令牌。 |
-    | **添加新的访问令牌** |&lt;ul>&lt;li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入您创建的访问令牌的名称。&lt;li>按照[GitHub文档](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的说明创建个人访问令牌。&lt;li>GitHub企业个人访问令牌(PAT)所需的权限&lt;br>这些权限确保Cloud Manager能够验证拉取请求、管理提交状态检查并访问必要的存储库详细信息。&lt;br>在GitHub Enterprise中生成PAT时，请确保它包含以下存储库权限：&lt;ul>&lt;li>拉取请求（读取和写入）&lt;li>提交状态（读取和写入）&lt;li>存储库元数据（只读）&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴您刚刚创建的令牌。 |
-    
-    1。 单击&#x200B;**验证**。
-    
-    验证后，外部存储库已准备好使用并链接到管道。
-    
-    另请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
+| 令牌类型 | 描述 |
+| --- | --- |
+| **使用现有的访问令牌** | 如果您已经为贵组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择一个现有令牌。使用&#x200B;**令牌名称**&#x200B;下拉列表，选择要应用到存储库的令牌。否则，添加一个新的访问令牌。 |
+| **添加新的访问令牌** | <ul><li> 在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>按照[GitHub文档](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的说明创建个人访问令牌。<li>GitHub企业个人访问令牌(PAT)所需的权限<br>这些权限确保Cloud Manager可以验证拉取请求、管理提交状态检查以及访问必要的存储库详细信息。<br>在GitHub Enterprise中生成PAT时，请确保它包含以下存储库权限：<ul><li>拉取请求（读取和写入）<li>提交状态（读取和写入）<li>存储库元数据（只读）</li></li></ul></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
+
+验证后，外部存储库即可使用并链接到管道。
+
+另请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
 
 >[!TAB GitLab]
 
-    | 令牌类型 | 描述 |
-    | — | — |
-    | **使用现有访问令牌** | 如果您已经为您的组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择现有令牌。 使用&#x200B;**令牌名称**&#x200B;下拉列表选择要应用于存储库的令牌。 否则，请添加新访问令牌。 |
-    | **添加新的访问令牌** |&lt;ul>&lt;li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入您创建的访问令牌的名称。&lt;li>按照[GitLab文档](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的说明创建个人访问令牌。&lt;li>GitLab个人访问令牌(PAT)所需的权限&lt;br>这些范围允许Cloud Manager访问验证和Webhook集成所需的存储库数据和用户信息。&lt;br>在GitLab中生成PAT时，请确保它包括以下令牌范围：&lt;ul>&lt;li>api&lt;li>read_user&lt;/li>&lt;/li>&lt;/ul>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴您刚刚创建的令牌。 |
+| 令牌类型 | 描述 |
+| --- | --- |
+| **使用现有的访问令牌** | 如果您已经为贵组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择一个现有令牌。使用&#x200B;**令牌名称**&#x200B;下拉列表，选择要应用到存储库的令牌。否则，添加一个新的访问令牌。 |
+| **添加新的访问令牌** | <ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>按照[GitLab文档](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的说明创建个人访问令牌。<li>GitLab个人访问令牌(PAT)所需的权限<br>这些范围允许Cloud Manager访问验证和webhook集成所需的存储库数据和用户信息。<br>在GitLab中生成PAT时，请确保它包括以下令牌范围：<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
 
-1. 点击&#x200B;**验证**。
+验证后，外部存储库即可使用并链接到管道。
 
-   验证后，外部存储库即可使用并链接到管道。
-
-   另请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
+另请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
 
 
 >[!TAB 比特桶]
 
-    | 令牌类型 | 描述 |
-    | — | — |
-    | **使用现有访问令牌** | 如果您已经为您的组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择现有令牌。 使用&#x200B;**令牌名称**&#x200B;下拉列表选择要应用于存储库的令牌。 否则，请添加新访问令牌。 |
-    | **添加新的访问令牌** |&lt;ul>&lt;li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入您创建的访问令牌的名称。&lt;li>使用[Bitbucket文档]创建存储库访问令牌(https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)。&lt;li>Bitbucket个人访问令牌(PAT)所需的权限&lt;br>这些权限允许Cloud Manager访问存储库内容、管理拉取请求以及配置或响应webhook事件。&lt;br>在Bitbucket中创建应用程序密码时，请确保它包含以下必需的应用程序密码权限：&lt;ul>&lt;li>存储库（只读）&lt;li>拉取请求（读取和写入）&lt;li>Webhooks（读取和写入）&lt;/li>&lt;/ul>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴您刚刚创建的令牌。 |
-    
-    1。 单击&#x200B;**验证**。
-    
-    验证后，外部存储库已准备好使用并链接到管道。
-    
-    另请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
+| 令牌类型 | 描述 |
+| --- | --- |
+| **使用现有的访问令牌** | 如果您已经为贵组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择一个现有令牌。使用&#x200B;**令牌名称**&#x200B;下拉列表，选择要应用到存储库的令牌。否则，添加一个新的访问令牌。 |
+| **添加新的访问令牌** | <ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>使用[Bitbucket文档](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)创建存储库访问令牌。<li>Bitbucket个人访问令牌(PAT)所需的权限<br>这些权限允许Cloud Manager访问存储库内容、管理拉取请求以及配置或响应webhook事件。<br>在Bitbucket中创建应用程序密码时，请确保它包含以下必需的应用程序密码权限：<ul><li>存储库（只读）<li>拉取请求（读取和写入）<li>Webhook（读写）</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
+
+验证后，外部存储库即可使用并链接到管道。
+
+另请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
 
 >[!ENDTABS]
 
