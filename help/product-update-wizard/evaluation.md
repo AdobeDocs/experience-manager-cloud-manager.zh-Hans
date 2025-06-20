@@ -3,29 +3,28 @@ title: 评估阶段
 seo-title: Evaluation Phase
 description: 了解产品更新向导的评估阶段如何使用模式检测器来评估升级复杂性。
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
-workflow-type: ht
-source-wordcount: '279'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 57%
 
 ---
 
 
 # 评估阶段 {#evaluation}
 
-产品更新向导中的第一个阶段是&#x200B;**[!UICONTROL 评估]**&#x200B;阶段，该阶段会直接用该向导中的模式检测器评估升级复杂性。 在此步骤结束时，您可以访问该评估报告。
+产品更新向导的第一阶段是&#x200B;**[!UICONTROL 评估]**&#x200B;阶段。 它会在向导中运行模式检测器以评估升级复杂性。 在此步骤结束时，您可以查看评估报告。
 
-利用生成的报告，您可以通过检测以下模式来检查作者实例的升级资格：
+该报告通过检测以下内容的模式来检查创作实例的升级准备情况：
 
-* 违反与升级影响或覆盖的区域相关的某些规则。
+* 受升级影响或覆盖的区域中的规则违规。
+* 它使用的AEM 6.x功能或API无法向后兼容，并且在升级后可能会中断。
 
-* 使用一项 AEM 6.x 功能或一个 API，此 API 无法与新版本 AEM 向后兼容，并且在升级后可能会中断。
-
-该报告用于评估升级到 Adobe Experience Manager (AEM) 6.5 的过程中涉及的开发工作。
+此报表可帮助估计升级到Adobe Experience Manager (AEM) 6.5所需的开发工作。
 
 >[!NOTE]
 >
->要了解有关模式检测器的更多信息，请参阅[使用模式检测器来评估升级复杂性](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-65/content/implementing/deploying/upgrading/pattern-detector)。
+>要了解有关模式检测器的更多信息，请参阅[使用模式检测器来评估升级复杂性](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/deploying/upgrading/pattern-detector)。
 
 ## 运行评估报告 {#running}
 
@@ -45,4 +44,4 @@ ht-degree: 100%
 
    ![已创建报告](/help/assets/Evaluation-1.png)
 
-Cloud Manager 中的当前版本的产品更新向导仅支持&#x200B;**评估**&#x200B;阶段。 其他四个阶段即将推出，即&#x200B;**修复**、**执行**、**验证**&#x200B;和&#x200B;**完成**。
+Cloud Manager中的当前产品更新向导仅支持&#x200B;**评估**&#x200B;阶段。 其他四个阶段即将推出，即&#x200B;**修复**、**执行**、**验证**&#x200B;和&#x200B;**完成**。

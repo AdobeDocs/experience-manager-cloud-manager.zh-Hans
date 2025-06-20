@@ -2,10 +2,10 @@
 title: 自定义权限
 description: 了解如何使用自定义权限创建具有可配置权限的新的自定义权限配置文件，以限制 Cloud Manager 用户对项目、管道和环境的访问。
 exl-id: a81eda9f-aa89-40ea-8e4c-52367a0a6aba
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1416'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '1373'
+ht-degree: 98%
 
 ---
 
@@ -111,23 +111,23 @@ Cloud Manager 有一组预定义的角色，用于管理对 Cloud Manager 各种
 以下权限可用于创建自定义配置文件。
 
 | 权限 | 描述 |
-|---|---|
-| 项目访问权限 | 允许用户访问项目 |
-| 项目编辑权限 | 允许用户编辑项目 |
-| 管道创建权限 | 允许用户创建新管道 |
-| 管道删除权限 | 允许用户删除管道 |
-| 管道编辑权限 | 允许用户编辑管道 |
-| 生产部署批准/拒绝权限 | 允许用户批准或拒绝生产部署步骤 |
-| 管道执行取消权限 | 允许用户取消管道执行 |
-| 管道执行开始权限 | 允许用户开始新的管道执行 |
-| 覆盖/拒绝重要量度失败权限 | 允许用户覆盖/拒绝重要量度失败 |
-| 生产部署计划权限 | 允许用户计划生产部署步骤 |
-| 存储库信息访问权限 | 允许用户访问存储库信息并生成访问密码 |
-| 存储库创建 | 允许用户创建新的 Git 存储库 |
-| 存储库删除 | 允许用户删除 Git 存储库 |
-| 存储库编辑 | 允许用户编辑 Git 存储库 |
-| 存储库代码生成 | 允许用户从原型生成项目 |
-| 内容复制管理 | 允许用户管理内容复制操作 |
+| --- | --- |
+| `Program Access` | 允许用户访问项目 |
+| `Program Edit` | 允许用户编辑项目 |
+| `Pipeline Create` | 允许用户创建新管道 |
+| `Pipeline Delete` | 允许用户删除管道 |
+| `Pipeline Edit` | 允许用户编辑管道 |
+| `Production Deployments Approve/Reject` | 允许用户批准或拒绝生产部署步骤 |
+| `Pipeline Executions Cancel` | 允许用户取消管道执行 |
+| `Pipeline Executions Start` | 允许用户开始新的管道执行 |
+| `Override/Reject Important Metric Failures` | 允许用户覆盖/拒绝重要量度失败 |
+| `Production Deployments Schedule` | 允许用户计划生产部署步骤 |
+| `Repository Info Access` | 允许用户访问存储库信息并生成访问密码 |
+| `Repository Create` | 允许用户创建新的 Git 存储库 |
+| `Repository Delete` | 允许用户删除 Git 存储库 |
+| `Repository Edit` | 允许用户编辑 Git 存储库 |
+| `Repository Code Generate` | 允许用户从原型生成项目 |
+| `Content Copy Manage` | 允许用户管理内容复制操作 |
 
 ### 组织级权限 {#organization-level}
 
@@ -142,7 +142,7 @@ Cloud Manager 中组织级权限的一个示例是&#x200B;**存储库信息访�
 以下术语用于创建并管理自定义权限和预定义的角色。
 
 | 术语 | 描述 |
-|---|---|
+| --- | --- |
 | 预定义的权限 | 预定义的角色，例如&#x200B;**业务负责人**、**部署经理**&#x200B;等。监管 Cloud Manager 的各种功能。 有关预定义角色的详细信息，请参阅文档[基于角色的权限](/help/requirements/role-based-permissions.md)。 |
 | 自定义权限 | Cloud Manager 功能，允许用户创建权限配置文件，以定义管理 Cloud Manager 所支持功能的角色 |
 | 权限配置文件 | 在 Admin Console 中创建，用于管理可配置的权限，这些权限适用于权限配置文件中的用户 |
@@ -152,11 +152,11 @@ Cloud Manager 中组织级权限的一个示例是&#x200B;**存储库信息访�
 权限项是指权限应用的范围。 通常，它是下列项之一。
 
 | 权限项类型 | 示例 | 描述 |
-|---|---|---|
+| --- | --- | --- |
 | 组织 | 组织：A 公司 | 所有对组织适用的资源。资源可以是项目、环境或管道。如果用户为任意权限添加一个组织，则该组织中的所有新资源也会具有此权限。 |
-| 项目 | 项目 A | 所有对项目适用的资源 |
-| 环境 | 项目 A：环境 | 适用于特定环境 |
-| 管道 | 项目 A：管道 | 适用于特定管道 |
+| 项目 | 项目 A | 项目的所有适用资源。 |
+| 环境 | 项目 A：环境 | 适用于特定环境。 |
+| 管道 | 项目 A：管道 | 适用于特定管道。 |
 
 ## 限制 {#limitations}
 

@@ -2,10 +2,10 @@
 title: 项目设置
 description: 完成新用户引导后，业务负责人必须对项目进行一些初始设置。
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
 source-wordcount: '564'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 100%
 
 站点 KPI 是根据在暂存环境上运行的测试来测量的。 通常，这些 KPI 将会按比例缩小，以适应暂存环境的功能。
 
-例如，一个用户期望其生产环境中的每分钟平均页面查看次数达到 1000 次，其生产环境中有四个 Dispatcher/发布服务器，每个服务器的每分钟页面查看次数为 250 次。 该场景假定其暂存环境中仅有一个 Dispatcher/发布服务器对。
+例如，一个用户期望其生产环境中的每分钟平均页面查看次数达到 1000 次，其生产环境中有四个 Dispatcher/发布服务器，每个服务器的每分钟页面查看次数为 250 次。 此方案假设其暂存环境仅包含一个Dispatcher/发布服务器对。
 
 资产性能测试涉及在 30 分钟内反复上传资产。 在整个测试过程中，会测量每个资产的处理时间和各种系统级指标。
 
@@ -92,4 +92,4 @@ ht-degree: 100%
 
 ## 视频概述 {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/34265?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)

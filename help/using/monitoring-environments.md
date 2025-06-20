@@ -2,10 +2,10 @@
 title: 监控环境
 description: 了解如何在 Cloud Manager 中监控环境。
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 98%
+source-wordcount: '865'
+ht-degree: 75%
 
 ---
 
@@ -28,8 +28,8 @@ Adobe Managed Services 会设置阈值，而您可以在 [!UICONTROL Cloud Manag
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
-1. 单击要监视的程序的![更多图标，省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
-1. 在菜单中，在&#x200B;**管理**&#x200B;标题下，单击&#x200B;**显示监控**，以打开显示系统监控信息的&#x200B;**报告**&#x200B;页面。
+1. 点击要监控的程序的![“更多”图标（省略号）](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+1. 在菜单的&#x200B;**管理**&#x200B;下，单击&#x200B;**显示监视**&#x200B;以打开显示系统监视信息的&#x200B;**报告**&#x200B;页面。
 
    ![设置](/help/assets/first-timea1.png)
 
@@ -72,28 +72,28 @@ Adobe Managed Services 会设置阈值，而您可以在 [!UICONTROL Cloud Manag
 
 #### 主机 {#host}
 
-* **每个核心的负载**：CPU 正在执行的进程数。 或者，一分钟（load1）、五分钟（load5）和十五分钟（load15）时间内处于等待状态的排队进程数的平均值。
-* **进程计数**：当前打开的进程数。
-* **用户计数**：具有活动 shell 会话的用户的数量。
-* **内存使用**：当前分配的系统内存的百分比。
-* **JVM 内存**：分配的 Java 堆的大小（以 MB 为单位）。
-* **旧一代空间**：当前分配的 JVM 旧一代内存的百分比。
+* **`Load Per Core`**： CPU正在执行的进程数。 或者，一分钟（load1）、五分钟（load5）和十五分钟（load15）时间内处于等待状态的排队进程数的平均值。
+* **P`rocess Count`**：当前打开的进程数。
+* **`User Count`**：具有活动shell会话的用户数。
+* **`Memory Usage`**：当前分配的系统内存的百分比。
+* **`JVM Memory`**：已分配的Java栈的大小（以MB为单位）。
+* **`Old Generation Space`**：当前分配的JVM旧一代内存的百分比。
 
 #### 网络 {#network}
 
-* **CQ 端口检查**：访问 AEM 或 Dispatcher 端口的响应时间（以秒为单位）。创作、发布和 Dispatcher 具有不同的量度。
+* **`CQ Port Check`**：访问AEM或Dispatcher端口的响应时间（以秒为单位）。 创作、发布和 Dispatcher 具有不同的量度。
 
 #### 存储 {#storage}
 
-* **磁盘空间**：主机上每个挂载点的已用磁盘空间（以 MB 为单位）。 每个挂载点具有不同的量度。 至少有 `/` 和 `/mnt` 的量度，但根据具体的实例配置，可能会提供额外的挂载点量度。
-* **文件夹大小**
-* **AEM 区段存储**：AEM 区段存储的已用磁盘空间（以 GB 为单位）。
+* **`Disk Space`**：主机上每个挂载点的已用磁盘空间（以MB为单位）。 每个挂载点具有不同的量度。 至少有 `/` 和 `/mnt` 的量度，但根据具体的实例配置，可能会提供额外的挂载点量度。
+* **`Folder Size`**
+* **`AEM Segment Store`**： AEM区段存储的已用磁盘空间（以GB为单位）。
 
 #### 应用程序 {#application}
 
-* **复制代理**：测试复制事件所用的时间（以秒为单位）
+* **`Replication Agent`**：测试复制事件的时间（以秒为单位）
    * 每个复制代理均具有单独的量度。
-* **Dispatcher 刷新**：当前位于 Dispatcher 刷新队列中的项目数
+* **`Dispatcher Flush`**：当前在Dispatcher刷新队列中的项目数
 
 ## SLA 报告 {#sla-reporting}
 
@@ -113,15 +113,15 @@ Adobe Managed Services 会设置阈值，而您可以在 [!UICONTROL Cloud Manag
 
 ## SLA 量度 {#sla-metrics}
 
-* **作者合同**：您与 Adobe Managed Services 签订的合同中为创作层定义的 SLA。
-* **AMS 作者 SLA**：测量出的生产作者层的正常运行时间，其中考虑了供应商或 Adobe 引起的事故。
-* **作者 SLA**：测量出的作者层的正常运行时间，其中忽略了计划的停机时间，例如维护时段。
-* **最终用户合同**：您与 Adobe Managed Services 签订的合同中为发布层定义的 SLA。
-* **AMS 最终用户 SLA**：测量出的生产发布层的正常运行时间，其中考虑了由供应商或 Adobe 引起的事故。
-* **最终用户 SLA**：测量出的发布层的正常运行时间，其中忽略了计划的停机时间，例如维护时段。
+* **`Author Contract`**：在与Adobe Managed Services签订的合同中为创作层定义的SLA。
+* **`AMS Author SLA`**：测量出的生产创作层的正常运行时间，由供应商或Adobe引起的保理事件。
+* **`Author SLA`**：测量出的创作层的正常运行时间忽略了计划的停机时间，例如维护时段。
+* **`End User Contract`**：在与Adobe Managed Services签订的合同中为发布层定义的SLA。
+* **`AMS End User SLA`**：测量出的生产发布层的正常运行时间，由供应商或Adobe引起的保理事件。
+* **`End User SLA`**：测量出的发布层的正常运行时间，忽略了计划的停机时间，例如维护时段。
 
 ## 视频教程 {#video-tutorial}
 
 本视频概述如何使用 Cloud Manager 报告生成的图表来查看项目环境。
 
->[!VIDEO](https://video.tv.adobe.com/v/34273?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/26315/)

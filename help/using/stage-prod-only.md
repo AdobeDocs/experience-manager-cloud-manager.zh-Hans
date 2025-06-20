@@ -2,16 +2,16 @@
 title: 拆分仅阶段管道和仅生产管道
 description: 了解如何使用专用管道拆分暂存和生产部署。
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 35845e827b0a3fadfe2a55a2171b5e02100cf3eb
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 98%
+source-wordcount: '917'
+ht-degree: 96%
 
 ---
 
 # 仅分离阶段管道和仅生产管道 {#stage-prod-only}
 
-了解如何使用专用管道拆分暂存和生产部署。
+您可以使用专用管道拆分暂存和生产部署。
 
 ## 概述 {#overview}
 
@@ -75,7 +75,7 @@ ht-degree: 98%
 
 ### 仅生产管道 {#prod-only}
 
-1. 在您选择&#x200B;**添加仅生产管道**&#x200B;选项后，**添加仅生产管道**&#x200B;对话框就会打开。
+1. 单击&#x200B;**添加仅生产管道**&#x200B;后，将打开其关联的对话框。
 1. 在&#x200B;**管道名称**&#x200B;字段中，输入所需的名称。 对话框的其余选项和功能与标准耦合管道创建对话框中的选项相同。
 1. 在对话框的右下角，点击&#x200B;**保存**。
 

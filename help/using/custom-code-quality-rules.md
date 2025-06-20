@@ -2,10 +2,10 @@
 title: 自定义代码质量规则
 description: 了解 Cloud Manager 在代码质量测试期间执行的自定义代码质量规则的具体内容。这些规则以 AEM Engineering 的最佳实践为基础。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 54987d6ccd8c31dab677d90b40466c458743f936
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '3644'
-ht-degree: 96%
+source-wordcount: '3636'
+ht-degree: 95%
 
 ---
 
@@ -227,7 +227,7 @@ public void orDoThis(Session session) throws Exception {
 * **严重性**：主要
 * **开始版本**：版本 2018.4.0
 
-如 [Sling 文档](https://sling.apache.org/documentation/the-sling-engine/servlets.html)所述，建议不要通过路径绑定 servlet。路径绑定的 servlet 不能使用标准 JCR 访问控制，因此，需要额外的安全严密性。 建议在存储库中创建节点并按资源类型注册 servlet，而不是使用路径绑定的 servlet。
+如[Sling文档](https://sling.apache.org/documentation/the-sling-engine/servlets.html)中所述，建议不要通过路径绑定servlet。 路径绑定的 servlet 不能使用标准 JCR 访问控制，因此，需要额外的安全严密性。 建议在存储库中创建节点并按资源类型注册 servlet，而不是使用路径绑定的 servlet。
 
 #### 不合规的代码 {#non-compliant-code-5}
 
@@ -475,7 +475,7 @@ public void doThis() {
 * **严重性**：轻微
 * **开始版本**：版本 2018.4.0
 
-以 `/libs` 和 `/apps` 开头的路径通常不应进行硬编码。这些路径通常相对 Sling 搜索路径进行存储，默认为 `/libs,/apps`。使用绝对路径可能会引入细微的缺陷，这些缺陷只会在项目生命周期的后期才会出现。
+以 `/libs` 和 `/apps` 开头的路径通常不应进行硬编码。这些路径通常相对于`Sling`搜索路径进行存储，该路径默认为`/libs,/apps`。 使用绝对路径可能会引入细微的缺陷，这些缺陷只会在项目生命周期的后期才会出现。
 
 #### 不合规的代码 {#non-compliant-code-13}
 
@@ -500,7 +500,7 @@ public void doThis(Resource resource) {
 * **严重性**：轻微
 * **开始版本**：版本 2020.5.0
 
-Sling 调度程序不得用于需要保证执行的任务。 Sling 计划作业可保证执行，并且更适合集群和非集群环境。
+请勿将Sling调度程序用于需要保证执行的任务。 Sling 计划作业可保证执行，并且更适合集群和非集群环境。
 
 请参阅 [Apache Sling 事件和作业处理文档](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)，详细了解如何在集群环境中处理 Sling 作业。
 
@@ -892,7 +892,7 @@ AEM Cloud Service 禁止创建包含带 haystack 属性的索引定义。
 
 AEM Cloud Service禁止使用不受支持的异步属性创建索引定义。
 
-### 索引定义的配置在多个索引中不应有相同的标记 {#oakpal-indexing-same-tag-multiple-indexes}
+### 索引定义的配置在多个索引中不应具有相同的标记 {#oakpal-indexing-same-tag-multiple-indexes}
 
 * **键**： SameTagInMultipleIndexes
 * **类型**：改进
@@ -908,8 +908,7 @@ AEM Cloud Service禁止创建在多个索引中包含相同标记的索引定义
 * **严重性**：主要
 * **开始版本**：版本 2025.4.0
 
-对于/content下的路径，不允许在文件保险库中使用“替换”模式；对于/etc和/var下的路径，不应使用此模式。
-模式“替换”会将存储库中所有现有内容替换为内容包中提供的内容，触发此操作的包不应包含在通过CloudManager部署的包中。
+不允许对低于`/content`的路径使用文件保管库中的“替换”模式；不应将其用于低于`/etc`和`/var.`的路径。 “替换”模式使用来自包的内容覆盖现有存储库内容。 触发此操作的包不应包含在通过Cloud Manager部署的这些包中。
 
 ## Dispatcher 优化工具 {#dispatcher-optimization-tool-rules}
 

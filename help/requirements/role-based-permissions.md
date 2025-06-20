@@ -2,10 +2,10 @@
 title: 基于角色的权限
 description: 了解 Cloud Manager 预先配置的基于角色的权限来管理对云资源的访问。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 682b142f35bc233bad82b0ddfa69bc0f2d5b5fdb
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 100%
+source-wordcount: '560'
+ht-degree: 99%
 
 ---
 
@@ -41,28 +41,28 @@ ht-degree: 100%
 
 每个角色均具有特定关联的预配置权限。下表列出了可用的权限以及可以执行这些权限的角色。
 
-| 权限 | 描述 | 业务负责人 | 部署管理员 | 项目管理员 | 开发人员 | CSE |
+| 权限 | 描述 | 业务负责人 | 部署管理器 | 程序管理员 | 开发人员 | CSE |
 | --- | --- | --- | --- | --- | --- | --- |
-| 读取应用程序 | 读取项目 KPI | x | x | x | x | x |
-| 编写应用程序 | 项目设置或编辑 | x | | | | |
-| 添加项目 | 添加新项目 | x |  |  |  |  |
-| 读取环境 | 查看环境详细信息 | x | x | x | x | x |
-| 创建执行 | 启动管道 | x | x | x | | |
-| 读取执行 | 查看执行状态 | x | x | x | x | x |
-| 恢复执行 | 暂停后可恢复执行 | x | x | x | | x |
-| 执行审批部署到生产 | 提供上线审批 | x | x | x | | |
-| 计划将执行部署到生产 | 计划生产部署 | x | x | x | | x |
-| 将执行部署到生产 | 在因 CSE 监督而暂停时将应用程序部署到生产环境 |  |  |  |  | x |
-| 执行取消 | 取消当前执行 |  |  | x |  |  |
-| 执行覆盖质量审核失败 | 审批重要质量审核失败 | x | x | x |  |  |
-| 管道创建 | 设置/编辑管道 |  | x |  |  |  |
-| 管道读取 | 查看管道详细信息 | x | x | x | x | x |
-| 管道写入 | 设置/编辑管道 |  | x |  |  |  |
-| 管道修改审批 | 允许编辑“业务负责人”选项 |  | x |  |  |  |
-| 管道修改托管部署 | 允许编辑“CSE 监督”选项 |  | x |  |  |  |
-| 管道删除 | 允许管道删除 |  | x |  |  |  |
-| 步骤读取 | 查看步骤质量量度结果 | x | x | x | x | x |
-| 生成个人访问令牌 | 访问 Git |  | x |  | x |  |
+| `Read the Application` | 读取项目 KPI | x | x | x | x | x |
+| `Write Application` | 项目设置或编辑 | x | | | | |
+| `Add Program` | 添加新项目 | x |  |  |  |  |
+| `Read Environment` | 查看环境详细信息 | x | x | x | x | x |
+| `Create Execution` | 启动管道 | x | x | x | | |
+| `Read Execution` | 查看执行状态 | x | x | x | x | x |
+| `Resume Execution` | 暂停后可恢复执行 | x | x | x | | x |
+| `Execution Approve Deploy to Production` | 提供上线审批 | x | x | x | | |
+| `Execution Schedule Deploy to Production` | 计划生产部署 | x | x | x | | x |
+| `Execution Deploy to Production` | 在因 CSE 监督而暂停时将应用程序部署到生产环境 |  |  |  |  | x |
+| `Execution Cancel` | 取消当前执行 |  |  | x |  |  |
+| `Execution Override Quality Gate Failures` | 审批重要质量审核失败 | x | x | x |  |  |
+| `Pipeline Create` | 设置/编辑管道 |  | x |  |  |  |
+| `Pipeline Read` | 查看管道详细信息 | x | x | x | x | x |
+| `Pipeline Write` | 设置/编辑管道 |  | x |  |  |  |
+| P`ipeline Modify Approval` | 允许编辑“业务负责人”选项 |  | x |  |  |  |
+| `Pipeline Modify Managed Deployment` | 允许编辑“CSE 监督”选项 |  | x |  |  |  |
+| `Pipeline Delete` | 允许管道删除 |  | x |  |  |  |
+| `Step Read` | 查看步骤质量量度结果 | x | x | x | x | x |
+| `Generate Personal Access Token` | 访问 Git |  | x |  | x |  |
 
 <!-- CQDOC-22080 | Download log files  |  |  | x |  | x |  | -->
 

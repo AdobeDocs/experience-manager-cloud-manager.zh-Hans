@@ -3,10 +3,10 @@ title: 在 Cloud Manager 中添加专用存储库
 description: 了解如何设置 Cloud Manager 以使用您自己的专用 GitHub 存储库。
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
 source-wordcount: '815'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -90,7 +90,7 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 
 请注意，**类型**&#x200B;列可轻松识别 Adobe 提供的存储库 (**Adobe**) 和您自己的 GitHub 存储库 (**GitHub**)。
 
-要稍后返回存储库并完成验证，请转到&#x200B;**存储库**&#x200B;页面。 单击添加的GitHub存储库旁边的![更多图标，省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然后单击&#x200B;**所有权验证**。
+要稍后返回存储库并完成验证，请转到&#x200B;**存储库**&#x200B;页面。 点击您添加的 GitHub 存储库旁边的![“更多”图标（省略号 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)），然后点击&#x200B;**所有权验证**。
 
 
 ## 将专用存储库与 Cloud Manager 结合使用 {#using}
@@ -105,7 +105,7 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 
 1. 对于每个提取请求，系统会自动创建[全栈代码质量管道](/help/using/managing-pipelines.md)。 每次更新提取请求时，此管道便会启动。
 
-1. 在完成代码质量检查之前，GitHub检查将保持运行状态。 之后，代码质量结果会传播到 GitHub 检查。
+1. GitHub 检查会持续运行，直到完成代码质量检查。 之后，代码质量结果会传播到 GitHub 检查。
 
    ![GitHub 代码质量检查](/help/assets/repositories/github-code-quality.png)
 
@@ -134,6 +134,6 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 * 专用存储库不支持 Web 层和配置管道。
 * 在生产全栈管道上使用专用存储库时，不会创建和推送任何 Git 标记。
 * 如果从您的 GitHb 组织中删除 Adobe GitHub 应用程序，则该操作会移除所有存储库的提取请求验证功能。
-* 当新的提交被推送到选定的分支时，使用专用存储库和提交构建触发器的管道不会自动启动。
+* 将新提交推送到所选分支时，使用专用存储库和已提交生成触发器的管道不会自动启动。
 * [工件重用功能](/help/getting-started/project-setup.md#build-artifact-reuse)不适用于专用存储库。
 * 您无法使用 Cloud Manager 的 GitHub 检查来暂停提取请求验证。 如果在 Cloud Manager 中验证 GitHub 存储库，则 Cloud Manager 会尝试验证为该存储库创建的提取请求。

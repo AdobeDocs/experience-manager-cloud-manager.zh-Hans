@@ -2,10 +2,10 @@
 title: 在 Cloud Manager 中管理存储库
 description: 了解如何在 Cloud Manager 中查看、添加和删除 Git 存储库。
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: ee84c682b6bd2b9144b3f75d544dea33a5ad944b
-workflow-type: ht
-source-wordcount: '732'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '730'
+ht-degree: 97%
 
 ---
 
@@ -73,7 +73,7 @@ Cloud Manager 支持两种类型的存储库：Adobe 管理的存储库（**Adob
 
 ## 检查分支 / 创建项目 {#check-branches}
 
-在 **AEM Cloud Manager** 中，**检查分支/创建项目** 操作有两个用途，具体取决于存储库的当前状态。
+在&#x200B;**AEM Cloud Manager**&#x200B;中，**检查分支/创建项目**&#x200B;有两个用途，具体取决于存储库的当前状态。
 
 * 如果存储库是新创建的，此操作将使用 [AEM 项目原型](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/overview)生成示例项目。
 * 如果示例项目已在存储库中创建，则该操作将检查存储库及其分支的状态，并提供示例项目是否已存在的反馈。

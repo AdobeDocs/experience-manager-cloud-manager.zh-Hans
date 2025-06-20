@@ -3,10 +3,10 @@ title: Cloud Manager 2025.6.0 版的发行说明
 description: 了解 Adobe Managed Services 上有关 Cloud Manager 2025.5.0 版本的信息。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 38d398caf2323b603afd293aa9152308fefd323f
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 68%
+source-wordcount: '556'
+ht-degree: 71%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 68%
 
   查看[仅暂存和仅生产管道](/help/using/stage-prod-only.md)。
 
-* **管道收藏夹**
+* **管道收藏功能**
 
   在此版本中，Cloud Manager引入了固定收藏管道的功能，可让您将特定管道标记为收藏夹，以便它们显示在&#x200B;**管道**&#x200B;页面上的列表顶部。 此项增强功能可帮助您更轻松地查找并运行常用的管道。<!-- CMGR-68293 -->
 
@@ -48,11 +48,11 @@ ht-degree: 68%
   请参阅[将管道标记为收藏](/help/using/managing-pipelines.md#pipeline-favorites)。
 
 
-## 私人Beta计划 {#beta-program}
+## Private Beta 计划 {#beta-program}
 
 参与Cloud Manager的私人测试版计划，在即将发布的功能正式发布之前获得独家访问权。
 
-目前提供以下私人测试版机会：
+目前提供以下 Private Beta 机会：
 
 
 ### 自带 Git：现支持 GitLab 和 Bitbucket {#gitlab-bitbucket}
@@ -73,7 +73,7 @@ ht-degree: 68%
 
 #### 管理访问令牌{#access-tokens}
 
-结合使用&#x200B;**管理访问令牌**&#x200B;功能和BYOG可查看、重命名和删除与外部自带Git存储库（例如GitHub Enterprise、GitLab、Bitbucket和Azure DevOps）关联的访问令牌。
+使用BYOG的&#x200B;**管理访问令牌**&#x200B;查看、重命名和删除与外部自带Git存储库关联的访问令牌，例如GitHub Enterprise、GitLab、Bitbucket和Azure DevOps。
 
 请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
 

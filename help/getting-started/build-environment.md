@@ -2,10 +2,10 @@
 title: 构建环境
 description: 了解 Cloud Manager 用户可用来构建和测试代码的专用构建环境。
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1263'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '1262'
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ Cloud Manager 的构建环境具有以下属性。
    * `graphicsmagick`
 * 可以在构建时安装其他包，如[安装其他系统包](#installing-additional-system-packages)部分中所述。
 * 每次构建都是在原始环境中完成的。 构建容器在执行之间不保留任何状态。
-* Maven 始终通过以下三条命令运行：
+* Maven通过以下三条命令运行：
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
@@ -117,7 +117,7 @@ Cloud Manager [版本 2023.10.0](/help/release-notes/2023/2023-10-0.md) 开始�
 
 也可以选择 Oracle 8 或 Oracle 11 作为整个 Maven 执行的 JDK。 与工具链选项不同，除非还设置了工具链配置（在此情况下，工具链配置仍适用于工具链感知的 Maven 插件），否则这将更改用于所有插件的 JDK。 因此，通过 [Apache Maven Enforcer 插件](https://maven.apache.org/enforcer/maven-enforcer-plugin/)等插件检查和强制执行 Java 版本将会起作用。
 
-要执行此过程，请在管道使用的 Git 存储库分支中创建一个名为 `.cloudmanager/java-version` 的文件。 此文件可以包含内容 `11` 或 `8`。任何其他值将被忽略。如果指定了 `11`，则使用 Oracle 11，并且 `JAVA_HOME` 环境变量将设置为 `/usr/lib/jvm/jdk-11.0.22`。如果指定了 `8`，则使用 Oracle 8，并且 `JAVA_HOME` 环境变量将设置为 `/usr/lib/jvm/jdk1.8.0_401`。
+要执行此过程，请在管道使用的 Git 存储库分支中创建一个名为 `.cloudmanager/java-version` 的文件。 此文件可以包含内容 `11` 或 `8`。任何其他值将被忽略。如果指定了`11`，则系统使用Oracle 11并将`JAVA_HOME`环境变量设置为`/usr/lib/jvm/jdk-11.0.22`。 如果指定了`8`，则系统使用Oracle 8并将`JAVA_HOME`环境变量设置为`/usr/lib/jvm/jdk1.8.0_401`。
 
 ## 环境变量 {#environment-variables}
 
@@ -149,17 +149,17 @@ Cloud Manager [版本 2023.10.0](/help/release-notes/2023/2023-10-0.md) 开始�
 
 #### Dispatcher {#dispatcher}
 
-只有常规环境变量可用于 [Dispatcher](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-dispatcher/using/dispatcher)。 无法使用密钥。
+只有常规环境变量可用于 [Dispatcher](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-dispatcher/using/dispatcher)。 无法使用密钥。
 
 但是，无法在 `IfDefine` 指令中使用环境变量。
 
 >[!TIP]
 >
->在部署之前，使用 [Dispatcher 在本地](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools)验证环境变量的使用情况。
+>在部署之前，使用 [Dispatcher 在本地](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools)验证环境变量的使用情况。
 
 #### OSGi 配置 {#osgi}
 
-可在 [OSGi 配置](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-65/content/implementing/deploying/configuring/configuring-osgi)中使用常规环境变量和密钥。
+可在 [OSGi 配置](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi)中使用常规环境变量和密钥。
 
 ### 管道变量 {#pipeline-variables}
 

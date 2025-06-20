@@ -2,10 +2,10 @@
 title: 代码质量测试
 description: 了解管道代码质量测试的工作方式以及其提高部署质量的方式。
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: f5e6ac81c6454730850bb7e884d82be48d2f8525
-workflow-type: ht
-source-wordcount: '2793'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '2783'
+ht-degree: 98%
 
 ---
 
@@ -126,18 +126,18 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | 反序列化防火墙已加载。 | [反序列化防火墙已加载](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | 严重 |
 | `AuthorizableNodeName` 实施不会在节点名称/路径中公开可授权 ID。 | [可授权的节点名称生成](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/security/security-checklist#security) | 严重 |
 | 默认密码已更改。 | [默认登录帐户](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/security/security#users-and-groups-in-aem) | 严重 |
-| Sling 默认 GET Servlet 可抵御 DOS 攻击。 | Sling Get Servlet | 严重 |
-| 正确配置了 Sling JavaScript 处理程序。 | Sling JavaScript 处理程序 | 严重 |
-| 已适当配置 Sling JSP 脚本处理程序。 | Sling JSP 脚本处理程序 | 严重 |
+| `Sling`默认的GET servlet受保护，不会受到DOS攻击。 | `Sling Get` servlet | 严重 |
+| `Sling` JavaScript处理程序已正确配置。 | `Sling` JavaScript处理程序 | 严重 |
+| 已正确配置`Sling` JSP脚本处理程序。 | `Sling` JSP脚本处理程序 | 严重 |
 | 已正确配置 SSL。 | SSL 配置 | 严重 |
 | 未找到明显不安全的用户配置文件策略。 | 用户配置文件默认访问 | 严重 |
-| 已配置 Sling 引用过滤器来阻止 CSRF 攻击。 | [Sling 引用过滤器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/security/security-checklist#security) | 重要 |
+| `Sling`反向链接筛选器已配置为防止CSRF攻击。 | [Sling 引用过滤器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/security/security-checklist#security) | 重要 |
 | 已适当配置 Adobe Granite HTML 库管理器。 | CQ HTML 库管理器配置 | 重要 |
 | 已禁用 CRXDE 支持捆绑包。 | CRXDE 支持 | 重要 |
-| 已禁用 Sling DavEx 捆绑包和 Servlet。 | DavEx 运行状况检查 | 重要 |
+| `Sling` DavEx包和servlet已禁用。 | DavEx 运行状况检查 | 重要 |
 | 未安装示例内容。 | 示例内容包 | 重要 |
 | 已禁用 WCM 请求过滤器和 WCM 调试过滤器。 | [WCM 过滤器配置](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/deploying/configuring/osgi-configuration-settings#configuring) | 重要 |
-| 已适当配置 Sling WebDAV 捆绑包和 Servlet。 | WebDAV 运行状况检查 | 重要 |
+| `Sling` WebDAV包和servlet已正确配置。 | WebDAV 运行状况检查 | 重要 |
 | 已配置 Web 服务器来阻止点击劫持攻击。 | Web 服务器配置 | 重要 |
 | 复制未使用 `admin` 用户。 | 复制和转移用户 | 信息 |
 
