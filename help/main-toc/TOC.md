@@ -7,9 +7,9 @@ user-guide-description: 了解如何使用 Cloud Manager 在云中自行管理 A
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
+source-git-commit: 012359b4ecf872ece036b27b48fededf150493d2
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 91%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 91%
    + [访问权限](/help/requirements/access-rights.md)
    + [源代码存储库](/help/requirements/source-code-repository.md)
    + [基于角色的权限](/help/requirements/role-based-permissions.md)
-   + [设置用户和角色](/help/requirements/users-and-roles.md)
+   + [添加用户和角色](/help/requirements/users-and-roles.md)
    + [自定义权限](/help/using/custom-permissions.md)
    + [环境配置](/help/requirements/environment-provisioning.md)
 + 开始使用 {#getting-started}
