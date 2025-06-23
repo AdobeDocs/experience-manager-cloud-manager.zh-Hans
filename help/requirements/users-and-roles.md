@@ -2,10 +2,10 @@
 title: 添加用户和角色
 description: 了解如何使用 Admin Console 添加用户和角色以及创建轮廓。
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 012359b4ecf872ece036b27b48fededf150493d2
+source-git-commit: 9ad9af206fafea45f8bbf61b02950de0776b5a9f
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 84%
+source-wordcount: '770'
+ht-degree: 95%
 
 ---
 
@@ -57,9 +57,10 @@ Admin Console 是一个中央位置，用于管理整个组织内的 Adobe 授�
 
 使用Admin Console创建用户或组，或将其添加到这些产品配置文件中。
 
+<!-- CQDOC-22790
 >[!IMPORTANT]
 >
->由于Admin Console和Cloud Manager中的当前限制，在选择&#x200B;**无权限**&#x200B;的情况下无法保存配置文件。 尝试这样做会导致后端错误。 此行为会影响部署管理器配置文件的创建。 作为解决方法，在创建新配置文件时至少选择一个权限。
+>Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile. -->
 
 **要使用Admin Console创建产品配置文件，请执行以下操作：**
 
@@ -83,18 +84,19 @@ Admin Console 是一个中央位置，用于管理整个组织内的 Adobe 授�
    * **显示名称** - **显示名称**&#x200B;必须为 [!UICONTROL Cloud Manager] 定义的技术值（见下表）。
    * **权限组** - 可为该轮廓选择一个权限组（并非总是可用）。
 
-     >[!IMPORTANT]
-     >
-     >由于Admin Console和Cloud Manager中的当前限制，在选择&#x200B;**无权限**&#x200B;的情况下无法保存配置文件。 尝试这样做会导致后端错误。 此行为会影响部署管理器配置文件的创建。 作为解决方法，在创建新配置文件时至少选择一个权限。
+<!-- CQDOC-22790
+      >[!IMPORTANT]
+      >
+      >Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile. -->
 
-   ![创建新轮廓](/help/assets/screen_shot_2018-05-04at171819.png)
+![创建新轮廓](/help/assets/screen_shot_2018-05-04at171819.png)
 
-   | 角色 | 显示名称（必需） | 建议的轮廓名称 |
-   |---|---|---|
-   | 业务负责人 | `CM_BUSINESS_OWNER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - 业务负责人角色 |
-   | 部署管理员 | `CM_DEPLOYMENT_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - 部署管理员角色 |
-   | 开发人员 | `CM_DEVELOPER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - 开发人员角色 |
-   | 项目管理员 | `CM_PROGRAM_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - 项目管理员角色 |
+| 角色 | 显示名称（必需） | 建议的轮廓名称 |
+|---|---|---|
+| 业务负责人 | `CM_BUSINESS_OWNER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - 业务负责人角色 |
+| 部署管理员 | `CM_DEPLOYMENT_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - 部署管理员角色 |
+| 开发人员 | `CM_DEVELOPER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - 开发人员角色 |
+| 项目管理员 | `CM_PROGRAM_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - 项目管理员角色 |
 
 
 1. 单击&#x200B;**完成**&#x200B;以保存新轮廓。
