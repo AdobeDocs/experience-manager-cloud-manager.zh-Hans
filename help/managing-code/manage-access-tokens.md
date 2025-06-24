@@ -3,9 +3,9 @@ title: 在Cloud Manager中管理访问令牌
 description: 了解如何在Adobe Managed Services上查看、编辑和删除用于在Cloud Manager中自带Git的访问令牌。
 badge: label="私人测试版" type="Positive" url="/help/release-notes/current.md网站#access-tokens"
 exl-id: 873aad0b-d7c6-4bc3-a70d-bbfdc1e02193
-source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
+source-git-commit: 254ad0ac77e793657292e34ae4a6bf3baecea8d5
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '398'
 ht-degree: 3%
 
 ---
@@ -43,11 +43,9 @@ Cloud Manager使用访问令牌管理在外部Git平台上托管的存储库。 
 1. 在&#x200B;**管理访问令牌**&#x200B;对话框中，单击令牌名称右侧的![编辑图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)。
 1. 在&#x200B;**编辑访问令牌**&#x200B;对话框中，更新&#x200B;**令牌名称**&#x200B;或&#x200B;**访问令牌**&#x200B;值，或同时更新两者。
 
-   如果&#x200B;**访问令牌**&#x200B;当前正在使用中，则会显示一条通知，警告您在更新后将自动重新验证所有关联的存储库。
-
    ![编辑访问令牌对话框](/help/managing-code/assets/access-tokens-edit.png)
 
-1. 如果令牌正在使用中，则会出现通知，警告您所有关联的存储库都会自动重新验证。
+1. 如果&#x200B;**访问令牌**&#x200B;当前正在使用中，则会显示一条通知，警告您在更新后将自动重新验证所有关联的存储库。
 
 1. 单击&#x200B;**更新**&#x200B;以保存更改。
 
