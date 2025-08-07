@@ -1,11 +1,10 @@
 ---
 title: 在Cloud Manager中管理访问令牌
 description: 了解如何在Adobe Managed Services上查看、编辑和删除用于在Cloud Manager中自带Git的访问令牌。
-badge: label="私人测试版" type="Positive" url="/help/release-notes/current.md网站#access-tokens"
 exl-id: 873aad0b-d7c6-4bc3-a70d-bbfdc1e02193
-source-git-commit: 254ad0ac77e793657292e34ae4a6bf3baecea8d5
+source-git-commit: d6f058c3f6dc010f08a5cb75a0fb152b56111e79
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '388'
 ht-degree: 3%
 
 ---
@@ -14,7 +13,7 @@ ht-degree: 3%
 
 Cloud Manager使用访问令牌管理在外部Git平台上托管的存储库。 以前，如果令牌过期，则必须重新载入关联的存储库才能保持可操作性。
 
-现在，通过&#x200B;**管理访问令牌**&#x200B;功能，您可以更高效地管理令牌。 您可以查看、重命名或删除连接到受支持的外部Git提供程序（包括GitHub Enterprise、GitLab、Bitbucket和Azure DevOps）的令牌。
+现在，**管理访问令牌**&#x200B;允许您更有效地管理令牌。 您可以查看、重命名或删除连接到受支持的外部Git提供程序（包括GitHub Enterprise、GitLab、Bitbucket和Azure DevOps）的令牌。
 
 另请参阅[在Cloud Manager中添加外部存储库](/help/managing-code/external-repositories.md)。
 
@@ -55,4 +54,4 @@ Cloud Manager使用访问令牌管理在外部Git平台上托管的存储库。 
 
    对于当前正在使用的令牌，该图标被禁用（![删除大纲图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg)）。
 
-1. 在&#x200B;**删除访问令牌**&#x200B;对话框中，单击&#x200B;**删除**&#x200B;以永久删除该令牌。
+1. 在&#x200B;**删除访问令牌**&#x200B;中，单击&#x200B;**删除**&#x200B;以永久删除该令牌。
