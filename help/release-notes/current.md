@@ -3,10 +3,10 @@ title: Cloud Manager 2025.8.0 版的发行说明
 description: 了解 Adobe Managed Services 上有关 Cloud Manager 2025.8.0 版本的信息。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: d6f058c3f6dc010f08a5cb75a0fb152b56111e79
+source-git-commit: 73a094f47f518e2782ac96357e1adc4e923a0b63
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 58%
+source-wordcount: '625'
+ht-degree: 71%
 
 ---
 
@@ -57,7 +57,37 @@ ht-degree: 58%
 目前提供以下机会：
 
 
-### 自带 Git：现支持 GitLab 和 Bitbucket {#gitlab-bitbucket}
+### 自带Git (BYOG) {#gitlab-bitbucket-azure-vsts}
+
+<!-- BOTH CS & AMS -->
+
+客户现在可以将他们的 Azure DevOps Git 存储库加入到 Cloud Manager 中，同时支持现代 Azure DevOps 和旧版 VSTS（Visual Studio Team Services）两种存储库。
+
+* Edge Delivery Services 用户可以使用已加入的存储库来同步和部署网站代码。
+* 对于 AEM as a Cloud Service 和 Adobe Managed Services (AMS) 用户，该存储库可以链接到全栈和前端两种管道。
+
+对其他管道类型以及通过代码质量管道进行提取请求验证的支持即将推出。
+
+请参阅[在 Cloud Manager 中添加外部存储库](/help/managing-code/external-repositories.md)。
+
+![添加“存储库”对话框](/help/release-notes/assets/azure-repo.png)
+
+如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)。请务必注明您想要使用的 Git 平台以及您是处于专用/公共还是企业存储库结构中。
+
+#### 管理访问令牌{#manage-access-tokens}
+
+在 Cloud Manager 中使用&#x200B;**管理访问令牌**&#x200B;功能，可查看、重命名并删除与外部自带 Git 存储库（如 GitHub Enterprise、GitLab、Bitbucket 和 Azure DevOps）关联的访问令牌。
+
+请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
+
+如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)。
+
+
+
+
+
+
+
 
 **自带Git** (BYOG)功能已扩展到包括对外部存储库（如GitLab和Bitbucket）的支持。 这项新的支持是对专用和企业 GitHub 存储库现有支持的补充。添加这些新的存储库时，您还可以将它们直接链接到管道。您可以在公共云平台、专用云平台或基础架构中托管这些存储库。这种集成还消除了与 Adobe 存储库持续同步代码的需要，并提供了在提取请求合并到主分支之前对其进行验证的功能。
 

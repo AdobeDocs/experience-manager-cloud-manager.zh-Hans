@@ -1,17 +1,28 @@
 ---
 title: 在Cloud Manager中添加外部存储库
-description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab和Bitbucket存储库集成。
+description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab、Bitbucket和Azure DevOps存储库集成。
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: d6f058c3f6dc010f08a5cb75a0fb152b56111e79
+source-git-commit: 73a094f47f518e2782ac96357e1adc4e923a0b63
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '2322'
 ht-degree: 28%
 
 ---
 
 # 在 Cloud Manager 中添加外部存储库 {#external-repositories}
 
+<!-- badge: label="Beta - Azure DevOps only" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" -->
+
 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab和Bitbucket存储库集成。
+
+客户现在还可以将其Azure DevOps (Beta) Git存储库载入到Cloud Manager中，并支持现代Azure DevOps和旧版VSTS (Visual Studio Team Services)存储库。
+
+* Edge Delivery Services 用户可以使用已加入的存储库来同步和部署网站代码。
+* 对于 AEM as a Cloud Service 和 Adobe Managed Services (AMS) 用户，该存储库可以链接到全栈和前端两种管道。
+
+>[!NOTE]
+>
+>本文中介绍的为Azure DevOps添加的支持仅通过私人测试版计划提供。 有关更多详细信息以及注册测试版，请参阅[自带Git](/help/release-notes/current.md)。
 
 ## 配置外部存储库
 
@@ -54,7 +65,7 @@ ht-degree: 28%
    | --- | --- |
    | **存储库名称** | 必需。为您的新存储库取一个富有表现力的名称。 |
    | **存储库 URL** | 必需。存储库的 URL。<br><br>如果您使用的是GitHub托管的存储库，则路径必须以`.git`结尾。<br>例如，*`https://github.com/org-name/repo-name.git`* （URL路径仅用于图示）。<br><br>如果您使用外部存储库，则必须使用以下 URL 路径格式：<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> 或 <br>`https://self-hosted-domain/org-name/repo-name.git`<br>，并与您的 Git 供应商匹配。 |
-   | **选择存储库类型** | 必需。选择正在使用的存储库类型：<ul><li>**GitHub**（GitHub Enterprise和GitHub的自托管版本）</li><li>**GitLab**（`gitlab.com`和GitLab的自托管版本） </li><li>**Bitbucket**(仅支持`bitbucket.org` （云版本）)。 Bitbucket的自托管版本从2024年2月15日开始被弃用。)</li></ul>如果上面的存储库 URL 路径包含 Git 供应商名称，例如 GitLab 或 Bitbucket，则存储库类型已为您预先选择。 |
+   | **选择存储库类型** | 必需。选择正在使用的存储库类型：<ul><li>**GitHub**（GitHub Enterprise和GitHub的自托管版本）</li><li>**GitLab**（`gitlab.com`和GitLab的自托管版本） </li><li>**Bitbucket**(仅支持`bitbucket.org` （云版本）)。 Bitbucket的自托管版本从2024年2月15日开始被弃用。)</li></ul>如果上面的存储库 URL 路径包含 Git 供应商名称，例如 GitLab 或 Bitbucket，则存储库类型已为您预先选择。</li><li>**Azure DevOps** (`dev.azure.com`) </ul> |
    | **描述** | 可选。存储库的详细描述。 |
 
 1. 选择&#x200B;**保存**&#x200B;以添加存储库。
@@ -108,6 +119,19 @@ ht-degree: 28%
 
 另请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
 
+>[!TAB Azure DevOps (Beta)]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
+
+| 访问令牌选项 | 描述 |
+| --- | --- |
+| **使用现有的访问令牌** | 如果您已经为贵组织提供了存储库访问令牌，并且有权访问多个存储库，则可以选择一个现有令牌。使用&#x200B;**令牌名称**&#x200B;下拉列表，选择要应用到存储库的令牌。否则，添加一个新的访问令牌。 |
+| **添加新的访问令牌** | <ul><li>在&#x200B;**令牌名称**&#x200B;文本字段中，键入要创建的访问令牌的名称。<li>使用[Azure DevOps文档](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)创建存储库访问令牌。<li>Azure DevOps个人访问令牌(PAT)所需的权限。<br>这些权限允许Cloud Manager访问存储库内容、管理拉取请求以及配置或响应webhook事件。<br>当您在Azure DevOps中创建应用程序密码时，请确保它包含以下必需的应用密码权限：<ul><li>存储库（只读）</li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**访问令牌**&#x200B;字段中，粘贴刚刚创建的令牌。 |
+
+验证后，外部存储库即可使用并链接到管道。
+
+另请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
+
 >[!ENDTABS]
 
 
@@ -145,7 +169,7 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 
 在`GitHub.com`上托管的存储库不需要Webhook配置，因为Cloud Manager直接通过GitHub应用程序集成。
 
-对于已载入访问令牌的所有其他外部存储库（例如GitHub Enterprise、GitLab和Bitbucket），webhook配置可用，必须手动设置。
+对于已载入访问令牌的所有其他外部存储库 — 例如GitHub Enterprise、GitLab、Bitbucket和Azure DevOps - webhook配置可用，必须手动设置。
 
 **要为外部存储库配置webhook：**
 
@@ -172,7 +196,7 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
    1. 在&#x200B;**Webhook密码**&#x200B;令牌/密钥字段旁边，单击&#x200B;**生成**，然后单击![复制图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)。
 将密码粘贴为纯文本文件。 您的Git供应商的Webhook设置需要复制的密钥。
 1. 单击&#x200B;**关闭**。
-1. 导航到您的Git供应商解决方案（GitHub Enterprise、GitLab或Bitbucket）。
+1. 导航到您的Git供应商解决方案（GitHub Enterprise、GitLab、Bitbucket或Azure DevOps）。
 
    有关webhook配置的所有详细信息以及每个供应商所需的事件均可在[添加外部存储库](#add-ext-repo)中获取。 在步骤8下，请参见选项卡表。
 
@@ -210,6 +234,14 @@ Cloud Manager允许您为已添加的外部Git存储库配置webhook。 请参�
 | 必需的webhook事件 |
 | --- |
 | 这些事件可确保Cloud Manager能够验证拉取请求、响应代码推送并与注释交互以协调管道。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>拉取请求：已创建<li>拉取请求：已更新<li>拉取请求：已合并<li>拉取请求：评论<li>存储库：推送</li></li></li></ul></ul></ul> |
+
+>[!TAB Azure DevOps (Beta)]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
+
+| 所需的webhook事件和身份验证 |
+| --- |
+| 这些事件可确保Cloud Manager能够验证拉取请求、响应代码推送并与注释交互以协调管道。<br>确保将webhook设置为在下列必需的webhook事件上触发<ul><li>存储库：推送</li></ul>设置身份验证： <br>1。 在&#x200B;**基本身份验证用户名**&#x200B;字段中，键入`cloudmanager`。<br>2。在&#x200B;**基本身份验证密码**&#x200B;字段中，键入从Cloud Manager用户界面生成的Webhook密码。 |
 
 >[!ENDTABS]
 
