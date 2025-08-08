@@ -3,10 +3,10 @@ title: Cloud Manager 2025.8.0 版的发行说明
 description: 了解 Adobe Managed Services 上有关 Cloud Manager 2025.8.0 版本的信息。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 73a094f47f518e2782ac96357e1adc4e923a0b63
+source-git-commit: cba5f331d2b4093822dce4470147966e2cac15b7
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 71%
+source-wordcount: '469'
+ht-degree: 66%
 
 ---
 
@@ -81,27 +81,6 @@ ht-degree: 71%
 请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
 
 如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)。
-
-
-
-
-
-
-
-
-**自带Git** (BYOG)功能已扩展到包括对外部存储库（如GitLab和Bitbucket）的支持。 这项新的支持是对专用和企业 GitHub 存储库现有支持的补充。添加这些新的存储库时，您还可以将它们直接链接到管道。您可以在公共云平台、专用云平台或基础架构中托管这些存储库。这种集成还消除了与 Adobe 存储库持续同步代码的需要，并提供了在提取请求合并到主分支之前对其进行验证的功能。
-
-使用外部存储库（不包括 GitHub 托管的存储库）和&#x200B;**部署触发器**&#x200B;设置为&#x200B;**在 Git 发生更改时**&#x200B;的管道现在会自动启动。
-
-请参阅[在 Cloud Manager 中添加外部存储库](/help/managing-code/external-repositories.md)。
-
-![添加“存储库”对话框](/help/release-notes/assets/repositories-add-release-notes.png)
-
->[!NOTE]
->
->目前，开箱即用的提取请求代码质量检查仅限于 GitHub 托管的存储库，但正在计划将此功能扩展到其他 Git 供应商的更新。
-
-<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
 
 #### 管理访问令牌{#access-tokens}
 
