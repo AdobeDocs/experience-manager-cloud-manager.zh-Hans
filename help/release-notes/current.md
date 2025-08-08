@@ -3,10 +3,10 @@ title: Cloud Manager 2025.8.0 版的发行说明
 description: 了解 Adobe Managed Services 上有关 Cloud Manager 2025.8.0 版本的信息。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: cba5f331d2b4093822dce4470147966e2cac15b7
+source-git-commit: a96bc45242ee6c6b06b4354756a67562150f385c
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 66%
+source-wordcount: '432'
+ht-degree: 70%
 
 ---
 
@@ -81,12 +81,6 @@ ht-degree: 66%
 请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
 
 如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)。
-
-#### 管理访问令牌{#access-tokens}
-
-使用BYOG的&#x200B;**管理访问令牌**&#x200B;查看、重命名和删除与外部自带Git存储库关联的访问令牌，例如GitHub Enterprise、GitLab、Bitbucket和Azure DevOps。
-
-请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
 
 <!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
 
