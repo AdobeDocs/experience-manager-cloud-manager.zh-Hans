@@ -3,10 +3,10 @@ title: Cloud Manager 2025.8.0 版的发行说明
 description: 了解 Adobe Managed Services 上有关 Cloud Manager 2025.8.0 版本的信息。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: b64b8529e4c6072c9bcb7438dc2d89098d29115d
+source-git-commit: b34fe26f8c9a2d59a7df3d03717f302fe4456352
 workflow-type: tm+mt
 source-wordcount: '474'
-ht-degree: 58%
+ht-degree: 75%
 
 ---
 
@@ -24,18 +24,18 @@ ht-degree: 58%
 
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-下一个计划发布于2025年9月4日星期四。
+下一个版本计划于 2025 年 9 月 4 日星期四发布。
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
 
 ## 新增功能 {#what-is-new}
 
-* **Adobe Experience Hub即将推出**
+* **Adobe Experience Hub 即将推出**
 
-  从2025年8月19日开始，Adobe将分阶段向所有Adobe Experience Manager用户推出新的Experience Hub。
+  从 2025 年 8 月 19 日开始，Adobe 开始分阶段向所有 Adobe Experience Manager 用户推出新的 Experience Hub。
 
-  Experience Hub是一个统一的起点，可提供个性化的情境式体验，帮助用户更快地实现目标。 该推出将于2025年8月26日结束，可供所有用户使用。 新的Experience Hub可直接在[experience.adobe.com](https://experience.adobe.com/)中访问。 若要了解更多信息，请参阅[Adobe Experience Hub](/help/experience-hub.md)。
+  Experience Hub 是一个统一的起点，提供个性化的上下文体验，帮助用户更快地实现目标。推出过程于 2025 年 8 月 26 日结束，届时所有用户均可使用。新的 Experience Hub 可直接在 [experience.adobe.com](https://experience.adobe.com/) 上访问。更多信息请参阅 [Adobe Experience Hub](/help/experience-hub.md)。
 
 * **仅暂存管道和仅生产管道**
 
@@ -54,14 +54,14 @@ ht-degree: 58%
   请参阅[将管道标记为收藏](/help/using/managing-pipelines.md#pipeline-favorites)。
 
 
-## Beta项目 {#beta-program}
+## Beta 计划 {#beta-program}
 
 参与Cloud Manager的Beta计划，在即将发布的功能正式发布之前以独占方式访问这些功能。
 
 目前提供以下机会：
 
 
-### 自带Git (BYOG) {#gitlab-bitbucket-azure-vsts}
+### 使用您自己的 Git (BYOG) {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -88,7 +88,7 @@ ht-degree: 58%
 
 ## 错误修复 {#bug-fixes}
 
-7月的Cloud Manager版本中没有重大的错误修复。
+8月份的Cloud Manager版本中没有重大的错误修复。
 
 <!--
 Known Issues {#known-issues}
