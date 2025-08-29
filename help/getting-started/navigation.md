@@ -52,7 +52,7 @@ Cloud Manager UI 主要由两个图形界面组成：
 | 2 | Adobe Cloud Manager | 单击以打开Cloud Manager的&#x200B;**我的程序**&#x200B;控制台，无论您在Cloud Manager中的哪个位置。 |
 | 3 | 选定的组织 | 组织选择器会显示您当前登录的组织（在此示例中为 Foundation Internal）。 如果您的Adobe ID与多个组织相关联，请单击以切换到另一个组织。 |
 | 4 | 反馈图标 | 单击以向Adobe提供有关Cloud Manager的反馈。 |
-| 5 | AI助手图标 | 提供旨在简化查找与AEM相关查询的答案的对话界面。 查看[AI助手](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) |
+| 5 | AI助手图标 | 提供旨在简化查找与AEM相关查询的答案的对话界面。 查看[AI助手](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) |
 | 6 | ![“帮助”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | 单击以提供对学习和支持资源的快速访问。 |
 | 7 | ![铃铛图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) | 单击以查看当前分配的未完成[通知的数量](/help/using/notifications.md) |
 | 8 | ![应用图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | 单击以在AEM主页和AEM解决方案之间快速移动 |
