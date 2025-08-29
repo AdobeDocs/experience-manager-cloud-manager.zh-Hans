@@ -155,7 +155,7 @@ Cloud Manager UI 主要由两个图形界面组成：
 1. 根据对程序的最后操作制定的[行动号召](#cta)。
 1. 对程序[环境的概述](#environments)。
 1. 对程序[管道的概述](#pipelines)。
-1.  [有用资源](#useful-resources)的链接。
+1. [有用资源](#useful-resources)的链接。
 
 ### 工具栏 {#program-overview-toolbar}
 
