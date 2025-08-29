@@ -2,15 +2,15 @@
 title: 浏览 Cloud Manager UI
 description: 了解 Cloud Manager UI 的组织方式，以及如何管理您的程序和环境。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+source-git-commit: 5cde30f97eb4fb9e784179cb85fba36eccca9dbc
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 96%
+source-wordcount: '1501'
+ht-degree: 61%
 
 ---
 
 
-# 导航 Cloud Manger UI {#navigation}
+# 导航Cloud Manager UI {#navigation}
 
 了解 Cloud Manager UI 的组织方式，以及如何管理您的程序和环境。
 
@@ -21,26 +21,20 @@ Cloud Manager UI 主要由两个图形界面组成：
 
 ## 我的程序控制台 {#my-programs-console}
 
-当您登录 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上的 Cloud Manager 并选择适当的组织时，您将会进入&#x200B;**我的程序**&#x200B;控制台。
+当您在[experience.adobe.com](https://experience.adobe.com/experiencemanager)登录Cloud Manager并选择适当的组织时，即进入&#x200B;**我的程序**&#x200B;控制台。
 
-![我的程序控制台](assets/my-programs-console.png)
+![我的程序控制台](/help/getting-started/assets/cloud-manager-my-programs-console.png)
 
-“我的程序”控制台提供了对您在所选组织中有权访问的所有程序的概述。它由几个部分组成。
+**我的程序**&#x200B;控制台提供了在选定组织中您有权访问的所有程序的概述。 它由几个部分组成。
 
-1. 用于组织选择、警报和帐户设置的[工具栏](#toolbars-my-programs-toolbars)。
-1. 使用选项卡可以切换程序的当前视图。
+|   | 区域 | 描述 |
+| --- | --- | --- |
+| 1 | [工具栏](#toolbars-my-programs-toolbars) | 用于组织选择、警报和帐户设置。 |
+| 2 | 左侧面板选项卡 | 允许您切换程序当前视图的各种选项卡，包括：<br><ul><li>**Experience Manager**&#x200B;打开各种AEM解决方案的主页</li><li>显示所有可用程序的&#x200B;**所有程序**。</li><li>**许可证**&#x200B;打开许可证仪表板。 许可证仪表板仅适用于&#x200B;*AEM as a Cloud Service程序* (AEMaaCS)，而不适用于Adobe Managed Services程序，如AEM 6.5和AEM 6.5 LTS。 要确定您的程序具有的服务类型（AEMaaCS或AMS），请参阅本文的[程序卡部分](#program-cards)。 这些选项卡默认为已关闭，可以使用位于![Cloud Manager标题](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)左侧的[显示菜单图标](#cloud-manager-header)下拉菜单显示。</li></ol> |
+| 3 | [我的程序](#my-programs-section) | 列出可以选择的所有可用程序。<br>有关程序的详细信息，请参阅[程序和程序类型](/help/getting-started/program-setup.md)。 |
+| 4 | [行动号召和统计数据](#cta-statistics) | 提供近期活动的概览。 |
+| 5 | [快速链接](#quick-links) | 快速访问相关资源。 |
 
-   * **主页**&#x200B;视图（默认），选择 **我的程序** 视图，其中显示所有项目的概览。
-   * 访问许可证仪表板的&#x200B;**许可证**。 许可证仪表板仅适用于 *AEM as a Cloud Service 项目* (AEMaaCS)，而不适用于 AMS 项目。 要确定您的程序所具有的服务类型（AEMaaCS 或 AMS），请参阅本文章中的[程序信息卡部分](#program-cards)。
-   * 选项卡默认为关闭，并且可以使用位于 [Cloud Manager 标题](#cloud-manager-header)左侧的汉堡图标下拉菜单显示。
-
-1. [操作号召和统计数据](#cta-statistics)，用于概述您最近的活动
-1. [**我的程序** 部分](#my-programs-section) ，其中概述了您的所有计划
-1. [快速链接](#quick-links)可用于轻松访问相关资源
-
->[!TIP]
->
->有关程序的详细信息，请参阅[了解程序和程序类型](/help/getting-started/program-setup.md)。
 
 ### 工具栏 {#my-programs-toolbars}
 
@@ -50,29 +44,44 @@ Cloud Manager UI 主要由两个图形界面组成：
 
 第一个是 Cloud Manager 标头。 当您浏览 Cloud Manager 时，该标头会持久显示。作为一个锚点，它有助于您访问适用于各个 Cloud Manager 程序的设置和信息。
 
-![Experience Cloud 标头](assets/experience-cloud-header.png)
+![Experience Cloud 标头](/help/getting-started/assets/cloud-manager-header.png)
 
-1. 标题左侧的![显示菜单图标，汉堡包](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)图标是一个下拉菜单，可访问各个程序特定部分的选项卡。 根据上下文，它还允许您在许可证仪表板和&#x200B;**[我的程序](#my-programs-console)** 控制台之间切换。
-   * 许可证仪表板仅适用于 AEM as a Cloud Service 计划，而不适用于 AMS 计划。
-   * 要确定您的程序所具有的服务类型（AMS 或 AEMaaCS），请参阅本文档的 [程序信息卡部分](#program-cards)。
-1. 无论您在浏览 Cloud Manager 的哪个部分，Cloud Manager 按钮都会带您返回到 Cloud Manager 中的“我的程序”控制台。
-1. 单击&#x200B;**反馈**&#x200B;向Adobe提供有关Cloud Manager的反馈。
-1. 组织选择器会显示您当前登录的组织（在此示例中为 Foundation Internal）。 如果您的 Adobe ID 与多个组织关联，请单击以切换到另一个组织。
-1. 单击解决方案切换器可快速跳转到其他 Experience Cloud 解决方案。
-1. 可使用帮助图标快速访问学习和支持资源。
-1. 通知图标上标有当前分配的未完成[通知](/help/using/notifications.md)的数量。
-1. 选择代表用户的图标来访问用户设置。 如果不选择用户图片，则会随机分配一个图标。
+|   | 区域 | 描述 |
+| --- | --- | --- |
+| 1 | ![显示菜单图标，汉堡](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) | 一个下拉菜单，提供对各个项目特定部分的选项卡的访问。<br>要确定您的程序具有的服务类型（AMS或AEMaaCS），请参阅本文档的[程序卡部分](#program-cards)。 |
+| 2 | Adobe Cloud Manager | 单击以打开Cloud Manager的&#x200B;**我的程序**&#x200B;控制台，无论您在Cloud Manager中的哪个位置。 |
+| 3 | 选定的组织 | 组织选择器会显示您当前登录的组织（在此示例中为 Foundation Internal）。 如果您的Adobe ID与多个组织相关联，请单击以切换到另一个组织。 |
+| 4 | 反馈图标 | 单击以向Adobe提供有关Cloud Manager的反馈。 |
+| 5 | AI助手图标 | 提供旨在简化查找与AEM相关查询的答案的对话界面。 查看[AI助手](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) |
+| 6 | ![“帮助”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | 单击以提供对学习和支持资源的快速访问。 |
+| 7 | ![铃铛图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) | 单击以查看当前分配的未完成[通知的数量](/help/using/notifications.md) |
+| 8 | ![应用图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | 单击以在AEM主页和AEM解决方案之间快速移动 |
+| 9 | 应用程序图标 | 单击以访问您的&#x200B;**帐户设置**&#x200B;和&#x200B;**程序设置**，或者单击以注销。 |
+
+
+<!--
+1. The ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) icon on the left side of the header is  
+   * The License Dashboard only applies to AEM as a Cloud Service programs, not AMS programs.
+   * To determine the type of service your program has (AMS or AEMaaCS), see the [Program Cards section](#program-cards) of this document.
+1. The **Adobe Cloud Manager** button takes you back to the **My Programs** console of Cloud Manager no matter where you are in Cloud Manager.
+1. Click **Feedback** to provide feedback to Adobe about Cloud Manager.
+1. The organization selector displays the organization that you are currently signed into (in this example, Foundation Internal). Click to switch to another organization if your Adobe ID is associated with multiple.
+1. Clicking the solutions switcher lets you quickly jump to other Experience Cloud solutions.
+1. The Help icon provides quick access to learning and support resources.
+1. The notifications icon is badged with the number of currently assigned incomplete [notifications](/help/using/notifications.md)
+1. Select the icon representing your user to access your user settings. If you do not select a user picture, an icon is randomly assigned. -->
 
 #### 程序工具栏 {#program-toolbar}
 
 程序工具栏可以提供在 Cloud Manager 程序和适合上下文的操作之间切换的链接。
 
-![程序工具栏](assets/program-toolbar.png)
+![Cloud Manager程序工具栏](/help/getting-started/assets/cloud-manager-programs-toolbar.png)
 
-1. 程序选择器会打开一个下拉菜单，您可以在其中快速选择其他程序或采取适合上下文的操作，例如创建一个新程序
-1. 通过“快速入门”链接，您可以访问[入门文档历程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/overview)，以便快速开始使用 Cloud Manager。
-加入历程是为 Adobe Experience Manager as a Cloud Service (AEMaaCS) 上的 Cloud Manager 而设计的，而不是为 Adobe Managed Services (AMS) 上的 Cloud Manager 设计的。 但很多概念是相同的。
-1. 操作按钮可以提供适合上下文的操作，例如创建新程序。
+|   | 区域 | 描述 |
+| --- | --- | --- |
+| 1 | 我的程序 | 单击以打开一个下拉列表，您可以从中选择添加程序、选择其他现有程序或返回到Experience Manager主页。 |
+| 2 | 快速入门 | 单击以访问[入门文档历程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/overview)，让您启动并运行Cloud Manager。<br>入门培训历程是为Adobe Experience Manager as a Cloud Service (AEMaaCS)上的Cloud Manager设计的，而不是Adobe Managed Services (AMS)上的Cloud Manager设计的。 但很多概念是相同的。 |
+| 3 | “动态操作”按钮 | 操作按钮提供了与上下文相关的操作，例如添加项目、添加域或添加SSL证书。 |
 
 ### 操作号召和统计数据 {#cta-statistics}
 
@@ -88,21 +97,18 @@ Cloud Manager UI 主要由两个图形界面组成：
 
 “我的程序”控制台的主要内容是&#x200B;**我的程序**&#x200B;部分，其中会将您的程序列为单独的信息卡。 单击一张信息卡即可访问该程序的&#x200B;**程序概述**&#x200B;页面，了解有关该程序的详细信息。
 
->[!NOTE]
->
->根据您的权限，您可能无法选择某些程序。
+根据您的权限，您可能无法选择某些程序。
 
-使用以下排序选项，以便更好地找到所需的程序：
+您可以使用以下排序选项快速查找所需的程序：
 
 ![排序选项](assets/my-programs-sorting.png)
 
-* 排序依据
-   * 创建日期（默认）
+* 排序方式：
+   * 创建日期
    * 项目名称
    * 状态
-* 升序（默认）/降序
-* 网格视图（默认）
-* 列表视图
+* ![按顺序排列图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) / ![按顺序排列图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderUp_18_N.svg)按顺序排列程序或按顺序排列。
+* ![经典网格视图图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ClassicGridView_18_N.svg) / ![文本项目符号图标或列表](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TextBulleted_18_N.svg)分别以网格表单或列表表单查看程序。
 
 #### 程序信息卡 {#program-cards}
 
@@ -123,7 +129,7 @@ Cloud Manager UI 主要由两个图形界面组成：
 
 ![信息](assets/information-view.png)
 
-![更多图标，省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)允许您对程序执行其他操作。
+通过![“更多”图标（省略号）](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)可以访问可在该程序上执行的其他操作。
 
 ![程序的省略号按钮](assets/program-ellipsis.png)
 
@@ -149,7 +155,7 @@ Cloud Manager UI 主要由两个图形界面组成：
 1. 根据对程序的最后操作制定的[行动号召](#cta)。
 1. 对程序[环境的概述](#environments)。
 1. 对程序[管道的概述](#pipelines)。
-1. [有用资源](#useful-resources)的链接。
+1.  [有用资源](#useful-resources)的链接。
 
 ### 工具栏 {#program-overview-toolbar}
 
@@ -157,11 +163,9 @@ Cloud Manager UI 主要由两个图形界面组成：
 
 #### Cloud Manager 标头 {#cloud-manager-header-2}
 
-Cloud Manager 标头有一个汉堡图标下拉菜单，该菜单可自动打开以显示“程序概述”中的可导航选项卡。
+Cloud Manager标题有一个![显示菜单图标，一个汉堡包](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)下拉菜单，该菜单会自动打开以显示程序概述的可导航选项卡。
 
-![Cloud Manager 汉堡图标下拉菜单](assets/cloud-manager-hamburger.png)
-
-单击汉堡图标即可隐藏选项卡。
+单击![显示菜单图标，汉堡](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以隐藏选项卡。
 
 #### 程序工具栏 {#program-toolbar-2}
 
@@ -169,7 +173,7 @@ Cloud Manager 标头有一个汉堡图标下拉菜单，该菜单可自动打开
 
 ![程序工具栏](assets/cloud-manager-program-toolbar.png)
 
-此外，如果您使用汉堡图标隐藏选项卡，则工具栏仍然可以显示您当前所在的选项卡。
+此外，如果您使用![显示菜单图标（汉堡](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)）隐藏选项卡，则工具栏仍会显示您当前所在的选项卡。
 
 ### 程序选项卡 {#program-tabs}
 
@@ -187,7 +191,7 @@ Cloud Manager 标头有一个汉堡图标下拉菜单，该菜单可自动打开
 
 默认情况下，当您打开一个程序时，您会进入&#x200B;**概述**&#x200B;选项卡。当前选项卡会突出显示。选择另一个选项卡来显示其详细信息。
 
-使用 [Cloud Manager 标头](#cloud-manager-header-2)中的汉堡图标来隐藏选项卡。
+在![Cloud Manager标题](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)中使用[显示菜单图标](#cloud-manager-header-2)汉堡来隐藏选项卡。
 
 ### 行动号召 {#cta}
 
