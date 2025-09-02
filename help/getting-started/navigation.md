@@ -2,10 +2,10 @@
 title: 浏览 Cloud Manager UI
 description: 了解 Cloud Manager UI 的组织方式，以及如何管理您的程序和环境。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 5cde30f97eb4fb9e784179cb85fba36eccca9dbc
+source-git-commit: cc41d4716aa3c3683010b6dd392b5355b129d1ef
 workflow-type: tm+mt
-source-wordcount: '1501'
-ht-degree: 61%
+source-wordcount: '1530'
+ht-degree: 52%
 
 ---
 
@@ -44,20 +44,19 @@ Cloud Manager UI 主要由两个图形界面组成：
 
 第一个是 Cloud Manager 标头。 当您浏览 Cloud Manager 时，该标头会持久显示。作为一个锚点，它有助于您访问适用于各个 Cloud Manager 程序的设置和信息。
 
-![Experience Cloud 标头](/help/getting-started/assets/cloud-manager-header.png)
+![Experience Cloud 标头](/help/getting-started/assets/cloud-manager-header-toolbar.png)
 
-|   | 区域 | 描述 |
-| --- | --- | --- |
-| 1 | ![显示菜单图标，汉堡](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) | 一个下拉菜单，提供对各个项目特定部分的选项卡的访问。<br>要确定您的程序具有的服务类型（AMS或AEMaaCS），请参阅本文档的[程序卡部分](#program-cards)。 |
-| 2 | Adobe Cloud Manager | 单击以打开Cloud Manager的&#x200B;**我的程序**&#x200B;控制台，无论您在Cloud Manager中的哪个位置。 |
-| 3 | 选定的组织 | 组织选择器会显示您当前登录的组织（在此示例中为 Foundation Internal）。 如果您的Adobe ID与多个组织相关联，请单击以切换到另一个组织。 |
-| 4 | 反馈图标 | 单击以向Adobe提供有关Cloud Manager的反馈。 |
-| 5 | AI助手图标 | 提供旨在简化查找与AEM相关查询的答案的对话界面。 查看[AI助手](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) |
-| 6 | ![“帮助”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | 单击以提供对学习和支持资源的快速访问。 |
-| 7 | ![铃铛图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) | 单击以查看当前分配的未完成[通知的数量](/help/using/notifications.md) |
-| 8 | ![应用图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | 单击以在AEM主页和AEM解决方案之间快速移动 |
-| 9 | 应用程序图标 | 单击以访问您的&#x200B;**帐户设置**&#x200B;和&#x200B;**程序设置**，或者单击以注销。 |
-
+| 区域 | 描述 |
+| --- | --- |
+| ![显示菜单图标，汉堡](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) | 一个下拉菜单，提供对各个项目特定部分的选项卡的访问。<br>要确定您的程序具有的服务类型（AMS或AEMaaCS），请参阅本文档的[程序卡部分](#program-cards)。 |
+| ![Adobe红白图标](/help/getting-started/assets/AdobeLogoWhiteOnRed.svg) Cloud Manager | 单击以打开Cloud Manager的&#x200B;**我的程序**&#x200B;控制台，无论您在Cloud Manager中的哪个位置。 |
+| *`Name of selected organization`* | 组织选择器显示您当前登录的组织（在此示例中为&#x200B;*Foundation Internal*）。 如果您的Adobe ID与多个组织相关联，请单击以切换到另一个组织。 |
+| ![反馈图标](/help/getting-started/assets/AppComment.svg)反馈 | 单击以向Adobe提供有关Cloud Manager的反馈。 |
+| ![AI助手图标](/help/getting-started/assets/AIChat.svg) | AI Assistant提供了一个对话界面，旨在简化对AEM相关查询的查找。 查看[AI助手](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) |
+| ![“帮助”图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | 单击以提供对学习和支持资源的快速访问。 |
+| ![白铃图标](/help/getting-started/assets/Bell.svg) | 单击以查看当前分配的未完成[通知的数量](/help/using/notifications.md) |
+| ![应用图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | 单击以在AEM主页和AEM解决方案之间快速移动 |
+| *`Dynamic Account icon`* | 单击您的用户图片以访问您的&#x200B;**帐户设置**&#x200B;和&#x200B;**程序设置**，或者注销。<br>如果您选择不添加用户图片，则会随机分配图标（如上面的工具栏图像所示）。 |
 
 <!--
 1. The ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) icon on the left side of the header is  
@@ -80,8 +79,8 @@ Cloud Manager UI 主要由两个图形界面组成：
 |   | 区域 | 描述 |
 | --- | --- | --- |
 | 1 | 我的程序 | 单击以打开一个下拉列表，您可以从中选择添加程序、选择其他现有程序或返回到Experience Manager主页。 |
-| 2 | 快速入门 | 单击以访问[入门文档历程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/overview)，让您启动并运行Cloud Manager。<br>入门培训历程是为Adobe Experience Manager as a Cloud Service (AEMaaCS)上的Cloud Manager设计的，而不是Adobe Managed Services (AMS)上的Cloud Manager设计的。 但很多概念是相同的。 |
-| 3 | “动态操作”按钮 | 操作按钮提供了与上下文相关的操作，例如添加项目、添加域或添加SSL证书。 |
+| 2 | ![信息图标](/help/getting-started/assets/Info.svg)快速入门 | 单击以访问[入门文档历程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/onboarding/journey/overview)，让您启动并运行Cloud Manager。<br>入门培训历程是为Adobe Experience Manager as a Cloud Service (AEMaaCS)上的Cloud Manager设计的，而不是Adobe Managed Services (AMS)上的Cloud Manager设计的。 但很多概念是相同的。 |
+| 3 | *`Dynamic action button`* | 操作按钮提供了与上下文相关的操作，您可以单击这些操作，例如&#x200B;**添加项目**（如上面的示例所示），或添加域。 |
 
 ### 操作号召和统计数据 {#cta-statistics}
 
@@ -101,7 +100,7 @@ Cloud Manager UI 主要由两个图形界面组成：
 
 您可以使用以下排序选项快速查找所需的程序：
 
-![排序选项](assets/my-programs-sorting.png)
+![排序选项](/help/getting-started/assets/cloud-manager-my-programs-sorting.png)
 
 * 排序方式：
    * 创建日期
@@ -114,25 +113,26 @@ Cloud Manager UI 主要由两个图形界面组成：
 
 每个程序都会由一张信息卡或表格中的一行来表示，其中提供有关该程序的概述以及采取操作的快速链接。
 
-![程序信息卡](assets/program-card.png)
+![程序信息卡](/help/getting-started/assets/cloud-manager-program-card.png)
 
 * 程序图像（如果进行了配置）
-* 项目名称
+* 项目名称（在上例中，*WKND Magazine*）
 * 服务类型：
    * **Experience Manager** 适用于 AMS 计划
    * **Experience Manager Cloud** 适用于 [AEM as a Cloud Service 计划](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/home)
-* 状态
+* 状态（在上例中，*就绪*）
 * 已配置的解决方案
 * 创建日期
 
-通过信息图标还可以快速访问有关该程序的附加信息（在列表视图中很有用）。
+单击![信息图标](/help/getting-started/assets/Info.svg)可快速访问有关程序的其他信息（在列表视图中很有用）。
 
-![信息](assets/information-view.png)
+Cloud Manager AMS中的![信息弹出窗口](/help/getting-started/assets/cloud-manager-information-view.png)
 
-通过![“更多”图标（省略号）](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)可以访问可在该程序上执行的其他操作。
+单击![更多图标，省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)可让您对程序执行其他操作。
 
-![程序的省略号按钮](assets/program-ellipsis.png)
+![程序的省略号按钮](/help/getting-started/assets/cloud-manager-program-ellipsis.png)
 
+* Experience Manager主页
 * 导航至程序的特定[环境](/help/using/managing-environments.md) 
 * 打开[程序概述](#program-overview)
 * [编辑程序](/help/getting-started/program-setup.md)
@@ -146,16 +146,15 @@ Cloud Manager UI 主要由两个图形界面组成：
 
 当您在&#x200B;[**我的程序**&#x200B;控制台](#my-programs-console)中选择一个程序后，您就会进入&#x200B;**程序概述**&#x200B;页面。
 
-![程序概述](assets/program-overview.png)
+![程序概述](/help/getting-started/assets/cloud-manager-program-overview.png)
 
-通过程序概述，您可以访问 Cloud Manager 程序的所有详细信息。 与“我的程序”控制台一样，它由几个部分组成。
+**计划概述**&#x200B;允许您访问Cloud Manager计划的所有详细信息。 与&#x200B;**我的项目群**&#x200B;一样，它由若干部分组成。
 
 1. 通过[工具栏](#program-overview-toolbar)可以快速跳转回&#x200B;**我的程序**&#x200B;控制台并导航该程序。
-1. [选项卡](#program-tabs)用于在程序的不同方面之间进行切换。
+1. [选项卡区域](#program-tabs)可在程序的不同方面之间切换。
 1. 根据对程序的最后操作制定的[行动号召](#cta)。
-1. 对程序[环境的概述](#environments)。
-1. 对程序[管道的概述](#pipelines)。
-1. [有用资源](#useful-resources)的链接。
+1. 已关联程序的[环境](#environments)。
+1. 已关联项目的[管道](#pipelines)。
 
 ### 工具栏 {#program-overview-toolbar}
 
