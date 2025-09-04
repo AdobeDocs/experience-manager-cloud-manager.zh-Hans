@@ -2,7 +2,7 @@
 title: 拆分仅阶段管道和仅生产管道
 description: 了解如何使用专用管道拆分暂存和生产部署。
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+source-git-commit: 34c0b39d50dd4998cb75cc032d71d24798dee729
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 96%

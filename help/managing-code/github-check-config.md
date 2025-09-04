@@ -1,33 +1,35 @@
 ---
-title: GitHub 检查专用存储库的配置
-description: 了解如何控制自动创建的管道以验证对专用存储库的每个拉取请求。
+title: 对专用存储库的拉取请求检查
+description: 了解如何控制自动创建的管道以验证对专用存储库的每个提取请求。
 exl-id: 29c9e487-e196-411a-8cda-6751b0a56066
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '236'
-ht-degree: 100%
+source-git-commit: 1ae6792f8bc628c3530a63004c3d38f215c72778
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 92%
 
 ---
 
-# GitHub 检查专用存储库的配置 {#github-check-config}
+# 对专用存储库的拉取请求检查 {#github-check-config}
+
+<!--OLD TITLE THAT I THOUGHT WAS BETTER Check configuration for private repositories -->
 
 了解如何控制自动创建的管道以验证对专用存储库的每个提取请求。
 
-## GitHub 检查的配置 {#configuration}
+## 专用存储库检查的配置 {#configuration}
 
 使用[专用存储库](private-repositories.md#using)时，系统会自动创建一个[全栈代码质量管道](/help/overview/ci-cd-pipelines.md)。每次更新提取请求时，此管道将启动。
 
 您可以通过在专用存储库的默认分支中创建一份 `.cloudmanager/pr_pipelines.yml` 文件来控制这些检查。
 
 ```yaml
-github:
+pullRequest:
   shouldDeletePreviousComment: false
 pipelines:
   - type: CI_CD
     template:
       programId: 1234
       pipelineId: 456
-    namePrefix: Full Stack Code Quality Pipeline for PR 
+    namePrefix: Full Stack Code Quality Pipeline for PR
     importantMetricsFailureBehavior: CONTINUE
 ```
 
