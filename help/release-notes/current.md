@@ -3,7 +3,7 @@ title: Cloud Manager 2025.9.0 版的发行说明
 description: 了解 Adobe Managed Services 上有关 Cloud Manager 2025.9.0 版本的信息。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 979430b92a03abbc8c600e4cc0e10cff5041f425
+source-git-commit: 68e546c1337122f823d63529ebd68d6966bb132a
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 70%
@@ -31,7 +31,7 @@ ht-degree: 70%
 
 ## 新增功能 {#what-is-new}
 
-* 现在为Azure DevOps专用存储库添加了&#x200B;**支持**
+* **现在已为Azure DevOps专用存储库添加支持**
 
   文档更新包括使用Azure DevOps自带Git和拉取请求验证的配置步骤。 请参阅[在Cloud Manager中添加外部存储库](/help/managing-code/external-repositories.md)。
 
