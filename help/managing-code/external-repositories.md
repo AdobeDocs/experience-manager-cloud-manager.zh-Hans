@@ -2,7 +2,7 @@
 title: 在Cloud Manager中添加外部存储库
 description: 了解如何将外部存储库添加到 Cloud Manager。Cloud Manager支持与GitHub Enterprise、GitLab、Bitbucket和Azure DevOps存储库集成。
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 1ae6792f8bc628c3530a63004c3d38f215c72778
+source-git-commit: 76a5cb04514bc1961c8f9008e9bea5d1d6fe1c19
 workflow-type: tm+mt
 source-wordcount: '2453'
 ht-degree: 27%
@@ -318,8 +318,6 @@ Azure DevOps通过状态检查跟踪拉取请求验证。 当Cloud Manager运行
 
 使用webhooks-4![对拉取请求进行](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)Azure DevOps验证
 
-
->[!ENDTABS]
 
 >[!ENDTABS]
 
