@@ -2,10 +2,10 @@
 title: Cloud Manager for AMS 简介
 description: 从此处开始了解 Cloud Manager for Adobe Managed Services (AMS) 以及它如何使组织能够在云中自行管理 Adobe Experience Manager。
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
-workflow-type: ht
-source-wordcount: '1256'
-ht-degree: 100%
+source-git-commit: 8f29a06f63b8dc10cb3d28e2f38da1ead84f32f5
+workflow-type: tm+mt
+source-wordcount: '1250'
+ht-degree: 95%
 
 ---
 
@@ -29,31 +29,28 @@ ht-degree: 100%
 >
 >本文档具体描述了 Cloud Manager for Adobe Managed Services (AMS) 的特性和功能。
 >
->可以在 [AEM as a Cloud Service 文档](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-cloud-service/content/implementing/home)中找到 AEM as a Cloud Service 的等效文档。
+>可以在 [AEM as a Cloud Service 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/home)中找到 AEM as a Cloud Service 的等效文档。
 
 使用 Cloud Manager 时，您的开发团队可从以下功能受益：
 
 * 持续集成/持续交付 (CI/CD) 代码，将上市时间从几个月/几周缩短到几天/几小时。
-
 * 在投入生产之前，根据最佳实践执行代码审查、性能测试和安全性验证以将生产中断降至最低。
-
 * API 连接，对现有 DevOps 过程进行补充。
-
 * 自动缩放功能可智能地检测增加的容量需求，并自动使更多的 Dispatcher/发布区段联机。
 
 ![CI/CD 流程](/help/assets/screen_shot_2018-05-12at73843pm.png) [!UICONTROL Cloud Manager] 中使用的 CI/CD 流程。
 
 ## [!UICONTROL Cloud Manager] 中的主要功能 {#key-features-in-cloud-manager}
 
-下面对精选的 Cloud Manager 主要功能进行了深入探讨。
+以下部分重点介绍了Cloud Manager的主要功能。
 
 ### 自助式界面 {#self-service-interface}
 
-利用 [!UICONTROL Cloud Manager] 的用户界面 (UI)，您可以轻松访问和管理 Adobe Experience Manager 应用程序的云环境和 CI/CD 管道。
+要探究并开始使用 [!UICONTROL Cloud Manager] 的 UI，请参阅[首次登录](/help/getting-started/first-time-login.md)。
+
+通过[!UICONTROL Cloud Manager]的用户界面(UI)，您可以轻松访问和管理云环境，并轻松地为Adobe Experience Manager应用程序访问CI/CD管道。
 
 您可以定义特定于应用程序的关键绩效指标 (KPI)，例如每分钟的峰值页面查看量或预期的页面加载响应时间。这些 KPI 是衡量部署成功的基础。 可以轻松定义不同团队成员的角色和权限。 自助服务界面有助于您掌控一切。它还提供了有关最佳实践资源的链接，并在需要时向 Adobe 专家寻求指导。
-
-要探究并开始使用 [!UICONTROL Cloud Manager] 的 UI，请参阅[首次登录](/help/getting-started/first-time-login.md)。
 
 ### CI/CD 管道 {#ci-cd-pipeline}
 
@@ -105,14 +102,14 @@ Cloud Manager 提供了附加高级功能，这些功能可能有助于实施您
 启用蓝/绿部署时，部署流与标准 Cloud Service 部署流不同。
 
 | 步骤 | 蓝/绿部署 | 标准部署 |
-|---|---|---|
+| --- | --- | --- |
 | 1 | 部署到作者 | 部署到作者 |
 | 2 | 暂停以进行测试 | - |
 | 3 | 创建绿色基础架构 | - |
-| 4 | 部署到绿色发布/Dispatcher 层 | 部署到发布者 |
+| 4 | 部署到绿色发布/Dispatcher层 | 部署到发布者 |
 | 5 | 暂停以进行测试（最多 24 小时） | - |
 | 6 | 将绿色基础架构添加到生产负载平衡器 | - |
-| 7 | 从生产负载平衡器中移除蓝色基础架构 |
+| 7 | 从生产负载平衡器中移除蓝色基础架构 | - |
 | 8 | 暂停以进行最终签发（最长 24 小时） | - |
 | 9 | 自动终止蓝色基础架构 | - |
 | 10 | 管道完成 | - |
