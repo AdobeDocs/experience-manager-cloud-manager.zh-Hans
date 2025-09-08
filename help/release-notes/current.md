@@ -3,10 +3,10 @@ title: Cloud Manager 2025.9.0 版的发行说明
 description: 了解 Adobe Managed Services 上有关 Cloud Manager 2025.9.0 版本的信息。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 68e546c1337122f823d63529ebd68d6966bb132a
+source-git-commit: 24ec1d82f9a700b57cd74c2c83c8d9d00b8bece1
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 70%
+source-wordcount: '376'
+ht-degree: 68%
 
 ---
 
@@ -31,13 +31,13 @@ ht-degree: 70%
 
 ## 新增功能 {#what-is-new}
 
-* **现在已为Azure DevOps专用存储库添加支持**
+* 现在为Azure DevOps （专用存储库）添加了&#x200B;**支持**
 
   文档更新包括使用Azure DevOps自带Git和拉取请求验证的配置步骤。 请参阅[在Cloud Manager中添加外部存储库](/help/managing-code/external-repositories.md)。
 
-* **对专用存储库的拉取请求检查**
+* **将您自己的Git (BYOG)支持扩展到配置管道（专用存储库）**
 
-  Cloud Manager现在支持跨GitHub、Bitbucket、Azure DevOps和GitLab使用专用存储库配置管道。 请参阅专用存储库的![拉取请求检查](/help/managing-code/github-check-config.md)。
+  Cloud Manager现在支持跨GitHub、Bitbucket、Azure DevOps和GitLab使用专用存储库配置管道。 这种支持进一步加快了开发周期。 请参阅专用存储库的![拉取请求检查](/help/managing-code/github-check-config.md)。
 
 ## Beta 计划 {#beta-program}
 
