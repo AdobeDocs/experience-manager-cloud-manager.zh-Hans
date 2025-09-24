@@ -2,10 +2,10 @@
 title: 拆分仅阶段管道和仅生产管道
 description: 了解如何使用专用管道拆分暂存和生产部署。
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 34c0b39d50dd4998cb75cc032d71d24798dee729
+source-git-commit: 92237ea156e3921b5dc55cea3abdecee9d26b14b
 workflow-type: tm+mt
 source-wordcount: '917'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 96%
 
 ![仅暂存管道运行](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
 
-点击&#x200B;**升级构建**&#x200B;后，系统会提示您确认是以正常方式还是以[紧急模式](#emergency-mode)运行相关的仅暂存管道。
+单击&#x200B;**升级生成**&#x200B;将提示您确认相关仅生产管道是否正常或在[紧急模式](#emergency-mode)下运行。
 
 如果不存在仅限生产管道，系统会提示您创建一个。
 
