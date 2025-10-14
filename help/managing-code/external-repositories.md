@@ -29,7 +29,7 @@ ht-degree: 27%
 
 在 Cloud Manager 中配置外部存储库包括三个步骤：
 
-1. [将外部存储库 ](#add-external-repo) 添加到选择的程序。
+1. [将外部存储库 &#x200B;](#add-external-repo) 添加到选择的程序。
 1. [将已验证的外部存储库链接到管道](#validate-ext-repo)。
 <!-- 1. Provide an access token to the external repository.
 1. Validate ownership of the private GitHub repository. -->

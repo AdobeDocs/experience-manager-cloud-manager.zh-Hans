@@ -90,7 +90,7 @@ Cloud Manager 现已知道您的 GitHub 存储库，但它仍需要其访问权�
 
 请注意，**类型**&#x200B;列可轻松识别 Adobe 提供的存储库 (**Adobe**) 和您自己的 GitHub 存储库 (**GitHub**)。
 
-要稍后返回存储库并完成验证，请转到&#x200B;**存储库**&#x200B;页面。 点击您添加的 GitHub 存储库旁边的![“更多”图标（省略号 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)），然后点击&#x200B;**所有权验证**。
+要稍后返回存储库并完成验证，请转到&#x200B;**存储库**&#x200B;页面。 点击您添加的 GitHub 存储库旁边的![“更多”图标（省略号 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)），然后点击&#x200B;**所有权验证**。
 
 
 ## 将专用存储库与 Cloud Manager 结合使用 {#using}
