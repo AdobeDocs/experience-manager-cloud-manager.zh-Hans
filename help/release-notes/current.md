@@ -3,10 +3,10 @@ title: Cloud Manager 2025.10.0 版的发行说明
 description: 了解 Adobe Managed Services 上有关 Cloud Manager 2025.10.0 版本的信息。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: e203ab018908ec0a47e8d472079843d5db05dce0
+source-git-commit: 8477b55292be4591b679200ff11b976a2da3a7be
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 54%
+source-wordcount: '581'
+ht-degree: 74%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 54%
 
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-下一个计划发布于2025年11月6日星期四。
+下一个版本计划于 2025 年 11 月 6 日星期四发布。
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
@@ -39,21 +39,30 @@ ht-degree: 54%
 
 目前提供以下机会：
 
-### Experience Hub可扩展性和自定义 {#exp-hub-extensibility}
+### Experience Hub 可扩展性和自定义 {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/experience-hub/experience-hub)是您进入AEM的入口点，根据贵组织的需求进行自定义。 介绍Adobe中您现有的AEM UI扩展，以便它们可以帮助您在Experience Hub中轻松启用它们。
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) 是您进入 AEM 的入口点，可根据组织需求进行自定义。请告知 Adobe 您现有的 AEM UI 扩展，以便他们协助您在 Experience Hub 中轻松启用这些功能。
 
-![Experience Hub可扩展性和自定义工作流程示意图](/help/release-notes/assets/experience-hub-extensibility-customization.png)
+![Experience Hub 可扩展性和自定义工作流程示意图](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
-在Experience Hub中嵌入自定义体验，以扩展和个性化贵组织的仪表板。 除了Adobe的内置小组件之外，还可以使用[UI可扩展性](https://developer.adobe.com/uix/docs/)框架添加您自己的小组件。 构建基于JavaScript的UI应用程序，并将其呈现给您的用户，以满足特定于业务的要求和工作流。
+在 Experience Hub 中嵌入自定义体验，扩展和个性化组织的仪表板。除了 Adobe 的内置构件之外，还可以使用 [UI 可扩展性](https://developer.adobe.com/uix/docs/)框架添加您自己的构件。构建基于 JavaScript 的 UI 应用程序，并将其呈现给您的用户，以满足特定业务需求和工作流程。
 
-对Beta版感兴趣吗？ 向[beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com)发送电子邮件，其中包含您的Adobe OrgID以及要创建的自定义设置的简短说明。
+是否对 Beta 感兴趣？向 [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) 发送电子邮件，其中包含您的 Adobe OrgID 以及要创建自定义设置的简短说明。
 
 ### 通过模块缓存加快构建速度 {#quick-build-cm-pipelines}
 
-新的构建模型使用模块级缓存仅编译已更改的模块（而不是整个存储库）以缩短构建时间。 它适用于代码质量、全栈和仅限暂存的管道。
+新的构建模型使用模块级缓存仅编译已更改的模块（而不是整个存储库）以缩短构建时间。它适用于代码质量、全栈和仅限暂存的管道。
 
-对Beta版感兴趣吗？ 使用您的Adobe OrgID和项目ID向[beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com)发送电子邮件。
+![编辑非生产管道对话框，其中显示两个生成策略选项，即“完全生成”和“智能生成”](/help/release-notes/assets/non-production-pipeline-edit.png) *编辑非生产管道对话框，其中显示两个生成策略选项，即“完全生成”和“智能生成”。*
+
+在&#x200B;**添加/编辑管道**&#x200B;对话框的&#x200B;**Source代码**&#x200B;选项卡下，新增的&#x200B;**生成策略**&#x200B;部分允许您选择以下生成选项之一：
+
+* **完整内部版本** — 每次运行都会在存储库中生成所有模块。
+* **智能生成** — 仅生成自上次提交以来更改的模块，这会缩短总体生成时间。
+
+您控制哪些管道使用&#x200B;**智能生成**。 在Beta测试期间，此选项仅对&#x200B;**代码质量**&#x200B;和&#x200B;**开发部署**&#x200B;管道显示。
+
+是否有兴趣？向 [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) 发送电子邮件，其中包含您的 Adobe OrgID 和项目群 ID。
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline variables](/help/getting-started/build-environment.md#pipeline-variables). -->
 
@@ -85,7 +94,7 @@ ht-degree: 54%
 
 ## 错误修复 {#bug-fixes}
 
-10月的Cloud Manager版本中没有重大的错误修复。
+Cloud Manager 的 10 月发行版本中没有重大错误修复。
 
 <!--
 Known Issues {#known-issues}
