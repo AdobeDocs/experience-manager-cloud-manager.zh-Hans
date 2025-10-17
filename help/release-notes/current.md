@@ -3,7 +3,7 @@ title: Cloud Manager 2025.10.0 版的发行说明
 description: 了解 Adobe Managed Services 上有关 Cloud Manager 2025.10.0 版本的信息。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 8477b55292be4591b679200ff11b976a2da3a7be
+source-git-commit: f62191a1b9dd67ea1e999e2db0bb05de66bf73f2
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 74%
@@ -41,7 +41,7 @@ ht-degree: 74%
 
 ### Experience Hub 可扩展性和自定义 {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/experience-hub/experience-hub) 是您进入 AEM 的入口点，可根据组织需求进行自定义。请告知 Adobe 您现有的 AEM UI 扩展，以便他们协助您在 Experience Hub 中轻松启用这些功能。
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) 是您进入 AEM 的入口点，可根据组织需求进行自定义。请告知 Adobe 您现有的 AEM UI 扩展，以便他们协助您在 Experience Hub 中轻松启用这些功能。
 
 ![Experience Hub 可扩展性和自定义工作流程示意图](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
@@ -53,7 +53,8 @@ ht-degree: 74%
 
 新的构建模型使用模块级缓存仅编译已更改的模块（而不是整个存储库）以缩短构建时间。它适用于代码质量、全栈和仅限暂存的管道。
 
-![编辑非生产管道对话框，其中显示两个生成策略选项，即“完全生成”和“智能生成”](/help/release-notes/assets/non-production-pipeline-edit.png) *编辑非生产管道对话框，其中显示两个生成策略选项，即“完全生成”和“智能生成”。*
+![编辑非生产管道对话框，其中显示两个生成策略选项，即“完全生成”和“智能生成”](/help/release-notes/assets/non-production-pipeline-edit.png)
+*显示“完全生成”和“智能生成”这两个生成策略选项的“编辑非生产管道”对话框。*
 
 在&#x200B;**添加/编辑管道**&#x200B;对话框的&#x200B;**Source代码**&#x200B;选项卡下，新增的&#x200B;**生成策略**&#x200B;部分允许您选择以下生成选项之一：
 
