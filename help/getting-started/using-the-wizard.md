@@ -2,10 +2,10 @@
 title: 使用新项目向导
 description: 关注此页面，了解如何使用该向导创建 AEM 应用程序项目。
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
-source-git-commit: f3617eb50147f5af33282cb0f25ada7dc423d434
+source-git-commit: b98e1711f1f98f52977dd6cb4cd2bc834d81a360
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 92%
+source-wordcount: '322'
+ht-degree: 82%
 
 ---
 
@@ -39,6 +39,6 @@ ht-degree: 92%
 
 ## 现有或迁移客户 {#existing-migrating}
 
-如果您是现任 Adobe Managed Services (AMS) 客户或要迁移到 AMS 的内部部署 AEM 客户，则您可能已在 Git 或其他版本控制系统中拥有项目代码。
+如果您是正在迁移的当前Adobe Managed Services (AMS)客户或内部部署AEM客户，您可能已在Git或其他版本控制系统中拥有项目代码。
 
 在此类情况下，您可以将项目导入 Cloud Manager Git 存储库中。
