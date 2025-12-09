@@ -2,10 +2,10 @@
 title: Git 与 Adobe Cloud Manager 的集成
 description: 本视频系列介绍了客户管理的（内部部署）Git 存储库的设置以及它与 Adobe Cloud Manager 的集成。
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
-source-git-commit: 51bd685a17eb9d68b1ec8245e6167cab02101fc1
-workflow-type: ht
+source-git-commit: 75baacd1fd6f36ca1d6ea5c1993516569ab6ef47
+workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ Adobe Cloud Manager 附带了一个 Git 存储库，用于使用 Cloud Manager �
 
 ## Git 集成概述
 
->[!VIDEO](https://video.tv.adobe.com/v/31239?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/28710/)
 
 本视频系列探究了多个有关将客户管理的 Git 存储库与 Cloud Manager 集成的用例。
 
@@ -36,35 +36,35 @@ Adobe Cloud Manager 附带了一个 Git 存储库，用于使用 Cloud Manager �
 
 将客户管理的 Git 存储库与 Cloud Manager 的 Git 存储库同步的首要步骤。
 
->[!VIDEO](https://video.tv.adobe.com/v/31238/?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/28711/?quality=12)
 
 ## 基本分支策略 {#branching-strategy}
 
 设置基本分支策略以利用 Cloud Manager 的[生产管道](/help/using/production-pipelines.md)和[非生产管道](/help/using/non-production-pipelines.md)。
 
->[!VIDEO](https://video.tv.adobe.com/v/31237/?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 
 ## 功能分支开发 {#feature-development}
 
 使用功能分支隔离客户管理的 Git 存储库中的代码更改，并与 Cloud Manager 的 Git 存储库同步，以便使用非生产管道进行代码质量和验证测试。
 
->[!VIDEO](https://video.tv.adobe.com/v/31236/?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
 
 ## 生产部署 {#production-deployment}
 
 在客户管理的 Git 存储库中为生产版本准备代码，并与 Cloud Manager 的 Git 存储库同步，以便部署到暂存和生产环境。
 
->[!VIDEO](https://video.tv.adobe.com/v/31235/?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
 
 ## 同步版本标记 {#sync-tags}
 
 您可以将版本标记从 Cloud Manager Git 存储库同步到客户管理的 Git 存储库。此功能可让您查看已部署到暂存和生产环境的代码。
 
->[!VIDEO](https://video.tv.adobe.com/v/31234/?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
 
 ## 其他资源 {#additional-resources}
 
 * [Cloud Manager 简介](/help/introduction.md)
-* [GitHub 资源](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git)
+* [GitHub 资源](https://docs.github.com/en/get-started/git-basics/set-up-git)
 * [Atlassian Git 教程](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [Git 备忘单](https://education.github.com/git-cheat-sheet-education.pdf)

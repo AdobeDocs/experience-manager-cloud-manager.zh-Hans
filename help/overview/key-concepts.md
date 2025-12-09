@@ -2,10 +2,10 @@
 title: 重要概念
 description: 与所有功能强大的工具一样，Cloud Manager 包含了许多概念和术语。本文档总结了开始使用 Cloud Manager 时的一些最重要内容。
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
-workflow-type: ht
+source-git-commit: 75baacd1fd6f36ca1d6ea5c1993516569ab6ef47
+workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 应用程序是客户创建的一组自定义项和配置，以根据其具体的用例要求和需求来调整底层[解决方案](#solution)（例如 AEM Sites 或 AEM Assets）。 应用程序是一个逻辑单元，其中可能包含多个[工件](#artifact)。
 
-虚构的 [WKND 生活方式应用程序](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-learn/getting-started-wknd-tutorial-develop/overview)是一个示例应用程序。
+虚构的 [WKND 生活方式应用程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)是一个示例应用程序。
 
 ## 工件 {#artifact}
 
@@ -42,7 +42,7 @@ Git 存储库是一个存储客户特定源代码的位置，可[使用 Git](htt
 
 ## 组织 {#organization}
 
-组织是代表企业客户的 Adobe 构造。一家公司可能有多个组织，具体取决于它们在 Adobe Identity Management System (IMS) 中的配置方式。
+组织是代表企业客户的 Adobe 构造。一家公司可能具有多个组织，具体取决于它们在Adobe Identity Management System (IMS)中的配置方式。
 
 ## 管道 {#pipeline}
 
