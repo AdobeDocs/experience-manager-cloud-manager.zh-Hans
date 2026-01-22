@@ -41,7 +41,7 @@ ht-degree: 69%
 
 ### Experience Hub 可扩展性和自定义 {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) 是您进入 AEM 的入口点，可根据组织需求进行自定义。请告知 Adobe 您现有的 AEM UI 扩展，以便他们协助您在 Experience Hub 中轻松启用这些功能。
+[Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/experience-hub/experience-hub) 是您进入 AEM 的入口点，可根据组织需求进行自定义。请告知 Adobe 您现有的 AEM UI 扩展，以便他们协助您在 Experience Hub 中轻松启用这些功能。
 
 ![Experience Hub 可扩展性和自定义工作流程示意图](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
