@@ -2,7 +2,7 @@
 title: 在Cloud Manager中管理访问令牌
 description: 了解如何在Adobe Managed Services上查看、编辑和删除用于在Cloud Manager中自带Git的访问令牌。
 exl-id: 873aad0b-d7c6-4bc3-a70d-bbfdc1e02193
-source-git-commit: 28841719e820e47577b411a4034ebc7a8e1bb556
+source-git-commit: 651d9fc9964d599cb51556f7b6ba255fe8092d7f
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 3%
@@ -16,12 +16,6 @@ Cloud Manager使用访问令牌管理在外部Git平台上托管的存储库。 
 现在，**管理访问令牌**&#x200B;允许您更有效地管理令牌。 您可以查看、重命名或删除连接到受支持的外部Git提供程序(包括GitHub Enterprise、GitLab、Bitbucket和Azure DevOps)的令牌。
 
 另请参阅[在Cloud Manager中添加外部存储库](/help/managing-code/external-repositories.md)。
-
-<!--
->[!NOTE]
->
->The features described in this article are only available through the private beta program. For more details and to sign up for  the private beta, see [Manage Access Tokens](/help/release-notes/current.md#access-tokens).
--->
 
 ## 查看访问令牌 {#view-access-tokens}
 

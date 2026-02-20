@@ -7,10 +7,10 @@ user-guide-description: 了解如何使用 Cloud Manager 在云中自行管理 A
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 28841719e820e47577b411a4034ebc7a8e1bb556
+source-git-commit: 8ceaefebdddefb508a4c296c00f053e6b4dfb248
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 90%
+source-wordcount: '388'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 90%
 # Cloud Manager 文档 {#content}
 
 + [Cloud Manager for AMS](/help/introduction.md)
-+ [Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + 概述 {#overview}
    + [重要概念](/help/overview/key-concepts.md)
    + [用户历程](/help/overview/user-journey.md)
@@ -65,7 +65,7 @@ ht-degree: 90%
    + [添加一个 Adobe 存储库](/help/managing-code/adobe-repositories.md)
    + [添加一个专用存储库](/help/managing-code/private-repositories.md)
    + [添加外部存储库](/help/managing-code/external-repositories.md)
-   + [管理访问令牌（私人测试版）](/help/managing-code/manage-access-tokens.md)
+   + [管理访问令牌](/help/managing-code/manage-access-tokens.md)
    + [Git 子模块支持](/help/managing-code/git-submodules.md)
    + [专用存储库的提取请求检查](/help/managing-code/github-check-config.md)
    + [GitHub 检查批注](/help/managing-code/github-annotations.md)
