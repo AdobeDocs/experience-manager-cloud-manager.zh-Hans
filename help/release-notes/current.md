@@ -3,10 +3,10 @@ title: Cloud Manager 2026.1.0 版的发行说明
 description: 了解 Adobe Managed Services 上有关 Cloud Manager 2026.1.0 版本的信息。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 6279792f05ec04c82634d255dad7264f6d0cef64
+source-git-commit: 28841719e820e47577b411a4034ebc7a8e1bb556
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 62%
+source-wordcount: '476'
+ht-degree: 48%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 62%
 
 ### Experience Hub 可扩展性和自定义 {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/experience-hub/experience-hub) 是您进入 AEM 的入口点，可根据组织需求进行自定义。请告知 Adobe 您现有的 AEM UI 扩展，以便他们协助您在 Experience Hub 中轻松启用这些功能。
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) 是您进入 AEM 的入口点，可根据组织需求进行自定义。请告知 Adobe 您现有的 AEM UI 扩展，以便他们协助您在 Experience Hub 中轻松启用这些功能。
 
 ![Experience Hub 可扩展性和自定义工作流程示意图](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
@@ -77,32 +77,6 @@ ht-degree: 62%
 是否有兴趣？向 [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) 发送电子邮件，其中包含您的 Adobe OrgID 和项目群 ID。
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline variables](/help/getting-started/build-environment.md#pipeline-variables). -->
-
-
-### 使用您自己的 Git (BYOG) {#gitlab-bitbucket-azure-vsts}
-
-<!-- BOTH CS & AMS -->
-
-客户现在可以将他们的 Azure DevOps Git 存储库加入到 Cloud Manager 中，同时支持现代 Azure DevOps 和旧版 VSTS（Visual Studio Team Services）两种存储库。
-
-* Edge Delivery Services 用户可以使用已加入的存储库来同步和部署网站代码。
-* 对于 AEM as a Cloud Service 和 Adobe Managed Services (AMS) 用户，该存储库可以链接到全栈和前端两种管道。
-
-对其他管道类型以及通过代码质量管道进行提取请求验证的支持即将推出。
-
-请参阅[在 Cloud Manager 中添加外部存储库](/help/managing-code/external-repositories.md)。
-
-![添加“存储库”对话框](/help/release-notes/assets/azure-repo.png)
-
-如果您有兴趣测试此新功能并分享您的反馈，请从与您的 Adobe ID 关联的电子邮件地址发送电子邮件至 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)。请务必注明您想要使用的 Git 平台以及您是处于专用/公共还是企业存储库结构中。
-
-#### 管理访问令牌{#manage-access-tokens}
-
-在 Cloud Manager 中使用&#x200B;**管理访问令牌**&#x200B;功能，可查看、重命名并删除与外部自带 Git 存储库（如 GitHub Enterprise、GitLab、Bitbucket 和 Azure DevOps）关联的访问令牌。
-
-请参阅[管理访问令牌](/help/managing-code/manage-access-tokens.md)。
-
-<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
 
 ## 错误修复 {#bug-fixes}
 
