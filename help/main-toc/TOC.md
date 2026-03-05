@@ -7,10 +7,10 @@ user-guide-description: 了解如何使用 Cloud Manager 在云中自行管理 A
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 8ceaefebdddefb508a4c296c00f053e6b4dfb248
+source-git-commit: 77f5000f0a237dc82e183eb074eddb23e3a2eb44
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 91%
+source-wordcount: '334'
+ht-degree: 87%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 91%
 # Cloud Manager 文档 {#content}
 
 + [Cloud Manager for AMS](/help/introduction.md)
-+ [Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + 概述 {#overview}
    + [重要概念](/help/overview/key-concepts.md)
    + [用户历程](/help/overview/user-journey.md)
@@ -54,8 +54,8 @@ ht-degree: 91%
    + [管理环境](/help/using/managing-environments.md)
    + [监控环境](/help/using/monitoring-environments.md)
    + [开发环境的Service Pack更新（私人测试版）](/help/using/service-packs-environments.md)
-   + [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
-   + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
+   + [CLOUD MANAGER API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
+   + [CLOUD MANAGER CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [通知](/help/using/notifications.md)
    + [自定义代码质量规则](/help/using/custom-code-quality-rules.md)
    + [内容复制以实现环境一致性](/help/using/content-copy.md)
@@ -77,6 +77,9 @@ ht-degree: 91%
    + [评估](/help/product-update-wizard/evaluation.md)
 + 发行说明 {#release-notes}
    + [当前](/help/release-notes/current.md)
+   + 2026 {#rn-2026}
+      + [2026.2.0](/help/release-notes/2026/2026-2-0.md)
+      + [2026.1.0](/help/release-notes/2026/2026-1-0.md)
    + 2025 {#rn-2025}
       + [2025.12.0](/help/release-notes/2025/2025-12-0.md)
       + [2025.11.0](/help/release-notes/2025/2025-11-0.md)
