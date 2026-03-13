@@ -3,7 +3,7 @@ title: Cloud Manager 2026.3.0发行说明
 description: 了解Adobe Managed Services上的Cloud Manager 2026.3.0版本。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 9ce8a2ca2117992421052b76b0f5c7c9c5a6195b
+source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 19%
@@ -30,7 +30,7 @@ ht-degree: 19%
 ## 新增功能 {#what-is-new}
 
 * **在AEM Experience Hub中支持UI可扩展性**
-[AEM Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/experience-hub/experience-hub)中对UI扩展的支持现已启用，从而让开发人员能够使用Adobe App Builder构建的自定义功能和构件来扩展界面。
+[AEM Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)中对UI扩展的支持现已启用，从而让开发人员能够使用Adobe App Builder构建的自定义功能和构件来扩展界面。
 
   若要了解更多信息，请参阅[AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/)。
 
@@ -57,7 +57,7 @@ ht-degree: 19%
 <!--
 ### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
 
 ![Diagram of Experience Hub extensibility and customization workflow](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
@@ -91,4 +91,5 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 <!--
 Known Issues {#known-issues}
 
-* A -->
+* A 
+-->

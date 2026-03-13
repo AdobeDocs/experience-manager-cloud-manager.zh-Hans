@@ -2,9 +2,9 @@
 title: Cloud Manager 常见问题解答
 description: 了解有关适用于 AMS 客户的 Cloud Manager 的最常见问题的解答。
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: e7e9844b5f06552fc2104584c63935dee7a9fa89
+source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '762'
 ht-degree: 100%
 
 ---
@@ -20,9 +20,10 @@ ht-degree: 100%
 Yes. You need to add the `maven-toolchains-plugin` with the correct settings for Java 11.
 
 * This process is documented [here](/help/getting-started/using-the-wizard.md).
-* For an example, see the [WKND sample project code](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75). -->
+* For an example, see the [WKND sample project code](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75). 
+-->
 
-## 从 Java 8 切换到 Java 11 后，我的构建失败，并显示一个有关 maven-scr-plugin 的错误。我该怎么办？ {#maven-src-plugin}
+## 从 Java 8 切换到 Java 11 后，我的构建失败，并显示一个有关 maven-scr-plugin 的错误。 我该怎么办？ {#maven-src-plugin}
 
 尝试将构建从 Java 8 切换到 Java 11 时，您的 AEM Cloud Manager 构建可能会失败。 如果您遇到以下错误，则需要移除 `maven-scr-plugin` 并将所有 OSGi 注释转换为 OSGi R6 注释。
 
@@ -44,15 +45,15 @@ Yes. You need to add the `maven-toolchains-plugin` with the correct settings for
 
 ## 代码质量检查失败，并且现在部署出现卡滞。 是否能通过某种方式绕过此检查？ {#deployment-stuck}
 
-是。除安全评级之外的所有代码质量故障都是非关键量度。 因此，可以通过展开结果 UI 中的项目将它们作为部署管道的一部分绕过。
+是。 除安全评级之外的所有代码质量故障都是非关键量度。 因此，可以通过展开结果 UI 中的项目将它们作为部署管道的一部分绕过。
 
 具有[部署经理、项目经理或业务所有者](/help/requirements/users-and-roles.md#role-definitions)角色的用户可以忽略这些问题。 在这种情况下，管道将会继续运行。 或者，他们可以接受这些问题，在这种情况下，管道会因失败而停止。
 
 有关更多详细信息，请参阅[运行管道时的三层审核](/help/using/code-quality-testing.md#three-tier-gates-while-running-a-pipeline)和[配置非生产管道](/help/using/non-production-pipelines.md#understanding-the-flow)文档。
 
-## Cloud Manager 部署在 Adobe Managed Services 环境中执行性能测试步骤时失败。如何调试该问题以通过关键量度？ {#debug-critical-metrics}
+## Cloud Manager 部署在 Adobe Managed Services 环境中执行性能测试步骤时失败。 如何调试该问题以通过关键量度？ {#debug-critical-metrics}
 
-此问题的答案不是唯一的。但是，您可能会发现有关性能测试步骤的以下几点很有帮助：
+此问题的答案不是唯一的。 但是，您可能会发现有关性能测试步骤的以下几点很有帮助：
 
 * 此步骤是 Web 性能步骤。 也就是说，它是使用 Web 浏览器加载页面的时间。
 * 在测试期间，结果 .csv 文件中列出的 URL 将会加载到 Cloud Manager 基础架构的 Chrome 浏览器中。
@@ -63,11 +64,11 @@ Yes. You need to add the `maven-toolchains-plugin` with the correct settings for
 
 ## 我是否能将 SNAPSHOT 用于 Maven 项目版本？ {#snapshot}
 
-是。对于开发人员部署，Git 分支 `pom.xml` 文件必须在 `<version>` 值的末尾包含 `-SNAPSHOT`。
+是。 对于开发人员部署，Git 分支 `pom.xml` 文件必须在 `<version>` 值的末尾包含 `-SNAPSHOT`。
 
 这样一来，在版本未更改的情况下，仍能安装后续部署。 在开发人员部署中，不会为 Maven 构建添加或生成自动版本。
 
-您也可以为暂存和生产构建或部署将版本设置为 `-SNAPSHOT`。 Cloud Manager 会自动设置适当的版本号并在 Git 中为您创建标记。如果需要，可以稍后参考此标记。
+您也可以为暂存和生产构建或部署将版本设置为 `-SNAPSHOT`。 Cloud Manager 会自动设置适当的版本号并在 Git 中为您创建标记。 如果需要，可以稍后参考此标记。
 
 [此处记录了](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling)有关版本处理的更多详细信息。
 
