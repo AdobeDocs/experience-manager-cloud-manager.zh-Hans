@@ -30,7 +30,7 @@ ht-degree: 19%
 ## 新增功能 {#what-is-new}
 
 * **在AEM Experience Hub中支持UI可扩展性**
-[AEM Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)中对UI扩展的支持现已启用，从而让开发人员能够使用Adobe App Builder构建的自定义功能和构件来扩展界面。
+[AEM Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/experience-hub/experience-hub)中对UI扩展的支持现已启用，从而让开发人员能够使用Adobe App Builder构建的自定义功能和构件来扩展界面。
 
   若要了解更多信息，请参阅[AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/)。
 
@@ -57,7 +57,7 @@ ht-degree: 19%
 <!--
 ### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
+[Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
 
 ![Diagram of Experience Hub extensibility and customization workflow](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
