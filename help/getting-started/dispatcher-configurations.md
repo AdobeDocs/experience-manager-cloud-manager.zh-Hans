@@ -30,7 +30,7 @@ Cloud Manager 使用内置的[项目创建向导](/help/getting-started/using-th
 
 1. 从您的 CSE 处获取当前的生产配置文件。
 1. 移除硬编码的环境特定的数据（例如发布渲染程序 IP），并替换为变量。
-1. 在每个目标Dispatcher的键值对中定义所需的变量，并将其添加到每个实例上的[变量](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/variables.html?lang=en#variables-files-(.vars))文件夹中。
+1. 在每个目标Dispatcher的键值对中定义所需的变量，并将其添加到每个实例上的[变量](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/variables.html?lang=zh-Hans#variables-files-(.vars))文件夹中。
 1. 在暂存环境中测试更新的配置。
 1. 测试后，请求 CSE 部署到生产环境。
 1. 将文件提交到 Git 存储库。
