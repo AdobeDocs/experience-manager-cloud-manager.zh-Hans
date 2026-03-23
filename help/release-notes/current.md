@@ -3,10 +3,10 @@ title: Cloud Manager 2026.3.0发行说明
 description: 了解Adobe Managed Services上的Cloud Manager 2026.3.0版本。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
+source-git-commit: b7e651b72d1943aef69c1c69915d4752a6163931
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 19%
+source-wordcount: '461'
+ht-degree: 16%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 19%
 ## 新增功能 {#what-is-new}
 
 * **在AEM Experience Hub中支持UI可扩展性**
-[AEM Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/experience-hub/experience-hub)中对UI扩展的支持现已启用，从而让开发人员能够使用Adobe App Builder构建的自定义功能和构件来扩展界面。
+[AEM Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)中对UI扩展的支持现已启用，从而让开发人员能够使用Adobe App Builder构建的自定义功能和构件来扩展界面。
 
   若要了解更多信息，请参阅[AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/)。
 
@@ -57,7 +57,7 @@ ht-degree: 19%
 <!--
 ### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
 
 ![Diagram of Experience Hub extensibility and customization workflow](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
@@ -68,7 +68,7 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 
 ### 通过模块缓存加快构建速度 {#quick-build-cm-pipelines}
 
-新的构建模型使用模块级缓存仅编译已更改的模块（而不是整个存储库）以缩短构建时间。 它适用于代码质量、全栈和仅限暂存的管道。
+新的构建模型使用模块级缓存仅编译已更改的模块（而不是整个存储库）以缩短构建时间。 它适用于代码质量和全栈管道。
 
 ![编辑非生产管道对话框，其中显示两个生成策略选项，即“完全生成”和“智能生成”](/help/release-notes/assets/non-production-pipeline-edit.png)
 *显示“完全生成”和“智能生成”这两个生成策略选项的“编辑非生产管道”对话框。*
@@ -78,7 +78,9 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 * **完整内部版本** — 每次运行都会在存储库中生成所有模块。
 * **智能生成** — 仅生成自上次提交以来更改的模块，这会缩短总体生成时间。
 
-您控制哪些管道使用&#x200B;**智能生成**。 在Beta测试期间，此选项仅对&#x200B;**代码质量**&#x200B;和&#x200B;**开发部署**&#x200B;管道显示。
+请参阅[添加非生产管道](/help/using/non-production-pipelines.md#add-non-production-pipeline)和[关于在非生产管道中使用Smart Build](/help/using/non-production-pipelines.md#about-smart-build)。
+
+您控制哪些管道使用&#x200B;**智能生成**。 在Beta测试期间，此选项仅对&#x200B;**代码质量**&#x200B;和&#x200B;**开发全栈代码部署**&#x200B;管道显示。
 
 是否有兴趣？ 向 [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) 发送电子邮件，其中包含您的 Adobe OrgID 和项目群 ID。
 
