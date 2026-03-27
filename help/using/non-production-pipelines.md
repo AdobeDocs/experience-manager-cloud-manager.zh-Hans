@@ -2,10 +2,10 @@
 title: 添加非生产管道
 description: 了解如何使用 Cloud Manager 创建和配置非生产管道以部署代码。
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: ddbffd1310e0af646c071c81d560fb50abeb01c1
+source-git-commit: 261c4334a514ee2101444e83a559d300bba3d507
 workflow-type: tm+mt
 source-wordcount: '1994'
-ht-degree: 23%
+ht-degree: 22%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 23%
 
 通过使用 [!UICONTROL Cloud Manager] 中的&#x200B;**管道**&#x200B;图块，**部署管理员**&#x200B;可以创建两种不同类型的管道。
 
-* **生产管道** – 生产管道是一个专用管道，它包含一系列精心设计的步骤，可执行这些步骤以将源代码用于生产环境。
+* **生产管道** — 生产管道是一个专用管道，它包含一系列精心设计的步骤，可执行这些步骤以将源代码用于生产环境。
 * **非生产管道** – 非生产管道主要用于运行代码质量扫描或将源代码部署到开发环境中。
 
 本文档侧重于非生产管道。 有关如何配置生产管道的详细信息，请参阅[配置生产管道](/help/using/production-pipelines.md)文档。
