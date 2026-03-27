@@ -4,8 +4,8 @@ description: 从此处开始了解 Cloud Manager for Adobe Managed Services (AMS
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: 8f29a06f63b8dc10cb3d28e2f38da1ead84f32f5
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 95%
+source-wordcount: '1299'
+ht-degree: 96%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="aemcloud_cloudmanager_introduction"
 >title="Cloud Manager for AMS 简介"
->abstract="使组织能够在云中自行管理 Adobe Experience Manager。它包含一个持续集成和持续交付 (CI/CD) 框架，使 IT 团队和实施合作伙伴能够在不影响性能或安全性的情况下快速交付自定义项或更新。"
+>abstract="使组织能够在云中自行管理 Adobe Experience Manager。 它包含一个持续集成和持续交付 (CI/CD) 框架，使 IT 团队和实施合作伙伴能够在不影响性能或安全性的情况下快速交付自定义项或更新。"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/cloud-manager/programs#cloud-manager" text="创建程序"
 >additional-url="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/cloud-manager/environments#cloud-manager" text="创建环境"
 
 ## 简介 {#introduction}
 
-[!UICONTROL Cloud Manager] for Adobe Experience Manager 使开发人员能够通过基于 Adobe Experience Manager 最佳实践构建的简化工作流来打造令人印象深刻的客户体验。利用为 Adobe Experience Manager 优化的 CI/CD 管道，您可以轻松地合并开发工作流。只需签入代码，代码随后会持续推进到生产就绪状态。 在构建阶段，将根据最佳实践全面测试自定义代码更新，以便为客户提供可靠的应用程序。Cloud Manager 使用开放式 API 方法，使您能够在不中断现有流程和工具的情况下与系统集成。
+[!UICONTROL Cloud Manager] for Adobe Experience Manager 使开发人员能够通过基于 Adobe Experience Manager 最佳实践构建的简化工作流来打造令人印象深刻的客户体验。 利用为 Adobe Experience Manager 优化的 CI/CD 管道，您可以轻松地合并开发工作流。只需签入代码，代码随后会持续推进到生产就绪状态。 在构建阶段，将根据最佳实践全面测试自定义代码更新，以便为客户提供可靠的应用程序。 Cloud Manager 使用开放式 API 方法，使您能够在不中断现有流程和工具的情况下与系统集成。
 
 >[!NOTE]
 >
@@ -50,13 +50,13 @@ ht-degree: 95%
 
 通过[!UICONTROL Cloud Manager]的用户界面(UI)，您可以轻松访问和管理云环境，并轻松地为Adobe Experience Manager应用程序访问CI/CD管道。
 
-您可以定义特定于应用程序的关键绩效指标 (KPI)，例如每分钟的峰值页面查看量或预期的页面加载响应时间。这些 KPI 是衡量部署成功的基础。 可以轻松定义不同团队成员的角色和权限。 自助服务界面有助于您掌控一切。它还提供了有关最佳实践资源的链接，并在需要时向 Adobe 专家寻求指导。
+您可以定义特定于应用程序的关键绩效指标 (KPI)，例如每分钟的峰值页面查看量或预期的页面加载响应时间。 这些 KPI 是衡量部署成功的基础。 可以轻松定义不同团队成员的角色和权限。 自助服务界面有助于您掌控一切。 它还提供了有关最佳实践资源的链接，并在需要时向 Adobe 专家寻求指导。
 
 ### CI/CD 管道 {#ci-cd-pipeline}
 
 [!UICONTROL Cloud Manager] 的一项重要功能是，能够实施优化的 CI/CD 管道来加速自定义代码或更新的交付，例如，在网站上添加新的组件。
 
-通过 [!UICONTROL Cloud Manager] UI，您能够配置并启动您的 CI/CD 管道。在执行此管道期间，会执行彻底的代码扫描，以确保只有高质量的应用程序才能投入到生产环境。
+通过 [!UICONTROL Cloud Manager] UI，您能够配置并启动您的 CI/CD 管道。 在执行此管道期间，会执行彻底的代码扫描，以确保只有高质量的应用程序才能投入到生产环境。
 
 要详细了解如何从 [!UICONTROL Cloud Manager] UI 配置管道，请参阅[配置生产管道](/help/using/production-pipelines.md)和[配置非生产管道](/help/using/non-production-pipelines.md)。
 
@@ -64,9 +64,9 @@ ht-degree: 95%
 
 [!UICONTROL Cloud Manager] 提供了灵活的可配置部署模式，使您能够根据不断变化的业务需求来交付体验。
 
-在自动触发器模式下，系统会根据特定事件（例如，代码提交）将代码自动部署到环境。您还可以计划在指定的时间范围内，甚至在工作时间以外执行代码部署。
+在自动触发器模式下，系统会根据特定事件（例如，代码提交）将代码自动部署到环境。 您还可以计划在指定的时间范围内，甚至在工作时间以外执行代码部署。
 
-质量检查不依赖于部署触发器，每次触发部署时，都会在 CI/CD 管道执行期间执行质量检查。质量检查包括现成的代码审查、安全性测试和性能测试，无需您或您的合作伙伴进行任何操作。
+质量检查不依赖于部署触发器，每次触发部署时，都会在 CI/CD 管道执行期间执行质量检查。 质量检查包括现成的代码审查、安全性测试和性能测试，无需您或您的合作伙伴进行任何操作。
 
 要了解有关部署代码和质量检查的更多信息，请参阅[部署代码](/help/using/code-deployment.md)。
 
@@ -78,7 +78,7 @@ Cloud Manager 提供了附加高级功能，这些功能可能有助于实施您
 
 当生产环境承受异常高的负载时，[!UICONTROL Cloud Manager] 将检测对额外容量的需求，并使用其自动缩放功能自动使额外容量联机。
 
-在此类事件中，[!UICONTROL Cloud Manager] 自动触发自动缩放配置过程，发送自动缩放事件通知，并在几分钟内使额外容量联机。额外容量将在生产环境中与运行 Dispatcher/发布节点相同的区域内进行配置，并遵守相同的系统规范。
+在此类事件中，[!UICONTROL Cloud Manager] 自动触发自动缩放配置过程，发送自动缩放事件通知，并在几分钟内使额外容量联机。 额外容量将在生产环境中与运行 Dispatcher/发布节点相同的区域内进行配置，并遵守相同的系统规范。
 
 自动缩放功能适用于 Dispatcher/发布层，其使用水平缩放功能来添加一到十个 Dispatcher/发布对区段。 所配置的任何额外容量都会在 Adobe CSE（客户成功工程师）确定的十个工作日内手动缩放。
 
@@ -90,11 +90,11 @@ Cloud Manager 提供了附加高级功能，这些功能可能有助于实施您
 
 蓝/绿部署是一种方法，通过运行两个分别称作蓝色和绿色的相同生产环境来减少停机时间并降低风险。
 
-在任何时候，只有一个环境是实时的，并且实时环境服务于所有生产流量。通常，蓝色表示当前的实时环境，绿色表示空闲环境。
+在任何时候，只有一个环境是实时的，并且实时环境服务于所有生产流量。 通常，蓝色表示当前的实时环境，绿色表示空闲环境。
 
-* 蓝/绿部署是 Cloud Manager CI/CD 管道的附加组件，其中创建了第二组发布和 Dispatcher 实例（绿色）并将它们用于部署。随后，将绿色实例附加到生产负载平衡器，并移除和终止旧的实例（蓝色）。
+* 蓝/绿部署是 Cloud Manager CI/CD 管道的附加组件，其中创建了第二组发布和 Dispatcher 实例（绿色）并将它们用于部署。 随后，将绿色实例附加到生产负载平衡器，并移除和终止旧的实例（蓝色）。
 * 此蓝/绿实施将实例视为瞬态实例，并且蓝/绿管道的每次迭代都会创建一组新的发布和 Dispatcher 服务器。
-* 在设置过程中会创建一个绿色负载平衡器。此负载平衡器永不会发生改变，并且您应将绿色或“测试”URL 指向它。
+* 在设置过程中会创建一个绿色负载平衡器。 此负载平衡器永不会发生改变，并且您应将绿色或“测试”URL 指向它。
 * 在蓝/绿部署期间，将创建现有 Dispatcher/发布层的精确副本。
 
 #### 蓝/绿部署流 {#flow}
