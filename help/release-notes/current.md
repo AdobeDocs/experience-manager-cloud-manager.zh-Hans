@@ -1,20 +1,20 @@
 ---
 title: Cloud Manager 2026.4.0发行说明
-description: 了解Adobe Managed Services上的Cloud Manager 2026.4.0版本。
+description: 了解Adobe Managed Services中的Cloud Manager 2026.4.0版本。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 4f2fdc8d04b0ab48d3d18cc7d2cacfe0075b48f9
+source-git-commit: 0ad5d533e6f8749a9c141d5a095f0a2fed37efcf
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 14%
 
 ---
 
-# Adobe Managed Services上的Cloud Manager 2026.4.0发行说明 {#release-notes}
+# Adobe Managed Services中的Cloud Manager 2026.4.0发行说明 {#release-notes}
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-了解Adobe Managed Services上的[!UICONTROL Cloud Manager] 2026.4.0版本。
+了解Adobe Managed Services中的[!UICONTROL Cloud Manager] 2026.4.0版本。
 
 另请参阅 [Adobe Experience Manager as a Cloud Service 的当前发行说明](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/home)。
 
