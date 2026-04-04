@@ -7,7 +7,7 @@ user-guide-description: 了解如何使用 Cloud Manager 在云中自行管理 A
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 4a012c762d6cb334e31e18c6f5305bdf322fd480
+source-git-commit: 9ef2f45331c0aaf5c619af1151da38278cfc3c5d
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 87%
@@ -53,7 +53,7 @@ ht-degree: 87%
    + [代码质量测试](/help/using/code-quality-testing.md)
    + [管理环境](/help/using/managing-environments.md)
    + [监控环境](/help/using/monitoring-environments.md)
-   + [开发环境的Service Pack更新（私人测试版）](/help/using/service-packs-environments.md)
+   + {hide-from-toc}[开发环境的Service Pack更新（私人测试版）](/help/using/service-packs-environments.md)
    + [CLOUD MANAGER API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
    + [CLOUD MANAGER CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [通知](/help/using/notifications.md)

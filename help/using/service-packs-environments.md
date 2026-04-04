@@ -2,11 +2,10 @@
 title: 开发环境的Service Pack更新 — 私人测试版
 description: 了解如何通过 Cloud Manager 用户界面启动开发环境的服务包更新。
 hide: true
-hidefromtoc: true
 exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
-source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
+source-git-commit: 9ef2f45331c0aaf5c619af1151da38278cfc3c5d
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '468'
 ht-degree: 94%
 
 ---
@@ -21,9 +20,9 @@ ht-degree: 94%
 
 ## 概述 {#service-pack-updates-overview}
 
-您可以通过 Cloud Manager 用户界面启动开发环境的服务包更新。此功能可让您检查可用的服务包更新并独立管理安装过程。
+您可以通过 Cloud Manager 用户界面启动开发环境的服务包更新。 此功能可让您检查可用的服务包更新并独立管理安装过程。
 
-**主要优点** 
+**主要优点**
 
 * 更好地控制 Cloud Manager 服务包更新。
 * 减少在启动更新中对 Adobe 客户成功工程师 (CSE) 的依赖。
