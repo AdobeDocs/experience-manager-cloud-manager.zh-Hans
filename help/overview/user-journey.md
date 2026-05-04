@@ -2,13 +2,16 @@
 title: 用户历程
 description: 了解不同的新用户引导场景并开始使用 Cloud Manager。
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '532'
+TQID: https://experienceleague.adobe.com/EnNaMZzu5bLUD3Jjsp6ovqFvoFM30ju4FOQJfmySLEk
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 560
 ht-degree: 100%
 
 ---
-
 
 # 用户历程 {#user-journey}
 
@@ -46,17 +49,17 @@ ht-degree: 100%
 
 您现有的 AEM 项目还需要符合推荐的最佳实践，因为您会开始使用 [!UICONTROL Cloud Manager] 将新的代码更改部署到 AEM 环境。
 
-要获取有关升级到 AEM 6.5 的好处的其他信息，请参阅[升级到 AEM 6.5](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-65/content/implementing/deploying/upgrading/upgrade)。
+要获取有关升级到 AEM 6.5 的好处的其他信息，请参阅[升级到 AEM 6.5](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/deploying/upgrading/upgrade)。
 
 ## 访问 [!UICONTROL Cloud Manager] {#accessing-cloud-manager}
 
 使用您的 Adobe Identity Management 凭据登录 [!UICONTROL Experience Cloud] 登录页面。 然后，从解决方案切换器中选择 AEM，以访问 [!UICONTROL Cloud Manager] 和您的 AEM 环境。
 
-在首次登录 [!UICONTROL Cloud Manager] 后，您将有权直接从 [!UICONTROL Cloud Manager] UI 访问 AEM 环境。此时，您已能开始探索 [!UICONTROL Cloud Manager] 的所有可能性，并准备将您的第一个代码分支部署到您的暂存和生产环境中。
+在首次登录 [!UICONTROL Cloud Manager] 后，您将有权直接从 [!UICONTROL Cloud Manager] UI 访问 AEM 环境。 此时，您已能开始探索 [!UICONTROL Cloud Manager] 的所有可能性，并准备将您的第一个代码分支部署到您的暂存和生产环境中。
 
 要开始使用 [!UICONTROL Cloud Manager]，请参阅[首次登录](/help/getting-started/first-time-login.md)。
 
-有关 AEM 的其他信息，请参阅[部署和维护](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-65/content/implementing/deploying/deploying/deploy)。
+有关 AEM 的其他信息，请参阅[部署和维护](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/deploying/deploying/deploy)。
 
 ## 开始使用 [!UICONTROL Cloud Manager] {#getting-started-with-cloud-manager}
 

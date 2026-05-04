@@ -2,10 +2,13 @@
 title: 在Cloud Manager中管理访问令牌
 description: 了解如何在Adobe Managed Services上查看、编辑和删除用于在Cloud Manager中自带Git的访问令牌。
 exl-id: 873aad0b-d7c6-4bc3-a70d-bbfdc1e02193
-source-git-commit: 651d9fc9964d599cb51556f7b6ba255fe8092d7f
+TQID: https://experienceleague.adobe.com/o-kW-Wuj-afgXomU0kErSwYsNZziQFkpvtxvU0PQj3M
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 3%
+source-wordcount: 387
+ht-degree: 6%
 
 ---
 
@@ -13,7 +16,7 @@ ht-degree: 3%
 
 Cloud Manager使用访问令牌管理在外部Git平台上托管的存储库。 以前，如果令牌过期，则必须重新载入关联的存储库才能保持可操作性。
 
-现在，**管理访问令牌**&#x200B;允许您更有效地管理令牌。 您可以查看、重命名或删除连接到受支持的外部Git提供程序(包括GitHub Enterprise、GitLab、Bitbucket和Azure DevOps)的令牌。
+现在，**管理访问令牌**&#x200B;允许您更有效地管理令牌。 您可以查看、重命名或删除连接到受支持的外部Git提供程序（包括GitHub Enterprise、GitLab、Bitbucket和Azure DevOps）的令牌。
 
 另请参阅[在Cloud Manager中添加外部存储库](/help/managing-code/external-repositories.md)。
 

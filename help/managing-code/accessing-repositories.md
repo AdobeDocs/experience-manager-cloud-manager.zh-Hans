@@ -2,9 +2,12 @@
 title: 存储库访问信息
 description: 了解如何使用 Cloud Manager 的自助 Git 帐户管理访问和管理 Adobe 管理的 Git 存储库。
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
-source-git-commit: 04fbc4a3fdba8b108055d66a4fdb1a31994cb18e
-workflow-type: ht
-source-wordcount: '381'
+TQID: https://experienceleague.adobe.com/S3oIN4DvfYCvKQLGQmFtWlqHcN5Mv9xvoNKjaMnNlm0
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 403
 ht-degree: 100%
 
 ---
@@ -38,14 +41,14 @@ Cloud Manager 中没有关于[专用存储库](/help/managing-code/private-repos
 
    ![管道信息卡上的 Access Repo Info](/help/managing-code/assets/pipelines-card2.png)
 
-1. 要访问密码，必须生成一个新密码。在 **存储库信息** 对话框中，选择 **生成密码**。
+1. 要访问密码，必须生成一个新密码。 在 **存储库信息** 对话框中，选择 **生成密码**。
 
 1. 在确认对话框中，选择 **生成密码**。
 
 1. 在 **密码** 字段右侧，点击 ![复制图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) 将密码复制到剪贴板。
 
    * 生成密码会使之前的密码失效。
-   * Cloud Manager 不保存密码。安全地保存此密码是您的责任。
+   * Cloud Manager 不保存密码。 安全地保存此密码是您的责任。
    * 由于 Cloud Manager 不保存密码，因此，如果您丢失密码，则必须重新生成一个新密码。
 
    ![在“存储库信息”对话框中复制密码](/help/managing-code/assets/repository-copy-password.png)
@@ -54,10 +57,10 @@ Cloud Manager 中没有关于[专用存储库](/help/managing-code/private-repos
 
 ## 从存储库窗口访问存储库信息 {#repositories-window}
 
- **Access Repo Info** 功能也可从 [**存储库** 页面](/help/managing-code/managing-repositories.md)获得。该工具栏显示有关访问 Adobe 管理的存储库的相同信息。
+**Access Repo Info** 功能也可从 [**存储库** 页面](/help/managing-code/managing-repositories.md)获得。 该工具栏显示有关访问 Adobe 管理的存储库的相同信息。
 
 ## 撤销访问密码 {#revoke-password}
 
 您可以随时撤销访问密码。
 
-为此，[为此请求创建支持工单](https://experienceleague.adobe.com/zh-hans?support-solution=Experience+Manager&amp;support-tab=home#support)。该工单会得到优先处理，并且通常会在一天内撤销。
+为此，[为此请求创建支持工单](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home#support)。 该工单会得到优先处理，并且通常会在一天内撤销。

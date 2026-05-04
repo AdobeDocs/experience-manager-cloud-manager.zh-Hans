@@ -2,17 +2,20 @@
 title: 添加生产管道
 description: 了解如何使用 Cloud Manager 创建和配置生产管道以部署代码。
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 1209faf71edbd74cd87acfe24ec438b98ddd4a3a
-workflow-type: ht
-source-wordcount: '1249'
+TQID: https://experienceleague.adobe.com/WH6W8bZNCWo0BAGLwnMOPpB3bk5P6Fd7c5b-dRT5Vc0
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 1256
 ht-degree: 100%
 
 ---
 
-
 # 添加生产管道 {#configuring-production-pipelines}
 
-了解如何使用 Cloud Manager 创建和配置生产管道以部署代码。如果您首先想了解有关管道在 Cloud Manager 中的工作方式的更具有概念化的概述，请参阅 [CI/CD 管道](/help/overview/ci-cd-pipelines.md)。
+了解如何使用 Cloud Manager 创建和配置生产管道以部署代码。 如果您首先想了解有关管道在 Cloud Manager 中的工作方式的更具有概念化的概述，请参阅 [CI/CD 管道](/help/overview/ci-cd-pipelines.md)。
 
 ## 概述 {#overview}
 
@@ -21,9 +24,9 @@ ht-degree: 100%
 * **生产管道** - 生产管道是一个专用管道，它包含一系列精心设计的步骤，可执行这些步骤以将 Git 存储库中的源代码用于生产环境。
 * **非生产管道** - 非生产管道主要用于运行代码质量扫描或将源代码部署到开发环境中。
 
-本文档侧重于生产管道。有关如何配置非生产管道的详细信息，请参阅[配置非生产管道](/help/using/non-production-pipelines.md)文档。
+本文档侧重于生产管道。 有关如何配置非生产管道的详细信息，请参阅[配置非生产管道](/help/using/non-production-pipelines.md)文档。
 
-**部署管理员**&#x200B;角色负责设置管道。管道配置包含：
+**部署管理员**&#x200B;角色负责设置管道。 管道配置包含：
 
 1. 定义会启动管道的触发器。
 1. 定义用于控制生产部署的参数。
@@ -45,7 +48,7 @@ ht-degree: 100%
 
    ![添加生产管道](/help/assets/configure-pipelines/add-prod1.png)
 
-1. 这将打开&#x200B;**添加生产管道**&#x200B;对话框，您必须在其中的&#x200B;**配置**&#x200B;选项卡上为管道定义大量选项。这些选项将分组到多个可折叠的部分中，并且会在以下步骤中进行描述。
+1. 这将打开&#x200B;**添加生产管道**&#x200B;对话框，您必须在其中的&#x200B;**配置**&#x200B;选项卡上为管道定义大量选项。 这些选项将分组到多个可折叠的部分中，并且会在以下步骤中进行描述。
 
    1. 在&#x200B;**管道名称**&#x200B;字段中提供管道的描述性名称。
 
@@ -71,7 +74,7 @@ ht-degree: 100%
             * **手动** - 使用 Cloud Manager UI 手动启动管道。
             * **在 Git 发生更改时** – 只要将承诺添加到配置的 Git 分支时就会启动 CI/CD 管道。 利用此选项，您仍能根据需要手动启动管道。
 
-         * **重要量度失败行为** - 在管道设置或编辑期间，部署管理员可以选择定义在任何质量审核出现重要失败时的管道行为。可用的选项为：
+         * **重要量度失败行为** - 在管道设置或编辑期间，部署管理员可以选择定义在任何质量审核出现重要失败时的管道行为。 可用的选项为：
 
             * **每次询问** – 默认设置，需要对任何重要失败进行手动干预。
             * **立即失败** – 每当发生重要失败时，管道都会被取消。 它是在模拟用户手动拒绝每个失败。
@@ -81,7 +84,7 @@ ht-degree: 100%
 
          * **部署选项** - 您可以加快执行某些部署任务。
 
-            * **暂存部署后审批** - 此审批在部署到暂存环境后且执行任何测试前进行。否则，在生产部署之前进行审批，这将在所有测试完成后执行。
+            * **暂存部署后审批** - 此审批在部署到暂存环境后且执行任何测试前进行。 否则，在生产部署之前进行审批，这将在所有测试完成后执行。
 
             * **跳过负载平衡器更改** - 不进行负载平衡器更改。
 
@@ -95,7 +98,7 @@ ht-degree: 100%
                * **刷新** - 执行缓存删除。
                * **使无效** - 执行缓存无效，与将内容从创作实例激活到发布实例时类似。
 
-            1. 单击&#x200B;**添加路径**&#x200B;以添加指定路径。可以为每个环境添加最多 100 个路径。
+            1. 单击&#x200B;**添加路径**&#x200B;以添加指定路径。 可以为每个环境添加最多 100 个路径。
 
          ![Dispatcher 配置](/help/assets/configure-pipelines/dispatcher-stage.png)
 
@@ -157,10 +160,10 @@ ht-degree: 100%
 
 ## 后续步骤 {#the-next-steps}
 
-配置管道后，部署代码。 请参阅[代码部署](/help/using/code-deployment.md)了解更多详细信息。
+配置管道后，部署代码。 请参阅 [代码部署](/help/using/code-deployment.md)以了解更多详细信息。
 
 ## 视频教程 {#video-tutorial-one}
 
 该视频概述了本文档中详述的管道创建过程。
 
->[!VIDEO](https://video.tv.adobe.com/v/327604?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)

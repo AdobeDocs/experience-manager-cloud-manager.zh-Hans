@@ -2,13 +2,17 @@
 title: 监控环境
 description: 了解如何在 Cloud Manager 中监控环境。
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+TQID: https://experienceleague.adobe.com/1WlZ7i3267CTPVQrvLi9FlzJuTjzSzpghePEMlSygjY
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: 873
 ht-degree: 75%
 
 ---
-
 
 # 监控环境 {#monitoring-environments}
 
@@ -22,7 +26,7 @@ ht-degree: 75%
 
 如果量度超过其关键阈值，则将被视为处于关键状态。
 
-Adobe Managed Services 会设置阈值，而您可以在 [!UICONTROL Cloud Manager] 中查看这些阈值。 在大多数情况下，客户之间的阈值是一致的，但在某些情况下，Adobe Managed Services 会修改阈值以匹配特定的客户要求。请向您的客户成功工程师 (CSE) 咨询任何有关阈值的问题。
+Adobe Managed Services 会设置阈值，而您可以在 [!UICONTROL Cloud Manager] 中查看这些阈值。 在大多数情况下，客户之间的阈值是一致的，但在某些情况下，Adobe Managed Services 会修改阈值以匹配特定的客户要求。 请向您的客户成功工程师 (CSE) 咨询任何有关阈值的问题。
 
 ## 访问系统监控功能 {#accessing-system-monitoring}
 
@@ -37,14 +41,14 @@ Adobe Managed Services 会设置阈值，而您可以在 [!UICONTROL Cloud Manag
 
 ## 系统监控概述 {#system-monitoring-overview}
 
-**报告**&#x200B;页面的&#x200B;**系统监控**&#x200B;部分列出了程序中受监控的环境。它通过以下四个不同的类别报告了它们的高级健康状况：
+**报告**&#x200B;页面的&#x200B;**系统监控**&#x200B;部分列出了程序中受监控的环境。 它通过以下四个不同的类别报告了它们的高级健康状况：
 
 * 主机
 * 存储
 * 网络
 * 应用程序
 
-每个类别中的状态均为各个量度的摘要。如果某个类别中的任意量度处于关键状态，则对于概述页面而言，整个类别都处于关键状态。 可以在环境级别和实例级别查看同一摘要。
+每个类别中的状态均为各个量度的摘要。 如果某个类别中的任意量度处于关键状态，则对于概述页面而言，整个类别都处于关键状态。 可以在环境级别和实例级别查看同一摘要。
 
 ![系统监控概述](/help/assets/System-Monitoring-Reports.png)
 
@@ -54,7 +58,7 @@ Adobe Managed Services 会设置阈值，而您可以在 [!UICONTROL Cloud Manag
 
 ## 系统监控详细信息 {#system-monitoring-detail}
 
-要查看特定量度的详细信息，请单击特定实例的其中一个类别列或左侧导航中的类别标题。每个详细信息页面均显示该类别中量度的一系列图表。您可以查看环境中所有实例或某个特定实例的量度。您可以使用右上角的下拉框在环境和实例之间切换。
+要查看特定量度的详细信息，请单击特定实例的其中一个类别列或左侧导航中的类别标题。 每个详细信息页面均显示该类别中量度的一系列图表。 您可以查看环境中所有实例或某个特定实例的量度。 您可以使用右上角的下拉框在环境和实例之间切换。
 
 ![选择环境](/help/assets/System_Monitoring1.png)
 
@@ -64,7 +68,8 @@ Adobe Managed Services 会设置阈值，而您可以在 [!UICONTROL Cloud Manag
 
 ![量度图表](/help/assets/Monitoring_Graphs1.png)
 
-通过单击图例中的系列，可以在图表上隐藏该系列。例如，如果您单击警告阈值系列，则您只会看到关键阈值。
+通过单击图例中的系列，可以在图表上隐藏该系列。
+例如，如果您单击警告阈值系列，则您只会看到关键阈值。
 
 ![修改图表](/help/assets/Monitoring_Graphs2.png)
 
@@ -124,4 +129,4 @@ Adobe Managed Services 会设置阈值，而您可以在 [!UICONTROL Cloud Manag
 
 本视频概述如何使用 Cloud Manager 报告生成的图表来查看项目环境。
 
->[!VIDEO](https://video.tv.adobe.com/v/34273?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/26315/)

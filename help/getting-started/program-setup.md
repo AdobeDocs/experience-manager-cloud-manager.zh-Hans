@@ -2,13 +2,16 @@
 title: 项目设置
 description: 完成新用户引导后，业务负责人必须对项目进行一些初始设置。
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+TQID: https://experienceleague.adobe.com/AqaA4GSOptV11h2y4V1Mt15KmEhEYBaiM-RvBFjtfWY
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: 570
 ht-degree: 93%
 
 ---
-
 
 # 程序设置 {#program-setup}
 
@@ -34,7 +37,7 @@ ht-degree: 93%
 
    ![“常规”选项卡](/help/assets/Setup_Program-General.png)
 
-1. 在 **KPI** 选项卡上，定义 KPI。在此示例中，为 **AEM Sites** 和 **AEM Assets** 定义了单独的 KPI。指定您已授权的产品的 KPI。
+1. 在 **KPI** 选项卡上，定义 KPI。 在此示例中，为 **AEM Sites** 和 **AEM Assets** 定义了单独的 KPI。 指定您已授权的产品的 KPI。
 
    有关如何在 Cloud Manager 中测量 KPI 的更多详细信息，请参阅 [KPI](#kpis) 部分。
 
@@ -48,11 +51,11 @@ ht-degree: 93%
 
 1. 单击&#x200B;**保存**。
 
-您的程序已创建。可能需要几分钟的时间来配置资源，之后该程序才可供使用。
+您的程序已创建。 可能需要几分钟的时间来配置资源，之后该程序才可供使用。
 
 ## 编辑程序 {#editing-program}
 
-在设置项目后，可以编辑项目。执行以下步骤来编辑项目。
+在设置项目后，可以编辑项目。 执行以下步骤来编辑项目。
 
 1. 在 [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com) 中登录 Cloud Manager 并选择适当的组织。
 
@@ -62,7 +65,7 @@ ht-degree: 93%
 
    ![“编辑项目”选项](/help/assets/set-up-program/edit-program1.png)
 
-1. 这将显示&#x200B;**编辑项目**&#x200B;对话框，在其中可以更新项目。有关可用字段的详细信息，请参阅[使用 Cloud Manager 设置项目](#program-setup-cloud-manager)部分。
+1. 这将显示&#x200B;**编辑项目**&#x200B;对话框，在其中可以更新项目。 有关可用字段的详细信息，请参阅[使用 Cloud Manager 设置项目](#program-setup-cloud-manager)部分。
 
    ![“编辑项目”对话框](/help/assets/set-up-program/edit-program-general.png)
 
@@ -92,4 +95,4 @@ ht-degree: 93%
 
 ## 视频概述 {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/34265?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)
