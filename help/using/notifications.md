@@ -2,13 +2,18 @@
 title: 通知
 description: 了解 Cloud Manager 如何向您通知重要事件。
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '561'
+TQID: https://experienceleague.adobe.com/WBAHeIAH1XL6oVy342wLaUAoAHkUoN1AbcAl2Erkte4
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 564
 ht-degree: 100%
 
 ---
-
 
 # 通知 {#notifications}
 
@@ -16,7 +21,7 @@ ht-degree: 100%
 
 ## Cloud Manager 中的通知 {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] 在生产部署开始时，当生产管道启动和完成（成功或失败）时向您发送通知。以及当达到&#x200B;**上线审批**&#x200B;和&#x200B;**已计划**&#x200B;步骤时。这些通知将通过 [!UICONTROL Experience Cloud] 通知系统发送。
+[!UICONTROL Cloud Manager] 在生产部署开始时，当生产管道启动和完成（成功或失败）时向您发送通知。 以及当达到&#x200B;**上线审批**&#x200B;和&#x200B;**已计划**&#x200B;步骤时。 这些通知将通过 [!UICONTROL Experience Cloud] 通知系统发送。
 
 >[!NOTE]
 >
@@ -28,11 +33,11 @@ ht-degree: 100%
 
 ![“通知”图标](/help/assets/notifications-bell-badged.png)
 
-单击铃铛图标可打开侧边栏并查看通知。侧边栏中的&#x200B;**通知**&#x200B;选项卡列出了最近的通知，例如部署确认通知。通知涉及您的环境。
+单击铃铛图标可打开侧边栏并查看通知。 侧边栏中的&#x200B;**通知**&#x200B;选项卡列出了最近的通知，例如部署确认通知。 通知涉及您的环境。
 
 ![通知侧边栏](/help/assets/notifications-activities.png)
 
-**公告**&#x200B;选项卡包括 Adobe 产品公告。公告涉及产品。
+**公告**&#x200B;选项卡包括 Adobe 产品公告。 公告涉及产品。
 
 ![通知侧边栏](/help/assets/notificaitons-announcements.png)
 
@@ -58,21 +63,21 @@ ht-degree: 100%
 
 ![通知订阅](/help/assets/notifications-subscriptions.png)
 
-默认情况下，您会收到所有产品的所有通知。单击产品旁边的&#x200B;**自定义**&#x200B;以定义您收到的该产品的通知类型。
+默认情况下，您会收到所有产品的所有通知。 单击产品旁边的&#x200B;**自定义**&#x200B;以定义您收到的该产品的通知类型。
 
 ![通知订阅自定义](/help/assets/notifications-subscriptions-customize.png)
 
 ### 优先级 {#priority}
 
-优先级警报带有 **HIGH** 标记。您可以将它们配置为仅作为警报接收。在&#x200B;**优先级**&#x200B;分区，您可以定义哪些类别有资格作为优先通知。
+优先级警报带有 **HIGH** 标记。 您可以将它们配置为仅作为警报接收。 在&#x200B;**优先级**&#x200B;分区，您可以定义哪些类别有资格作为优先通知。
 
 ![通知优先级](/help/assets/notifications-priority.png)
 
-使用下拉菜单添加到有资格作为优先级的类别列表中。单击类别名称旁边的 `X` 将其删除。
+使用下拉菜单添加到有资格作为优先级的类别列表中。 单击类别名称旁边的 `X` 将其删除。
 
 ### 警报 {#alerts}
 
-警报会在窗口右上角出现几秒钟。使用&#x200B;**警报**&#x200B;分区来定义您收到警报的通知。
+警报会在窗口右上角出现几秒钟。 使用&#x200B;**警报**&#x200B;分区来定义您收到警报的通知。
 
 ![通知警报](/help/assets/notifications-alerts.png)
 
@@ -84,14 +89,14 @@ ht-degree: 100%
 
 ### 电子邮件 {#emails}
 
-通知在 Adobe [!UICONTROL Experience Cloud] 解决方案的 Web 用户界面中提供。您也可以选择通过电子邮件在&#x200B;**电子邮件**&#x200B;分区发送这些通知。
+通知在 Adobe [!UICONTROL Experience Cloud] 解决方案的 Web 用户界面中提供。 您也可以选择通过电子邮件在&#x200B;**电子邮件**&#x200B;分区发送这些通知。
 
 ![通知电子邮件](/help/assets/notifications-emails.png)
 
-默认情况下不发送电子邮件。您可以选择以以下方式接收电子邮件：
+默认情况下不发送电子邮件。 您可以选择以以下方式接收电子邮件：
 
 * 即刻
 * 每日
 * 每周
 
-当选中&#x200B;**即时通知**&#x200B;后，每个通知都会立即发送电子邮件。对于&#x200B;**每日摘要**&#x200B;和&#x200B;**每周摘要**，您可以选择发送每日摘要的时间以及发送每周摘要的日期和时间。
+当选中&#x200B;**即时通知**&#x200B;后，每个通知都会立即发送电子邮件。 对于&#x200B;**每日摘要**&#x200B;和&#x200B;**每周摘要**，您可以选择发送每日摘要的时间以及发送每周摘要的日期和时间。

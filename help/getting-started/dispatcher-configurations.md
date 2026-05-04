@@ -2,13 +2,20 @@
 title: Dispatcher 配置
 description: 了解如何使用 Cloud Manager 部署 Dispatcher 配置文件。
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
-source-git-commit: 037a296c21adde6f7fa731c71ee4a75cea042780
+TQID: https://experienceleague.adobe.com/KpGTN-444bigrhLddGnZvxkZsThcVc1B--oEoAKTdos
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 89%
+source-wordcount: 595
+ht-degree: 92%
 
 ---
-
 
 # Dispatcher 配置 {#manage-your-dispatcher-configurations}
 
@@ -88,7 +95,7 @@ Cloud Manager 使用内置的[项目创建向导](/help/getting-started/using-th
    </project>
    ```
 
-   * 与步骤1中一样，如果需要，此处的artifactId和name可以是其他值。`dispatcher` 此处仅以使用为例。
+   * 与步骤 1 中一样，可以根据需要将此处的 artifactId 和 name 设为其他值。 此处仅以使用 `dispatcher` 为例。
 
 1. Maven Assembly 插件需要 `descriptor` 来定义 .zip 文件的创建方式。 要创建此描述符，请在 `dispatcher` 子目录中创建一个名为 `assembly.xml` 的文件，该文件包含以下内容。 请注意，上述 `pom.xml` 文件中的第 26 行引用了此文件名。
 

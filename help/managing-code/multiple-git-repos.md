@@ -2,9 +2,15 @@
 title: 使用多个 Git 存储库
 description: 了解如何使用您自己的 Git 存储库或多个 Git 存储库，而不是直接使用 Cloud Manager 的 Git 存储库。
 exl-id: 53bf78bb-489a-4a83-8459-c361f532d54a
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
-workflow-type: ht
-source-wordcount: '738'
+TQID: https://experienceleague.adobe.com/xKzqOfbi12A0POy-C7Gm7-n649DEBX9JP3LfXA5UC3Y
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 743
 ht-degree: 100%
 
 ---
@@ -17,7 +23,7 @@ ht-degree: 100%
 
 为了使 Cloud Manager 的 Git 存储库保持最新，如果您使用的是自己的存储库，请设置一个自动同步流程。
 
-根据托管 Git 存储库的位置，可以使用 GitHub 操作或 Jenkins 等持续集成解决方案来设置自动化。借助自动化功能，在每次推送到您自己的存储库时，都会自动转发到 Cloud Manager 的 Git 存储库。
+根据托管 Git 存储库的位置，可以使用 GitHub 操作或 Jenkins 等持续集成解决方案来设置自动化。 借助自动化功能，在每次推送到您自己的存储库时，都会自动转发到 Cloud Manager 的 Git 存储库。
 
 虽然为单个客户拥有的 Git 存储库实施此类自动化很简单，但为多个存储库配置此类自动化则需要更复杂的初始设置。 来自多个 Git 存储库的内容需映射到单个 Cloud Manager 的 Git 存储库中的不同目录。 Cloud Manager 的 Git 存储库需要使用根 Maven `pom.xml` 进行设置，并在模块部分中列出不同的子项目
 
@@ -48,7 +54,7 @@ ht-degree: 100%
 
 例如，对项目 A 中的 `main` 分支所做的更改将自动推送到 Cloud Manager Git 存储库中的 `main` 分支。 当然，分支之间会存在映射，例如在推送到项目 A 中名为 `dev` 的分支时，会推送到 Cloud Manager Git 存储库中名为 `development` 的分支。 对于项目 B，需要执行类似的步骤。
 
-根据分支策略和工作流，可以为不同的分支配置同步。如果使用的 Git 存储库未提供类似于 GitHub 操作的概念，则也可以通过 Jenkins（或类似方法）进行集成。 在此情况下，一个 webhook 将触发一个 Jenkins 作业来完成这项工作。
+根据分支策略和工作流，可以为不同的分支配置同步。 如果使用的 Git 存储库未提供类似于 GitHub 操作的概念，则也可以通过 Jenkins（或类似方法）进行集成。 在此情况下，一个 webhook 将触发一个 Jenkins 作业来完成这项工作。
 
 执行以下步骤会添加新的（第三个）源或存储库：
 

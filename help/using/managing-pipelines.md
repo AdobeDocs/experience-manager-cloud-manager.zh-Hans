@@ -2,13 +2,18 @@
 title: 管理管道
 description: 了解如何管理现有管道，包括运行、编辑和删除它们。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 91eda02d55134fba167f30830a142a80717e9083
+TQID: https://experienceleague.adobe.com/5SdiydpBmjwCLtzujtle4gW1JyRRvR2qNFN3fdN5A0w
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: 1244
 ht-degree: 91%
 
 ---
-
 
 # 管理管道 {#managing-pipelines}
 
@@ -36,7 +41,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 ## 管道页面 {#pipelines}
 
-**管道**&#x200B;页面显示所选项目的所有管道的完整列表。此列表很有用，因为它提供的信息比[管道信息卡](#pipeline-card)中的信息更全面。
+**管道**&#x200B;页面显示所选项目的所有管道的完整列表。 此列表很有用，因为它提供的信息比[管道信息卡](#pipeline-card)中的信息更全面。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 上登录到 Cloud Manager 并选择适当的组织和项目。
 
@@ -92,7 +97,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 ## 运行多个管道 {#run-multiple-pipelines}
 
-使用 Cloud Manager，您可以同时运行多个管道，从而提高 Adobe Managed Services (AMS) 客户的部署效率。**运行所选**&#x200B;功能可让您选择多个管道并触发它们同时运行。这样可以减少单独运行管道的手动工作量，优化构建和部署工作流程。
+使用 Cloud Manager，您可以同时运行多个管道，从而提高 Adobe Managed Services (AMS) 客户的部署效率。 **运行所选**&#x200B;功能可让您选择多个管道并触发它们同时运行。 这样可以减少单独运行管道的手动工作量，优化构建和部署工作流程。
 
 **如要运行多个管道：**
 
@@ -103,7 +108,7 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 1. 在页面的右上角附近，点击&#x200B;**运行所选（x）**。
 1. 在&#x200B;**运行选定的管道 (x)** 对话框中，点击&#x200B;**运行 (x)**。
 
-   **运行**&#x200B;按钮显示了可以继续运行的管道数量。例如，您可能选择了四个管道，但其中一个已经在运行。或者，关联到某个选定管道的环境不再存在。在这种情况下，系统会进行相应调整。按钮会更新为“运行（3）”，表示三条管道可以继续运行。
+   **运行**&#x200B;按钮显示了可以继续运行的管道数量。 例如，您可能选择了四个管道，但其中一个已经在运行。 或者，关联到某个选定管道的环境不再存在。 在这种情况下，系统会进行相应调整。 按钮会更新为“运行（3）”，表示三条管道可以继续运行。
 
 1. 管道开始运行，在&#x200B;**管道**&#x200B;列表中会更新其状态。
 
@@ -156,13 +161,13 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 在此页面中，您可以查看管道各个步骤的状态并检索构建日志以进行诊断。 有关更多信息，请参阅[代码部署](/help/using/code-deployment.md)文档。
 
-管道执行中的所有步骤都将显示，而尚未开始的步骤将灰显。已完成的步骤将显示其持续时间。
+管道执行中的所有步骤都将显示，而尚未开始的步骤将灰显。 已完成的步骤将显示其持续时间。
 
 管道步骤完成后会显示摘要。
 
 ![步骤摘要](/help/assets/configure-pipelines/pipeline-step.png)
 
-单击&#x200B;**查看详细信息**&#x200B;链接以显示&#x200B;**持续时间**&#x200B;部分。该部分包括基于该项目的历史趋势的管道的平均持续时间。
+单击&#x200B;**查看详细信息**&#x200B;链接以显示&#x200B;**持续时间**&#x200B;部分。 该部分包括基于该项目的历史趋势的管道的平均持续时间。
 
 ![持续时间](/help/assets/configure-pipelines/duration.png)
 
@@ -170,6 +175,6 @@ Cloud Manager 中的&#x200B;**项目概述**&#x200B;页面上的&#x200B;**管道
 
 ![代码质量问题](assets/managing-pipelines-code-quality-issues.png)
 
-CSV 文件中有一个&#x200B;**项目文件位置**&#x200B;列，用于指示有问题代码的位置。此列是项目相对路径，而&#x200B;**文件位置**&#x200B;列是由 Maven 生成的。
+CSV 文件中有一个&#x200B;**项目文件位置**&#x200B;列，用于指示有问题代码的位置。 此列是项目相对路径，而&#x200B;**文件位置**&#x200B;列是由 Maven 生成的。
 
 ![项目代码扫描问题详情](assets/managing-pipelines-code-quality-details.png)

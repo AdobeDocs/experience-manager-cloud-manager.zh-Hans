@@ -2,13 +2,18 @@
 title: 源代码存储库
 description: 了解为 Cloud Manager 中的每个程序配置的 Git 存储库。
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '245'
+TQID: https://experienceleague.adobe.com/hdEpqKW0NluPs-w37SeLzpd-EHJNqb2nfSAMQ35man8
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 254
 ht-degree: 100%
 
 ---
-
 
 # 源代码存储库 {#source-code-repository}
 
@@ -16,9 +21,9 @@ ht-degree: 100%
 
 ## Cloud Manager 存储库 {#cloud-manager-repository}
 
-您的 [!UICONTROL AEM Managed Services] 订阅包括一个由 Adobe 配置和管理的源代码存储库。每个项目都分配有一个唯一的 Git 存储库，您的关联代码将会存储在其中并受到保护。
+您的 [!UICONTROL AEM Managed Services] 订阅包括一个由 Adobe 配置和管理的源代码存储库。 每个项目都分配有一个唯一的 Git 存储库，您的关联代码将会存储在其中并受到保护。
 
-作为最佳实践，您应始终使用 Cloud Manager 的 Git 存储库，该存储库是空的，没有配置任何分支或示例项目。Cloud Manager 为其 Git 存储库提供了专用访问令牌，让您可以使用任何 Git 客户端创建分支、管理代码、检索提交历史记录等。
+作为最佳实践，您应始终使用 Cloud Manager 的 Git 存储库，该存储库是空的，没有配置任何分支或示例项目。 Cloud Manager 为其 Git 存储库提供了专用访问令牌，让您可以使用任何 Git 客户端创建分支、管理代码、检索提交历史记录等。
 
 有关如何在 Git 中设置分支的更多信息，请参阅[配置版本分支](/help/getting-started/configuring-branches.md)。
 

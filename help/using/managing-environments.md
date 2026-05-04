@@ -2,13 +2,22 @@
 title: 管理环境
 description: 了解如何使用 Cloud Manager 管理环境。
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: 0b7c926120798e2fdb635752192f4ab2e12c1e24
-workflow-type: ht
-source-wordcount: '273'
+TQID: https://experienceleague.adobe.com/Dz3Z5i-gSNSorc7Na74RKgm3e0P9b-3vjVRdJvu6a0c
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 275
 ht-degree: 100%
 
 ---
-
 
 # 管理环境 {#managing-environments}
 
@@ -39,11 +48,11 @@ Cloud Manager 的&#x200B;**概述**&#x200B;页面包含&#x200B;**环境**&#x200B
 
 在&#x200B;**环境**&#x200B;磁贴上，单击任意环境的行可显示&#x200B;**环境**&#x200B;屏幕。
 
-**环境**&#x200B;屏幕显示程序中的每个生产和暂存环境。每张信息卡的上方将显示环境名称。信息卡包括环境中的节点表以及 CPU 尺寸、存储、区域和状态。
+**环境**&#x200B;屏幕显示程序中的每个生产和暂存环境。 每张信息卡的上方将显示环境名称。 信息卡包括环境中的节点表以及 CPU 尺寸、存储、区域和状态。
 
 >[!NOTE]
 >
->节点的&#x200B;**状态**&#x200B;表示 VM 的电源状态，而不会反映服务器上 AEM 的状态。状态可以是：
+>节点的&#x200B;**状态**&#x200B;表示 VM 的电源状态，而不会反映服务器上 AEM 的状态。 状态可以是：
 
 * 绿色 – 正在运行
 * 红色 – 已停止

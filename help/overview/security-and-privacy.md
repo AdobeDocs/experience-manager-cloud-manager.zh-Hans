@@ -2,13 +2,21 @@
 title: 安全性和隐私
 description: 了解 Cloud Manager 中的代码和工件资产的安全性和隐私性。
 exl-id: 67df1987-8db7-40bd-9717-1bf194e957f7
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '202'
+TQID: https://experienceleague.adobe.com/mtWOzJnzV8k403LlyD9Fn9WSE5XTgjHzyVuA4j62MMg
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 202
 ht-degree: 100%
 
 ---
-
 
 # 安全性和隐私 {#security-and-privacy}
 
@@ -22,16 +30,16 @@ ht-degree: 100%
 
 ## 资源隔离 {#resource-isolation}
 
-[!UICONTROL Cloud Manager] 客户需要使用 IMS 凭据进行身份验证，因为所有与 [!UICONTROL Cloud Manager] 关联的权限都会关联到其 IMS 组织。在新用户引导过程中，配置团队需确保在 [!UICONTROL Cloud Manager] 中实施资源隔离。
+[!UICONTROL Cloud Manager] 客户需要使用 IMS 凭据进行身份验证，因为所有与 [!UICONTROL Cloud Manager] 关联的权限都会关联到其 IMS 组织。 在新用户引导过程中，配置团队需确保在 [!UICONTROL Cloud Manager] 中实施资源隔离。
 
 ## 数据安全性 {#data-security}
 
-对 [!UICONTROL Cloud Manager] 中的代码进行传输中加密。Cloud Manager 生成的二进制文件也将进行传输中加密，并且会在存储时进行加密。
+对 [!UICONTROL Cloud Manager] 中的代码进行传输中加密。 Cloud Manager 生成的二进制文件也将进行传输中加密，并且会在存储时进行加密。
 
 每个客户都有自己的 Git 存储库，并且代码是安全的且不会与任何其他组织共享。
 
 ## 数据隐私 {#data-privacy}
 
-[!UICONTROL Cloud Manager] 遵守 Adobe 制定的隐私原则。开发人员通过 HTTPS 将代码安全地推送到 Git 存储库中。
+[!UICONTROL Cloud Manager] 遵守 Adobe 制定的隐私原则。 开发人员通过 HTTPS 将代码安全地推送到 Git 存储库中。
 
-[!UICONTROL Cloud Manager] 的用户界面基于遵循 Adobe 通用控制框架的服务而构建。[!UICONTROL Cloud Manager] 的用户界面使用来自多个云提供商的安全服务。
+[!UICONTROL Cloud Manager] 的用户界面基于遵循 Adobe 通用控制框架的服务而构建。 [!UICONTROL Cloud Manager] 的用户界面使用来自多个云提供商的安全服务。

@@ -3,13 +3,20 @@ title: 评估阶段
 seo-title: Evaluation Phase
 description: 了解产品更新向导的评估阶段如何使用模式检测器来评估升级复杂性。
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+TQID: https://experienceleague.adobe.com/dj-Wnq9FagNI3mzzVHcUH-sOufzb02D0juHqhtgpon0
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 57%
+source-wordcount: 270
+ht-degree: 59%
 
 ---
-
 
 # 评估阶段 {#evaluation}
 
@@ -38,7 +45,7 @@ ht-degree: 57%
 
    ![运行评估](/help/assets/Run-Evaluation.png)
 
-1. 向导会告知您操作的状态。在生成评估报告时会看到&#x200B;**进行中**&#x200B;或&#x200B;**已完成**&#x200B;状态（如适用）。
+1. 向导会告知您操作的状态。 在生成评估报告时会看到&#x200B;**进行中**&#x200B;或&#x200B;**已完成**&#x200B;状态（如适用）。
 
 1. 生成报告后，可单击&#x200B;**[!UICONTROL 下载报告]**&#x200B;以保存副本。
 

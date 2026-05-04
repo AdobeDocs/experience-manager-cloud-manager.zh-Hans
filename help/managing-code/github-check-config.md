@@ -1,11 +1,17 @@
 ---
-title: 对专用存储库的拉取请求检查
+title: 专用存储库的提取请求检查
 description: 了解如何控制自动创建的管道以验证对专用存储库的每个提取请求。
 exl-id: 29c9e487-e196-411a-8cda-6751b0a56066
-source-git-commit: 1ae6792f8bc628c3530a63004c3d38f215c72778
+TQID: https://experienceleague.adobe.com/duceoXUt2SqWI0ZXzyuqZtszLfJkWr53G5O5ze4nxTY
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 92%
+source-wordcount: 237
+ht-degree: 95%
 
 ---
 
@@ -17,7 +23,7 @@ ht-degree: 92%
 
 ## 专用存储库检查的配置 {#configuration}
 
-使用[专用存储库](private-repositories.md#using)时，系统会自动创建一个[全栈代码质量管道](/help/overview/ci-cd-pipelines.md)。每次更新提取请求时，此管道将启动。
+使用[专用存储库](private-repositories.md#using)时，系统会自动创建一个[全栈代码质量管道](/help/overview/ci-cd-pipelines.md)。 每次更新提取请求时，此管道将启动。
 
 您可以通过在专用存储库的默认分支中创建一份 `.cloudmanager/pr_pipelines.yml` 文件来控制这些检查。
 
