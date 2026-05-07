@@ -1,82 +1,58 @@
 ---
-title: Cloud Manager 2026.4.0发行说明
-description: 了解Adobe Managed Services中的Cloud Manager 2026.4.0版本。
+title: Cloud Manager 2026.5.0发行说明
+description: 了解Adobe Managed Services中的Cloud Manager 2026.5.0版本。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 TQID: https://experienceleague.adobe.com/4zfTpSYuFwrJZ-oeL1SObT14v2Rd--Z1hKn5JllHAro
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 8964aad406d3e7fc5b911b98f928ad0427511230
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 0c2a9a946df6d5e1b0e4d5edb2715d8db98e9974
 workflow-type: tm+mt
-source-wordcount: 467
-ht-degree: 14%
+source-wordcount: 512
+ht-degree: 15%
 
 ---
 
 
-# Adobe Managed Services中的Cloud Manager 2026.4.0发行说明 {#release-notes}
+# Adobe Managed Services中的Cloud Manager 2026.5.0发行说明 {#release-notes}
 
 <!-- add "hold: true" to metadata above to be able to commit/merge to Main WITHOUT Publishig -->
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-了解Adobe Managed Services中的[!UICONTROL Cloud Manager] 2026.4.0版本。
+了解Adobe Managed Services中的[!UICONTROL Cloud Manager] 2026.5.0版本。
 
 另请参阅 [Adobe Experience Manager as a Cloud Service 的当前发行说明](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/release-notes/home)。
 
 ## 发行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2026.4.0的发布日期是2026年4月2日星期四。
+[!UICONTROL Cloud Manager] 2026.5.0的发布日期是2026年5月7日星期四。
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-下一个计划发布于2026年5月7日星期四。
+下一个计划发布于2026年6月4日星期四。
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
 ## 新增功能 {#what-is-new}
 
-* **支持AEM Experience Hub中的用户界面可扩展性。**
-
-  [AEM Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/experience-hub/experience-hub)中的用户界面扩展支持现已启用，允许开发人员使用Adobe App Builder构建的自定义功能和构件来扩展界面。
-
-  若要了解更多信息，请参阅[AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/)。
-
-* **配置管道现在支持托管密钥。**
-
-  用户现在可以直接在Cloud Manager配置管道中添加和管理密钥。 这些密钥安全地覆盖管道配置规范中的值，并支持灵活、特定于环境的部署。
-
-  所选管道的下拉菜单中的![查看/编辑变量选项](/help/release-notes/assets/view-edit-variables-option.png)
-  *所选管道的下拉菜单上的“查看/编辑变量”选项。*
-
-  ![变量配置对话框&#x200B;](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*变量配置对话框。*
-
-* **改进的稳定性、性能和可靠性。**
-
-  此版本包括优化和维护更新，这些更新改进了Cloud Manager的稳定性、性能和可靠性。
-
+2026年5月Cloud Manager的AMS版本中没有任何重要的新功能。
 
 ## Beta 计划 {#beta-program}
 
-参与Cloud Manager的Beta计划，在即将发布的功能正式发布之前以独占方式访问这些功能。
+参与 Cloud Manager 的 beta 计划，在即将推出的功能正式发布之前获得独家访问权限。
 
-目前提供以下机会：
+>[!IMPORTANT]
+>
+>Beta版本可能包含缺陷，并“按原样”提供，无任何类型的担保。 Adobe没有义务维护、更正、更新、更改、修改或以其他方式支持（通过Adobe支持服务或其他方式）Beta版。 Adobe建议客户谨慎使用，不要依赖测试版或随附的任何文档或材料的正确功能或性能。 Beta版中的功能和API如有更改，恕不另行通知。 因此，使用测试版完全由客户自行承担风险。
 
-<!--
-### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
+目前提供以下测试版计划机会：
 
-[Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
+### AEM Managed Services的Web层管道 {#web-tier-pipelines}
 
-![Diagram of Experience Hub extensibility and customization workflow](/help/release-notes/assets/experience-hub-extensibility-customization.png)
+Cloud Manager现在支持AMS程序的专用Web层管道，允许团队独立于全栈部署部署Dispatcher和Web层配置。 这样可以在Web层更改上加快迭代，同时减少不必要的完整管道执行。 配置Web层管道后，全栈管道会自动跳过该环境的Web层部署，以防止部署冲突。 删除Web层管道会自动恢复默认部署行为。
 
-Embed custom experiences in Experience Hub to extend and personalize your organization's dashboard. In addition to Adobe's built-in widgets, add your own using the [UI Extensibility](https://developer.adobe.com/uix/docs/) framework. Build JavaScript-based UI apps and surface them to your users to meet business-specific requirements and workflows. 
-
-Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) with your Adobe OrgID and a short description of the customization you intend to create.
--->
+要加入Beta，请联系您的Adobe客户成功工程师以了解更多信息。
 
 ### 通过模块缓存加快构建速度 {#quick-build-cm-pipelines}
 
@@ -100,7 +76,7 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 
 ## 错误修复 {#bug-fixes}
 
-2026年4月的AMS版本Cloud Manager中没有重大错误修复。
+2026年5月，AMS版本上的Cloud Manager中没有重大错误修复。
 
 <!--
 Known Issues {#known-issues}
