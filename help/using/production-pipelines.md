@@ -217,4 +217,4 @@ Web层配置管道仅部署HTTPD/Dispatcher配置。 有关此管道类型的更
 
 该视频概述了本文档中详述的管道创建过程。
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/)
+>[!VIDEO](https://video.tv.adobe.com/v/327604?captions=chi_hans)
