@@ -8,9 +8,9 @@ product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
 workflow-type: tm+mt
-source-wordcount: 1999
+source-wordcount: 2096
 ht-degree: 22%
 
 ---
@@ -91,6 +91,10 @@ ht-degree: 22%
 
 部署完整的AEM应用程序，包括应用程序代码和默认的Web层配置。
 
+>[!NOTE]
+>
+>如果所选环境已存在全栈代码管道，则会禁用此选择。
+
 | 区域 | 选项 | 描述 |
 | --- | --- | --- |
 | **Source代码** | **存储库** | 从下拉列表中，选择管道用作其源的Git存储库。 Cloud Manager从您在此处选择的存储库中生成代码。 |
@@ -105,11 +109,19 @@ ht-degree: 22%
 
 如果全栈管道已存在，Cloud Manager会显示一条通知，指出创建Web层配置管道会导致现有全栈管道忽略Web层配置。 在创建Web层配置管道后，Cloud Manager会通过该管道（而不是全栈管道）管理Web层配置部署。
 
+>[!NOTE]
+>
+>如果所选环境已存在Web层配置管道，则将禁用此选择。 在任何时候，每个环境只能有一个 Web 层配置管道。
+
 | 区域 | 选项 | 描述 |
 | --- | --- | --- |
 | **Source代码** | **存储库** | 从下拉列表中，选择包含Web层配置的Git存储库。 |
 |   | **Git分支** | 选择Cloud Manager用于部署的所选存储库中的分支。 如有必要，请单击&#x200B;**刷新**&#x200B;以更新所选存储库的可用分支列表。 如果最近创建的分支未出现在列表中，请使用此选项。 |
 |   | **代码位置** | 在包含要部署的Web层配置的所选存储库中输入路径。 默认位置是存储库根(`/`)。 |
+
+>[!NOTE]
+>
+>如果代码位置未指向Dispatcher代码位置，则可能会将其他应用程序代码拉入工件包并部署到Dispatcher，从而导致Apache在重新启动时失败以及管道失败。 确保为存储库中的Dispatcher文件设置正确的路径。
 
 >[!ENDTABS]
 
