@@ -3,17 +3,13 @@ title: 添加生产管道
 description: 了解如何使用 Cloud Manager 创建和配置生产管道以部署代码。
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 TQID: https://experienceleague.adobe.com/WH6W8bZNCWo0BAGLwnMOPpB3bk5P6Fd7c5b-dRT5Vc0
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
 workflow-type: tm+mt
-source-wordcount: 1256
-ht-degree: 100%
+source-wordcount: 1665
+ht-degree: 73%
 
 ---
 
@@ -50,24 +46,11 @@ ht-degree: 100%
 
 1. 单击 **+ 添加**，然后选择&#x200B;**添加生产管道**。
 
-   ![添加生产管道](/help/assets/configure-pipelines/add-prod1.png)
+   ![添加生产管道](/help/assets/configure-pipelines/add-prod7.png)
 
 1. 这将打开&#x200B;**添加生产管道**&#x200B;对话框，您必须在其中的&#x200B;**配置**&#x200B;选项卡上为管道定义大量选项。 这些选项将分组到多个可折叠的部分中，并且会在以下步骤中进行描述。
 
    1. 在&#x200B;**管道名称**&#x200B;字段中提供管道的描述性名称。
-
-   1. 在&#x200B;**源代码**&#x200B;部分下，定义管道在何处检索其处理的代码。
-
-      * **存储库** - 定义管道应从中检索代码的 Git 存储库。
-
-      >[!TIP]
-      >
-      >请参阅[项目设置](/help/getting-started/program-setup.md)文档，了解如何在 Cloud Manager 中添加和管理存储库。
-
-      * **Git 分支** – 定义管道应从中检索代码的所选存储库的分支。
-      * **代码位置** - 定义管道应从中检索代码的所选存储库分支中的路径。
-
-      ![定义管道的存储库](/help/assets/configure-pipelines/add-prod2.png)
 
    1. 在&#x200B;**环境**&#x200B;部分下，您可以定义触发部署的内容以及应如何在每个环境中推出部署。
 
@@ -133,7 +116,16 @@ ht-degree: 100%
 
          * **Dispatcher 配置** - 为您的生产环境定义 Dispatcher 配置。 这些选项与暂存环境的选项相同。
 
-1. 单击&#x200B;**继续**&#x200B;以进入&#x200B;**暂存测试**&#x200B;选项卡，可以在其中根据已许可的产品来配置 AEM Sites 和 AEM Assets 性能测试。
+1. 单击&#x200B;**继续**&#x200B;进入&#x200B;**Source代码**&#x200B;选项卡，在该选项卡中选择要部署和配置源存储库的代码类型。
+
+   1. 在&#x200B;**选择要部署的代码**&#x200B;下，选择部署类型：
+
+      * **[全栈代码](#full-stack-code)** — 完整AEM应用程序的代码。
+      * **[Web层配置](#web-tier-config)** — 用于存储、处理网页并将网页交付给客户端的Dispatcher属性。
+
+      有关这些部署类型的详细信息，请参阅[CI/CD管道](/help/overview/ci-cd-pipelines.md#code-sources)。 完成管道配置的剩余步骤取决于您选择的类型。 按照上面的链接跳到本文档的相关部分。
+
+1. 单击&#x200B;**继续**&#x200B;以进入&#x200B;**暂存测试**&#x200B;选项卡，可以在其中根据已许可的产品来配置 AEM Sites 和 AEM Assets 性能测试。 {#stage-testing}
 
    >[!TIP]
    >
@@ -145,7 +137,7 @@ ht-degree: 100%
       * **其他实时页面**
       * **新页面**
 
-      ![网站负载权重](/help/assets/configure-pipelines/add-prod5.png)
+      ![网站负载权重](/help/assets/configure-pipelines/add-prod8.png)
 
    1. 在 **Assets 性能测试分发**&#x200B;部分中，您可以定义图像和 PDF 的测试分发，并定义您自己的测试资产。
 
@@ -162,6 +154,57 @@ ht-degree: 100%
 
 1. 单击&#x200B;**保存**&#x200B;以完成生产管道添加操作。
 
+### 全栈代码 {#full-stack-code}
+
+全栈代码管道部署后端和前端代码构建以及HTTPD/Dispatcher配置。
+
+>[!NOTE]
+>
+>如果全栈生产管道已存在，则禁用此选择。
+
+**要配置全栈栈代码生产管道：**
+
+1. 在&#x200B;**Source代码**&#x200B;选项卡上，定义以下选项。
+
+   * **存储库** - 定义管道应从中检索代码的 Git 存储库。
+
+   >[!TIP]
+   >
+   >请参阅[项目设置](/help/getting-started/program-setup.md)文档，了解如何在 Cloud Manager 中添加和管理存储库。
+
+   * **Git分支** — 定义管道应从中检索代码的分支。
+   * **忽略 Web 层配置** – 勾选后，该管道不会部署您的 Web 层配置。 如果同一环境已存在某个Web层配置管道，则该复选框将自动选中并禁用，因为Web层配置由该管道管理。 当不存在Web层配置管道时，您可以选择或清除此选项以控制全栈管道是否部署Dispatcher配置。
+
+   ![全栈代码源](/help/assets/configure-pipelines/add-prod-fullstack-source.png)
+
+1. 单击&#x200B;**继续**&#x200B;进入&#x200B;**阶段测试**&#x200B;选项卡。 有关详细信息，请参阅[暂存测试](#stage-testing)。
+
+### Web 层配置 {#web-tier-config}
+
+Web层配置管道仅部署HTTPD/Dispatcher配置。 有关此管道类型的更多详细信息，请参阅[CI/CD管道](/help/overview/ci-cd-pipelines.md#deployment-types)。
+
+>[!NOTE]
+>
+>如果Web层配置生产管道已存在，则禁用此选择。
+
+如果您为具有现有全栈管道的环境创建Web层配置管道，则忽略全栈管道中的Web层配置。 此更改仅影响该环境中的Web层配置。
+
+**要配置Web层配置生产管道：**
+
+1. 在&#x200B;**Source代码**&#x200B;选项卡上，定义以下选项。
+
+   * **存储库** — 从下拉列表中选择包含Web层配置的Git存储库。
+   * **Git分支** — 选择Cloud Manager用于部署的所选存储库中的分支。
+   * **代码位置** — 在包含要部署的Web层配置的选定存储库中输入路径。 默认位置是存储库根(`/`)。
+
+   >[!NOTE]
+   >
+   >如果代码位置未指向Dispatcher代码位置，则可能会将其他应用程序代码拉入工件包并部署到Dispatcher，从而导致Apache在重新启动时失败以及管道失败。 确保为存储库中的Dispatcher文件设置正确的路径。
+
+   ![Web层配置源](/help/assets/configure-pipelines/add-prod-webtier-source.png)
+
+1. 单击&#x200B;**继续**&#x200B;进入&#x200B;**阶段测试**&#x200B;选项卡。 有关详细信息，请参阅[暂存测试](#stage-testing)。
+
 ## 后续步骤 {#the-next-steps}
 
 配置管道后，部署代码。 请参阅 [代码部署](/help/using/code-deployment.md)以了解更多详细信息。
@@ -170,4 +213,4 @@ ht-degree: 100%
 
 该视频概述了本文档中详述的管道创建过程。
 
->[!VIDEO](https://video.tv.adobe.com/v/327604?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
