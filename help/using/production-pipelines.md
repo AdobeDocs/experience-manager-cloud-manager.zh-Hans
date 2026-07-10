@@ -3,17 +3,13 @@ title: 添加生产管道
 description: 了解如何使用 Cloud Manager 创建和配置生产管道以部署代码。
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 TQID: https://experienceleague.adobe.com/WH6W8bZNCWo0BAGLwnMOPpB3bk5P6Fd7c5b-dRT5Vc0
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 4c73ab16ff7eab406c31a6d26cdd09360a94b3ea
 workflow-type: tm+mt
-source-wordcount: 1665
-ht-degree: 73%
+source-wordcount: 2101
+ht-degree: 58%
 
 ---
 
@@ -23,7 +19,7 @@ ht-degree: 73%
 
 ## 概述 {#overview}
 
-通过使用 **Cloud Manager 中的**&#x200B;管道设置图块，您可以创建两种不同类型的管道。
+通过使用 **Cloud Manager] 中的**&#x200B;管道设置[!UICONTROL 图块，您可以创建两种不同类型的管道。
 
 * **生产管道** - 生产管道是一个专用管道，它包含一系列精心设计的步骤，可执行这些步骤以将 Git 存储库中的源代码用于生产环境。
 * **非生产管道** - 非生产管道主要用于运行代码质量扫描或将源代码部署到开发环境中。
@@ -40,7 +36,7 @@ ht-degree: 73%
 >
 >在管道的关联 Git 存储库具有至少一个分支且[项目设置](/help/getting-started/program-setup.md)完成之前，无法设置管道。
 
-## 添加新的生产管道 {#adding-production-pipeline}
+## 添加生产管道 {#adding-production-pipeline}
 
 在使用 [!UICONTROL Cloud Manager] UI 设置项目并具有至少一个环境后，便可以添加生产管道。
 
@@ -209,6 +205,83 @@ Web层配置管道仅部署HTTPD/Dispatcher配置。 有关此管道类型的更
 
 1. 单击&#x200B;**继续**&#x200B;进入&#x200B;**阶段测试**&#x200B;选项卡。 有关详细信息，请参阅[暂存测试](#stage-testing)。
 
+
+## 关于在生产管道中使用Smart Build{#about-smart-build}
+
+Cloud Manager中的&#x200B;**智能生成**&#x200B;是生产管道的优化生成策略。 Smart Build通过缓存模块并仅重新生成自上次成功运行以来发生更改的模块来缩短构建时间。 未更改的模块从缓存中重用，而只重新构建已修改的模块及其依赖关系，从而提高迭代开发工作流的效率。
+
+Smart Build当前可用于以下内容：
+
+* 代码质量管道。
+* 开发、暂存和生产全栈部署管道。
+
+>[!NOTE]
+>
+>启用Smart Build后首次运行的行为类似于Full Build，因为缓存为空。
+
+在出现以下情况时，建议使用Smart Build：
+
+* 您正在积极开发和提交频繁的增量更改。
+* 您的项目包含多个Maven模块。
+* 完整内部版本需要大量时间。
+
+当出现以下情况时，Smart Build并不总是理想的：
+
+* 您的内部版本严重依赖在Maven的依赖关系图之外执行操作的插件。
+* 每次执行都需要完全重新生成验证。
+
+### 了解构建性能{#smart-build-performance}
+
+使用Smart Build的性能提升取决于以下几个因素：
+
+* 项目中的模块数。
+* 代码更改的频率和范围。
+* 依赖项在各个模块之间的分布。
+
+通常，具有多个独立模块的项目可以看到最大的改进。
+
+### 每模块缓存选择退出{#smart-build-cache-optout}
+
+Smart Build提供细粒度控制，允许您禁用特定模块的缓存。 此功能在以下情况下很有用：
+
+* 使用插件，如`exec-maven-plugin`或`maven-antrun-plugin`。
+* 执行Maven依赖项未跟踪的文件操作。
+* 缓存时生成不一致的结果。
+
+### 禁用模块的缓存{#smart-build-disable-caching}
+
+您可以将以下属性添加到受影响模块的`pom.xml`：
+
+```xml
+<properties>
+  <maven.build.cache.enabled>false</maven.build.cache.enabled>
+</properties>
+```
+
+此语法强制模块在每次管道执行时重新生成，而其他模块继续受益于缓存。
+
+### 使用智能构建时的限制和注意事项{#smart-build-limitations}
+
+使用Smart Build时，请牢记以下几点：
+
+* Smart Build依赖于Maven依赖关系分析。
+* 在依赖关系图之外进行的更改可能不会触发重新生成。
+* 某些插件可能与缓存不完全兼容。
+* 您可以通过编辑非生产管道随时切换回&#x200B;**完整内部版本**。
+
+如果遇到意外的生成行为，请考虑禁用特定模块的缓存或暂时将生成策略切换到&#x200B;**完整生成**。
+
+### 智能生成问题疑难解答{#smart-build-troubleshoot}
+
+| 问题 | 建议的解决方案 |
+| --- | --- |
+| 生成结果不一致 | ·禁用受影响模块的缓存。<br>·验证插件行为（尤其是`exec`/`antrun`插件）。 |
+| 无性能改进 | ·确保已多次运行（缓存预热）。<br>·检查大多数模块是否频繁更改。 |
+| 意外的项目或缺少更改 | ·检查更改是否在Maven依赖项跟踪之外。<br>·使用&#x200B;**Full Build**&#x200B;进行验证。 |
+
+请参阅[添加生产管道](#adding-production-pipeline)以启用智能生成。
+
+
 ## 后续步骤 {#the-next-steps}
 
 配置管道后，部署代码。 请参阅 [代码部署](/help/using/code-deployment.md)以了解更多详细信息。
@@ -217,4 +290,4 @@ Web层配置管道仅部署HTTPD/Dispatcher配置。 有关此管道类型的更
 
 该视频概述了本文档中详述的管道创建过程。
 
->[!VIDEO](https://video.tv.adobe.com/v/327604?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
