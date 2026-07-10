@@ -4,9 +4,13 @@ description: 了解Adobe Managed Services中的Cloud Manager 2026.7.0版本。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 TQID: https://experienceleague.adobe.com/4zfTpSYuFwrJZ-oeL1SObT14v2Rd--Z1hKn5JllHAro
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 4c73ab16ff7eab406c31a6d26cdd09360a94b3ea
 workflow-type: tm+mt
 source-wordcount: 391
@@ -39,7 +43,7 @@ ht-degree: 14%
 <!-- There are no significant new features in the June 2026 Cloud Manager on AMS release. -->
 
 * **通过模块缓存提高了生成性能**
-新的构建模型使用模块级缓存提高构建性能，只编译已更改的模块（而不是整个存储库）。 适用于生产管道。 您控制哪些生产管道使用**智能生成**。
+新的构建模型使用模块级缓存提高构建性能，只编译已更改的模块（而不是整个存储库）。 适用于生产管道。 您控制哪些生产管道使用&#x200B;**智能生成**。
 
   有关更多信息，请参阅以下内容：
 

@@ -3,9 +3,13 @@ title: 添加生产管道
 description: 了解如何使用 Cloud Manager 创建和配置生产管道以部署代码。
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 TQID: https://experienceleague.adobe.com/WH6W8bZNCWo0BAGLwnMOPpB3bk5P6Fd7c5b-dRT5Vc0
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 4c73ab16ff7eab406c31a6d26cdd09360a94b3ea
 workflow-type: tm+mt
 source-wordcount: 2101
@@ -19,7 +23,7 @@ ht-degree: 58%
 
 ## 概述 {#overview}
 
-通过使用 **Cloud Manager] 中的**&#x200B;管道设置[!UICONTROL 图块，您可以创建两种不同类型的管道。
+通过使用 **Cloud Manager 中的**&#x200B;管道设置图块，您可以创建两种不同类型的管道。
 
 * **生产管道** - 生产管道是一个专用管道，它包含一系列精心设计的步骤，可执行这些步骤以将 Git 存储库中的源代码用于生产环境。
 * **非生产管道** - 非生产管道主要用于运行代码质量扫描或将源代码部署到开发环境中。
