@@ -8,9 +8,9 @@ product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
+source-git-commit: 4c73ab16ff7eab406c31a6d26cdd09360a94b3ea
 workflow-type: tm+mt
-source-wordcount: 2096
+source-wordcount: 2080
 ht-degree: 22%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 22%
 >
 >在管道的关联Git存储库具有至少一个分支且[项目设置](/help/getting-started/program-setup.md)完成之前，您无法设置管道。 请参阅 [Cloud Manager 存储库](/help/managing-code/managing-repositories.md)，了解如何在 Cloud Manager 中添加和管理存储库。
 
-## 添加新的非生产管道 {#add-non-production-pipeline}
+## 添加非生产管道 {#add-non-production-pipeline}
 
 在Cloud Manager UI中设置项目和至少一个环境后，您可以添加非生产管道。 在部署到生产环境之前，使用这些管道测试代码质量。
 
@@ -99,7 +99,7 @@ ht-degree: 22%
 | --- | --- | --- |
 | **Source代码** | **存储库** | 从下拉列表中，选择管道用作其源的Git存储库。 Cloud Manager从您在此处选择的存储库中生成代码。 |
 |   | **Git分支** | 从下拉列表中，选择管道应从中构建的所选存储库的分支。 默认为 `main`。 管道使用所选分支作为构建和部署的源。 如有必要，请单击&#x200B;**刷新**&#x200B;以更新所选存储库的可用分支列表。 如果最近创建的分支未出现在列表中，请使用此选项。 |
-|   | **生成策略** | <ul><li>**完整生成** — 每次生成存储库中的所有模块<li>Beta **智能生成** — 仅生成自上次提交以来更改的模块。<br>了解有关[在非生产管道中使用Smart Build](#about-smart-build)的更多信息。</li></ol>**重要信息**： Smart Build仅适用于代码质量管道和开发全栈代码部署管道。 |
+|   | **生成策略** | <ul><li>**完整生成** — 每次生成存储库中的所有模块<li>**智能生成** — 仅生成自上次提交以来更改的模块。<br>了解有关[在非生产管道中使用Smart Build](#about-smart-build)的更多信息。</li></ol> |
 |   | **忽略Web层配置**&#x200B;复选框 | 选择此选项可跳过全栈代码管道中Web层配置的部署。 保持未选中选项以部署Web层配置以及管道代码。 |
 | **管道** | **体验审核**&#x200B;复选框 | 选择此选项可在管道中包含体验审核步骤。 启用后，该管道会在“Source代码”选项卡之后包含“体验审核”步骤。 |
 
@@ -131,21 +131,24 @@ ht-degree: 22%
 
 Cloud Manager中的&#x200B;**智能生成**&#x200B;是适用于非生产管道的优化生成策略。 Smart Build通过缓存模块并仅重新生成自上次成功运行以来发生更改的模块来缩短构建时间。 未更改的模块从缓存中重用，而只重新构建已修改的模块及其依赖关系，从而提高迭代开发工作流的效率。
 
-Smart Build当前仅适用于以下项目：
+Smart Build当前可用于以下内容：
 
 * 代码质量管道。
-* 开发全栈部署管道。
+* 开发、暂存和非生产全栈部署管道。
+
 
 >[!NOTE]
 >
 >启用Smart Build后首次运行的行为类似于Full Build，因为缓存为空。
 
 在出现以下情况时，建议使用Smart Build：
+
 * 您正在积极开发和提交频繁的增量更改。
 * 您的项目包含多个Maven模块。
 * 完整内部版本需要大量时间。
 
 当出现以下情况时，Smart Build并不总是理想的：
+
 * 您的内部版本严重依赖在Maven的依赖关系图之外执行操作的插件。
 * 每次执行都需要完全重新生成验证。
 
