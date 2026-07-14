@@ -27,7 +27,7 @@ ht-degree: 30%
 
 ## 首次登录 {#logging-in-for-the-first-time}
 
-1. 在[experience.adobe.com](https://experience.adobe.com/experiencemanager)登录Cloud Manager。 要了解更多信息，请参阅[关于Adobe Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
+1. 在[experience.adobe.com](https://experience.adobe.com/experiencemanager)登录Cloud Manager。 要了解更多信息，请参阅[关于Adobe Experience Hub](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/experience-hub/experience-hub)
 1. 在左侧面板中点击 **Cloud Manager**。
 
    Experience Manager左侧面板中的![Cloud Manager](/help/getting-started/assets/cloud-manager-experiencemanager.png)

@@ -37,7 +37,7 @@ Cloud Manager 使用内置的[项目创建向导](/help/getting-started/using-th
 
 1. 从客户成功团队获取当前生产配置文件。
 1. 删除特定于环境的数据（如发布渲染程序IP），并将其替换为变量。
-1. 在每个目标Dispatcher的键值对中定义所需的变量，并将其添加到每个实例上的[变量](https://experienceleague.adobe.com/en/docs/experience-manager-learn/ams/dispatcher/variables)文件夹中。
+1. 在每个目标Dispatcher的键值对中定义所需的变量，并将其添加到每个实例上的[变量](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/ams/dispatcher/variables)文件夹中。
 1. 在暂存环境中测试更新的配置。
 1. 测试后，请请求客户成功团队部署到生产环境。
 1. 将文件提交到 Git 存储库。
