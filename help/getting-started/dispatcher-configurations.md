@@ -10,10 +10,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: 1692390e24f8fa7d719bd8293a99586ec4ec36d4
 workflow-type: tm+mt
-source-wordcount: 595
-ht-degree: 92%
+source-wordcount: 557
+ht-degree: 44%
 
 ---
 
@@ -23,39 +23,39 @@ ht-degree: 92%
 
 ## 使用 Cloud Manager 部署 Dispatcher 配置 {#deploying-dispatcher-configurations}
 
-Cloud Manager 能够部署 Web 服务器和 Dispatcher 配置文件，前提是这些文件与普通 AEM 内容包一起存储在 Git 存储库中。
+如果Web服务器和Dispatcher配置文件与标准AEM内容包一起存储在Git存储库中，则Cloud Manager可以部署这些文件。
 
-为了利用此功能，Maven 构建应生成一个 .zip 文件，其中至少包含两个目录：`conf` 和 `conf.d`。 可以使用 `maven-assembly-plugin` 生成此 .zip 文件。
+若要使用此功能，Maven内部版本将生成一个.zip文件，其中至少包含两个目录： `conf`和`conf.d`。 可以使用 `maven-assembly-plugin` 生成此 .zip 文件。
 
-Cloud Manager 使用内置的[项目创建向导](/help/getting-started/using-the-wizard.md)生成的项目具有自动创建的正确的 Maven 项目结构。 如果您不熟悉 Adobe Managed Services (AMS)，那么建议您执行此操作。
+Cloud Manager 使用内置的[项目创建向导](/help/getting-started/using-the-wizard.md)生成的项目具有自动创建的正确的 Maven 项目结构。 如果您不熟悉Adobe Managed Services (AMS)，建议您使用此方法。
 
-当您部署到 Dispatcher 实例时，实例上的目录会被 Git 存储库中的目录替换。 由于 Web 服务器和 Dispatcher 配置文件通常需要特定于环境的详细信息，因此您必须与客户成功工程师 (CSE) 合作，在 `/etc/sysconfig/httpd` 中设置相应的环境变量，然后才能正确使用此功能。
+当您部署到 Dispatcher 实例时，实例上的目录会被 Git 存储库中的目录替换。 要在`/etc/sysconfig/httpd`中正确设置相应的环境变量，请与您的客户成功团队协作，因为Web服务器和Dispatcher配置文件通常需要特定于环境的详细信息。
 
 ## 适用于现有托管服务客户的 Dispatcher 配置 {#steps-for-configuring-dispatcher}
 
-执行以下步骤以完成初始 Dispatcher 配置。
+要完成初始Dispatcher配置，请执行以下操作：
 
-1. 从您的 CSE 处获取当前的生产配置文件。
-1. 移除硬编码的环境特定的数据（例如发布渲染程序 IP），并替换为变量。
-1. 在每个目标Dispatcher的键值对中定义所需的变量，并将其添加到每个实例上的[变量](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/variables.html?lang=zh-Hans#variables-files-(.vars))文件夹中。
+1. 从客户成功团队获取当前生产配置文件。
+1. 删除特定于环境的数据（如发布渲染程序IP），并将其替换为变量。
+1. 在每个目标Dispatcher的键值对中定义所需的变量，并将其添加到每个实例上的[变量](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/ams/dispatcher/variables)文件夹中。
 1. 在暂存环境中测试更新的配置。
-1. 测试后，请求 CSE 部署到生产环境。
+1. 测试后，请请求客户成功团队部署到生产环境。
 1. 将文件提交到 Git 存储库。
 1. 通过 Cloud Manager 进行部署。
 
 >[!NOTE]
 >
->可以在 Cloud Manager 新用户引导期间或以后的某个时间点，将 Dispatcher 和 Web 服务器配置迁移到 Git 存储库。
+>将Dispatcher和Web服务器配置迁移到Git存储库在Cloud Manager新用户引导期间完成，但也可以稍后完成。
 
 ### 示例 {#example}
 
-虽然特定的文件和目录结构可能会因项目的具体情况而异，但此示例应提供一个具体的指南，说明如何构建项目来包含 Apache 和 Dispatcher 配置。
+虽然特定的文件和目录结构会因项目的具体情况而异，但此示例清晰地说明了如何构建项目以包含Apache和Dispatcher配置。
 
 1. 创建一个名为 `dispatcher` 的子目录。
 
-   尽管可在此处使用任意名称，但此步骤中创建的目录名称必须与步骤 6 中使用的名称相同。
+   在此处使用任意名称，但在此步骤中创建的目录名称必须与步骤1中使用的名称相同。
 
-1. 此子目录包含一个 Maven 模块，该模块使用 Maven Assembly 插件构建 Dispatcher .zip 文件。 在 `dispatcher` 目录中，创建一个包含此内容的 `pom.xml` 文件，并根据需要更改 `parent` 引用、`artifactId` 和 `name`。
+1. 此子目录包含一个Maven模块，该模块使用`maven-assembly-plugin`构建Dispatcher .zip文件。 在 `dispatcher` 目录中，创建一个包含此内容的 `pom.xml` 文件，并根据需要更改 `parent` 引用、`artifactId` 和 `name`。
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -95,9 +95,9 @@ Cloud Manager 使用内置的[项目创建向导](/help/getting-started/using-th
    </project>
    ```
 
-   * 与步骤 1 中一样，可以根据需要将此处的 artifactId 和 name 设为其他值。 此处仅以使用 `dispatcher` 为例。
+   * 与步骤1中一样，artifactId和name可以是其他值。 此处以`dispatcher`为例。
 
-1. Maven Assembly 插件需要 `descriptor` 来定义 .zip 文件的创建方式。 要创建此描述符，请在 `dispatcher` 子目录中创建一个名为 `assembly.xml` 的文件，该文件包含以下内容。 请注意，上述 `pom.xml` 文件中的第 26 行引用了此文件名。
+1. `maven-assembly-plugin`需要`descriptor`才能定义.zip文件的创建方式。 要创建此描述符，请在 `dispatcher` 子目录中创建一个名为 `assembly.xml` 的文件，该文件包含以下内容。 请注意，上述 `pom.xml` 文件中的第 26 行引用了此文件名。
 
    ```xml
    <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
@@ -197,7 +197,7 @@ Cloud Manager 使用内置的[项目创建向导](/help/getting-started/using-th
            └── 02-dispatcher.conf
    ```
 
-1. 最后，在项目的根目录中的 `pom.xml` 文件中，添加 `<module>` 元素以包含 Dispatcher 模块。
+1. 最后，在项目根目录下的`pom.xml`文件中，添加一个`<module>`元素以包含Dispatcher模块。
 
    例如，如果现有模块列表为以下内容：
 
@@ -222,7 +222,7 @@ Cloud Manager 使用内置的[项目创建向导](/help/getting-started/using-th
 
    * 如步骤 1 中所述，`<module>` 元素的值必须与创建的目录名称匹配。
 
-1. 要进行测试，请在项目的根目录中运行 `mvn clean package`。 您应在输出中看到类似这样的行。
+1. 要进行测试，请在项目的根目录中运行 `mvn clean package`。 您会在输出中看到类似这样的行。
 
    ```
    [INFO] --- maven-assembly-plugin:3.1.0:single (default) @ dispatcher ---
