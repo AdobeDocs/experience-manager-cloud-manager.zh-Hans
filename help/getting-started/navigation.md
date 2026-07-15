@@ -10,10 +10,10 @@ feature_v2:
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: fa6be369b979682cebf68852603725d8754605ab
 workflow-type: tm+mt
-source-wordcount: 1660
-ht-degree: 52%
+source-wordcount: 1641
+ht-degree: 36%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 52%
 Cloud Manager UI 主要由两个图形界面组成：
 
 * 在[我的程序控制台](#my-programs-console)中，您可以查看和管理您的所有程序。
-* 在[程序概述窗口](#program-overview)中，您可以查看单个程序的详细信息，并对其进行管理。
+* [在“项目概述”窗口](#program-overview)中，您可以查看各个项目的详细信息并管理单个项目。
 
 ## 我的程序控制台 {#my-programs-console}
 
@@ -32,7 +32,7 @@ Cloud Manager UI 主要由两个图形界面组成：
 
 ![我的程序控制台](/help/getting-started/assets/cloud-manager-my-programs-console.png)
 
-**我的程序**&#x200B;控制台提供了在选定组织中您有权访问的所有程序的概述。 它由几个部分组成。
+**我的程序**&#x200B;控制台提供了在选定组织中您有权访问的所有程序的概述。 它由若干部分组成。
 
 |   | 区域 | 描述 |
 | --- | --- | --- |
@@ -45,11 +45,11 @@ Cloud Manager UI 主要由两个图形界面组成：
 
 ### 工具栏 {#my-programs-toolbars}
 
-有两个工具栏彼此叠放在一起。
+有两个工具栏。
 
 #### Cloud Manager 标头 {#cloud-manager-header}
 
-第一个是 Cloud Manager 标头。 当您浏览 Cloud Manager 时，该标头会持久显示。 作为一个锚点，它有助于您访问适用于各个 Cloud Manager 程序的设置和信息。
+第一个是 Cloud Manager 标头。 使用Cloud Manager时，标题始终可见。 它是一个中心位置，允许访问适用于所有Cloud Manager程序的设置和信息。
 
 ![Experience Cloud 标头](/help/getting-started/assets/cloud-manager-header-toolbar.png)
 
@@ -80,7 +80,7 @@ Cloud Manager UI 主要由两个图形界面组成：
 
 #### 程序工具栏 {#program-toolbar}
 
-程序工具栏可以提供在 Cloud Manager 程序和适合上下文的操作之间切换的链接。
+程序工具栏提供了在Cloud Manager程序和与上下文相关的操作之间切换的链接。
 
 ![Cloud Manager程序工具栏](/help/getting-started/assets/cloud-manager-programs-toolbar.png)
 
@@ -92,13 +92,13 @@ Cloud Manager UI 主要由两个图形界面组成：
 
 ### 操作号召和统计数据 {#cta-statistics}
 
-操作号召和统计信息数据部分提供了您组织的汇总数据，例如，如果您已成功设置了程序，则可能会显示过去 90 天的活动统计数据，其中包括：
+call-to-action和统计信息部分为您的组织提供聚合数据。 例如，如果您已成功配置程序，则会显示过去90天中活动的统计数据，包括以下内容：
 
 * [部署](/help/using/code-deployment.md)次数
 * 已发现的[代码质量问题](/help/using/code-quality-testing.md)数量
 * 版本数
 
-或者，如果您刚刚开始建立您的组织，则可能会有关于后续步骤或文档资源的提示。
+如果您开始设置组织，则有关后续步骤或文档资源的指导。
 
 ### 我的程序 {#my-programs-section}
 
@@ -114,12 +114,12 @@ Cloud Manager UI 主要由两个图形界面组成：
    * 创建日期
    * 项目名称
    * 状态
-* ![按顺序排列图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) / ![按顺序排列图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderUp_18_N.svg)按顺序排列程序或按顺序排列。
+* ![向下排序图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) / ![向上排序图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderUp_18_N.svg)分别向上或向下排序程序。
 * ![经典网格视图图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ClassicGridView_18_N.svg) / ![文本项目符号图标或列表](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TextBulleted_18_N.svg)分别以网格表单或列表表单查看程序。
 
 #### 程序信息卡 {#program-cards}
 
-每个程序都会由一张信息卡或表格中的一行来表示，其中提供有关该程序的概述以及采取操作的快速链接。
+表格中的信息卡或行表示每个项目，提供项目的概述以及采取行动的快速链接。
 
 ![程序信息卡](/help/getting-started/assets/cloud-manager-program-card.png)
 
@@ -136,7 +136,7 @@ Cloud Manager UI 主要由两个图形界面组成：
 
 Cloud Manager AMS中的![信息弹出窗口](/help/getting-started/assets/cloud-manager-information-view.png)
 
-单击![更多图标，省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)可让您对程序执行其他操作。
+单击![更多图标，省略号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)可访问您可对项目执行的其他操作。
 
 ![程序的省略号按钮](/help/getting-started/assets/cloud-manager-program-ellipsis.png)
 
@@ -148,7 +148,7 @@ Cloud Manager AMS中的![信息弹出窗口](/help/getting-started/assets/cloud-
 
 ### 快速链接 {#quick-links}
 
-通过快速链接部分可以访问有用的相关资源。
+通过快速链接部分，可访问有用的相关资源。
 
 ## 程序概述窗口 {#program-overview}
 
@@ -156,9 +156,9 @@ Cloud Manager AMS中的![信息弹出窗口](/help/getting-started/assets/cloud-
 
 ![程序概述](/help/getting-started/assets/cloud-manager-program-overview.png)
 
-**计划概述**&#x200B;允许您访问Cloud Manager计划的所有详细信息。 与&#x200B;**我的项目群**&#x200B;一样，它由若干部分组成。
+**程序概述**&#x200B;提供对Cloud Manager程序所有详细信息的访问。 与&#x200B;**我的项目群**&#x200B;一样，它由若干部分组成。
 
-1. 通过[工具栏](#program-overview-toolbar)可以快速跳转回&#x200B;**我的程序**&#x200B;控制台并导航该程序。
+1. [工具栏](#program-overview-toolbar)以快速返回到&#x200B;**我的程序**&#x200B;控制台并导航该程序。
 1. [选项卡区域](#program-tabs)可在程序的不同方面之间切换。
 1. 根据对程序的最后操作制定的[行动号召](#cta)。
 1. 已关联程序的[环境](#environments)。
@@ -170,21 +170,21 @@ Cloud Manager AMS中的![信息弹出窗口](/help/getting-started/assets/cloud-
 
 #### Cloud Manager 标头 {#cloud-manager-header-2}
 
-Cloud Manager标题有一个![显示菜单图标，一个汉堡包](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)下拉菜单，该菜单会自动打开以显示程序概述的可导航选项卡。
+Cloud Manager标题有一个![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)下拉菜单，该菜单会自动打开以显示程序概述的可导航选项卡。
 
-单击![显示菜单图标，汉堡](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以隐藏选项卡。
+单击![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以隐藏选项卡。
 
 #### 程序工具栏 {#program-toolbar-2}
 
-程序的工具栏仍然允许您快速切换到其他程序，但它还可以执行适合上下文的操作，例如添加和编辑程序。
+程序工具栏仍提供快速切换到其他程序的访问权限，但还提供对上下文相关操作（例如添加和编辑程序）的访问权限。
 
 ![程序工具栏](assets/cloud-manager-program-toolbar.png)
 
-此外，如果您使用![显示菜单图标（汉堡](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)）隐藏选项卡，则工具栏仍会显示您当前所在的选项卡。
+此外，如果您使用![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)隐藏选项卡，则工具栏仍会显示您当前所在的选项卡。
 
 ### 程序选项卡 {#program-tabs}
 
-每个程序都有许多与之相关的选项和数据。 这些数据被收集到选项卡中，以简化程序导航。 通过这些选项卡您可以访问：
+每个程序都有许多与之相关的选项和数据。 此数据将整理到选项卡中，以简化程序导航。 这些选项卡授予对以下内容的访问权限：
 
 * 概述：当前文档中描述的程序概述
 * [活动](/help/using/managing-pipelines.md#activity)：程序的管道运行历史
@@ -198,13 +198,13 @@ Cloud Manager标题有一个![显示菜单图标，一个汉堡包](https://spec
 
 默认情况下，当您打开一个程序时，您会进入&#x200B;**概述**&#x200B;选项卡。 当前选项卡会突出显示。 选择另一个选项卡来显示其详细信息。
 
-在[Cloud Manager标题](#cloud-manager-header-2)中使用![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)汉堡来隐藏选项卡。
+若要隐藏选项卡，请在[Cloud Manager标题](#cloud-manager-header-2)中使用![显示菜单图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)。
 
 ### 行动号召 {#cta}
 
-行动号召部分会根据您的程序状态为您提供有用的信息。 对于新程序，您可能会看到所提供的后续步骤和上线日期提醒（[在程序创建期间设置](/help/getting-started/program-setup.md)）。
+行动号召部分会根据您的程序状态为您提供有用的信息。 对于新计划，您会看到提供的后续步骤以及上线日期[的提醒，该日期是在计划创建期间设置的](/help/getting-started/program-setup.md)。
 
-对于实时程序，上次部署的状态包含详细信息链接以及开始新部署的链接。
+对于实时项目，将显示上次部署的状态，其中包含详细信息以及开始新部署的链接。
 
 ![行动呼吁](assets/info-banner.png)
 
