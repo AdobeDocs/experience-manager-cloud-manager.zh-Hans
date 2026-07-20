@@ -3,9 +3,13 @@ title: 在Cloud Manager中添加外部存储库
 description: 了解如何将外部存储库添加到 Cloud Manager。 Cloud Manager支持与GitHub Enterprise、GitLab、Bitbucket和Azure DevOps存储库集成。
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
 TQID: https://experienceleague.adobe.com/uLIqzfR3sTBSMHCewIQPPADP9opdLQoT2PNQy5YZTKo
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: a7e83374a2282e4d63efb409d40722ebe9b4697e
 workflow-type: tm+mt
 source-wordcount: 2528
@@ -30,7 +34,7 @@ ht-degree: 27%
 
 在 Cloud Manager 中配置外部存储库包括三个步骤：
 
-1. [将外部存储库 ](#add-external-repo) 添加到选择的程序。
+1. [将外部存储库 &#x200B;](#add-external-repo) 添加到选择的程序。
 1. [将已验证的外部存储库链接到管道](#validate-ext-repo)。
 <!--
 1. Provide an access token to the external repository.
@@ -317,19 +321,19 @@ Azure DevOps通过状态检查来跟踪拉取请求验证。 当Cloud Manager运
 
 在代码质量验证期间，状态检查会显示该流程正在进行中：
 
-使用webhooks-1](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-1.png)对拉取请求进行![Azure DevOps验证
+使用webhooks-1![&#128279;](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-1.png)对拉取请求进行Azure DevOps验证
 
 代码质量验证完成后，状态检查将更新以反映结果：
 
-使用webhooks-2](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)对拉取请求进行![Azure DevOps验证
+使用webhooks-2![&#128279;](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)对拉取请求进行Azure DevOps验证
 
 如果验证失败，状态检查详细信息中会提供详细的错误信息。 您可以单击状态检查以在Cloud Manager中查看完整的验证结果。
 
-使用webhooks-3](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)对拉取请求进行![Azure DevOps验证
+使用webhooks-3![&#128279;](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)对拉取请求进行Azure DevOps验证
 
 对于拉取请求注释和反馈，Cloud Manager会在Azure DevOps中直接将注释添加到拉取请求，并包含验证详细信息以及所需的任何必要操作。
 
-使用webhooks-4](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)对拉取请求进行![Azure DevOps验证
+使用webhooks-4![&#128279;](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)对拉取请求进行Azure DevOps验证
 
 
 >[!ENDTABS]
