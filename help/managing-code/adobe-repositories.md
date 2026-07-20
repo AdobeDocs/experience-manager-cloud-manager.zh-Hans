@@ -3,8 +3,11 @@ title: 在 Cloud Manager 中添加 Adobe 存储库
 description: 了解如何在 Cloud Manager 中添加 Adobe 管理的存储库。
 exl-id: 24c6ca97-ea70-41b8-b4c7-b8b0f406a57d
 TQID: https://experienceleague.adobe.com/LBI6V07enOlxe8yh-XwlkL-mdMWR0MJyKi1gUQtjtK4
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 036302d4861b59e783ac731da12078be59cdc5c4
 workflow-type: tm+mt
 source-wordcount: 225
@@ -39,7 +42,7 @@ ht-degree: 69%
    ![添加“存储库”对话框](/help/managing-code/assets/repository-add-adobe.png)
 
 1. 单击&#x200B;**保存**。
-您的新存储库显示在**存储库**&#x200B;页面上的表中。
+您的新存储库显示在&#x200B;**存储库**&#x200B;页面上的表中。
 
 您现在可以将 [CI/CD 管道](/help/overview/ci-cd-pipelines.md)与其关联，或在&#x200B;[**存储库**&#x200B;页面内对其进行管理](/help/managing-code/managing-repositories.md)。
 
