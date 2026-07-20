@@ -66,4 +66,4 @@ Cloud Manager 中没有关于[专用存储库](/help/managing-code/private-repos
 
 您可以随时撤销访问密码。
 
-为此，[为此请求创建支持工单](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home#support)。 票证被指定高优先级，通常在一天内解决。
+为此，[为此请求创建支持工单](https://experienceleague.adobe.com/zh-hans?support-solution=Experience+Manager&support-tab=home#support)。 票证被指定高优先级，通常在一天内解决。
