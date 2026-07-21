@@ -3,25 +3,21 @@ title: 添加用户和角色
 description: 了解如何使用 Admin Console 添加用户和角色以及创建轮廓。
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 TQID: https://experienceleague.adobe.com/95vfyk6-SMg7GFaCVWkiaaGObo603DJqvExEgPFrwqw
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 130406286e65ad0e0651451766ca740f3458a9c1
 workflow-type: tm+mt
-source-wordcount: 796
-ht-degree: 96%
+source-wordcount: 797
+ht-degree: 80%
 
 ---
 
 # 添加用户和角色 {#add-users-and-roles}
 
-必须具有特定的权限，才能使用 [!UICONTROL Cloud Manager] 中的许多功能。 例如，仅允许某些用户为项目设置关键绩效指标 (KPI)。 这些权限将在逻辑上按角色分组。
+必须具有特定的权限，才能使用 [!UICONTROL Cloud Manager] 中的许多功能。 例如，仅允许授权用户为项目设置关键绩效指标(KPI)。 这些权限将在逻辑上按角色分组。
 
-[!UICONTROL Cloud Manager] 当前为用户定义了四个角色，这些角色控制特定功能的可用性：
+[!UICONTROL Cloud Manager]为用户定义了四个角色，这些角色控制特定功能的可用性：
 
 * 业务负责人
 * 项目管理员
@@ -51,9 +47,9 @@ ht-degree: 96%
 
 ## 使用Admin Console创建产品配置文件 {#using-admin-console-to-create-a-profile}
 
-从 Admin Console 中管理 [!UICONTROL Cloud Manager] 角色。 通过将用户添加到 [!UICONTROL Cloud Manager] 产品轮廓，提供特定的角色成员资格。
+从 Admin Console 中管理 [!UICONTROL Cloud Manager] 角色。 将用户添加到[!UICONTROL Cloud Manager]产品配置文件可提供特定的角色成员资格。
 
-Admin Console 是一个中央位置，用于管理整个组织内的 Adobe 授权。 要进一步了解Adobe Admin Console，请参阅 [Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html)。
+Admin Console 是一个中央位置，用于管理整个组织内的 Adobe 授权。 要进一步了解Adobe Admin Console，请参阅 [Admin Console](https://helpx.adobe.com/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html)。
 
 管理员必须在 [!UICONTROL AEM 托管服务]产品上下文中创建新的产品轮廓，以便为 [!UICONTROL Cloud Manager] 用户分配基于角色的权限，对应于四个 [!UICONTROL Cloud Manager] 角色中的每一个角色。
 
@@ -87,11 +83,11 @@ CQDOC-22790
 
    ![新建轮廓](/help/assets/admin-console-product-profiles.png)
 
-1. 提供信息以便为 [!UICONTROL Cloud Manager] 设置新角色。
+1. 要为[!UICONTROL Cloud Manager]设置新角色，请提供相关信息。
 
    * **轮廓名称** - **轮廓名称**&#x200B;可为任何内容，但为了避免混淆，建议使用&#x200B;**建议的轮廓名称**&#x200B;列中的值。
    * **显示名称** - **显示名称**&#x200B;必须为 [!UICONTROL Cloud Manager] 定义的技术值（见下表）。
-   * **权限组** - 可为该轮廓选择一个权限组（并非总是可用）。
+   * **权限组** — 为配置文件选择一个权限组（并非总是可用）。
 
 <!-- 
 CQDOC-22790
@@ -131,12 +127,12 @@ CQDOC-22790
 
 1. 在&#x200B;**编辑产品和用户组**&#x200B;对话框中，点击![“添加”图标（加号符号）](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)，选择要分配给该用户的轮廓。
 
-   * 如果已将该用户分配给角色，![“添加”图标（加号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)按钮）就变成编辑按钮（铅笔），但其作用相同。
+   * 如果用户已分配给角色，则![添加图标加上](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)按钮是编辑按钮（铅笔），但其功能相同。
 
    ![编辑产品和用户组](/help/assets/admin-console-edit-products-and-user-groups.png)
 
 1. 单击&#x200B;**保存**&#x200B;以将轮廓保存到用户。
 
-重复相同步骤以将轮廓分配给用户组，但在&#x200B;**用户**&#x200B;选项卡上从左侧导航面板中选择&#x200B;**用户组**。 点击一个用户组，选择&#x200B;**已分配的产品轮廓**，然后点击&#x200B;**分配产品轮廓**&#x200B;以分配轮廓。
+重复相同步骤以将轮廓分配给用户组，但在&#x200B;**用户**&#x200B;选项卡上从左侧导航面板中选择&#x200B;**用户组**。 单击用户组并选择&#x200B;**已分配的产品配置文件**，然后单击&#x200B;**分配产品配置文件**&#x200B;以分配配置文件。
 
 ![将轮廓分配给组](/help/assets/admin-console-edit-user-groups.png)
