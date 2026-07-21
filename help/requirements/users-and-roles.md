@@ -53,7 +53,7 @@ ht-degree: 80%
 
 从 Admin Console 中管理 [!UICONTROL Cloud Manager] 角色。 将用户添加到[!UICONTROL Cloud Manager]产品配置文件可提供特定的角色成员资格。
 
-Admin Console 是一个中央位置，用于管理整个组织内的 Adobe 授权。 要进一步了解Adobe Admin Console，请参阅 [Admin Console](https://helpx.adobe.com/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html)。
+Admin Console 是一个中央位置，用于管理整个组织内的 Adobe 授权。 要进一步了解Adobe Admin Console，请参阅 [Admin Console](https://helpx.adobe.com/cn/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html)。
 
 管理员必须在 [!UICONTROL AEM 托管服务]产品上下文中创建新的产品轮廓，以便为 [!UICONTROL Cloud Manager] 用户分配基于角色的权限，对应于四个 [!UICONTROL Cloud Manager] 角色中的每一个角色。
 
