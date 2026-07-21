@@ -29,7 +29,7 @@ ht-degree: 85%
 
 ## 用户角色 {#user-roles}
 
-使用 [Admin Console](https://helpx.adobe.com/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html) 对 [!UICONTROL Cloud Manager] 进行角色管理。 任何 [!UICONTROL Cloud Manager] 用户都必须是客户的 IMS 组织的成员，并且具有 Adobe Managed Services 产品上下文。 通过在Admin Console中将用户添加到[!UICONTROL Cloud Manager]产品配置文件来提供特定的角色成员资格。
+使用 [Admin Console](https://helpx.adobe.com/cn/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html) 对 [!UICONTROL Cloud Manager] 进行角色管理。 任何 [!UICONTROL Cloud Manager] 用户都必须是客户的 IMS 组织的成员，并且具有 Adobe Managed Services 产品上下文。 通过在Admin Console中将用户添加到[!UICONTROL Cloud Manager]产品配置文件来提供特定的角色成员资格。
 
 要了解有关如何设置角色的更多信息，请参阅[设置用户和角色](/help/requirements/users-and-roles.md)。
 
