@@ -3,9 +3,13 @@ title: 用户载入
 description: 了解不同的新用户引导场景并开始使用 Cloud Manager。
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
 TQID: https://experienceleague.adobe.com/EnNaMZzu5bLUD3Jjsp6ovqFvoFM30ju4FOQJfmySLEk
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 2cd89edca1c1dfac7f1b7b68eccdf1416efb4724
 workflow-type: tm+mt
 source-wordcount: 567
@@ -37,7 +41,7 @@ ht-degree: 62%
 
 在新用户引导过程中，您将收到一封欢迎电子邮件，其中包括以下内容：
 
-* 访问 [!UICONTROL Cloud Manager ]的 URL。
+* 访问 [!UICONTROL Cloud Manager &#x200B;]的 URL。
 * 登录 [!UICONTROL Experience Cloud] 的说明。
 * 有关使用Admin Console管理您的用户及其相应权限以便他们能够访问Cloud Manager（如果需要）的说明。
 
