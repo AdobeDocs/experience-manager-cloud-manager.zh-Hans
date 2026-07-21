@@ -3,33 +3,29 @@ title: 重要概念
 description: 与所有功能强大的工具一样，Cloud Manager 包含了许多概念和术语。 本文档总结了开始使用 Cloud Manager 时的一些最重要内容。
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
 TQID: https://experienceleague.adobe.com/usnXqDujeZ04U5hOtiI76aemlj-ceToAOtAYS9U0UuM
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 628eceafe63153d64151937df85937135bdc8e7b
 workflow-type: tm+mt
-source-wordcount: 431
-ht-degree: 95%
+source-wordcount: 421
+ht-degree: 60%
 
 ---
 
 # 重要概念 {#key-concepts}
 
-与所有功能强大的工具一样，Cloud Manager 包含了许多概念和术语。 本文档总结了开始使用 Cloud Manager 时的一些最重要内容。
+Cloud Manager包含许多概念和术语。 本文总结了开始使用Cloud Manager时的一些最重要的概念。
 
 ## 应用程序 {#application}
 
-应用程序是客户创建的一组自定义项和配置，以根据其具体的用例要求和需求来调整底层[解决方案](#solution)（例如 AEM Sites 或 AEM Assets）。 应用程序是一个逻辑单元，其中可能包含多个[工件](#artifact)。
+应用程序是客户创建的一组自定义项和配置，以根据其具体的用例要求和需求来调整底层[解决方案](#solution)（例如 AEM Sites 或 AEM Assets）。 应用程序是一个逻辑单元，由多个[项目](#artifact)组成。
 
 虚构的 [WKND 生活方式应用程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)是一个示例应用程序。
 
 ## 工件 {#artifact}
 
-工件是一个可部署的单元，它是将源代码转换为一个单元的构建过程所产生的结果。 例如，一个包含源代码的 .zip 文件。
+工件是一个可部署的单元，它是将源代码转换为单个单元的构建过程所产生的结果。 例如，一个包含源代码的 .zip 文件。
 
 ## 工件存储库 {#artifact-repository}
 
@@ -49,19 +45,19 @@ Git 存储库是一个存储客户特定源代码的位置，可[使用 Git](htt
 
 ## 组织 {#organization}
 
-组织是代表企业客户的 Adobe 构造。 一家公司可能具有多个组织，具体取决于它们在Adobe Identity Management System (IMS)中的配置方式。
+组织是代表企业客户的 Adobe 构造。 一家公司可以有多个组织，具体取决于它们在Adobe Identity Management System (IMS)中的配置方式。
 
 ## 管道 {#pipeline}
 
-管道是一组按顺序运行或“执行”的部署步骤。
+管道是一组按顺序执行的部署步骤。
 
 ## 产品 {#product}
 
-产品是由组织许可的[解决方案](#solution)中的一组特定功能。 组织中不同的[项目](#program)可能有资格使用一组不同的产品，例如 AEM Sites、AEM Assets 或 AEM Forms。
+产品是由组织许可的[解决方案](#solution)中的一组特定功能。 组织内的其他[项目](#program)有权使用不同的产品集，例如AEM Sites、AEM Assets或AEM Forms。
 
 ## 项目 {#program}
 
-项目是一组支持对客户计划进行逻辑分组的环境，通常对应于购买的服务水平协议 (SLA)。 每个项目只具有一个生产环境，并且可能具有多个非生产环境。
+项目是一组支持对客户计划进行逻辑分组的环境，通常对应于购买的service level agreement (SLA)。 每个程序只具有一个生产环境和多个非生产环境。
 
 ## 解决方案 {#solution}
 
@@ -69,4 +65,4 @@ Git 存储库是一个存储客户特定源代码的位置，可[使用 Git](htt
 
 ## 步骤 {#step}
 
-步骤是配置的指令集，它作为[管道](#pipeline)的构建块完成一些工作单元。
+步骤是一个配置的指令集，它将某个工作单元作为[管道](#pipeline)的组件完成。
