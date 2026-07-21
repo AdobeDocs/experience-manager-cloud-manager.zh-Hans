@@ -23,7 +23,7 @@ ht-degree: 34%
 
 在新用户引导过程中，Adobe会在Adobe Identity Management System (IMS)中为您的公司创建一个组织标识符。 可以在 IMS 中管理您所有的用户及其权限。 每个需要成为此组织的成员并授予任何[!UICONTROL Experience Cloud]服务访问权限的用户都必须具有Adobe ID。
 
-有关Adobe ID的信息，请参阅[管理Adobe标识类型](https://helpx.adobe.com/business/enterprise/set-up-your-organization/identity.html)，以了解有关如何使用某个可用标识类型获取Adobe ID的详细说明。
+有关Adobe ID的信息，请参阅[管理Adobe标识类型](https://helpx.adobe.com/cn/business/enterprise/set-up-your-organization/identity.html)，以了解有关如何使用某个可用标识类型获取Adobe ID的详细说明。
 
 ### 用户和角色 {#users-and-roles}
 
