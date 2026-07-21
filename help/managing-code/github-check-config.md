@@ -8,10 +8,10 @@ product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: b52942282fe5f825181123b3839ef155753c5e23
 workflow-type: tm+mt
 source-wordcount: 237
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 95%
 
 ## 专用存储库检查的配置 {#configuration}
 
-使用[专用存储库](private-repositories.md#using)时，系统会自动创建一个[全栈代码质量管道](/help/overview/ci-cd-pipelines.md)。 每次更新提取请求时，此管道将启动。
+使用[专用存储库](private-repositories.md#using)时，系统会自动创建一个[全栈代码质量管道](/help/overview/ci-cd-pipelines.md)。 此管道在每次拉取请求更新时启动。
 
 您可以通过在专用存储库的默认分支中创建一份 `.cloudmanager/pr_pipelines.yml` 文件来控制这些检查。
 

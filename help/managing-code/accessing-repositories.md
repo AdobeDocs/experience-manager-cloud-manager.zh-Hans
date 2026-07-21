@@ -8,10 +8,10 @@ product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: c1c7a8a36bd770401393fe7e2c62b306c1a2573d
 workflow-type: tm+mt
-source-wordcount: 403
-ht-degree: 100%
+source-wordcount: 400
+ht-degree: 72%
 
 ---
 
@@ -21,14 +21,14 @@ ht-degree: 100%
 
 ## 从概述页面访问存储库信息 {#overview-page}
 
-通过 Cloud Manager，您可以使用&#x200B;**管道**&#x200B;信息卡中的 **Access Repo Info** 轻松检索 Cloud Manager 存储库的存储库访问信息。
+借助Cloud Manager，您可以使用&#x200B;**管道**&#x200B;信息卡中的&#x200B;**访问存储库信息**，检索Adobe管理的存储库的访问信息。
 
 **存储库信息** 对话框可让您查看 Adobe 管理的存储库的以下访问信息：
 
 * Git 用户名。
 * Git 密码。
 * Cloud Manager Git 存储库的 URL。
-* 预构建的 Git 命令，用于快速将远程添加到 Git 存储库并推送代码。
+* 预建Git命令用于将远程添加到Git存储库和推送代码。
 
   ![存储库信息窗口](assets/repository-info.png)
 
@@ -44,7 +44,7 @@ Cloud Manager 中没有关于[专用存储库](/help/managing-code/private-repos
 
    ![管道信息卡上的 Access Repo Info](/help/managing-code/assets/pipelines-card2.png)
 
-1. 要访问密码，必须生成一个新密码。 在 **存储库信息** 对话框中，选择 **生成密码**。
+1. 要访问密码，必须生成新密码。 在 **存储库信息** 对话框中，选择 **生成密码**。
 
 1. 在确认对话框中，选择 **生成密码**。
 
@@ -52,11 +52,11 @@ Cloud Manager 中没有关于[专用存储库](/help/managing-code/private-repos
 
    * 生成密码会使之前的密码失效。
    * Cloud Manager 不保存密码。 安全地保存此密码是您的责任。
-   * 由于 Cloud Manager 不保存密码，因此，如果您丢失密码，则必须重新生成一个新密码。
+   * 由于Cloud Manager不会保存密码，因此如果丢失密码，则必须生成一个新密码。
 
    ![在“存储库信息”对话框中复制密码](/help/managing-code/assets/repository-copy-password.png)
 
-使用这些凭据，您可以克隆存储库的本地副本，在该本地存储库中进行更改，并在准备就绪后将任何代码更改提交回 Cloud Manager 中的远程代码存储库。
+使用这些凭据，您可以克隆存储库的本地副本，在本地存储库中进行更改，并在准备就绪后将任何代码更改提交回Cloud Manager中的远程代码存储库。
 
 ## 从存储库窗口访问存储库信息 {#repositories-window}
 
@@ -66,4 +66,4 @@ Cloud Manager 中没有关于[专用存储库](/help/managing-code/private-repos
 
 您可以随时撤销访问密码。
 
-为此，[为此请求创建支持工单](https://experienceleague.adobe.com/zh-hans?support-solution=Experience+Manager&support-tab=home#support)。 该工单会得到优先处理，并且通常会在一天内撤销。
+为此，[为此请求创建支持工单](https://experienceleague.adobe.com/zh-hans?support-solution=Experience+Manager&support-tab=home#support)。 票证被指定高优先级，通常在一天内解决。

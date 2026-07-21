@@ -8,10 +8,10 @@ product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: b52942282fe5f825181123b3839ef155753c5e23
 workflow-type: tm+mt
-source-wordcount: 387
-ht-degree: 6%
+source-wordcount: 382
+ht-degree: 3%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 6%
 
 Cloud Manager使用访问令牌管理在外部Git平台上托管的存储库。 以前，如果令牌过期，则必须重新载入关联的存储库才能保持可操作性。
 
-现在，**管理访问令牌**&#x200B;允许您更有效地管理令牌。 您可以查看、重命名或删除连接到受支持的外部Git提供程序（包括GitHub Enterprise、GitLab、Bitbucket和Azure DevOps）的令牌。
+现在，**管理访问令牌**&#x200B;允许您更有效地管理令牌。 您可以管理受支持的Git提供商的令牌：GitHub Enterprise、GitLab、Bitbucket和Azure DevOps。
 
 另请参阅[在Cloud Manager中添加外部存储库](/help/managing-code/external-repositories.md)。
 
 ## 查看访问令牌 {#view-access-tokens}
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登录 Cloud Manager 并选择适当的组织。
+1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登录Cloud Manager并选择适当的组织。
 1. 在&#x200B;**[我的程序](/help/getting-started/navigation.md#my-programs-console)**&#x200B;控制台上，选择要管理其自带Git访问令牌的程序。
 1. 在侧菜单的&#x200B;**程序**&#x200B;下，单击![文件夹大纲图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **存储库**。
 1. 在页面的右上角附近，单击&#x200B;**管理访问令牌**。
