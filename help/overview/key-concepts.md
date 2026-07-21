@@ -3,9 +3,13 @@ title: 重要概念
 description: 与所有功能强大的工具一样，Cloud Manager 包含了许多概念和术语。 本文档总结了开始使用 Cloud Manager 时的一些最重要内容。
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
 TQID: https://experienceleague.adobe.com/usnXqDujeZ04U5hOtiI76aemlj-ceToAOtAYS9U0UuM
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 628eceafe63153d64151937df85937135bdc8e7b
 workflow-type: tm+mt
 source-wordcount: 421
