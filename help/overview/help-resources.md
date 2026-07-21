@@ -21,6 +21,6 @@ ht-degree: 64%
 
 请联系您的 Adobe Managed Services 客户成功工程师（CSE）以获取有关 [!UICONTROL Cloud Manager] 的帮助。 他们可以通知您他们是否能解决您的问题，或者您是否需要向Adobe客户关怀团队提交支持工单。
 
-通过访问[企业支持](https://experienceleague.adobe.com/?support-tab=home#support)来创建支持单。
+通过访问[企业支持](https://experienceleague.adobe.com/zh-hans?support-tab=home#support)来创建支持单。
 
-请参阅[访问 AEM 支持门户](https://helpx.adobe.com/business/enterprise/get-help/support-and-expert-services.html)，了解有关通过 Adobe 客户关怀部门创建支持单的更多信息。
+请参阅[访问 AEM 支持门户](https://helpx.adobe.com/cn/business/enterprise/get-help/support-and-expert-services.html)，了解有关通过 Adobe 客户关怀部门创建支持单的更多信息。
