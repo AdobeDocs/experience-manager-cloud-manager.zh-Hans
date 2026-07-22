@@ -135,4 +135,4 @@ Adobe Managed Services 会设置阈值，而您可以在 [!UICONTROL Cloud Manag
 
 本视频概述了如何使用Cloud Manager Reports生成的图表来监控程序环境。
 
->[!VIDEO](https://video.tv.adobe.com/v/26315/)
+>[!VIDEO](https://video.tv.adobe.com/v/34273?captions=chi_hans)
