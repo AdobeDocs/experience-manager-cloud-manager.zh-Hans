@@ -118,7 +118,7 @@ Cloud Manager 有一组预定义的角色，用于管理对 Cloud Manager 各种
 
 1. 点击&#x200B;**添加用户**，将用户分配到带自定义权限的新产品配置文件。
 
-请参阅[管理企业用户的产品配置文件](https://helpx.adobe.com/business/enterprise/manage-products-and-entitlements/manage-products-and-product-profiles/manage-product-profiles.html)文档中的&#x200B;**将用户和用户组添加到产品配置文件**，了解有关如何使用 Admin Console 的更多详细信息。
+请参阅[管理企业用户的产品配置文件](https://helpx.adobe.com/cn/business/enterprise/manage-products-and-entitlements/manage-products-and-product-profiles/manage-product-profiles.html)文档中的&#x200B;**将用户和用户组添加到产品配置文件**，了解有关如何使用 Admin Console 的更多详细信息。
 
 ## 可配置的权限 {#configurable-permissions}
 
