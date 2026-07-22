@@ -13,10 +13,10 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: 59ab2b4824e516576d0905376b80c37edc49e53d
 workflow-type: tm+mt
-source-wordcount: 873
-ht-degree: 75%
+source-wordcount: 843
+ht-degree: 58%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 75%
 
 如果量度超过其关键阈值，则将被视为处于关键状态。
 
-Adobe Managed Services 会设置阈值，而您可以在 [!UICONTROL Cloud Manager] 中查看这些阈值。 在大多数情况下，客户之间的阈值是一致的，但在某些情况下，Adobe Managed Services 会修改阈值以匹配特定的客户要求。 请向您的客户成功工程师 (CSE) 咨询任何有关阈值的问题。
+Adobe Managed Services 会设置阈值，而您可以在 [!UICONTROL Cloud Manager] 中查看这些阈值。 通常，客户之间的阈值是一致的，但在某些情况下，Adobe Managed Services会编辑阈值以匹配特定的客户要求。 请向您的客户成功工程师 (CSE) 咨询任何有关阈值的问题。
 
 ## 访问系统监控功能 {#accessing-system-monitoring}
 
@@ -54,7 +54,7 @@ Adobe Managed Services 会设置阈值，而您可以在 [!UICONTROL Cloud Manag
 * 网络
 * 应用程序
 
-每个类别中的状态均为各个量度的摘要。 如果某个类别中的任意量度处于关键状态，则对于概述页面而言，整个类别都处于关键状态。 可以在环境级别和实例级别查看同一摘要。
+每个类别中的状态均为各个量度的摘要。 如果某个类别中的任何量度达到关键状态，则概述页面上的整个类别都至关重要。 可以在环境或实例级别查看同一摘要。
 
 ![系统监控概述](/help/assets/System-Monitoring-Reports.png)
 
@@ -70,12 +70,12 @@ Adobe Managed Services 会设置阈值，而您可以在 [!UICONTROL Cloud Manag
 
 左侧导航显示当前所选类别中的可用量度，其中包含当前所选环境和实例的数据。
 
-状态和一段时间内的数据图形以及阈值会在单个图形中显示。 如果显示多个实例，则每个实例的数据都会位于一个单独的系列中。
+状态和一段时间内的数据图形以及阈值会在单个图形中显示。 如果显示多个实例，则每个实例的数据将显示在单独的系列中。
 
 ![量度图表](/help/assets/Monitoring_Graphs1.png)
 
-通过单击图例中的系列，可以在图表上隐藏该系列。
-例如，如果您单击警告阈值系列，则您只会看到关键阈值。
+通过单击图例中的系列，可以从图表的视图中删除单个系列。
+例如，如果单击警告阈值系列，则只能看到关键阈值。
 
 ![修改图表](/help/assets/Monitoring_Graphs2.png)
 
@@ -84,7 +84,7 @@ Adobe Managed Services 会设置阈值，而您可以在 [!UICONTROL Cloud Manag
 #### 主机 {#host}
 
 * **`Load Per Core`**： CPU正在执行的进程数。 或者，一分钟（load1）、五分钟（load5）和十五分钟（load15）时间内处于等待状态的排队进程数的平均值。
-* **P`rocess Count`**：当前打开的进程数。
+* **`Process Count`**：当前打开的进程数。
 * **`User Count`**：具有活动shell会话的用户数。
 * **`Memory Usage`**：当前分配的系统内存的百分比。
 * **`JVM Memory`**：已分配的Java栈的大小（以MB为单位）。
@@ -96,14 +96,14 @@ Adobe Managed Services 会设置阈值，而您可以在 [!UICONTROL Cloud Manag
 
 #### 存储 {#storage}
 
-* **`Disk Space`**：主机上每个挂载点的已用磁盘空间（以MB为单位）。 每个挂载点具有不同的量度。 至少有 `/` 和 `/mnt` 的量度，但根据具体的实例配置，可能会提供额外的挂载点量度。
+* **`Disk Space`**：主机上每个挂载点的已用磁盘空间（以MB为单位）。 每个挂载点具有不同的量度。 至少有`/`和`/mnt`的量度，但根据特定实例配置，可以使用其他装入点量度。
 * **`Folder Size`**
 * **`AEM Segment Store`**： AEM区段存储的已用磁盘空间（以GB为单位）。
 
 #### 应用程序 {#application}
 
 * **`Replication Agent`**：测试复制事件的时间（以秒为单位）
-   * 每个复制代理均具有单独的量度。
+  * 每个复制代理均具有单独的量度。
 * **`Dispatcher Flush`**：当前在Dispatcher刷新队列中的项目数
 
 ## SLA 报告 {#sla-reporting}
@@ -114,7 +114,7 @@ Adobe Managed Services 会设置阈值，而您可以在 [!UICONTROL Cloud Manag
 
 ![SLA 2018 图表](/help/assets/SLA-Reports-one.png)
 
-与使用系统监控图表时一样，滚存数据点可显示该月的具体值。
+与使用系统监控图表时一样，将鼠标悬停在数据点上会显示该月的特定值。
 
 ![数据点滚存](/help/assets/SLA-Reports-two.png)
 
@@ -133,6 +133,6 @@ Adobe Managed Services 会设置阈值，而您可以在 [!UICONTROL Cloud Manag
 
 ## 视频教程 {#video-tutorial}
 
-本视频概述如何使用 Cloud Manager 报告生成的图表来查看项目环境。
+本视频概述了如何使用Cloud Manager Reports生成的图表来监控程序环境。
 
 >[!VIDEO](https://video.tv.adobe.com/v/34273?captions=chi_hans)

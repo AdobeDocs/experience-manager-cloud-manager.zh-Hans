@@ -12,10 +12,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: 0dde660205ad28bc5924a5cc14404c48a0533ceb
 workflow-type: tm+mt
-source-wordcount: 275
-ht-degree: 100%
+source-wordcount: 261
+ht-degree: 57%
 
 ---
 
@@ -35,12 +35,12 @@ Cloud Manager 的&#x200B;**概述**&#x200B;页面包含&#x200B;**环境**&#x200B
 
 **环境**&#x200B;图块显示项目中配置的生产和暂存环境以及状态。
 
-状态是按以下优先级顺序跨环境中的节点排列的电源状态。
+状态是按顺序列出的环境节点中的聚合电源状态。
 
 * 绿色 – 所有节点都正在运行。
-* 红色 – 一个或多个节点已停止。
-* 蓝色 – 一个或多个节点即将启动。
-* 黄色 – 一个或多个节点的电源状态为不可用。
+* 红色 — 一个或多个节点已停止。
+* 蓝色 — 一个或多个节点正在启动。
+* 黄色 — 一个或多个节点的电源状态为不可用。
 
 ![“环境”图块](/help/assets/Environments-card-new.png)
 
@@ -48,7 +48,7 @@ Cloud Manager 的&#x200B;**概述**&#x200B;页面包含&#x200B;**环境**&#x200B
 
 在&#x200B;**环境**&#x200B;磁贴上，单击任意环境的行可显示&#x200B;**环境**&#x200B;屏幕。
 
-**环境**&#x200B;屏幕显示程序中的每个生产和暂存环境。 每张信息卡的上方将显示环境名称。 信息卡包括环境中的节点表以及 CPU 尺寸、存储、区域和状态。
+**环境**&#x200B;屏幕显示项目中的每个生产和暂存环境。 环境名称显示在每张信息卡的上方。 该信息卡包括环境中的节点表以及CPU的大小、存储、区域和状态。
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ Cloud Manager 的&#x200B;**概述**&#x200B;页面包含&#x200B;**环境**&#x200B
 
 * 绿色 – 正在运行
 * 红色 – 已停止
-* 蓝色 – 即将运行
+* 蓝色 — 正在启动
 * 黄色 – 不可用
 
 ![“环境”信息卡](/help/assets/Environments-tab.png)
@@ -67,11 +67,11 @@ Cloud Manager 的&#x200B;**概述**&#x200B;页面包含&#x200B;**环境**&#x200B
 
 >[!NOTE]
 >
->通过您的客户成功工程师请求获得环境日志。
+>通过客户成功代表请求环境日志。
 
 ## 视频教程 {#video-tutorial}
 
-此视频概述了由 AEM 创作、发布和 Dispatcher 实例组成的 Cloud Manager 环境。
+本视频介绍了由Cloud Manager创作、发布和AEM实例组成的Dispatcher环境。
 
 >[!VIDEO](https://video.tv.adobe.com/v/34270?captions=chi_hans)
 
