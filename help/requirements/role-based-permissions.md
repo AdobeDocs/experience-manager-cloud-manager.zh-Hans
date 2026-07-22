@@ -10,16 +10,16 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: e94834c5e13825a468ef5344e77024c4fe4a29e6
 workflow-type: tm+mt
-source-wordcount: 592
-ht-degree: 99%
+source-wordcount: 596
+ht-degree: 85%
 
 ---
 
 # 基于角色的权限 {#role-based-permissions}
 
-[!UICONTROL Cloud Manager 预配置了一些具有适当权限的角色。] 例如，开发人员可以开发代码，并有权将代码推送到 Git 存储库。 业务负责人具有不同的权限，可让他们定义关键绩效指标 (KPI) 并审批部署。
+[!UICONTROL Cloud Manager]包含预配置的角色，并具有适当的权限。 例如，软件开发人员编写代码并有权将代码推送到Git存储库。 业务潜在客户具有不同的权限，可让他们定义关键绩效指标(KPI)并审批部署。
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ ht-degree: 99%
 
 ## 用户角色 {#user-roles}
 
-使用 [Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-console.html) 对 [!UICONTROL Cloud Manager] 进行角色管理。 任何 [!UICONTROL Cloud Manager] 用户都必须是客户的 IMS 组织的成员，并且具有 Adobe Managed Services 产品上下文。 通过在 Admin Console 中将用户添加到 [!UICONTROL Cloud Manager] 产品配置文件来提供特定的角色成员资格。
+使用 [Admin Console](https://helpx.adobe.com/cn/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html) 对 [!UICONTROL Cloud Manager] 进行角色管理。 任何 [!UICONTROL Cloud Manager] 用户都必须是客户的 IMS 组织的成员，并且具有 Adobe Managed Services 产品上下文。 通过在Admin Console中将用户添加到[!UICONTROL Cloud Manager]产品配置文件来提供特定的角色成员资格。
 
 要了解有关如何设置角色的更多信息，请参阅[设置用户和角色](/help/requirements/users-and-roles.md)。
 

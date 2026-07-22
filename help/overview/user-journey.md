@@ -1,5 +1,5 @@
 ---
-title: 用户历程
+title: 用户载入
 description: 了解不同的新用户引导场景并开始使用 Cloud Manager。
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
 TQID: https://experienceleague.adobe.com/EnNaMZzu5bLUD3Jjsp6ovqFvoFM30ju4FOQJfmySLEk
@@ -10,22 +10,22 @@ feature_v2:
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: 2cd89edca1c1dfac7f1b7b68eccdf1416efb4724
 workflow-type: tm+mt
-source-wordcount: 560
-ht-degree: 100%
+source-wordcount: 567
+ht-degree: 62%
 
 ---
 
-# 用户历程 {#user-journey}
+# 用户载入 {#user-journey}
 
-作为 AEM (Adobe Experience Manager) 用户，您可能符合以下场景之一：
+作为AEM (Adobe Experience Manager)用户，您可以适应以下场景之一：
 
 * 您是 AEM 新手。
 * 您现在正在使用 AEM 6.x。
 * 您需要升级到 AEM 6.5 才能使用 [!UICONTROL Cloud Manager]。
 
-本文档列出了这三种场景，并解释如何开始使用 [!UICONTROL Cloud Manager]。
+本文档介绍了这三个场景，并解释了开始使用[!UICONTROL Cloud Manager]的过程。
 
 >[!NOTE]
 >
@@ -37,13 +37,13 @@ ht-degree: 100%
 
 ### Adobe Managed Services 新手 {#new-to-ams}
 
-作为新客户，在 Adobe Managed Services 新用户引导过程中，您将会登录 [!UICONTROL Cloud Manager]。
+作为新客户，在Adobe Managed Services新用户引导过程中，您已登录[!UICONTROL Cloud Manager]。
 
 在新用户引导过程中，您将收到一封欢迎电子邮件，其中包括以下内容：
 
-* 访问 [!UICONTROL Cloud Manager ]的 URL。
+* 访问 [!UICONTROL Cloud Manager &#x200B;]的 URL。
 * 登录 [!UICONTROL Experience Cloud] 的说明。
-* 有关使用 Admin Console 管理您的用户及其相应权限以便他们能够访问 [!UICONTROL Cloud Manager]（如果需要）的说明。
+* 有关使用Admin Console管理您的用户及其相应权限以便他们能够访问Cloud Manager（如果需要）的说明。
 
 ### 当前 Adobe Managed Services 客户 {#existing-customer}
 
@@ -51,15 +51,15 @@ ht-degree: 100%
 
 在进行升级期间，您会加入 Cloud Manager 并获得用于访问 [!UICONTROL Cloud Manager] 的 URL。 此外，对于那些需要访问 [!UICONTROL Cloud Manager] 的用户，您必须开始使用 Admin Console 来管理这些用户及其相应权限。
 
-您现有的 AEM 项目还需要符合推荐的最佳实践，因为您会开始使用 [!UICONTROL Cloud Manager] 将新的代码更改部署到 AEM 环境。
+您现有的AEM项目还需要符合建议的做法，因为您开始使用[!UICONTROL Cloud Manager]将新的代码更改部署到AEM环境。
 
 要获取有关升级到 AEM 6.5 的好处的其他信息，请参阅[升级到 AEM 6.5](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/deploying/upgrading/upgrade)。
 
 ## 访问 [!UICONTROL Cloud Manager] {#accessing-cloud-manager}
 
-使用您的 Adobe Identity Management 凭据登录 [!UICONTROL Experience Cloud] 登录页面。 然后，从解决方案切换器中选择 AEM，以访问 [!UICONTROL Cloud Manager] 和您的 AEM 环境。
+使用您的 Adobe Identity Management 凭据登录 [!UICONTROL Experience Cloud] 登录页面。 从解决方案切换器中选择AEM以访问[!UICONTROL Cloud Manager]和您的AEM环境。
 
-在首次登录 [!UICONTROL Cloud Manager] 后，您将有权直接从 [!UICONTROL Cloud Manager] UI 访问 AEM 环境。 此时，您已能开始探索 [!UICONTROL Cloud Manager] 的所有可能性，并准备将您的第一个代码分支部署到您的暂存和生产环境中。
+在首次登录 [!UICONTROL Cloud Manager] 后，您将有权直接从 [!UICONTROL Cloud Manager] UI 访问 AEM 环境。 此时，您已准备就绪，可使用[!UICONTROL Cloud Manager]的所有功能，并准备好您的第一个代码分支以部署到暂存和生产环境。
 
 要开始使用 [!UICONTROL Cloud Manager]，请参阅[首次登录](/help/getting-started/first-time-login.md)。
 
@@ -72,11 +72,11 @@ ht-degree: 100%
 1. 设置您的代码存储库环境。
 1. 设置您的团队和角色。 通过使用 Admin Console 将用户添加到 [!UICONTROL Cloud Manager] 配置文件来分配角色成员资格。
 1. 在 Git 存储库中设置源代码分支。
-1. 根据负载和性能 KPI（关键绩效指标）定义您的目标。
+1. 定义负载和性能KPI（关键绩效指标）。
 1. 定义测试场景，以便在成功通过所有质量检查后将代码部署到暂存环境和生产环境。
 
-## 端到端历程 {#end-to-end-journey}
+## 流程概述 {#end-to-end-journey}
 
-此图从较高层面说明了使用 [!UICONTROL Cloud Manager] CI/CD 管道将代码更改部署到暂存环境和生产环境时的客户历程。
+下图总结了使用[!UICONTROL Cloud Manager] CI/CD管道将代码更改部署到暂存环境和生产环境时的过程。
 
-![端到端历程](/help/assets/screen_shot_2018-05-15at124004pm.png)
+![加入Cloud Manager的客户历程，通过环境配置或升级、用户和角色管理、项目实施和CI/CD管道显示新客户和现有客户的路径。](/help/assets/screen_shot_2018-05-15at124004pm.png)
