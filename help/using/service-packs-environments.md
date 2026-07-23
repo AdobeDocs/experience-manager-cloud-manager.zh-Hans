@@ -15,10 +15,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8964aad406d3e7fc5b911b98f928ad0427511230
+source-git-commit: b4846046c6c410642d3e23f2cc2c002a6d53b3b7
 workflow-type: tm+mt
-source-wordcount: 468
-ht-degree: 94%
+source-wordcount: 455
+ht-degree: 91%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->此功能仅适用于[私人测试版计划](/help/release-notes/current.md#beta-program)。
+>此功能仅在[私人测试版计划](/help/release-notes/current.md#beta-program)中可用。
 
 ## 概述 {#service-pack-updates-overview}
 
@@ -71,7 +71,7 @@ ht-degree: 94%
 **如要跟踪服务包更新：**
 
 1. 从 Cloud Manager 仪表板导航到活动页面。
-1. 查找服务包安装条目。
+1. 找到Service Pack安装条目。
 
    ![服务包安装](/help/using/assets/service-pack-installation.png)
 
@@ -95,13 +95,13 @@ ht-degree: 94%
 
    ![拒绝或批准服务包更新](/help/using/assets/service-pack-reject-approve.png)
 
-1. 执行以下任一操作：
+1. 执行下列操作之一：
 
    * 要最终完成更新，点击&#x200B;**批准**。
 
    ![批准服务包](/help/using/assets/service-pack-approve.png)
 
-   * 要取消更新，点击&#x200B;**拒绝**。
-服务包安装被取消，不做任何更改。
+   * 要取消更新，请单击&#x200B;**拒绝**。
+     Service Pack安装已取消，并且不应用任何更改。
 
    ![拒绝服务包](/help/using/assets/service-pack-reject.png)

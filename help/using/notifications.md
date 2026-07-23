@@ -8,10 +8,10 @@ product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: 65b260abe417925f26d647fb9857d32c30455f9b
 workflow-type: tm+mt
-source-wordcount: 564
-ht-degree: 100%
+source-wordcount: 562
+ht-degree: 52%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## Cloud Manager 中的通知 {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] 在生产部署开始时，当生产管道启动和完成（成功或失败）时向您发送通知。 以及当达到&#x200B;**上线审批**&#x200B;和&#x200B;**已计划**&#x200B;步骤时。 这些通知将通过 [!UICONTROL Experience Cloud] 通知系统发送。
+在生产部署期间，当生产管道启动和完成（成功或失败）时发送通知。 以及当达到&#x200B;**上线审批**&#x200B;和&#x200B;**已计划**&#x200B;步骤时。 这些通知将通过 [!UICONTROL Experience Cloud] 通知系统发送。
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 通知显示在 [!UICONTROL Cloud Manager] 和整个 Adobe [!UICONTROL Experience Cloud] 侧边栏中。
 
-当您有新通知时，标题中的铃铛图标将被标记。
+当您有新通知时，标题中的铃铛图标会显示一个指示符。
 
 ![“通知”图标](/help/assets/notifications-bell-badged.png)
 
@@ -37,15 +37,15 @@ ht-degree: 100%
 
 ![通知侧边栏](/help/assets/notifications-activities.png)
 
-**公告**&#x200B;选项卡包括 Adobe 产品公告。 公告涉及产品。
+**公告**&#x200B;选项卡包括 Adobe 产品公告。 公告提供了有关产品的信息。
 
 ![通知侧边栏](/help/assets/notificaitons-announcements.png)
 
-单击通知或公告查看其详细信息。 链接到管道部署等活动的通知将带您了解该活动的详细信息，例如管道执行窗口。
+单击通知或公告查看其详细信息。 链接到管道部署等活动的通知将导航到该活动的详细信息，例如管道执行窗口。
 
-单击面板底部的&#x200B;**查看全部**&#x200B;选项，可查看收件箱中的所有公告。
+单击面板底部的&#x200B;**查看全部**&#x200B;选项可查看收件箱中的所有公告。
 
-单击面板底部的&#x200B;**标记为已读**&#x200B;选项，可将所有未读通知标记为已读并清除铃铛图标标记。
+单击面板底部的&#x200B;**全部标记为已读**&#x200B;选项可将所有未读通知标记为已读，并从铃铛图标中删除标记。
 
 ## 通知配置 {#configuration}
 
@@ -55,45 +55,45 @@ ht-degree: 100%
 
 ![通知设置图标](/help/assets/notifications-configuration.png)
 
-**Experience Cloud 偏好设置**&#x200B;窗口会打开，您可以在其中定义通知订阅以及接收通知的方式。
+将打开&#x200B;**Experience Cloud首选项**&#x200B;窗口，您可以在其中定义通知订阅以及接收通知的方式。
 
 ### 订阅 {#subscriptions}
 
-订阅定义了您收到通知的产品和通知。
+订阅定义了您收到的产品通知以及通知。
 
 ![通知订阅](/help/assets/notifications-subscriptions.png)
 
-默认情况下，您会收到所有产品的所有通知。 单击产品旁边的&#x200B;**自定义**&#x200B;以定义您收到的该产品的通知类型。
+默认情况下，您会收到所有产品的所有通知。 若要定义您收到的产品通知类型，请单击其旁边的&#x200B;**自定义**。
 
 ![通知订阅自定义](/help/assets/notifications-subscriptions-customize.png)
 
 ### 优先级 {#priority}
 
-优先级警报带有 **HIGH** 标记。 您可以将它们配置为仅作为警报接收。 在&#x200B;**优先级**&#x200B;分区，您可以定义哪些类别有资格作为优先通知。
+优先级警报带有 **HIGH** 标记。 您可以将它们配置为仅作为通知发送。 在&#x200B;**优先级**&#x200B;分区，您可以定义哪些类别有资格作为优先通知。
 
 ![通知优先级](/help/assets/notifications-priority.png)
 
-使用下拉菜单添加到有资格作为优先级的类别列表中。 单击类别名称旁边的 `X` 将其删除。
+使用下拉菜单添加到有资格作为优先级的类别列表中。 单击类别名称旁边的删除图标以删除它们。
 
 ### 警报 {#alerts}
 
-警报会在窗口右上角出现几秒钟。 使用&#x200B;**警报**&#x200B;分区来定义您收到警报的通知。
+警报会在窗口右上角出现几秒钟。 使用&#x200B;**警报**&#x200B;部分定义您接收警报的通知。
 
 ![通知警报](/help/assets/notifications-alerts.png)
 
 您可以定义警报的行为。
 
-* **显示警报** – 定义触发警报的通知类型
-* **警报应该一直显示在屏幕上，直到我关闭它们** – 控制警报是否应该持续存在，除非您主动关闭它们
-* **持续时间** – 定义如果您没有选择警报在屏幕上停留的时间，则警报应在屏幕上保持多长时间。
+* **显示**&#x200B;的警报 — 定义触发警报的通知类型。
+* **警报一直显示在屏幕上，直到您关闭它们** — 控制警报是否持续存在，除非您主动关闭它们。
+* **持续时间** — 定义如果您没有选择警报在屏幕上停留的时间，则警报在屏幕上停留的时间。
 
 ### 电子邮件 {#emails}
 
-通知在 Adobe [!UICONTROL Experience Cloud] 解决方案的 Web 用户界面中提供。 您也可以选择通过电子邮件在&#x200B;**电子邮件**&#x200B;分区发送这些通知。
+通知在 Adobe [!UICONTROL Experience Cloud] 解决方案的 Web 用户界面中提供。 若要通过电子邮件接收这些通知，请在&#x200B;**电子邮件**&#x200B;分区中选择加入。
 
 ![通知电子邮件](/help/assets/notifications-emails.png)
 
-默认情况下不发送电子邮件。 您可以选择以以下方式接收电子邮件：
+默认情况下，不会发送电子邮件。 您可以选择按以下方式接收电子邮件：
 
 * 即刻
 * 每日
