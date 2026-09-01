@@ -3,17 +3,13 @@ title: 项目设置
 description: 完成新用户引导后，业务负责人必须对项目进行一些初始设置。
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
 TQID: https://experienceleague.adobe.com/AqaA4GSOptV11h2y4V1Mt15KmEhEYBaiM-RvBFjtfWY
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 4381c51e54aaf1286b69c149dbf57c77bcd9a8bd
 workflow-type: tm+mt
-source-wordcount: 549
-ht-degree: 65%
+source-wordcount: 548
+ht-degree: 60%
 
 ---
 
@@ -81,7 +77,7 @@ ht-degree: 65%
 
 ## 在程序之间切换 {#swithing-programs}
 
-在使用一个项目时，可以快速切换到另一个项目，而无需返回 Cloud Manager 概述页面。
+在处理项目时，您可以切换到另一个项目，而无需返回Cloud Manager概述页面。
 
 使用操作栏切换到另一个项目、编辑当前项目或添加新项目。
 
@@ -91,12 +87,12 @@ ht-degree: 65%
 
 站点 KPI 是根据在暂存环境上运行的测试来测量的。 通常，会调整这些KPI以匹配暂存环境的功能。
 
-例如，某个用户期望其生产环境中的每分钟平均页面查看次数达到1000次，而其在生产环境中有四台Dispatcher/发布服务器，则将该情形降至每分钟250次页面查看次数。 此方案假设其暂存环境仅包含一个Dispatcher/发布服务器对。
+例如，某个团队期望其生产环境中的每分钟平均页面查看次数达到1000次，而该团队的生产环境中有四台Dispatcher/发布服务器，那么该团队会将此情形扩展到每分钟250次页面查看次数。 此方案假设其暂存环境仅包含一个Dispatcher/发布服务器对。
 
 资产性能测试涉及在 30 分钟内反复上传资产。 在整个测试过程中，会测量每个资产的处理时间和各种系统级指标。
 
-您为生产环境配置了内容交付网络(CDN)，例如Akamai或CloudFront。 由于[!UICONTROL Cloud Manager]直接针对暂存环境进行测试，因此KPI仅反映预期将通过CDN的流量。 即缓存未命中。 通常，此流量占总生产流量的一个相对较小的部分。
+您为生产环境配置了内容交付网络(CDN)，例如Akamai或CloudFront。 由于[!UICONTROL Cloud Manager]直接针对暂存环境进行测试，因此KPI仅反映预期将通过CDN的流量。 这是指缓存未命中。 通常，此流量占总生产流量的一个相对较小的部分。
 
 ## 视频概述 {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/34265?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)
