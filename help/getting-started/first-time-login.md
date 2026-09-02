@@ -10,7 +10,7 @@ feature_v2:
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 1692390e24f8fa7d719bd8293a99586ec4ec36d4
+source-git-commit: dac18093bc590afbd33e358582b3f1c703ce23e1
 workflow-type: tm+mt
 source-wordcount: 294
 ht-degree: 30%
@@ -59,4 +59,4 @@ Cloud Manager提供了项目活动的综合视图。 它列出了所有 CI/CD �
 
 >[!NOTE]
 >
->默认情况下，有权访问 AEM 环境的用户也具有 Cloud Manager 用户角色。 此角色不授予用户访问项目详细信息视图的权限。 仅具有Cloud Manager用户角色的用户可以使用项目菜单选项导航到AEM环境作者URL（如果存在环境）。 这些用户如果想要获得项目级访问权限，则必须联系其管理员。
+>默认情况下，有权访问 AEM 环境的用户也具有 Cloud Manager 用户角色。 此角色不提供用户访问项目详细信息视图的权限。 仅具有Cloud Manager用户角色的用户可以使用项目菜单选项导航到AEM环境作者URL（如果存在环境）。 这些用户如果想要获得项目级访问权限，则必须联系其管理员。

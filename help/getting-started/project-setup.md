@@ -8,7 +8,7 @@ product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+source-git-commit: 4381c51e54aaf1286b69c149dbf57c77bcd9a8bd
 workflow-type: tm+mt
 source-wordcount: 1411
 ht-degree: 65%
@@ -25,14 +25,14 @@ ht-degree: 65%
 
 * 必须使用 Apache Maven 构建项目。
 * Git 存储库的根目录中必须有一个 `pom.xml` 文件。
-   * 此`pom.xml`文件可以根据需要引用尽可能多的子模块（这些子模块又包含其他子模块）。
-   * 可以将引用添加到您在其他 Maven 工件存储库中拥有的 `pom.xml` 文件中。
-   * 配置后，支持访问[受密码保护的工件存储库](#password-protected-maven-repositories)。 但是，不支持访问受网络保护的工件存储库。
+  * 此`pom.xml`文件可以根据需要引用尽可能多的子模块（这些子模块又包含其他子模块）。
+  * 可以将引用添加到您在其他 Maven 工件存储库中拥有的 `pom.xml` 文件中。
+  * 配置后，支持访问[受密码保护的工件存储库](#password-protected-maven-repositories)。 但是，不支持访问受网络保护的工件存储库。
 * Cloud Manager通过扫描包含在名为`target`的目录中的内容包.zip文件来发现可部署的内容包。
-   * 任意数量的子模块都会生成内容包。
+  * 任意数量的子模块都会生成内容包。
 * Cloud Manager通过扫描包含在名为`conf`和`conf.d`的`target`子目录中的`zip`文件来发现可部署的Dispatcher工件。
 * 如果有多个内容包，则无法保证包部署顺序。
-   * 如果需要特定顺序，可以使用内容包依赖关系来定义该顺序。
+  * 如果需要特定顺序，可以使用内容包依赖关系来定义该顺序。
 * 可以从部署中[跳过](#skipping-content-packages)包。
 
 ## 在 Cloud Manager 中激活 Maven 配置文件 {#activating-maven-profiles-in-cloud-manager}
@@ -115,7 +115,7 @@ ht-degree: 65%
 
 ## 受密码保护的 Maven 存储库支持 {#password-protected-maven-repositories}
 
-应谨慎使用受密码保护的Maven存储库中的工件，因为以这种方式部署的代码不完全受Cloud Manager质量标准强制执行的质量检查的约束。 Adobe还建议您将Java源和整个项目源代码与二进制文件一起部署。
+应谨慎使用来自受密码保护的Maven存储库的工件，因为以这种方式部署的代码不完全受Cloud Manager质量标准强制执行的质量检查的约束。 Adobe还建议您将Java源和整个项目源代码与二进制文件一起部署。
 
 >[!TIP]
 >
@@ -339,7 +339,7 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 
 * 无论承诺哈希是否相同，生成工件都不会在不同的项目中重用。
 * 即使分支和/或管道不同，构建工件也将在同一项目中重用。
-* [Maven版本处理](/help/managing-code/maven-project-version.md)仅在生产管道中替换项目版本。 如果开发管道和生产管道均使用同一承诺，并且开发管道先运行，则版本将部署到暂存和生产管道中，并且保持不变。 不过，在此情况下仍会创建一个标记。
+* [Maven版本处理](/help/managing-code/maven-project-version.md)仅在生产管道中替换项目版本。 如果开发管道和生产管道均使用同一承诺，并且先运行开发管道，则版本将部署到暂存和生产管道中，并且保持不变。 不过，在此情况下仍会创建一个标记。
 * 如果无法检索已存储的工件，则会执行构建步骤，就像未存储任何工件一样。
 * 当 Cloud Manager 决定重用之前创建的构建工件时，不会考虑 `CM_DISABLE_BUILD_REUSE` 之外的管道变量。
 

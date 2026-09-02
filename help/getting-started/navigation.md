@@ -10,9 +10,9 @@ feature_v2:
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+source-git-commit: dac18093bc590afbd33e358582b3f1c703ce23e1
 workflow-type: tm+mt
-source-wordcount: 1641
+source-wordcount: 1640
 ht-degree: 36%
 
 ---
@@ -104,16 +104,16 @@ call-to-action和统计信息部分为您的组织提供聚合数据。 例如�
 
 “我的程序”控制台的主要内容是&#x200B;**我的程序**&#x200B;部分，其中会将您的程序列为单独的信息卡。 单击一张信息卡即可访问该程序的&#x200B;**程序概述**&#x200B;页面，了解有关该程序的详细信息。
 
-根据您的权限，您可能无法选择某些程序。
+根据您的权限，您无法选择某些程序。
 
 您可以使用以下排序选项快速查找所需的程序：
 
 ![排序选项](/help/getting-started/assets/cloud-manager-my-programs-sorting.png)
 
 * 排序方式：
-   * 创建日期
-   * 项目名称
-   * 状态
+  * 创建日期
+  * 项目名称
+  * 状态
 * ![向下排序图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) / ![向上排序图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderUp_18_N.svg)分别向上或向下排序程序。
 * ![经典网格视图图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ClassicGridView_18_N.svg) / ![文本项目符号图标或列表](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TextBulleted_18_N.svg)分别以网格表单或列表表单查看程序。
 
@@ -126,8 +126,8 @@ call-to-action和统计信息部分为您的组织提供聚合数据。 例如�
 * 程序图像（如果进行了配置）
 * 项目名称（在上例中，*WKND Magazine*）
 * 服务类型：
-   * **Experience Manager** 适用于 AMS 计划
-   * **Experience Manager Cloud** 适用于 [AEM as a Cloud Service 计划](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/home)
+  * **Experience Manager** 适用于 AMS 计划
+  * **Experience Manager Cloud** 适用于 [AEM as a Cloud Service 计划](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/home)
 * 状态（在上例中，*就绪*）
 * 已配置的解决方案
 * 创建日期
