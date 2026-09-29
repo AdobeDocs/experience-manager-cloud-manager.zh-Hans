@@ -248,4 +248,4 @@ Smart Build提供细粒度控制，允许您禁用特定模块的缓存。 此�
 
 该视频概述了本文档中详述的管道创建过程。
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/)
+>[!VIDEO](https://video.tv.adobe.com/v/327618?captions=chi_hans)
