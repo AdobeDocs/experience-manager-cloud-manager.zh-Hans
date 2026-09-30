@@ -3,21 +3,29 @@ title: 在 Cloud Manager 中添加专用存储库
 description: 了解如何设置 Cloud Manager 以使用您自己的专用 GitHub 存储库。
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-TQID: https://experienceleague.adobe.com/YQUazTRNh7C31piqZwe-1zAkRWIqt9fVY6jTD5T3ZpI
+TQID: 'https://experienceleague.adobe.com/YQUazTRNh7C31piqZwe-1zAkRWIqt9fVY6jTD5T3ZpI'
 product_v2:
   - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 32dc7aaf4c228d9aee1adedab3f52375f1807bb5
+    internal-label: Security
+source-git-commit: 26e8d7835883cd6a64913b3b4e3619041af63bf5
 workflow-type: tm+mt
-source-wordcount: 837
+source-wordcount: '837'
 ht-degree: 79%
-
 ---
-
 # 在 Cloud Manager 中添加专用存储库 {#private-repositories}
 
 了解如何设置 Cloud Manager 以使用您自己的专用 GitHub 存储库。
@@ -81,7 +89,7 @@ Cloud Manager现在已配置您的GitHub存储库，但仍需要授权才能访�
 
 1. 返回&#x200B;**专用存储库所有权验证**&#x200B;对话框中，Cloud Manager 已在&#x200B;**秘密文件内容**&#x200B;字段中生成了该内容。 复制该字段中的内容。
 
-   机密文件的内容只显示一次。 如果您在关闭此窗口之前未复制该内容，则必须重新生成密码。
+   机密文件的内容只显示一次。 如果您在关闭此窗口之前未复制该内容，则必须重新生成密钥。
 
    ![复制秘密文件内容](/help/assets/repositories/new-secret.png)
 
@@ -91,13 +99,13 @@ Cloud Manager现在已配置您的GitHub存储库，但仍需要授权才能访�
 
 可以安装该应用程序，并且您可以按任何顺序生成秘密文件。 但必须先完成这两个步骤，之后才能进行验证。
 
-在验证之前，存储库将会列出红色图标，这表示它尚未经过验证，因此尚无法使用。
+在验证之前，存储库会以红色图标显示，这表示它尚未经过验证，因此尚无法使用。
 
 ![未经验证的存储库](/help/assets/repositories/unvalidated-repo.png)
 
 请注意，**类型**&#x200B;列可轻松识别 Adobe 提供的存储库 (**Adobe**) 和您自己的 GitHub 存储库 (**GitHub**)。
 
-要稍后返回存储库并完成验证，请转到&#x200B;**存储库**&#x200B;页面。 点击您添加的 GitHub 存储库旁边的![“更多”图标（省略号 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)），然后点击&#x200B;**所有权验证**。
+要稍后返回存储库并完成验证，请转到&#x200B;**存储库**&#x200B;页面。 点击您添加的 GitHub 存储库旁边的![“更多”图标（省略号 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)），然后点击&#x200B;**所有权验证**。
 
 
 ## 将专用存储库与 Cloud Manager 结合使用 {#using}
@@ -124,7 +132,7 @@ Cloud Manager现在已配置您的GitHub存储库，但仍需要授权才能访�
 
 >[!TIP]
 >
->您可以控制自动创建的管道，验证对专用存储库的每个提取请求。 请参阅 [GitHub 检查专用存储库的配置](github-check-config.md)，了解更多信息。
+>您可以控制为验证每个对专用存储库的提取请求而自动创建的管道。 请参阅 [GitHub 检查专用存储库的配置](github-check-config.md)，了解更多信息。
 
 
 
