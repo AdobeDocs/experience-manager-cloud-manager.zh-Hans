@@ -2,26 +2,42 @@
 title: 构建环境
 description: 了解 Cloud Manager 用户可用来构建和测试代码的专用构建环境。
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-TQID: https://experienceleague.adobe.com/AdGVWjyF0DXEX7jH5S39JQ506oVnNYGtYqAWNHcQeP8
+autotag-review: '2026-09-28T18:27:41.054Z'
+TQID: 'https://experienceleague.adobe.com/DNcpDvFCu798nnK81kUEN8JmIv8DP72cas0YaVKPw40'
 product_v2:
   - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
+    internal-label: Environments
+  - id: 143cda9c-8952-5316-be5f-2cd421ad8ecc
+    internal-label: Dispatcher
+  - id: 2741637d-a621-529a-b21b-bfe9be07a9c8
+    internal-label: Dispatcher
+  - id: 2e0e1a8a-56e7-5bd5-b805-f35a7c0c2ca7
+    internal-label: Projects
+  - id: 5be0fc8f-1cff-5c3e-bb92-2903a56a3de6
+    internal-label: Migration
+  - id: d54b7e32-ec14-504f-8821-22c27fbf278b
+    internal-label: Production
 subfeature_v2:
   - id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
+    internal-label: Cloud Manager APIs
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+    internal-label: Security
+source-git-commit: 9b75e449f463ef5512ed4e42c4f749852d8c945a
 workflow-type: tm+mt
-source-wordcount: 1205
+source-wordcount: '1205'
 ht-degree: 50%
-
 ---
-
 # 构建环境 {#build-environment}
 
 了解Cloud Manager用于构建和测试代码的专用构建环境。
@@ -32,23 +48,23 @@ Cloud Manager 的构建环境具有以下属性。
 
 * 该构建环境基于 Linux，并派生自 Ubuntu 22.04。
 * 安装了 Apache Maven 3.9.4。
-   * Adobe 建议用户[更新其 Maven 存储库以使用 HTTPS 代替 HTTP](#https-maven)。
+  * Adobe 建议用户[更新其 Maven 存储库以使用 HTTPS 代替 HTTP](#https-maven)。
 * 安装的 Java 版本是 Oracle JDK 8u401 和 Oracle JDK 11.0.22。
-   * `/usr/lib/jvm/jdk1.8.0_401`
-   * `/usr/lib/jvm/jdk-11.0.22`
+  * `/usr/lib/jvm/jdk1.8.0_401`
+  * `/usr/lib/jvm/jdk-11.0.22`
 * 默认情况下会将`JAVA_HOME`环境变量设置为包含 Oracle JDK 8u401 的 `/usr/lib/jvm/jdk1.8.0_401`。 有关更多详细信息，请参阅[替代Maven执行JDK版本](#alternate-maven)部分。
 * 安装其他必需的系统包。
-   * `bzip2`
-   * `unzip`
-   * `libpng`
-   * `imagemagick`
-   * `graphicsmagick`
+  * `bzip2`
+  * `unzip`
+  * `libpng`
+  * `imagemagick`
+  * `graphicsmagick`
 * 在生成时安装其他包，如[安装其他系统包](#installing-additional-system-packages)部分中所述。
 * 每次构建都是在新环境中完成的。 构建容器在执行之间不保留数据。
 * Maven通过以下三条命令运行：
-   * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
-   * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
-   * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
+  * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
+  * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
+  * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * 使用 `settings.xml` 文件在系统级别配置 Maven，并且其中会自动包含使用名为 `adobe-public` 的配置文件的公共 Adobe 工件存储库。 请参阅 [Adobe 公共 Maven 存储库](https://repo1.maven.org/)了解详情。
 * 对于[前端管道](/help/overview/ci-cd-pipelines.md)有 Node.js 18 可用。
 
@@ -154,7 +170,7 @@ The currently available vendor/version combinations are:
 
 例如，当使用诸如gulp之类的工具进行JavaScript缩小时，请将不同的缩小级别用于开发环境与暂存和生产环境。
 
-为了支持这一点，Cloud Manager 会为每个执行将标准环境变量添加到构建容器中。
+为了支持这一点，Cloud Manager 会在每次执行时将标准环境变量添加到构建容器中。
 
 | 变量名称 | 描述 |
 |---|---|
@@ -162,9 +178,9 @@ The currently available vendor/version combinations are:
 | `BRANCH` | 执行的已配置分支 |
 | `CM_PIPELINE_ID` | 数值管道标识符 |
 | `CM_PIPELINE_NAME` | 管道名称 |
-| `CM_PROGRAM_ID` | 数值项目标识符 |
-| `CM_PROGRAM_NAME` | 项目名称 |
-| `ARTIFACTS_VERSION` | 对于暂存或生产管道，为由 Cloud Manager 生成的合成版本 |
+| `CM_PROGRAM_ID` | 数值程序标识符 |
+| `CM_PROGRAM_NAME` | 程序名称 |
+| `ARTIFACTS_VERSION` | 对于暂存或生产管道，由 Cloud Manager 生成的合成版本 |
 
 ### 标准环境变量可用性 {#availability}
 
@@ -172,7 +188,7 @@ The currently available vendor/version combinations are:
 
 #### 创作、预览和发布环境 {#author-preview-publish}
 
-常规环境变量和密钥均可用于创作、预览和发布环境。
+常规环境变量和密钥均可用于创作环境、预览环境和发布环境。
 
 #### Dispatcher {#dispatcher}
 
@@ -209,7 +225,7 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 变量必须遵循特定的限制。
 
 * 变量名称只能包含字母数字字符和下划线(`_`)。
-   * 按照惯例，这些名称全部大写。
+  * 按照惯例，这些名称全部大写。
 * 每个管道最多有 200 个变量。
 * 每个名称的长度必须少于 100 个字符。
 * 每个字符串值的长度必须少于 2048 个字符。
