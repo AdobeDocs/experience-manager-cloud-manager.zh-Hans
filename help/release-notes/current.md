@@ -21,10 +21,10 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 772379fc5c641fcde07165a2beb2d49e964b481d
+source-git-commit: b48085c8209c0802f6f2d321865bd1a1ee786139
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 9%
+source-wordcount: '378'
+ht-degree: 8%
 ---
 
 # Adobe Managed Services中的Cloud Manager 2026.11.0发行说明 {#release-notes}
@@ -48,29 +48,37 @@ ht-degree: 9%
 
 ## 新增功能 {#new-features}
 
-2026年11月的AMS版本Cloud Manager没有重大新功能。
+### AEM Managed Services的Web层管道 {#web-tier-pipelines}
 
+Cloud Manager现在支持AMS程序的专用Web层管道，允许团队独立于全栈部署部署Dispatcher和Web层配置。 这样可以在Web层更改上加快迭代，同时减少不必要的完整管道执行。
+
+配置Web层管道后，全栈管道会自动跳过该环境的Web层部署，以防止部署冲突。 删除Web层管道会自动恢复默认部署行为。<!-- CMGR-27553 -->
+
+查看[Web层配置管道](/help/overview/ci-cd-pipelines.md#web-tier-config-pipelines)。
 
 ## Beta 计划 {#beta-program}
 
-要在即将发布的功能正式发布之前获得独家访问权，请参与Cloud Manager的测试版计划。
+目前没有可用的测试版计划机会。
+
+<!--
+To get exclusive access to upcoming features before their general release, participate in Cloud Manager's beta programs.
 
 >[!IMPORTANT]
 >
->Beta版本包含问题，并且不提供任何类型的担保。 Adobe没有义务维护、更正、更新、更改、修改或以其他方式支持（通过Adobe支持服务或其他方式）Beta版。 客户使用测试版需自行承担风险。 请勿依赖测试版版本的正确功能或性能，或者依赖任何随附的文档或材料。 Beta版中的功能和API如有更改，恕不另行通知。 任何使用测试版的风险完全由客户自行承担。
+>Beta releases contain issues and are provided without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (through Adobe Support Services or otherwise) the beta releases. Customers use beta releases at their own risk. Do not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Any use of the beta releases is entirely at the customer's own risk.
 
-目前提供以下测试版计划机会：
-
-### AEM Managed Services的Web层管道 {#web-tier-pipelines}
-
-Cloud Manager现在支持AMS程序的专用Web层管道，允许团队独立于全栈部署部署Dispatcher和Web层配置。 这样可以在Web层更改上加快迭代，同时减少不必要的完整管道执行。 配置Web层管道后，全栈管道会自动跳过该环境的Web层部署，以防止部署冲突。 删除Web层管道会自动恢复默认部署行为。
-
-要加入Beta，请联系您的Adobe客户成功工程师以了解更多信息。
-
+The following beta program opportunity is currently available:
+-->
 
 ## 错误修复 {#bug-fixes}
 
-* 部署后安全测试间歇性失败。 在Adobe Managed Services程序上，部署后安全测试的SSL配置检查在许多程序中间歇性地失败，然后在重试时通过，导致不必要的管道失败。 检查已更新，因此不再失败。 (CMGR-79870)
+
+* 代码质量扫描在大型项目上失败。 代码质量(SonarQube)扫描会生成多GB的调试日志，并在扫描某些捆绑的库时终止，从而导致生成失败。 已更正扫描，以便在受影响的项目中正常完成扫描。 (CMGR-80025)
+
+* 网站使用CSV导出显示月份标签移动了一个月。 在许可证>站点使用详细信息页面上，CSV导出显示位于后UTC时区的用户一个月前移动的标签数。 现在，无论用户的时区如何，导出都会显示正确的月份标签。 (CMGR-80903)
+
+* 重用访问令牌名称不再覆盖现有令牌。 在程序中重用现有的访问令牌名称会覆盖共享令牌并创建重复的访问密钥。 Cloud Manager现在可以正确处理令牌名称重用，防止意外覆盖和重复。 (CMGR-81236)
+
 
 <!--
 Known Issues {#known-issues}
